@@ -1,7 +1,7 @@
 Dataset,Endpoint/unit,Shift,N,#Scaffolds,y range,Years
+COX-2 (CHEMBL230),pChEMBL,temporal,4374,1218,"[4.00, 10.70]",1994-2025
+BACE-1 inhibition,pIC50,scaffold,1510,724,"[2.54, 10.52]",--
+Lipophilicity (logD 7.4),log D,scaffold,4200,2442,"[-1.50, 4.50]",--
+ESOL (aqueous solubility),log mol/L,scaffold,1117,268,"[-11.60, 1.58]",--
 FreeSolv (hydration free energy),kcal/mol,scaffold,642,62,"[-25.47, 3.43]",--
 VEGFR2/KDR (CHEMBL279),pChEMBL,temporal,9651,3649,"[4.00, 10.64]",1999-2025
-Lipophilicity (logD 7.4),log D,scaffold,4200,2442,"[-1.50, 4.50]",--
-BACE-1 inhibition,pIC50,scaffold,1510,724,"[2.54, 10.52]",--
-ESOL (aqueous solubility),log mol/L,scaffold,1117,268,"[-11.60, 1.58]",--
-COX-2 (CHEMBL230),pChEMBL,temporal,4374,1218,"[4.00, 10.70]",1994-2025

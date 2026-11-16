@@ -1,4 +1,54 @@
 {
+ "chembl_cox2": {
+  "key": "chembl_cox2",
+  "name": "COX-2 (CHEMBL230)",
+  "unit": "pChEMBL",
+  "shift": "temporal",
+  "n": 4374,
+  "n_scaffolds": 1218,
+  "y_mean": 6.216183127572016,
+  "y_std": 1.1201177672716822,
+  "y_min": 4.0,
+  "y_max": 10.7,
+  "year_min": 1994,
+  "year_max": 2025
+ },
+ "bace": {
+  "key": "bace",
+  "name": "BACE-1 inhibition",
+  "unit": "pIC50",
+  "shift": "scaffold",
+  "n": 1510,
+  "n_scaffolds": 724,
+  "y_mean": 6.5224926403311265,
+  "y_std": 1.3432302200157513,
+  "y_min": 2.5445461,
+  "y_max": 10.522879
+ },
+ "lipophilicity": {
+  "key": "lipophilicity",
+  "name": "Lipophilicity (logD 7.4)",
+  "unit": "log D",
+  "shift": "scaffold",
+  "n": 4200,
+  "n_scaffolds": 2442,
+  "y_mean": 2.1863357142857143,
+  "y_std": 1.203003713387104,
+  "y_min": -1.5,
+  "y_max": 4.5
+ },
+ "esol": {
+  "key": "esol",
+  "name": "ESOL (aqueous solubility)",
+  "unit": "log mol/L",
+  "shift": "scaffold",
+  "n": 1117,
+  "n_scaffolds": 268,
+  "y_mean": -3.0500581915846015,
+  "y_std": 2.095456965333364,
+  "y_min": -11.6,
+  "y_max": 1.58
+ },
  "freesolv": {
   "key": "freesolv",
   "name": "FreeSolv (hydration free energy)",
@@ -23,56 +73,6 @@
   "y_min": 4.0,
   "y_max": 10.64,
   "year_min": 1999,
-  "year_max": 2025
- },
- "lipophilicity": {
-  "key": "lipophilicity",
-  "name": "Lipophilicity (logD 7.4)",
-  "unit": "log D",
-  "shift": "scaffold",
-  "n": 4200,
-  "n_scaffolds": 2442,
-  "y_mean": 2.1863357142857143,
-  "y_std": 1.203003713387104,
-  "y_min": -1.5,
-  "y_max": 4.5
- },
- "bace": {
-  "key": "bace",
-  "name": "BACE-1 inhibition",
-  "unit": "pIC50",
-  "shift": "scaffold",
-  "n": 1510,
-  "n_scaffolds": 724,
-  "y_mean": 6.5224926403311265,
-  "y_std": 1.3432302200157513,
-  "y_min": 2.5445461,
-  "y_max": 10.522879
- },
- "esol": {
-  "key": "esol",
-  "name": "ESOL (aqueous solubility)",
-  "unit": "log mol/L",
-  "shift": "scaffold",
-  "n": 1117,
-  "n_scaffolds": 268,
-  "y_mean": -3.0500581915846015,
-  "y_std": 2.095456965333364,
-  "y_min": -11.6,
-  "y_max": 1.58
- },
- "chembl_cox2": {
-  "key": "chembl_cox2",
-  "name": "COX-2 (CHEMBL230)",
-  "unit": "pChEMBL",
-  "shift": "temporal",
-  "n": 4374,
-  "n_scaffolds": 1218,
-  "y_mean": 6.216183127572016,
-  "y_std": 1.1201177672716822,
-  "y_min": 4.0,
-  "y_max": 10.7,
-  "year_min": 1994,
   "year_max": 2025
  }
 }

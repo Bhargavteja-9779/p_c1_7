@@ -1611,28 +1611,28 @@
  ],
  "diagnostic_law": {
   "adecp": {
-   "spearman_rho": -0.534,
-   "p_value": 1.6162095547365845e-30,
+   "spearman_rho": -0.562,
+   "p_value": 2.5377838528925096e-34,
    "n": 396
   },
   "mondrian": {
-   "spearman_rho": -0.51,
-   "p_value": 1.492604766096989e-27,
+   "spearman_rho": -0.497,
+   "p_value": 4.3175808914532935e-26,
    "n": 396
   },
   "split": {
-   "spearman_rho": -0.272,
-   "p_value": 3.653929896687948e-08,
+   "spearman_rho": -0.309,
+   "p_value": 3.1177946969946827e-10,
    "n": 396
   },
   "weighted_ad": {
-   "spearman_rho": -0.196,
-   "p_value": 8.471836121256677e-05,
+   "spearman_rho": -0.204,
+   "p_value": 4.2762568384374e-05,
    "n": 396
   },
   "_pooled_marginal_vs_auc": {
-   "spearman_rho": -0.063,
-   "p_value": 2.7642072302402198e-05,
+   "spearman_rho": -0.016,
+   "p_value": 0.29387172566883374,
    "n": 4356
   }
  }

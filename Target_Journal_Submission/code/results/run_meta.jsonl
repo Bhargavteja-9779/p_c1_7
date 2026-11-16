@@ -391,3 +391,6 @@
 {"dataset": "bace", "model": "lgbm", "seed": 8, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.9, "shift_auc": 0.961544084323787, "n": [906, 302, 302], "runtime_s": 2.48}
 {"dataset": "bace", "model": "lgbm", "seed": 9, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.0, "shift_auc": 0.6339999707615163, "n": [906, 302, 302], "runtime_s": 2.67}
 {"dataset": "bace", "model": "lgbm", "seed": 9, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.25, "shift_auc": 0.7050312120813413, "n": [906, 302, 302], "runtime_s": 2.5}
+{"dataset": "bace", "model": "lgbm", "seed": 9, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.5, "shift_auc": 0.7861131821703726, "n": [906, 302, 302], "runtime_s": 2.56}
+{"dataset": "bace", "model": "lgbm", "seed": 9, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.75, "shift_auc": 0.9002839787728609, "n": [906, 302, 302], "runtime_s": 2.5}
+{"dataset": "bace", "model": "lgbm", "seed": 9, "alpha": 0.1, "split_type": "similarity", "sweep_q": 0.9, "shift_auc": 0.955455170094879, "n": [906, 302, 302], "runtime_s": 1.97}

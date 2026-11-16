@@ -1,0 +1,78 @@
+{
+ "chembl_cox2": {
+  "key": "chembl_cox2",
+  "name": "COX-2 (CHEMBL230)",
+  "unit": "pChEMBL",
+  "shift": "temporal",
+  "n": 4374,
+  "n_scaffolds": 1218,
+  "y_mean": 6.216183127572016,
+  "y_std": 1.1201177672716822,
+  "y_min": 4.0,
+  "y_max": 10.7,
+  "year_min": 1994,
+  "year_max": 2025
+ },
+ "bace": {
+  "key": "bace",
+  "name": "BACE-1 inhibition",
+  "unit": "pIC50",
+  "shift": "scaffold",
+  "n": 1510,
+  "n_scaffolds": 724,
+  "y_mean": 6.5224926403311265,
+  "y_std": 1.3432302200157513,
+  "y_min": 2.5445461,
+  "y_max": 10.522879
+ },
+ "lipophilicity": {
+  "key": "lipophilicity",
+  "name": "Lipophilicity (logD 7.4)",
+  "unit": "log D",
+  "shift": "scaffold",
+  "n": 4200,
+  "n_scaffolds": 2442,
+  "y_mean": 2.1863357142857143,
+  "y_std": 1.203003713387104,
+  "y_min": -1.5,
+  "y_max": 4.5
+ },
+ "esol": {
+  "key": "esol",
+  "name": "ESOL (aqueous solubility)",
+  "unit": "log mol/L",
+  "shift": "scaffold",
+  "n": 1117,
+  "n_scaffolds": 268,
+  "y_mean": -3.0500581915846015,
+  "y_std": 2.095456965333364,
+  "y_min": -11.6,
+  "y_max": 1.58
+ },
+ "freesolv": {
+  "key": "freesolv",
+  "name": "FreeSolv (hydration free energy)",
+  "unit": "kcal/mol",
+  "shift": "scaffold",
+  "n": 642,
+  "n_scaffolds": 62,
+  "y_mean": -3.8030062305295944,
+  "y_std": 3.8478201171088116,
+  "y_min": -25.47,
+  "y_max": 3.43
+ },
+ "chembl_vegfr2": {
+  "key": "chembl_vegfr2",
+  "name": "VEGFR2/KDR (CHEMBL279)",
+  "unit": "pChEMBL",
+  "shift": "temporal",
+  "n": 9651,
+  "n_scaffolds": 3649,
+  "y_mean": 6.827245881255829,
+  "y_std": 1.1155719667541155,
+  "y_min": 4.0,
+  "y_max": 10.64,
+  "year_min": 1999,
+  "year_max": 2025
+ }
+}

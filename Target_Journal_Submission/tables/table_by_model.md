@@ -1,0 +1,18 @@
+| Model | Method | Worst-stratum cov. |
+|---|---|---|
+| lgbm | Split CP (B1) | 0.695$\pm$0.202 |
+| lgbm | Mondrian-AD CP (B3) | 0.695$\pm$0.210 |
+| lgbm | AD-reweighted CP [ADR-CP, ours] | 0.695$\pm$0.203 |
+| lgbm | AD-extrapolated CP [ADE-CP, ours] | 0.700$\pm$0.204 |
+| rf | Split CP (B1) | 0.784$\pm$0.127 |
+| rf | Mondrian-AD CP (B3) | 0.762$\pm$0.154 |
+| rf | AD-reweighted CP [ADR-CP, ours] | 0.784$\pm$0.125 |
+| rf | AD-extrapolated CP [ADE-CP, ours] | 0.754$\pm$0.163 |
+| ridge | Split CP (B1) | 0.774$\pm$0.123 |
+| ridge | Mondrian-AD CP (B3) | 0.806$\pm$0.135 |
+| ridge | AD-reweighted CP [ADR-CP, ours] | 0.772$\pm$0.121 |
+| ridge | AD-extrapolated CP [ADE-CP, ours] | 0.773$\pm$0.147 |
+| mlp | Split CP (B1) | 0.774$\pm$0.173 |
+| mlp | Mondrian-AD CP (B3) | 0.789$\pm$0.175 |
+| mlp | AD-reweighted CP [ADR-CP, ours] | 0.771$\pm$0.173 |
+| mlp | AD-extrapolated CP [ADE-CP, ours] | 0.779$\pm$0.184 |

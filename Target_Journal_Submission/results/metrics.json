@@ -1,0 +1,9249 @@
+{
+ "by_split_method": [
+  {
+   "split_type": "scaffold",
+   "method": "adecp",
+   "n": 256,
+   "marginal_coverage_mean": 0.8298,
+   "marginal_coverage_sd": 0.1187,
+   "marginal_coverage_ci": [
+    0.815,
+    0.8445
+   ],
+   "marginal_gap_mean": -0.039,
+   "marginal_gap_sd": 0.1075,
+   "marginal_gap_ci": [
+    -0.0531,
+    -0.0262
+   ],
+   "worst_stratum_coverage_mean": 0.7259,
+   "worst_stratum_coverage_sd": 0.1926,
+   "worst_stratum_coverage_ci": [
+    0.7043,
+    0.7505
+   ],
+   "max_stratum_gap_mean": 0.1677,
+   "max_stratum_gap_sd": 0.1707,
+   "max_stratum_gap_ci": [
+    0.1465,
+    0.1872
+   ],
+   "mean_width_mean": 4.8793,
+   "mean_width_sd": 3.1534,
+   "mean_width_ci": [
+    4.4803,
+    5.2674
+   ],
+   "median_width_mean": 4.875,
+   "median_width_sd": 3.2509,
+   "median_width_ci": [
+    4.4712,
+    5.2818
+   ],
+   "saturated_fraction_mean": 0.0021,
+   "saturated_fraction_sd": 0.0323,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0061
+   ],
+   "value_worst_coverage_mean": 0.7274,
+   "value_worst_coverage_sd": 0.1883,
+   "value_worst_coverage_ci": [
+    0.7029,
+    0.7511
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "adwcp",
+   "n": 256,
+   "marginal_coverage_mean": 0.8759,
+   "marginal_coverage_sd": 0.0806,
+   "marginal_coverage_ci": [
+    0.8661,
+    0.8853
+   ],
+   "marginal_gap_mean": 0.0071,
+   "marginal_gap_sd": 0.0687,
+   "marginal_gap_ci": [
+    -0.0017,
+    0.0155
+   ],
+   "worst_stratum_coverage_mean": 0.7935,
+   "worst_stratum_coverage_sd": 0.1336,
+   "worst_stratum_coverage_ci": [
+    0.7771,
+    0.8099
+   ],
+   "max_stratum_gap_mean": 0.1252,
+   "max_stratum_gap_sd": 0.0942,
+   "max_stratum_gap_ci": [
+    0.114,
+    0.1366
+   ],
+   "mean_width_mean": 6.6067,
+   "mean_width_sd": 6.082,
+   "mean_width_ci": [
+    5.8575,
+    7.3369
+   ],
+   "median_width_mean": 6.5045,
+   "median_width_sd": 6.2532,
+   "median_width_ci": [
+    5.7432,
+    7.2686
+   ],
+   "saturated_fraction_mean": 0.1532,
+   "saturated_fraction_sd": 0.3168,
+   "saturated_fraction_ci": [
+    0.1174,
+    0.1924
+   ],
+   "value_worst_coverage_mean": 0.7936,
+   "value_worst_coverage_sd": 0.1315,
+   "value_worst_coverage_ci": [
+    0.7773,
+    0.8094
+   ],
+   "eff_sample_size_mean": 199.3225,
+   "eff_sample_size_sd": 163.3387,
+   "eff_sample_size_ci": [
+    179.8103,
+    220.8244
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "localized",
+   "n": 256,
+   "marginal_coverage_mean": 0.9486,
+   "marginal_coverage_sd": 0.0574,
+   "marginal_coverage_ci": [
+    0.9416,
+    0.9553
+   ],
+   "marginal_gap_mean": 0.0798,
+   "marginal_gap_sd": 0.043,
+   "marginal_gap_ci": [
+    0.0745,
+    0.085
+   ],
+   "worst_stratum_coverage_mean": 0.8962,
+   "worst_stratum_coverage_sd": 0.1216,
+   "worst_stratum_coverage_ci": [
+    0.8813,
+    0.9107
+   ],
+   "max_stratum_gap_mean": 0.1234,
+   "max_stratum_gap_sd": 0.0637,
+   "max_stratum_gap_ci": [
+    0.1158,
+    0.1313
+   ],
+   "mean_width_mean": 10.3866,
+   "mean_width_sd": 9.2102,
+   "mean_width_ci": [
+    9.2663,
+    11.5409
+   ],
+   "median_width_mean": 10.367,
+   "median_width_sd": 9.2946,
+   "median_width_ci": [
+    9.2369,
+    11.5143
+   ],
+   "saturated_fraction_mean": 0.3835,
+   "saturated_fraction_sd": 0.4626,
+   "saturated_fraction_ci": [
+    0.3278,
+    0.4415
+   ],
+   "value_worst_coverage_mean": 0.9037,
+   "value_worst_coverage_sd": 0.1072,
+   "value_worst_coverage_ci": [
+    0.89,
+    0.9159
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "mondrian",
+   "n": 256,
+   "marginal_coverage_mean": 0.8385,
+   "marginal_coverage_sd": 0.1217,
+   "marginal_coverage_ci": [
+    0.8226,
+    0.8537
+   ],
+   "marginal_gap_mean": -0.0302,
+   "marginal_gap_sd": 0.1096,
+   "marginal_gap_ci": [
+    -0.0441,
+    -0.0173
+   ],
+   "worst_stratum_coverage_mean": 0.7293,
+   "worst_stratum_coverage_sd": 0.1962,
+   "worst_stratum_coverage_ci": [
+    0.7064,
+    0.7539
+   ],
+   "max_stratum_gap_mean": 0.1713,
+   "max_stratum_gap_sd": 0.1688,
+   "max_stratum_gap_ci": [
+    0.1503,
+    0.1906
+   ],
+   "mean_width_mean": 5.1335,
+   "mean_width_sd": 3.4067,
+   "mean_width_ci": [
+    4.7251,
+    5.564
+   ],
+   "median_width_mean": 4.947,
+   "median_width_sd": 3.3342,
+   "median_width_ci": [
+    4.5405,
+    5.3804
+   ],
+   "saturated_fraction_mean": 0.0028,
+   "saturated_fraction_sd": 0.0441,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0083
+   ],
+   "value_worst_coverage_mean": 0.7352,
+   "value_worst_coverage_sd": 0.1903,
+   "value_worst_coverage_ci": [
+    0.7113,
+    0.7591
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "normalized",
+   "n": 256,
+   "marginal_coverage_mean": 0.8618,
+   "marginal_coverage_sd": 0.0951,
+   "marginal_coverage_ci": [
+    0.8501,
+    0.8739
+   ],
+   "marginal_gap_mean": -0.007,
+   "marginal_gap_sd": 0.0814,
+   "marginal_gap_ci": [
+    -0.0173,
+    0.003
+   ],
+   "worst_stratum_coverage_mean": 0.7713,
+   "worst_stratum_coverage_sd": 0.1658,
+   "worst_stratum_coverage_ci": [
+    0.7519,
+    0.7938
+   ],
+   "max_stratum_gap_mean": 0.1441,
+   "max_stratum_gap_sd": 0.1291,
+   "max_stratum_gap_ci": [
+    0.1269,
+    0.1593
+   ],
+   "mean_width_mean": 5.8987,
+   "mean_width_sd": 4.0264,
+   "mean_width_ci": [
+    5.4281,
+    6.4169
+   ],
+   "median_width_mean": 5.795,
+   "median_width_sd": 4.1352,
+   "median_width_ci": [
+    5.3035,
+    6.3308
+   ],
+   "saturated_fraction_mean": 0.0285,
+   "saturated_fraction_sd": 0.0878,
+   "saturated_fraction_ci": [
+    0.0191,
+    0.0397
+   ],
+   "value_worst_coverage_mean": 0.7763,
+   "value_worst_coverage_sd": 0.1633,
+   "value_worst_coverage_ci": [
+    0.7555,
+    0.7973
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "raw_ensemble",
+   "n": 256,
+   "marginal_coverage_mean": 0.828,
+   "marginal_coverage_sd": 0.1332,
+   "marginal_coverage_ci": [
+    0.8107,
+    0.8442
+   ],
+   "marginal_gap_mean": -0.0407,
+   "marginal_gap_sd": 0.1249,
+   "marginal_gap_ci": [
+    -0.0563,
+    -0.0261
+   ],
+   "worst_stratum_coverage_mean": 0.7165,
+   "worst_stratum_coverage_sd": 0.1907,
+   "worst_stratum_coverage_ci": [
+    0.6931,
+    0.7401
+   ],
+   "max_stratum_gap_mean": 0.1812,
+   "max_stratum_gap_sd": 0.1645,
+   "max_stratum_gap_ci": [
+    0.1611,
+    0.2007
+   ],
+   "mean_width_mean": 4.8475,
+   "mean_width_sd": 3.0494,
+   "mean_width_ci": [
+    4.4732,
+    5.222
+   ],
+   "median_width_mean": 4.879,
+   "median_width_sd": 3.0764,
+   "median_width_ci": [
+    4.5027,
+    5.2621
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0003,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0001
+   ],
+   "value_worst_coverage_mean": 0.7231,
+   "value_worst_coverage_sd": 0.1976,
+   "value_worst_coverage_ci": [
+    0.6985,
+    0.7481
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "split",
+   "n": 256,
+   "marginal_coverage_mean": 0.8371,
+   "marginal_coverage_sd": 0.1286,
+   "marginal_coverage_ci": [
+    0.8207,
+    0.8528
+   ],
+   "marginal_gap_mean": -0.0317,
+   "marginal_gap_sd": 0.1177,
+   "marginal_gap_ci": [
+    -0.0471,
+    -0.0179
+   ],
+   "worst_stratum_coverage_mean": 0.7259,
+   "worst_stratum_coverage_sd": 0.1856,
+   "worst_stratum_coverage_ci": [
+    0.7036,
+    0.7488
+   ],
+   "max_stratum_gap_mean": 0.1737,
+   "max_stratum_gap_sd": 0.1565,
+   "max_stratum_gap_ci": [
+    0.1553,
+    0.1921
+   ],
+   "mean_width_mean": 4.9585,
+   "mean_width_sd": 3.1498,
+   "mean_width_ci": [
+    4.5749,
+    5.3341
+   ],
+   "median_width_mean": 5.0201,
+   "median_width_sd": 3.1919,
+   "median_width_ci": [
+    4.6269,
+    5.3976
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7315,
+   "value_worst_coverage_sd": 0.1939,
+   "value_worst_coverage_ci": [
+    0.7068,
+    0.7554
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "weighted_ad",
+   "n": 256,
+   "marginal_coverage_mean": 0.839,
+   "marginal_coverage_sd": 0.1246,
+   "marginal_coverage_ci": [
+    0.8228,
+    0.8546
+   ],
+   "marginal_gap_mean": -0.0298,
+   "marginal_gap_sd": 0.113,
+   "marginal_gap_ci": [
+    -0.0444,
+    -0.0163
+   ],
+   "worst_stratum_coverage_mean": 0.7253,
+   "worst_stratum_coverage_sd": 0.1859,
+   "worst_stratum_coverage_ci": [
+    0.7035,
+    0.7486
+   ],
+   "max_stratum_gap_mean": 0.1738,
+   "max_stratum_gap_sd": 0.1561,
+   "max_stratum_gap_ci": [
+    0.1547,
+    0.1921
+   ],
+   "mean_width_mean": 5.0616,
+   "mean_width_sd": 3.4369,
+   "mean_width_ci": [
+    4.6406,
+    5.488
+   ],
+   "median_width_mean": 5.1023,
+   "median_width_sd": 3.4376,
+   "median_width_ci": [
+    4.6765,
+    5.5366
+   ],
+   "saturated_fraction_mean": 0.0051,
+   "saturated_fraction_sd": 0.0637,
+   "saturated_fraction_ci": [
+    0.0002,
+    0.0138
+   ],
+   "value_worst_coverage_mean": 0.7339,
+   "value_worst_coverage_sd": 0.1928,
+   "value_worst_coverage_ci": [
+    0.71,
+    0.7579
+   ],
+   "eff_sample_size_mean": 380.6057,
+   "eff_sample_size_sd": 278.0893,
+   "eff_sample_size_ci": [
+    348.3951,
+    414.6598
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "weighted_disc",
+   "n": 256,
+   "marginal_coverage_mean": 0.8727,
+   "marginal_coverage_sd": 0.0841,
+   "marginal_coverage_ci": [
+    0.8622,
+    0.8827
+   ],
+   "marginal_gap_mean": 0.004,
+   "marginal_gap_sd": 0.0732,
+   "marginal_gap_ci": [
+    -0.0054,
+    0.0125
+   ],
+   "worst_stratum_coverage_mean": 0.7686,
+   "worst_stratum_coverage_sd": 0.1446,
+   "worst_stratum_coverage_ci": [
+    0.7522,
+    0.7859
+   ],
+   "max_stratum_gap_mean": 0.1436,
+   "max_stratum_gap_sd": 0.1035,
+   "max_stratum_gap_ci": [
+    0.1314,
+    0.1562
+   ],
+   "mean_width_mean": 6.3447,
+   "mean_width_sd": 5.8645,
+   "mean_width_ci": [
+    5.6203,
+    7.0562
+   ],
+   "median_width_mean": 6.3666,
+   "median_width_sd": 6.0496,
+   "median_width_ci": [
+    5.6299,
+    7.1461
+   ],
+   "saturated_fraction_mean": 0.1368,
+   "saturated_fraction_sd": 0.3148,
+   "saturated_fraction_ci": [
+    0.1025,
+    0.175
+   ],
+   "value_worst_coverage_mean": 0.7872,
+   "value_worst_coverage_sd": 0.1357,
+   "value_worst_coverage_ci": [
+    0.7708,
+    0.8033
+   ],
+   "eff_sample_size_mean": 199.3225,
+   "eff_sample_size_sd": 163.3387,
+   "eff_sample_size_ci": [
+    179.8103,
+    220.8244
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "weighted_kde",
+   "n": 256,
+   "marginal_coverage_mean": 0.9822,
+   "marginal_coverage_sd": 0.0225,
+   "marginal_coverage_ci": [
+    0.9794,
+    0.9851
+   ],
+   "marginal_gap_mean": 0.1135,
+   "marginal_gap_sd": 0.0449,
+   "marginal_gap_ci": [
+    0.1084,
+    0.1193
+   ],
+   "worst_stratum_coverage_mean": 0.9591,
+   "worst_stratum_coverage_sd": 0.075,
+   "worst_stratum_coverage_ci": [
+    0.9495,
+    0.9683
+   ],
+   "max_stratum_gap_mean": 0.1313,
+   "max_stratum_gap_sd": 0.0561,
+   "max_stratum_gap_ci": [
+    0.1244,
+    0.1383
+   ],
+   "mean_width_mean": 12.3728,
+   "mean_width_sd": 8.7314,
+   "mean_width_ci": [
+    11.3539,
+    13.5013
+   ],
+   "median_width_mean": 12.8828,
+   "median_width_sd": 8.4786,
+   "median_width_ci": [
+    11.8458,
+    13.9947
+   ],
+   "saturated_fraction_mean": 0.8568,
+   "saturated_fraction_sd": 0.1782,
+   "saturated_fraction_ci": [
+    0.8349,
+    0.8798
+   ],
+   "value_worst_coverage_mean": 0.9609,
+   "value_worst_coverage_sd": 0.0466,
+   "value_worst_coverage_ci": [
+    0.9551,
+    0.9666
+   ],
+   "eff_sample_size_mean": 335.0791,
+   "eff_sample_size_sd": 250.8232,
+   "eff_sample_size_ci": [
+    305.3936,
+    368.0916
+   ]
+  },
+  {
+   "split_type": "scaffold",
+   "method": "weighted_logistic",
+   "n": 256,
+   "marginal_coverage_mean": 0.8997,
+   "marginal_coverage_sd": 0.0755,
+   "marginal_coverage_ci": [
+    0.8902,
+    0.9087
+   ],
+   "marginal_gap_mean": 0.031,
+   "marginal_gap_sd": 0.0666,
+   "marginal_gap_ci": [
+    0.0226,
+    0.0385
+   ],
+   "worst_stratum_coverage_mean": 0.8058,
+   "worst_stratum_coverage_sd": 0.1458,
+   "worst_stratum_coverage_ci": [
+    0.7887,
+    0.8233
+   ],
+   "max_stratum_gap_mean": 0.1314,
+   "max_stratum_gap_sd": 0.1028,
+   "max_stratum_gap_ci": [
+    0.1179,
+    0.1441
+   ],
+   "mean_width_mean": 8.7171,
+   "mean_width_sd": 8.1636,
+   "mean_width_ci": [
+    7.7113,
+    9.7291
+   ],
+   "median_width_mean": 8.9283,
+   "median_width_sd": 9.1365,
+   "median_width_ci": [
+    7.7929,
+    10.0693
+   ],
+   "saturated_fraction_mean": 0.2692,
+   "saturated_fraction_sd": 0.3638,
+   "saturated_fraction_ci": [
+    0.2252,
+    0.3138
+   ],
+   "value_worst_coverage_mean": 0.836,
+   "value_worst_coverage_sd": 0.114,
+   "value_worst_coverage_ci": [
+    0.8212,
+    0.8489
+   ],
+   "eff_sample_size_mean": 156.7692,
+   "eff_sample_size_sd": 112.6589,
+   "eff_sample_size_ci": [
+    143.2523,
+    171.4971
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "adecp",
+   "n": 100,
+   "marginal_coverage_mean": 0.8656,
+   "marginal_coverage_sd": 0.0588,
+   "marginal_coverage_ci": [
+    0.8547,
+    0.8773
+   ],
+   "marginal_gap_mean": -0.0344,
+   "marginal_gap_sd": 0.0588,
+   "marginal_gap_ci": [
+    -0.0453,
+    -0.0227
+   ],
+   "worst_stratum_coverage_mean": 0.8143,
+   "worst_stratum_coverage_sd": 0.0758,
+   "worst_stratum_coverage_ci": [
+    0.7999,
+    0.8292
+   ],
+   "max_stratum_gap_mean": 0.0927,
+   "max_stratum_gap_sd": 0.0702,
+   "max_stratum_gap_ci": [
+    0.0778,
+    0.1058
+   ],
+   "mean_width_mean": 2.5772,
+   "mean_width_sd": 0.2231,
+   "mean_width_ci": [
+    2.5345,
+    2.6193
+   ],
+   "median_width_mean": 2.5542,
+   "median_width_sd": 0.2781,
+   "median_width_ci": [
+    2.5029,
+    2.6102
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7913,
+   "value_worst_coverage_sd": 0.103,
+   "value_worst_coverage_ci": [
+    0.7708,
+    0.8121
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "adwcp",
+   "n": 100,
+   "marginal_coverage_mean": 0.9324,
+   "marginal_coverage_sd": 0.0288,
+   "marginal_coverage_ci": [
+    0.927,
+    0.9377
+   ],
+   "marginal_gap_mean": 0.0324,
+   "marginal_gap_sd": 0.0288,
+   "marginal_gap_ci": [
+    0.027,
+    0.0377
+   ],
+   "worst_stratum_coverage_mean": 0.8657,
+   "worst_stratum_coverage_sd": 0.05,
+   "worst_stratum_coverage_ci": [
+    0.8558,
+    0.8746
+   ],
+   "max_stratum_gap_mean": 0.0743,
+   "max_stratum_gap_sd": 0.032,
+   "max_stratum_gap_ci": [
+    0.0687,
+    0.0807
+   ],
+   "mean_width_mean": 3.8663,
+   "mean_width_sd": 1.1129,
+   "mean_width_ci": [
+    3.6532,
+    4.0704
+   ],
+   "median_width_mean": 3.704,
+   "median_width_sd": 1.662,
+   "median_width_ci": [
+    3.3969,
+    4.0416
+   ],
+   "saturated_fraction_mean": 0.292,
+   "saturated_fraction_sd": 0.2336,
+   "saturated_fraction_ci": [
+    0.2495,
+    0.3384
+   ],
+   "value_worst_coverage_mean": 0.8928,
+   "value_worst_coverage_sd": 0.045,
+   "value_worst_coverage_ci": [
+    0.8837,
+    0.9007
+   ],
+   "eff_sample_size_mean": 319.1439,
+   "eff_sample_size_sd": 237.5278,
+   "eff_sample_size_ci": [
+    278.0778,
+    363.3286
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "localized",
+   "n": 100,
+   "marginal_coverage_mean": 0.9381,
+   "marginal_coverage_sd": 0.0327,
+   "marginal_coverage_ci": [
+    0.9315,
+    0.9445
+   ],
+   "marginal_gap_mean": 0.0381,
+   "marginal_gap_sd": 0.0327,
+   "marginal_gap_ci": [
+    0.0315,
+    0.0445
+   ],
+   "worst_stratum_coverage_mean": 0.9044,
+   "worst_stratum_coverage_sd": 0.046,
+   "worst_stratum_coverage_ci": [
+    0.8956,
+    0.9129
+   ],
+   "max_stratum_gap_mean": 0.086,
+   "max_stratum_gap_sd": 0.0143,
+   "max_stratum_gap_ci": [
+    0.0829,
+    0.0888
+   ],
+   "mean_width_mean": 3.42,
+   "mean_width_sd": 0.5282,
+   "mean_width_ci": [
+    3.3131,
+    3.523
+   ],
+   "median_width_mean": 3.4363,
+   "median_width_sd": 0.5298,
+   "median_width_ci": [
+    3.332,
+    3.5368
+   ],
+   "saturated_fraction_mean": 0.0108,
+   "saturated_fraction_sd": 0.0159,
+   "saturated_fraction_ci": [
+    0.008,
+    0.0139
+   ],
+   "value_worst_coverage_mean": 0.8911,
+   "value_worst_coverage_sd": 0.0528,
+   "value_worst_coverage_ci": [
+    0.8811,
+    0.9011
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "mondrian",
+   "n": 100,
+   "marginal_coverage_mean": 0.8801,
+   "marginal_coverage_sd": 0.0505,
+   "marginal_coverage_ci": [
+    0.8703,
+    0.89
+   ],
+   "marginal_gap_mean": -0.0199,
+   "marginal_gap_sd": 0.0505,
+   "marginal_gap_ci": [
+    -0.0297,
+    -0.01
+   ],
+   "worst_stratum_coverage_mean": 0.8245,
+   "worst_stratum_coverage_sd": 0.0664,
+   "worst_stratum_coverage_ci": [
+    0.812,
+    0.8374
+   ],
+   "max_stratum_gap_mean": 0.0869,
+   "max_stratum_gap_sd": 0.0583,
+   "max_stratum_gap_ci": [
+    0.0758,
+    0.0978
+   ],
+   "mean_width_mean": 2.6952,
+   "mean_width_sd": 0.2239,
+   "mean_width_ci": [
+    2.6523,
+    2.7389
+   ],
+   "median_width_mean": 2.7769,
+   "median_width_sd": 0.4043,
+   "median_width_ci": [
+    2.6984,
+    2.8531
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8101,
+   "value_worst_coverage_sd": 0.082,
+   "value_worst_coverage_ci": [
+    0.7942,
+    0.8265
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "normalized",
+   "n": 100,
+   "marginal_coverage_mean": 0.8501,
+   "marginal_coverage_sd": 0.0619,
+   "marginal_coverage_ci": [
+    0.8382,
+    0.8612
+   ],
+   "marginal_gap_mean": -0.0499,
+   "marginal_gap_sd": 0.0619,
+   "marginal_gap_ci": [
+    -0.0618,
+    -0.0388
+   ],
+   "worst_stratum_coverage_mean": 0.7928,
+   "worst_stratum_coverage_sd": 0.0797,
+   "worst_stratum_coverage_ci": [
+    0.7776,
+    0.808
+   ],
+   "max_stratum_gap_mean": 0.1149,
+   "max_stratum_gap_sd": 0.0727,
+   "max_stratum_gap_ci": [
+    0.1007,
+    0.1288
+   ],
+   "mean_width_mean": 2.713,
+   "mean_width_sd": 0.2548,
+   "mean_width_ci": [
+    2.6655,
+    2.7612
+   ],
+   "median_width_mean": 2.5787,
+   "median_width_sd": 0.2512,
+   "median_width_ci": [
+    2.5305,
+    2.6254
+   ],
+   "saturated_fraction_mean": 0.001,
+   "saturated_fraction_sd": 0.0027,
+   "saturated_fraction_ci": [
+    0.0005,
+    0.0016
+   ],
+   "value_worst_coverage_mean": 0.7807,
+   "value_worst_coverage_sd": 0.1056,
+   "value_worst_coverage_ci": [
+    0.7597,
+    0.8004
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "raw_ensemble",
+   "n": 100,
+   "marginal_coverage_mean": 0.849,
+   "marginal_coverage_sd": 0.0725,
+   "marginal_coverage_ci": [
+    0.8351,
+    0.8636
+   ],
+   "marginal_gap_mean": -0.051,
+   "marginal_gap_sd": 0.0725,
+   "marginal_gap_ci": [
+    -0.0649,
+    -0.0364
+   ],
+   "worst_stratum_coverage_mean": 0.7804,
+   "worst_stratum_coverage_sd": 0.0901,
+   "worst_stratum_coverage_ci": [
+    0.7633,
+    0.7973
+   ],
+   "max_stratum_gap_mean": 0.1271,
+   "max_stratum_gap_sd": 0.0835,
+   "max_stratum_gap_ci": [
+    0.1111,
+    0.1426
+   ],
+   "mean_width_mean": 2.5069,
+   "mean_width_sd": 0.1577,
+   "mean_width_ci": [
+    2.4762,
+    2.5366
+   ],
+   "median_width_mean": 2.5273,
+   "median_width_sd": 0.1675,
+   "median_width_ci": [
+    2.4947,
+    2.5591
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.767,
+   "value_worst_coverage_sd": 0.1151,
+   "value_worst_coverage_ci": [
+    0.7445,
+    0.7902
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "split",
+   "n": 100,
+   "marginal_coverage_mean": 0.849,
+   "marginal_coverage_sd": 0.0725,
+   "marginal_coverage_ci": [
+    0.8351,
+    0.8636
+   ],
+   "marginal_gap_mean": -0.051,
+   "marginal_gap_sd": 0.0725,
+   "marginal_gap_ci": [
+    -0.0649,
+    -0.0364
+   ],
+   "worst_stratum_coverage_mean": 0.7804,
+   "worst_stratum_coverage_sd": 0.0901,
+   "worst_stratum_coverage_ci": [
+    0.7633,
+    0.7973
+   ],
+   "max_stratum_gap_mean": 0.1271,
+   "max_stratum_gap_sd": 0.0835,
+   "max_stratum_gap_ci": [
+    0.1111,
+    0.1426
+   ],
+   "mean_width_mean": 2.5069,
+   "mean_width_sd": 0.1577,
+   "mean_width_ci": [
+    2.4762,
+    2.5366
+   ],
+   "median_width_mean": 2.5273,
+   "median_width_sd": 0.1675,
+   "median_width_ci": [
+    2.4947,
+    2.5591
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.767,
+   "value_worst_coverage_sd": 0.1151,
+   "value_worst_coverage_ci": [
+    0.7445,
+    0.7902
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "weighted_ad",
+   "n": 100,
+   "marginal_coverage_mean": 0.8834,
+   "marginal_coverage_sd": 0.0539,
+   "marginal_coverage_ci": [
+    0.8732,
+    0.8943
+   ],
+   "marginal_gap_mean": -0.0166,
+   "marginal_gap_sd": 0.0539,
+   "marginal_gap_ci": [
+    -0.0268,
+    -0.0057
+   ],
+   "worst_stratum_coverage_mean": 0.8245,
+   "worst_stratum_coverage_sd": 0.0733,
+   "worst_stratum_coverage_ci": [
+    0.8107,
+    0.839
+   ],
+   "max_stratum_gap_mean": 0.1021,
+   "max_stratum_gap_sd": 0.0562,
+   "max_stratum_gap_ci": [
+    0.0909,
+    0.1123
+   ],
+   "mean_width_mean": 2.7577,
+   "mean_width_sd": 0.3468,
+   "mean_width_ci": [
+    2.6954,
+    2.8299
+   ],
+   "median_width_mean": 2.7848,
+   "median_width_sd": 0.3631,
+   "median_width_ci": [
+    2.7194,
+    2.8603
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8116,
+   "value_worst_coverage_sd": 0.0914,
+   "value_worst_coverage_ci": [
+    0.7937,
+    0.8299
+   ],
+   "eff_sample_size_mean": 508.7632,
+   "eff_sample_size_sd": 263.1126,
+   "eff_sample_size_ci": [
+    458.028,
+    559.4854
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "weighted_disc",
+   "n": 100,
+   "marginal_coverage_mean": 0.9285,
+   "marginal_coverage_sd": 0.034,
+   "marginal_coverage_ci": [
+    0.9221,
+    0.9349
+   ],
+   "marginal_gap_mean": 0.0285,
+   "marginal_gap_sd": 0.034,
+   "marginal_gap_ci": [
+    0.0221,
+    0.0349
+   ],
+   "worst_stratum_coverage_mean": 0.882,
+   "worst_stratum_coverage_sd": 0.0596,
+   "worst_stratum_coverage_ci": [
+    0.8702,
+    0.8932
+   ],
+   "max_stratum_gap_mean": 0.0795,
+   "max_stratum_gap_sd": 0.0225,
+   "max_stratum_gap_ci": [
+    0.0749,
+    0.0836
+   ],
+   "mean_width_mean": 3.6918,
+   "mean_width_sd": 1.1094,
+   "mean_width_ci": [
+    3.4805,
+    3.8988
+   ],
+   "median_width_mean": 3.2902,
+   "median_width_sd": 1.3008,
+   "median_width_ci": [
+    3.065,
+    3.5734
+   ],
+   "saturated_fraction_mean": 0.216,
+   "saturated_fraction_sd": 0.2342,
+   "saturated_fraction_ci": [
+    0.1738,
+    0.2614
+   ],
+   "value_worst_coverage_mean": 0.8858,
+   "value_worst_coverage_sd": 0.0522,
+   "value_worst_coverage_ci": [
+    0.8756,
+    0.8955
+   ],
+   "eff_sample_size_mean": 319.1439,
+   "eff_sample_size_sd": 237.5278,
+   "eff_sample_size_ci": [
+    278.0778,
+    363.3286
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "weighted_kde",
+   "n": 100,
+   "marginal_coverage_mean": 0.9821,
+   "marginal_coverage_sd": 0.0196,
+   "marginal_coverage_ci": [
+    0.978,
+    0.9857
+   ],
+   "marginal_gap_mean": 0.0821,
+   "marginal_gap_sd": 0.0196,
+   "marginal_gap_ci": [
+    0.078,
+    0.0857
+   ],
+   "worst_stratum_coverage_mean": 0.9613,
+   "worst_stratum_coverage_sd": 0.0364,
+   "worst_stratum_coverage_ci": [
+    0.9541,
+    0.9683
+   ],
+   "max_stratum_gap_mean": 0.0929,
+   "max_stratum_gap_sd": 0.0119,
+   "max_stratum_gap_ci": [
+    0.0905,
+    0.095
+   ],
+   "mean_width_mean": 5.6217,
+   "mean_width_sd": 0.8184,
+   "mean_width_ci": [
+    5.4624,
+    5.7719
+   ],
+   "median_width_mean": 5.8917,
+   "median_width_sd": 1.6634,
+   "median_width_ci": [
+    5.5582,
+    6.1965
+   ],
+   "saturated_fraction_mean": 0.7434,
+   "saturated_fraction_sd": 0.2247,
+   "saturated_fraction_ci": [
+    0.6984,
+    0.7861
+   ],
+   "value_worst_coverage_mean": 0.9668,
+   "value_worst_coverage_sd": 0.0344,
+   "value_worst_coverage_ci": [
+    0.9595,
+    0.973
+   ],
+   "eff_sample_size_mean": 453.2248,
+   "eff_sample_size_sd": 284.7583,
+   "eff_sample_size_ci": [
+    399.4035,
+    510.1749
+   ]
+  },
+  {
+   "split_type": "similarity",
+   "method": "weighted_logistic",
+   "n": 100,
+   "marginal_coverage_mean": 0.932,
+   "marginal_coverage_sd": 0.0311,
+   "marginal_coverage_ci": [
+    0.926,
+    0.9382
+   ],
+   "marginal_gap_mean": 0.032,
+   "marginal_gap_sd": 0.0311,
+   "marginal_gap_ci": [
+    0.026,
+    0.0382
+   ],
+   "worst_stratum_coverage_mean": 0.8837,
+   "worst_stratum_coverage_sd": 0.0598,
+   "worst_stratum_coverage_ci": [
+    0.8728,
+    0.8959
+   ],
+   "max_stratum_gap_mean": 0.0795,
+   "max_stratum_gap_sd": 0.0229,
+   "max_stratum_gap_ci": [
+    0.0747,
+    0.084
+   ],
+   "mean_width_mean": 3.78,
+   "mean_width_sd": 1.1648,
+   "mean_width_ci": [
+    3.5613,
+    3.9971
+   ],
+   "median_width_mean": 3.6137,
+   "median_width_sd": 1.7598,
+   "median_width_ci": [
+    3.2841,
+    3.9413
+   ],
+   "saturated_fraction_mean": 0.2465,
+   "saturated_fraction_sd": 0.2594,
+   "saturated_fraction_ci": [
+    0.1996,
+    0.2965
+   ],
+   "value_worst_coverage_mean": 0.8906,
+   "value_worst_coverage_sd": 0.0507,
+   "value_worst_coverage_ci": [
+    0.8804,
+    0.9009
+   ],
+   "eff_sample_size_mean": 313.3734,
+   "eff_sample_size_sd": 231.0232,
+   "eff_sample_size_ci": [
+    273.6865,
+    357.477
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "adecp",
+   "n": 40,
+   "marginal_coverage_mean": 0.7907,
+   "marginal_coverage_sd": 0.0881,
+   "marginal_coverage_ci": [
+    0.7625,
+    0.8182
+   ],
+   "marginal_gap_mean": -0.0593,
+   "marginal_gap_sd": 0.0631,
+   "marginal_gap_ci": [
+    -0.079,
+    -0.0401
+   ],
+   "worst_stratum_coverage_mean": 0.7531,
+   "worst_stratum_coverage_sd": 0.0797,
+   "worst_stratum_coverage_ci": [
+    0.7281,
+    0.7783
+   ],
+   "max_stratum_gap_mean": 0.0981,
+   "max_stratum_gap_sd": 0.0532,
+   "max_stratum_gap_ci": [
+    0.0816,
+    0.1144
+   ],
+   "mean_width_mean": 2.6432,
+   "mean_width_sd": 0.3618,
+   "mean_width_ci": [
+    2.5347,
+    2.7561
+   ],
+   "median_width_mean": 2.7325,
+   "median_width_sd": 0.3872,
+   "median_width_ci": [
+    2.6148,
+    2.848
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7134,
+   "value_worst_coverage_sd": 0.1276,
+   "value_worst_coverage_ci": [
+    0.6738,
+    0.7527
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "adwcp",
+   "n": 40,
+   "marginal_coverage_mean": 0.7204,
+   "marginal_coverage_sd": 0.1135,
+   "marginal_coverage_ci": [
+    0.687,
+    0.7559
+   ],
+   "marginal_gap_mean": -0.1296,
+   "marginal_gap_sd": 0.0802,
+   "marginal_gap_ci": [
+    -0.1528,
+    -0.1052
+   ],
+   "worst_stratum_coverage_mean": 0.7044,
+   "worst_stratum_coverage_sd": 0.115,
+   "worst_stratum_coverage_ci": [
+    0.6695,
+    0.7411
+   ],
+   "max_stratum_gap_mean": 0.1477,
+   "max_stratum_gap_sd": 0.0793,
+   "max_stratum_gap_ci": [
+    0.1239,
+    0.1716
+   ],
+   "mean_width_mean": 2.3468,
+   "mean_width_sd": 0.4847,
+   "mean_width_ci": [
+    2.1971,
+    2.497
+   ],
+   "median_width_mean": 2.2829,
+   "median_width_sd": 0.4153,
+   "median_width_ci": [
+    2.1582,
+    2.4141
+   ],
+   "saturated_fraction_mean": 0.022,
+   "saturated_fraction_sd": 0.0394,
+   "saturated_fraction_ci": [
+    0.0109,
+    0.0364
+   ],
+   "value_worst_coverage_mean": 0.6398,
+   "value_worst_coverage_sd": 0.1449,
+   "value_worst_coverage_ci": [
+    0.5984,
+    0.6847
+   ],
+   "eff_sample_size_mean": 440.9149,
+   "eff_sample_size_sd": 189.8236,
+   "eff_sample_size_ci": [
+    382.8735,
+    502.6265
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "localized",
+   "n": 40,
+   "marginal_coverage_mean": 0.6824,
+   "marginal_coverage_sd": 0.0985,
+   "marginal_coverage_ci": [
+    0.6524,
+    0.7133
+   ],
+   "marginal_gap_mean": -0.1676,
+   "marginal_gap_sd": 0.0527,
+   "marginal_gap_ci": [
+    -0.1839,
+    -0.151
+   ],
+   "worst_stratum_coverage_mean": 0.6579,
+   "worst_stratum_coverage_sd": 0.1038,
+   "worst_stratum_coverage_ci": [
+    0.6263,
+    0.6906
+   ],
+   "max_stratum_gap_mean": 0.1921,
+   "max_stratum_gap_sd": 0.0574,
+   "max_stratum_gap_ci": [
+    0.1742,
+    0.2094
+   ],
+   "mean_width_mean": 2.1323,
+   "mean_width_sd": 0.4511,
+   "mean_width_ci": [
+    2.0009,
+    2.2719
+   ],
+   "median_width_mean": 2.1477,
+   "median_width_sd": 0.4654,
+   "median_width_ci": [
+    2.0107,
+    2.2946
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5875,
+   "value_worst_coverage_sd": 0.1209,
+   "value_worst_coverage_ci": [
+    0.5501,
+    0.6251
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "mondrian",
+   "n": 40,
+   "marginal_coverage_mean": 0.7432,
+   "marginal_coverage_sd": 0.0898,
+   "marginal_coverage_ci": [
+    0.714,
+    0.7704
+   ],
+   "marginal_gap_mean": -0.1068,
+   "marginal_gap_sd": 0.0569,
+   "marginal_gap_ci": [
+    -0.1243,
+    -0.0893
+   ],
+   "worst_stratum_coverage_mean": 0.7304,
+   "worst_stratum_coverage_sd": 0.0924,
+   "worst_stratum_coverage_ci": [
+    0.7004,
+    0.7587
+   ],
+   "max_stratum_gap_mean": 0.1205,
+   "max_stratum_gap_sd": 0.0583,
+   "max_stratum_gap_ci": [
+    0.1028,
+    0.1386
+   ],
+   "mean_width_mean": 2.3717,
+   "mean_width_sd": 0.3691,
+   "mean_width_ci": [
+    2.2576,
+    2.4933
+   ],
+   "median_width_mean": 2.4674,
+   "median_width_sd": 0.3988,
+   "median_width_ci": [
+    2.3432,
+    2.6015
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6545,
+   "value_worst_coverage_sd": 0.125,
+   "value_worst_coverage_ci": [
+    0.6161,
+    0.6916
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "normalized",
+   "n": 40,
+   "marginal_coverage_mean": 0.657,
+   "marginal_coverage_sd": 0.0863,
+   "marginal_coverage_ci": [
+    0.6304,
+    0.683
+   ],
+   "marginal_gap_mean": -0.193,
+   "marginal_gap_sd": 0.0543,
+   "marginal_gap_ci": [
+    -0.2103,
+    -0.176
+   ],
+   "worst_stratum_coverage_mean": 0.6375,
+   "worst_stratum_coverage_sd": 0.0894,
+   "worst_stratum_coverage_ci": [
+    0.6102,
+    0.6647
+   ],
+   "max_stratum_gap_mean": 0.2125,
+   "max_stratum_gap_sd": 0.0571,
+   "max_stratum_gap_ci": [
+    0.1945,
+    0.2303
+   ],
+   "mean_width_mean": 2.111,
+   "mean_width_sd": 0.3415,
+   "mean_width_ci": [
+    2.0028,
+    2.2223
+   ],
+   "median_width_mean": 2.0662,
+   "median_width_sd": 0.3436,
+   "median_width_ci": [
+    1.9577,
+    2.1785
+   ],
+   "saturated_fraction_mean": 0.0001,
+   "saturated_fraction_sd": 0.0003,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0002
+   ],
+   "value_worst_coverage_mean": 0.5805,
+   "value_worst_coverage_sd": 0.1219,
+   "value_worst_coverage_ci": [
+    0.5427,
+    0.6181
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "raw_ensemble",
+   "n": 40,
+   "marginal_coverage_mean": 0.7024,
+   "marginal_coverage_sd": 0.1111,
+   "marginal_coverage_ci": [
+    0.6663,
+    0.7357
+   ],
+   "marginal_gap_mean": -0.1476,
+   "marginal_gap_sd": 0.0883,
+   "marginal_gap_ci": [
+    -0.1757,
+    -0.1213
+   ],
+   "worst_stratum_coverage_mean": 0.6516,
+   "worst_stratum_coverage_sd": 0.0917,
+   "worst_stratum_coverage_ci": [
+    0.6224,
+    0.679
+   ],
+   "max_stratum_gap_mean": 0.1984,
+   "max_stratum_gap_sd": 0.0647,
+   "max_stratum_gap_ci": [
+    0.1795,
+    0.2196
+   ],
+   "mean_width_mean": 2.2333,
+   "mean_width_sd": 0.4404,
+   "mean_width_ci": [
+    2.0916,
+    2.3663
+   ],
+   "median_width_mean": 2.2837,
+   "median_width_sd": 0.4796,
+   "median_width_ci": [
+    2.1303,
+    2.4276
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0002,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0001
+   ],
+   "value_worst_coverage_mean": 0.5935,
+   "value_worst_coverage_sd": 0.1289,
+   "value_worst_coverage_ci": [
+    0.5527,
+    0.6323
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "split",
+   "n": 40,
+   "marginal_coverage_mean": 0.6423,
+   "marginal_coverage_sd": 0.0901,
+   "marginal_coverage_ci": [
+    0.614,
+    0.6694
+   ],
+   "marginal_gap_mean": -0.2077,
+   "marginal_gap_sd": 0.0489,
+   "marginal_gap_ci": [
+    -0.2229,
+    -0.1924
+   ],
+   "worst_stratum_coverage_mean": 0.6153,
+   "worst_stratum_coverage_sd": 0.0938,
+   "worst_stratum_coverage_ci": [
+    0.5866,
+    0.6436
+   ],
+   "max_stratum_gap_mean": 0.2347,
+   "max_stratum_gap_sd": 0.0511,
+   "max_stratum_gap_ci": [
+    0.2189,
+    0.2509
+   ],
+   "mean_width_mean": 1.9671,
+   "mean_width_sd": 0.3509,
+   "mean_width_ci": [
+    1.8593,
+    2.0761
+   ],
+   "median_width_mean": 1.9763,
+   "median_width_sd": 0.3592,
+   "median_width_ci": [
+    1.8657,
+    2.0894
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5447,
+   "value_worst_coverage_sd": 0.1195,
+   "value_worst_coverage_ci": [
+    0.5089,
+    0.5815
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "weighted_ad",
+   "n": 40,
+   "marginal_coverage_mean": 0.8357,
+   "marginal_coverage_sd": 0.1019,
+   "marginal_coverage_ci": [
+    0.8032,
+    0.867
+   ],
+   "marginal_gap_mean": -0.0143,
+   "marginal_gap_sd": 0.0863,
+   "marginal_gap_ci": [
+    -0.0419,
+    0.0108
+   ],
+   "worst_stratum_coverage_mean": 0.8228,
+   "worst_stratum_coverage_sd": 0.1073,
+   "worst_stratum_coverage_ci": [
+    0.7884,
+    0.8557
+   ],
+   "max_stratum_gap_mean": 0.1375,
+   "max_stratum_gap_sd": 0.0556,
+   "max_stratum_gap_ci": [
+    0.1202,
+    0.1554
+   ],
+   "mean_width_mean": 2.9473,
+   "mean_width_sd": 0.592,
+   "mean_width_ci": [
+    2.7721,
+    3.1348
+   ],
+   "median_width_mean": 2.973,
+   "median_width_sd": 0.6315,
+   "median_width_ci": [
+    2.7815,
+    3.1786
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7564,
+   "value_worst_coverage_sd": 0.1438,
+   "value_worst_coverage_ci": [
+    0.7115,
+    0.8016
+   ],
+   "eff_sample_size_mean": 685.382,
+   "eff_sample_size_sd": 187.7798,
+   "eff_sample_size_ci": [
+    628.7102,
+    743.287
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "weighted_disc",
+   "n": 40,
+   "marginal_coverage_mean": 0.629,
+   "marginal_coverage_sd": 0.1308,
+   "marginal_coverage_ci": [
+    0.5882,
+    0.6703
+   ],
+   "marginal_gap_mean": -0.221,
+   "marginal_gap_sd": 0.1061,
+   "marginal_gap_ci": [
+    -0.2533,
+    -0.188
+   ],
+   "worst_stratum_coverage_mean": 0.6031,
+   "worst_stratum_coverage_sd": 0.1337,
+   "worst_stratum_coverage_ci": [
+    0.5614,
+    0.645
+   ],
+   "max_stratum_gap_mean": 0.2469,
+   "max_stratum_gap_sd": 0.1076,
+   "max_stratum_gap_ci": [
+    0.2136,
+    0.2793
+   ],
+   "mean_width_mean": 1.9252,
+   "mean_width_sd": 0.3757,
+   "mean_width_ci": [
+    1.8093,
+    2.0398
+   ],
+   "median_width_mean": 1.9044,
+   "median_width_sd": 0.3758,
+   "median_width_ci": [
+    1.7888,
+    2.0185
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5425,
+   "value_worst_coverage_sd": 0.1641,
+   "value_worst_coverage_ci": [
+    0.4948,
+    0.594
+   ],
+   "eff_sample_size_mean": 440.9149,
+   "eff_sample_size_sd": 189.8236,
+   "eff_sample_size_ci": [
+    382.8735,
+    502.6265
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "weighted_kde",
+   "n": 40,
+   "marginal_coverage_mean": 0.9874,
+   "marginal_coverage_sd": 0.0097,
+   "marginal_coverage_ci": [
+    0.9842,
+    0.9903
+   ],
+   "marginal_gap_mean": 0.1374,
+   "marginal_gap_sd": 0.0449,
+   "marginal_gap_ci": [
+    0.1234,
+    0.1508
+   ],
+   "worst_stratum_coverage_mean": 0.9201,
+   "worst_stratum_coverage_sd": 0.0383,
+   "worst_stratum_coverage_ci": [
+    0.9081,
+    0.9317
+   ],
+   "max_stratum_gap_mean": 0.1432,
+   "max_stratum_gap_sd": 0.0468,
+   "max_stratum_gap_ci": [
+    0.1284,
+    0.1572
+   ],
+   "mean_width_mean": 5.9961,
+   "mean_width_sd": 0.4768,
+   "mean_width_ci": [
+    5.848,
+    6.1505
+   ],
+   "median_width_mean": 6.269,
+   "median_width_sd": 0.4366,
+   "median_width_ci": [
+    6.1355,
+    6.3988
+   ],
+   "saturated_fraction_mean": 0.9294,
+   "saturated_fraction_sd": 0.0243,
+   "saturated_fraction_ci": [
+    0.9214,
+    0.9364
+   ],
+   "value_worst_coverage_mean": 0.9767,
+   "value_worst_coverage_sd": 0.0149,
+   "value_worst_coverage_ci": [
+    0.9718,
+    0.9812
+   ],
+   "eff_sample_size_mean": 1309.051,
+   "eff_sample_size_sd": 505.0042,
+   "eff_sample_size_ci": [
+    1158.3622,
+    1462.3851
+   ]
+  },
+  {
+   "split_type": "temporal",
+   "method": "weighted_logistic",
+   "n": 40,
+   "marginal_coverage_mean": 0.6509,
+   "marginal_coverage_sd": 0.119,
+   "marginal_coverage_ci": [
+    0.6133,
+    0.6881
+   ],
+   "marginal_gap_mean": -0.1991,
+   "marginal_gap_sd": 0.0898,
+   "marginal_gap_ci": [
+    -0.2273,
+    -0.1708
+   ],
+   "worst_stratum_coverage_mean": 0.6262,
+   "worst_stratum_coverage_sd": 0.1224,
+   "worst_stratum_coverage_ci": [
+    0.588,
+    0.6649
+   ],
+   "max_stratum_gap_mean": 0.2239,
+   "max_stratum_gap_sd": 0.0914,
+   "max_stratum_gap_ci": [
+    0.1949,
+    0.2517
+   ],
+   "mean_width_mean": 2.0055,
+   "mean_width_sd": 0.3665,
+   "mean_width_ci": [
+    1.8903,
+    2.1241
+   ],
+   "median_width_mean": 1.9548,
+   "median_width_sd": 0.3514,
+   "median_width_ci": [
+    1.8431,
+    2.0654
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5641,
+   "value_worst_coverage_sd": 0.1548,
+   "value_worst_coverage_ci": [
+    0.5165,
+    0.613
+   ],
+   "eff_sample_size_mean": 377.6299,
+   "eff_sample_size_sd": 119.5656,
+   "eff_sample_size_ci": [
+    340.7841,
+    416.0322
+   ]
+  }
+ ],
+ "scaffold_primary_by_dataset_method": [
+  {
+   "dataset": "bace",
+   "method": "adecp",
+   "n": 40,
+   "marginal_coverage_mean": 0.8474,
+   "marginal_coverage_sd": 0.0609,
+   "marginal_coverage_ci": [
+    0.8274,
+    0.8662
+   ],
+   "marginal_gap_mean": -0.0026,
+   "marginal_gap_sd": 0.0357,
+   "marginal_gap_ci": [
+    -0.0136,
+    0.0083
+   ],
+   "worst_stratum_coverage_mean": 0.7778,
+   "worst_stratum_coverage_sd": 0.0792,
+   "worst_stratum_coverage_ci": [
+    0.7531,
+    0.8022
+   ],
+   "max_stratum_gap_mean": 0.0945,
+   "max_stratum_gap_sd": 0.0418,
+   "max_stratum_gap_ci": [
+    0.0833,
+    0.1087
+   ],
+   "mean_width_mean": 2.2861,
+   "mean_width_sd": 0.425,
+   "mean_width_ci": [
+    2.1606,
+    2.4198
+   ],
+   "median_width_mean": 2.2157,
+   "median_width_sd": 0.4242,
+   "median_width_ci": [
+    2.0889,
+    2.3503
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7844,
+   "value_worst_coverage_sd": 0.0822,
+   "value_worst_coverage_ci": [
+    0.7579,
+    0.8091
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "adwcp",
+   "n": 40,
+   "marginal_coverage_mean": 0.8407,
+   "marginal_coverage_sd": 0.0696,
+   "marginal_coverage_ci": [
+    0.8186,
+    0.8612
+   ],
+   "marginal_gap_mean": -0.0093,
+   "marginal_gap_sd": 0.0432,
+   "marginal_gap_ci": [
+    -0.0222,
+    0.0041
+   ],
+   "worst_stratum_coverage_mean": 0.7721,
+   "worst_stratum_coverage_sd": 0.091,
+   "worst_stratum_coverage_ci": [
+    0.7439,
+    0.7998
+   ],
+   "max_stratum_gap_mean": 0.1018,
+   "max_stratum_gap_sd": 0.0534,
+   "max_stratum_gap_ci": [
+    0.0865,
+    0.119
+   ],
+   "mean_width_mean": 2.3636,
+   "mean_width_sd": 0.5538,
+   "mean_width_ci": [
+    2.1988,
+    2.5378
+   ],
+   "median_width_mean": 2.2636,
+   "median_width_sd": 0.5261,
+   "median_width_ci": [
+    2.1103,
+    2.434
+   ],
+   "saturated_fraction_mean": 0.0127,
+   "saturated_fraction_sd": 0.0282,
+   "saturated_fraction_ci": [
+    0.0055,
+    0.0214
+   ],
+   "value_worst_coverage_mean": 0.7721,
+   "value_worst_coverage_sd": 0.0948,
+   "value_worst_coverage_ci": [
+    0.7424,
+    0.8007
+   ],
+   "eff_sample_size_mean": 116.0549,
+   "eff_sample_size_sd": 57.6667,
+   "eff_sample_size_ci": [
+    98.4507,
+    133.9567
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "localized",
+   "n": 40,
+   "marginal_coverage_mean": 0.9207,
+   "marginal_coverage_sd": 0.0634,
+   "marginal_coverage_ci": [
+    0.9013,
+    0.9398
+   ],
+   "marginal_gap_mean": 0.0707,
+   "marginal_gap_sd": 0.0248,
+   "marginal_gap_ci": [
+    0.0628,
+    0.0786
+   ],
+   "worst_stratum_coverage_mean": 0.8697,
+   "worst_stratum_coverage_sd": 0.0985,
+   "worst_stratum_coverage_ci": [
+    0.8369,
+    0.8997
+   ],
+   "max_stratum_gap_mean": 0.111,
+   "max_stratum_gap_sd": 0.0339,
+   "max_stratum_gap_ci": [
+    0.1018,
+    0.1223
+   ],
+   "mean_width_mean": 3.3333,
+   "mean_width_sd": 1.0472,
+   "mean_width_ci": [
+    3.006,
+    3.6532
+   ],
+   "median_width_mean": 3.2845,
+   "median_width_sd": 0.9997,
+   "median_width_ci": [
+    2.9826,
+    3.5919
+   ],
+   "saturated_fraction_mean": 0.0267,
+   "saturated_fraction_sd": 0.0306,
+   "saturated_fraction_ci": [
+    0.0174,
+    0.0368
+   ],
+   "value_worst_coverage_mean": 0.8804,
+   "value_worst_coverage_sd": 0.0888,
+   "value_worst_coverage_ci": [
+    0.8522,
+    0.9082
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "mondrian",
+   "n": 40,
+   "marginal_coverage_mean": 0.8452,
+   "marginal_coverage_sd": 0.0658,
+   "marginal_coverage_ci": [
+    0.824,
+    0.8654
+   ],
+   "marginal_gap_mean": -0.0048,
+   "marginal_gap_sd": 0.0387,
+   "marginal_gap_ci": [
+    -0.0166,
+    0.0075
+   ],
+   "worst_stratum_coverage_mean": 0.7594,
+   "worst_stratum_coverage_sd": 0.0948,
+   "worst_stratum_coverage_ci": [
+    0.7288,
+    0.7885
+   ],
+   "max_stratum_gap_mean": 0.1179,
+   "max_stratum_gap_sd": 0.0537,
+   "max_stratum_gap_ci": [
+    0.1021,
+    0.1362
+   ],
+   "mean_width_mean": 2.3616,
+   "mean_width_sd": 0.4616,
+   "mean_width_ci": [
+    2.2214,
+    2.5068
+   ],
+   "median_width_mean": 2.2655,
+   "median_width_sd": 0.4815,
+   "median_width_ci": [
+    2.1141,
+    2.4153
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7768,
+   "value_worst_coverage_sd": 0.0948,
+   "value_worst_coverage_ci": [
+    0.7458,
+    0.8045
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "normalized",
+   "n": 40,
+   "marginal_coverage_mean": 0.8532,
+   "marginal_coverage_sd": 0.0656,
+   "marginal_coverage_ci": [
+    0.8322,
+    0.8734
+   ],
+   "marginal_gap_mean": 0.0032,
+   "marginal_gap_sd": 0.0405,
+   "marginal_gap_ci": [
+    -0.0091,
+    0.0154
+   ],
+   "worst_stratum_coverage_mean": 0.7419,
+   "worst_stratum_coverage_sd": 0.0895,
+   "worst_stratum_coverage_ci": [
+    0.7117,
+    0.7678
+   ],
+   "max_stratum_gap_mean": 0.1251,
+   "max_stratum_gap_sd": 0.0509,
+   "max_stratum_gap_ci": [
+    0.1095,
+    0.142
+   ],
+   "mean_width_mean": 2.721,
+   "mean_width_sd": 0.627,
+   "mean_width_ci": [
+    2.5373,
+    2.9104
+   ],
+   "median_width_mean": 2.4281,
+   "median_width_sd": 0.5897,
+   "median_width_ci": [
+    2.25,
+    2.6123
+   ],
+   "saturated_fraction_mean": 0.0083,
+   "saturated_fraction_sd": 0.0211,
+   "saturated_fraction_ci": [
+    0.0031,
+    0.0155
+   ],
+   "value_worst_coverage_mean": 0.78,
+   "value_worst_coverage_sd": 0.0861,
+   "value_worst_coverage_ci": [
+    0.752,
+    0.8064
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "raw_ensemble",
+   "n": 40,
+   "marginal_coverage_mean": 0.8473,
+   "marginal_coverage_sd": 0.0603,
+   "marginal_coverage_ci": [
+    0.8278,
+    0.8651
+   ],
+   "marginal_gap_mean": -0.0027,
+   "marginal_gap_sd": 0.0325,
+   "marginal_gap_ci": [
+    -0.0134,
+    0.0063
+   ],
+   "worst_stratum_coverage_mean": 0.7624,
+   "worst_stratum_coverage_sd": 0.084,
+   "worst_stratum_coverage_ci": [
+    0.734,
+    0.7873
+   ],
+   "max_stratum_gap_mean": 0.1076,
+   "max_stratum_gap_sd": 0.0502,
+   "max_stratum_gap_ci": [
+    0.0937,
+    0.1257
+   ],
+   "mean_width_mean": 2.2982,
+   "mean_width_sd": 0.4566,
+   "mean_width_ci": [
+    2.1634,
+    2.4401
+   ],
+   "median_width_mean": 2.3086,
+   "median_width_sd": 0.4627,
+   "median_width_ci": [
+    2.1728,
+    2.4541
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7763,
+   "value_worst_coverage_sd": 0.0825,
+   "value_worst_coverage_ci": [
+    0.7503,
+    0.8021
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "split",
+   "n": 40,
+   "marginal_coverage_mean": 0.8473,
+   "marginal_coverage_sd": 0.0603,
+   "marginal_coverage_ci": [
+    0.8278,
+    0.8651
+   ],
+   "marginal_gap_mean": -0.0027,
+   "marginal_gap_sd": 0.0325,
+   "marginal_gap_ci": [
+    -0.0134,
+    0.0063
+   ],
+   "worst_stratum_coverage_mean": 0.7624,
+   "worst_stratum_coverage_sd": 0.084,
+   "worst_stratum_coverage_ci": [
+    0.734,
+    0.7873
+   ],
+   "max_stratum_gap_mean": 0.1076,
+   "max_stratum_gap_sd": 0.0502,
+   "max_stratum_gap_ci": [
+    0.0937,
+    0.1257
+   ],
+   "mean_width_mean": 2.2982,
+   "mean_width_sd": 0.4566,
+   "mean_width_ci": [
+    2.1634,
+    2.4401
+   ],
+   "median_width_mean": 2.3086,
+   "median_width_sd": 0.4627,
+   "median_width_ci": [
+    2.1728,
+    2.4541
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7763,
+   "value_worst_coverage_sd": 0.0825,
+   "value_worst_coverage_ci": [
+    0.7503,
+    0.8021
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "weighted_ad",
+   "n": 40,
+   "marginal_coverage_mean": 0.8481,
+   "marginal_coverage_sd": 0.061,
+   "marginal_coverage_ci": [
+    0.8286,
+    0.867
+   ],
+   "marginal_gap_mean": -0.0019,
+   "marginal_gap_sd": 0.0316,
+   "marginal_gap_ci": [
+    -0.0122,
+    0.0071
+   ],
+   "worst_stratum_coverage_mean": 0.7649,
+   "worst_stratum_coverage_sd": 0.0864,
+   "worst_stratum_coverage_ci": [
+    0.7368,
+    0.7904
+   ],
+   "max_stratum_gap_mean": 0.1067,
+   "max_stratum_gap_sd": 0.0505,
+   "max_stratum_gap_ci": [
+    0.0928,
+    0.1248
+   ],
+   "mean_width_mean": 2.3033,
+   "mean_width_sd": 0.454,
+   "mean_width_ci": [
+    2.1688,
+    2.442
+   ],
+   "median_width_mean": 2.3146,
+   "median_width_sd": 0.4616,
+   "median_width_ci": [
+    2.1782,
+    2.4568
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.777,
+   "value_worst_coverage_sd": 0.0837,
+   "value_worst_coverage_ci": [
+    0.7498,
+    0.8024
+   ],
+   "eff_sample_size_mean": 298.3004,
+   "eff_sample_size_sd": 7.1228,
+   "eff_sample_size_ci": [
+    295.9754,
+    300.158
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "weighted_disc",
+   "n": 40,
+   "marginal_coverage_mean": 0.845,
+   "marginal_coverage_sd": 0.0659,
+   "marginal_coverage_ci": [
+    0.8242,
+    0.8644
+   ],
+   "marginal_gap_mean": -0.005,
+   "marginal_gap_sd": 0.0451,
+   "marginal_gap_ci": [
+    -0.0187,
+    0.0086
+   ],
+   "worst_stratum_coverage_mean": 0.7605,
+   "worst_stratum_coverage_sd": 0.0967,
+   "worst_stratum_coverage_ci": [
+    0.7294,
+    0.7893
+   ],
+   "max_stratum_gap_mean": 0.1098,
+   "max_stratum_gap_sd": 0.0699,
+   "max_stratum_gap_ci": [
+    0.0907,
+    0.1338
+   ],
+   "mean_width_mean": 2.3431,
+   "mean_width_sd": 0.5396,
+   "mean_width_ci": [
+    2.1885,
+    2.5142
+   ],
+   "median_width_mean": 2.2911,
+   "median_width_sd": 0.5148,
+   "median_width_ci": [
+    2.1439,
+    2.4484
+   ],
+   "saturated_fraction_mean": 0.0058,
+   "saturated_fraction_sd": 0.0218,
+   "saturated_fraction_ci": [
+    0.0003,
+    0.0134
+   ],
+   "value_worst_coverage_mean": 0.7721,
+   "value_worst_coverage_sd": 0.0854,
+   "value_worst_coverage_ci": [
+    0.7445,
+    0.7972
+   ],
+   "eff_sample_size_mean": 116.0549,
+   "eff_sample_size_sd": 57.6667,
+   "eff_sample_size_ci": [
+    98.4507,
+    133.9567
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "weighted_kde",
+   "n": 40,
+   "marginal_coverage_mean": 0.9517,
+   "marginal_coverage_sd": 0.0295,
+   "marginal_coverage_ci": [
+    0.9432,
+    0.9603
+   ],
+   "marginal_gap_mean": 0.1017,
+   "marginal_gap_sd": 0.0309,
+   "marginal_gap_ci": [
+    0.0921,
+    0.1111
+   ],
+   "worst_stratum_coverage_mean": 0.919,
+   "worst_stratum_coverage_sd": 0.0401,
+   "worst_stratum_coverage_ci": [
+    0.9064,
+    0.9315
+   ],
+   "max_stratum_gap_mean": 0.1254,
+   "max_stratum_gap_sd": 0.037,
+   "max_stratum_gap_ci": [
+    0.1136,
+    0.137
+   ],
+   "mean_width_mean": 5.459,
+   "mean_width_sd": 0.6409,
+   "mean_width_ci": [
+    5.2678,
+    5.6673
+   ],
+   "median_width_mean": 6.7434,
+   "median_width_sd": 1.7944,
+   "median_width_ci": [
+    6.1421,
+    7.2497
+   ],
+   "saturated_fraction_mean": 0.559,
+   "saturated_fraction_sd": 0.0884,
+   "saturated_fraction_ci": [
+    0.5316,
+    0.587
+   ],
+   "value_worst_coverage_mean": 0.9167,
+   "value_worst_coverage_sd": 0.053,
+   "value_worst_coverage_ci": [
+    0.8999,
+    0.9326
+   ],
+   "eff_sample_size_mean": 177.3059,
+   "eff_sample_size_sd": 11.9009,
+   "eff_sample_size_ci": [
+    173.3899,
+    180.8364
+   ]
+  },
+  {
+   "dataset": "bace",
+   "method": "weighted_logistic",
+   "n": 40,
+   "marginal_coverage_mean": 0.8625,
+   "marginal_coverage_sd": 0.0626,
+   "marginal_coverage_ci": [
+    0.8431,
+    0.881
+   ],
+   "marginal_gap_mean": 0.0125,
+   "marginal_gap_sd": 0.0361,
+   "marginal_gap_ci": [
+    0.0011,
+    0.0234
+   ],
+   "worst_stratum_coverage_mean": 0.7785,
+   "worst_stratum_coverage_sd": 0.093,
+   "worst_stratum_coverage_ci": [
+    0.7501,
+    0.8068
+   ],
+   "max_stratum_gap_mean": 0.1067,
+   "max_stratum_gap_sd": 0.049,
+   "max_stratum_gap_ci": [
+    0.0934,
+    0.1236
+   ],
+   "mean_width_mean": 2.5856,
+   "mean_width_sd": 0.6157,
+   "mean_width_ci": [
+    2.4067,
+    2.7845
+   ],
+   "median_width_mean": 2.3965,
+   "median_width_sd": 0.4949,
+   "median_width_ci": [
+    2.25,
+    2.5512
+   ],
+   "saturated_fraction_mean": 0.026,
+   "saturated_fraction_sd": 0.0588,
+   "saturated_fraction_ci": [
+    0.0107,
+    0.046
+   ],
+   "value_worst_coverage_mean": 0.7934,
+   "value_worst_coverage_sd": 0.0884,
+   "value_worst_coverage_ci": [
+    0.7664,
+    0.8209
+   ],
+   "eff_sample_size_mean": 106.1724,
+   "eff_sample_size_sd": 55.0781,
+   "eff_sample_size_ci": [
+    90.941,
+    124.8169
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "adecp",
+   "n": 40,
+   "marginal_coverage_mean": 0.7491,
+   "marginal_coverage_sd": 0.1312,
+   "marginal_coverage_ci": [
+    0.7078,
+    0.7907
+   ],
+   "marginal_gap_mean": -0.1009,
+   "marginal_gap_sd": 0.1183,
+   "marginal_gap_ci": [
+    -0.138,
+    -0.0634
+   ],
+   "worst_stratum_coverage_mean": 0.6639,
+   "worst_stratum_coverage_sd": 0.1584,
+   "worst_stratum_coverage_ci": [
+    0.6147,
+    0.7145
+   ],
+   "max_stratum_gap_mean": 0.218,
+   "max_stratum_gap_sd": 0.1128,
+   "max_stratum_gap_ci": [
+    0.1843,
+    0.2521
+   ],
+   "mean_width_mean": 4.814,
+   "mean_width_sd": 0.8916,
+   "mean_width_ci": [
+    4.5485,
+    5.0956
+   ],
+   "median_width_mean": 4.7939,
+   "median_width_sd": 0.9058,
+   "median_width_ci": [
+    4.5198,
+    5.0787
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5764,
+   "value_worst_coverage_sd": 0.2121,
+   "value_worst_coverage_ci": [
+    0.513,
+    0.6427
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "adwcp",
+   "n": 40,
+   "marginal_coverage_mean": 0.8421,
+   "marginal_coverage_sd": 0.12,
+   "marginal_coverage_ci": [
+    0.8038,
+    0.8794
+   ],
+   "marginal_gap_mean": -0.0079,
+   "marginal_gap_sd": 0.1097,
+   "marginal_gap_ci": [
+    -0.0419,
+    0.0252
+   ],
+   "worst_stratum_coverage_mean": 0.7512,
+   "worst_stratum_coverage_sd": 0.1659,
+   "worst_stratum_coverage_ci": [
+    0.6993,
+    0.8014
+   ],
+   "max_stratum_gap_mean": 0.1791,
+   "max_stratum_gap_sd": 0.0821,
+   "max_stratum_gap_ci": [
+    0.1565,
+    0.2054
+   ],
+   "mean_width_mean": 6.707,
+   "mean_width_sd": 2.9484,
+   "mean_width_ci": [
+    5.8501,
+    7.6935
+   ],
+   "median_width_mean": 6.8327,
+   "median_width_sd": 3.3646,
+   "median_width_ci": [
+    5.8485,
+    7.9612
+   ],
+   "saturated_fraction_mean": 0.2387,
+   "saturated_fraction_sd": 0.3904,
+   "saturated_fraction_ci": [
+    0.1279,
+    0.3659
+   ],
+   "value_worst_coverage_mean": 0.7247,
+   "value_worst_coverage_sd": 0.1912,
+   "value_worst_coverage_ci": [
+    0.6621,
+    0.7858
+   ],
+   "eff_sample_size_mean": 184.7555,
+   "eff_sample_size_sd": 93.0291,
+   "eff_sample_size_ci": [
+    156.335,
+    213.6465
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "localized",
+   "n": 40,
+   "marginal_coverage_mean": 0.9466,
+   "marginal_coverage_sd": 0.0669,
+   "marginal_coverage_ci": [
+    0.9245,
+    0.9659
+   ],
+   "marginal_gap_mean": 0.0966,
+   "marginal_gap_sd": 0.0518,
+   "marginal_gap_ci": [
+    0.0808,
+    0.1125
+   ],
+   "worst_stratum_coverage_mean": 0.9133,
+   "worst_stratum_coverage_sd": 0.1024,
+   "worst_stratum_coverage_ci": [
+    0.878,
+    0.9436
+   ],
+   "max_stratum_gap_mean": 0.1391,
+   "max_stratum_gap_sd": 0.0478,
+   "max_stratum_gap_ci": [
+    0.1238,
+    0.1538
+   ],
+   "mean_width_mean": 9.0288,
+   "mean_width_sd": 2.5314,
+   "mean_width_ci": [
+    8.2531,
+    9.7887
+   ],
+   "median_width_mean": 9.0323,
+   "median_width_sd": 2.6522,
+   "median_width_ci": [
+    8.2274,
+    9.8217
+   ],
+   "saturated_fraction_mean": 0.4765,
+   "saturated_fraction_sd": 0.474,
+   "saturated_fraction_ci": [
+    0.3267,
+    0.6208
+   ],
+   "value_worst_coverage_mean": 0.8666,
+   "value_worst_coverage_sd": 0.1715,
+   "value_worst_coverage_ci": [
+    0.8078,
+    0.9153
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "mondrian",
+   "n": 40,
+   "marginal_coverage_mean": 0.7604,
+   "marginal_coverage_sd": 0.1345,
+   "marginal_coverage_ci": [
+    0.7177,
+    0.8028
+   ],
+   "marginal_gap_mean": -0.0896,
+   "marginal_gap_sd": 0.123,
+   "marginal_gap_ci": [
+    -0.1284,
+    -0.051
+   ],
+   "worst_stratum_coverage_mean": 0.6676,
+   "worst_stratum_coverage_sd": 0.158,
+   "worst_stratum_coverage_ci": [
+    0.6191,
+    0.7182
+   ],
+   "max_stratum_gap_mean": 0.2218,
+   "max_stratum_gap_sd": 0.0993,
+   "max_stratum_gap_ci": [
+    0.1923,
+    0.2521
+   ],
+   "mean_width_mean": 4.9614,
+   "mean_width_sd": 0.9274,
+   "mean_width_ci": [
+    4.6886,
+    5.251
+   ],
+   "median_width_mean": 4.8975,
+   "median_width_sd": 1.0262,
+   "median_width_ci": [
+    4.6057,
+    5.2084
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.591,
+   "value_worst_coverage_sd": 0.2161,
+   "value_worst_coverage_ci": [
+    0.527,
+    0.6573
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "normalized",
+   "n": 40,
+   "marginal_coverage_mean": 0.8063,
+   "marginal_coverage_sd": 0.1406,
+   "marginal_coverage_ci": [
+    0.7626,
+    0.8493
+   ],
+   "marginal_gap_mean": -0.0437,
+   "marginal_gap_sd": 0.1278,
+   "marginal_gap_ci": [
+    -0.0808,
+    -0.0037
+   ],
+   "worst_stratum_coverage_mean": 0.738,
+   "worst_stratum_coverage_sd": 0.1819,
+   "worst_stratum_coverage_ci": [
+    0.6798,
+    0.792
+   ],
+   "max_stratum_gap_mean": 0.1961,
+   "max_stratum_gap_sd": 0.105,
+   "max_stratum_gap_ci": [
+    0.1656,
+    0.2292
+   ],
+   "mean_width_mean": 5.9024,
+   "mean_width_sd": 1.746,
+   "mean_width_ci": [
+    5.375,
+    6.4559
+   ],
+   "median_width_mean": 5.9038,
+   "median_width_sd": 1.8763,
+   "median_width_ci": [
+    5.3607,
+    6.5106
+   ],
+   "saturated_fraction_mean": 0.0521,
+   "saturated_fraction_sd": 0.1508,
+   "saturated_fraction_ci": [
+    0.0143,
+    0.1026
+   ],
+   "value_worst_coverage_mean": 0.6619,
+   "value_worst_coverage_sd": 0.2384,
+   "value_worst_coverage_ci": [
+    0.5916,
+    0.7335
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "raw_ensemble",
+   "n": 40,
+   "marginal_coverage_mean": 0.788,
+   "marginal_coverage_sd": 0.1316,
+   "marginal_coverage_ci": [
+    0.7487,
+    0.8313
+   ],
+   "marginal_gap_mean": -0.062,
+   "marginal_gap_sd": 0.1192,
+   "marginal_gap_ci": [
+    -0.0975,
+    -0.0239
+   ],
+   "worst_stratum_coverage_mean": 0.7199,
+   "worst_stratum_coverage_sd": 0.1639,
+   "worst_stratum_coverage_ci": [
+    0.669,
+    0.7712
+   ],
+   "max_stratum_gap_mean": 0.1908,
+   "max_stratum_gap_sd": 0.0977,
+   "max_stratum_gap_ci": [
+    0.1602,
+    0.2206
+   ],
+   "mean_width_mean": 5.2293,
+   "mean_width_sd": 1.1249,
+   "mean_width_ci": [
+    4.8713,
+    5.5889
+   ],
+   "median_width_mean": 5.3169,
+   "median_width_sd": 1.2108,
+   "median_width_ci": [
+    4.9328,
+    5.7053
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.617,
+   "value_worst_coverage_sd": 0.2245,
+   "value_worst_coverage_ci": [
+    0.549,
+    0.6882
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "split",
+   "n": 40,
+   "marginal_coverage_mean": 0.788,
+   "marginal_coverage_sd": 0.1316,
+   "marginal_coverage_ci": [
+    0.7487,
+    0.8313
+   ],
+   "marginal_gap_mean": -0.062,
+   "marginal_gap_sd": 0.1192,
+   "marginal_gap_ci": [
+    -0.0975,
+    -0.0239
+   ],
+   "worst_stratum_coverage_mean": 0.7199,
+   "worst_stratum_coverage_sd": 0.1639,
+   "worst_stratum_coverage_ci": [
+    0.669,
+    0.7712
+   ],
+   "max_stratum_gap_mean": 0.1908,
+   "max_stratum_gap_sd": 0.0977,
+   "max_stratum_gap_ci": [
+    0.1602,
+    0.2206
+   ],
+   "mean_width_mean": 5.2293,
+   "mean_width_sd": 1.1249,
+   "mean_width_ci": [
+    4.8713,
+    5.5889
+   ],
+   "median_width_mean": 5.3169,
+   "median_width_sd": 1.2108,
+   "median_width_ci": [
+    4.9328,
+    5.7053
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.617,
+   "value_worst_coverage_sd": 0.2245,
+   "value_worst_coverage_ci": [
+    0.549,
+    0.6882
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "weighted_ad",
+   "n": 40,
+   "marginal_coverage_mean": 0.7743,
+   "marginal_coverage_sd": 0.1372,
+   "marginal_coverage_ci": [
+    0.731,
+    0.8195
+   ],
+   "marginal_gap_mean": -0.0757,
+   "marginal_gap_sd": 0.1233,
+   "marginal_gap_ci": [
+    -0.1135,
+    -0.0358
+   ],
+   "worst_stratum_coverage_mean": 0.7057,
+   "worst_stratum_coverage_sd": 0.1643,
+   "worst_stratum_coverage_ci": [
+    0.6547,
+    0.7587
+   ],
+   "max_stratum_gap_mean": 0.1971,
+   "max_stratum_gap_sd": 0.0996,
+   "max_stratum_gap_ci": [
+    0.1667,
+    0.2274
+   ],
+   "mean_width_mean": 5.0358,
+   "mean_width_sd": 1.0373,
+   "mean_width_ci": [
+    4.7137,
+    5.3748
+   ],
+   "median_width_mean": 5.098,
+   "median_width_sd": 1.0985,
+   "median_width_ci": [
+    4.7564,
+    5.4561
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6042,
+   "value_worst_coverage_sd": 0.2255,
+   "value_worst_coverage_ci": [
+    0.538,
+    0.6751
+   ],
+   "eff_sample_size_mean": 254.1433,
+   "eff_sample_size_sd": 89.9717,
+   "eff_sample_size_ci": [
+    227.6298,
+    282.2556
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "weighted_disc",
+   "n": 40,
+   "marginal_coverage_mean": 0.8424,
+   "marginal_coverage_sd": 0.1282,
+   "marginal_coverage_ci": [
+    0.8019,
+    0.8829
+   ],
+   "marginal_gap_mean": -0.0076,
+   "marginal_gap_sd": 0.1175,
+   "marginal_gap_ci": [
+    -0.044,
+    0.0278
+   ],
+   "worst_stratum_coverage_mean": 0.7629,
+   "worst_stratum_coverage_sd": 0.176,
+   "worst_stratum_coverage_ci": [
+    0.7071,
+    0.8172
+   ],
+   "max_stratum_gap_mean": 0.1771,
+   "max_stratum_gap_sd": 0.0868,
+   "max_stratum_gap_ci": [
+    0.1533,
+    0.2037
+   ],
+   "mean_width_mean": 6.6743,
+   "mean_width_sd": 2.9416,
+   "mean_width_ci": [
+    5.8165,
+    7.6358
+   ],
+   "median_width_mean": 6.8615,
+   "median_width_sd": 3.3387,
+   "median_width_ci": [
+    5.8842,
+    7.9496
+   ],
+   "saturated_fraction_mean": 0.2325,
+   "saturated_fraction_sd": 0.3912,
+   "saturated_fraction_ci": [
+    0.122,
+    0.3582
+   ],
+   "value_worst_coverage_mean": 0.7218,
+   "value_worst_coverage_sd": 0.2006,
+   "value_worst_coverage_ci": [
+    0.6554,
+    0.7853
+   ],
+   "eff_sample_size_mean": 184.7555,
+   "eff_sample_size_sd": 93.0291,
+   "eff_sample_size_ci": [
+    156.335,
+    213.6465
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "weighted_kde",
+   "n": 40,
+   "marginal_coverage_mean": 0.9844,
+   "marginal_coverage_sd": 0.0173,
+   "marginal_coverage_ci": [
+    0.9785,
+    0.9893
+   ],
+   "marginal_gap_mean": 0.1344,
+   "marginal_gap_sd": 0.0499,
+   "marginal_gap_ci": [
+    0.1189,
+    0.1494
+   ],
+   "worst_stratum_coverage_mean": 0.9697,
+   "worst_stratum_coverage_sd": 0.0351,
+   "worst_stratum_coverage_ci": [
+    0.9577,
+    0.9795
+   ],
+   "max_stratum_gap_mean": 0.1483,
+   "max_stratum_gap_sd": 0.0502,
+   "max_stratum_gap_ci": [
+    0.1327,
+    0.1632
+   ],
+   "mean_width_mean": 11.3028,
+   "mean_width_sd": 1.3239,
+   "mean_width_ci": [
+    10.9053,
+    11.6944
+   ],
+   "median_width_mean": 11.5938,
+   "median_width_sd": 1.1919,
+   "median_width_ci": [
+    11.2219,
+    11.9504
+   ],
+   "saturated_fraction_mean": 0.9371,
+   "saturated_fraction_sd": 0.0614,
+   "saturated_fraction_ci": [
+    0.9184,
+    0.9556
+   ],
+   "value_worst_coverage_mean": 0.9512,
+   "value_worst_coverage_sd": 0.0516,
+   "value_worst_coverage_ci": [
+    0.9337,
+    0.9661
+   ],
+   "eff_sample_size_mean": 255.9605,
+   "eff_sample_size_sd": 89.9413,
+   "eff_sample_size_ci": [
+    227.4024,
+    284.0383
+   ]
+  },
+  {
+   "dataset": "esol",
+   "method": "weighted_logistic",
+   "n": 40,
+   "marginal_coverage_mean": 0.8475,
+   "marginal_coverage_sd": 0.1099,
+   "marginal_coverage_ci": [
+    0.8119,
+    0.8804
+   ],
+   "marginal_gap_mean": -0.0025,
+   "marginal_gap_sd": 0.1033,
+   "marginal_gap_ci": [
+    -0.0366,
+    0.0286
+   ],
+   "worst_stratum_coverage_mean": 0.7587,
+   "worst_stratum_coverage_sd": 0.1581,
+   "worst_stratum_coverage_ci": [
+    0.7064,
+    0.8071
+   ],
+   "max_stratum_gap_mean": 0.1615,
+   "max_stratum_gap_sd": 0.0947,
+   "max_stratum_gap_ci": [
+    0.1338,
+    0.1892
+   ],
+   "mean_width_mean": 7.04,
+   "mean_width_sd": 2.8112,
+   "mean_width_ci": [
+    6.2111,
+    7.955
+   ],
+   "median_width_mean": 6.8659,
+   "median_width_sd": 3.5224,
+   "median_width_ci": [
+    5.8024,
+    7.9744
+   ],
+   "saturated_fraction_mean": 0.3096,
+   "saturated_fraction_sd": 0.3691,
+   "saturated_fraction_ci": [
+    0.2048,
+    0.426
+   ],
+   "value_worst_coverage_mean": 0.7447,
+   "value_worst_coverage_sd": 0.1644,
+   "value_worst_coverage_ci": [
+    0.6879,
+    0.7948
+   ],
+   "eff_sample_size_mean": 157.8549,
+   "eff_sample_size_sd": 106.0038,
+   "eff_sample_size_ci": [
+    127.1135,
+    190.314
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "adecp",
+   "n": 40,
+   "marginal_coverage_mean": 0.7593,
+   "marginal_coverage_sd": 0.1932,
+   "marginal_coverage_ci": [
+    0.7019,
+    0.8168
+   ],
+   "marginal_gap_mean": -0.0907,
+   "marginal_gap_sd": 0.1898,
+   "marginal_gap_ci": [
+    -0.1459,
+    -0.0314
+   ],
+   "worst_stratum_coverage_mean": 0.537,
+   "worst_stratum_coverage_sd": 0.2913,
+   "worst_stratum_coverage_ci": [
+    0.45,
+    0.6294
+   ],
+   "max_stratum_gap_mean": 0.3577,
+   "max_stratum_gap_sd": 0.2404,
+   "max_stratum_gap_ci": [
+    0.2841,
+    0.4314
+   ],
+   "mean_width_mean": 9.7791,
+   "mean_width_sd": 2.7086,
+   "mean_width_ci": [
+    8.9848,
+    10.6832
+   ],
+   "median_width_mean": 9.8513,
+   "median_width_sd": 2.9982,
+   "median_width_ci": [
+    9.0004,
+    10.8485
+   ],
+   "saturated_fraction_mean": 0.0132,
+   "saturated_fraction_sd": 0.0816,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0393
+   ],
+   "value_worst_coverage_mean": 0.5902,
+   "value_worst_coverage_sd": 0.2753,
+   "value_worst_coverage_ci": [
+    0.5058,
+    0.6739
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "adwcp",
+   "n": 40,
+   "marginal_coverage_mean": 0.8937,
+   "marginal_coverage_sd": 0.0953,
+   "marginal_coverage_ci": [
+    0.8638,
+    0.9225
+   ],
+   "marginal_gap_mean": 0.0437,
+   "marginal_gap_sd": 0.0918,
+   "marginal_gap_ci": [
+    0.0149,
+    0.0722
+   ],
+   "worst_stratum_coverage_mean": 0.7917,
+   "worst_stratum_coverage_sd": 0.1873,
+   "worst_stratum_coverage_ci": [
+    0.736,
+    0.8472
+   ],
+   "max_stratum_gap_mean": 0.1771,
+   "max_stratum_gap_sd": 0.0973,
+   "max_stratum_gap_ci": [
+    0.1499,
+    0.2077
+   ],
+   "mean_width_mean": 15.5716,
+   "mean_width_sd": 8.0944,
+   "mean_width_ci": [
+    13.0538,
+    18.1117
+   ],
+   "median_width_mean": 15.5424,
+   "median_width_sd": 8.8144,
+   "median_width_ci": [
+    12.9198,
+    18.2842
+   ],
+   "saturated_fraction_mean": 0.3634,
+   "saturated_fraction_sd": 0.4308,
+   "saturated_fraction_ci": [
+    0.2289,
+    0.4973
+   ],
+   "value_worst_coverage_mean": 0.7955,
+   "value_worst_coverage_sd": 0.1802,
+   "value_worst_coverage_ci": [
+    0.7414,
+    0.8521
+   ],
+   "eff_sample_size_mean": 158.9803,
+   "eff_sample_size_sd": 114.6906,
+   "eff_sample_size_ci": [
+    123.914,
+    195.2218
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "localized",
+   "n": 40,
+   "marginal_coverage_mean": 0.9758,
+   "marginal_coverage_sd": 0.044,
+   "marginal_coverage_ci": [
+    0.9601,
+    0.9879
+   ],
+   "marginal_gap_mean": 0.1258,
+   "marginal_gap_sd": 0.0527,
+   "marginal_gap_ci": [
+    0.1103,
+    0.1413
+   ],
+   "worst_stratum_coverage_mean": 0.9076,
+   "worst_stratum_coverage_sd": 0.1883,
+   "worst_stratum_coverage_ci": [
+    0.8414,
+    0.9614
+   ],
+   "max_stratum_gap_mean": 0.1753,
+   "max_stratum_gap_sd": 0.1051,
+   "max_stratum_gap_ci": [
+    0.145,
+    0.2095
+   ],
+   "mean_width_mean": 23.8683,
+   "mean_width_sd": 5.6527,
+   "mean_width_ci": [
+    22.083,
+    25.5792
+   ],
+   "median_width_mean": 23.7439,
+   "median_width_sd": 6.563,
+   "median_width_ci": [
+    21.639,
+    25.7476
+   ],
+   "saturated_fraction_mean": 0.7778,
+   "saturated_fraction_sd": 0.3685,
+   "saturated_fraction_ci": [
+    0.6555,
+    0.8834
+   ],
+   "value_worst_coverage_mean": 0.9342,
+   "value_worst_coverage_sd": 0.1205,
+   "value_worst_coverage_ci": [
+    0.8927,
+    0.9671
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "mondrian",
+   "n": 40,
+   "marginal_coverage_mean": 0.7665,
+   "marginal_coverage_sd": 0.2105,
+   "marginal_coverage_ci": [
+    0.7011,
+    0.8279
+   ],
+   "marginal_gap_mean": -0.0835,
+   "marginal_gap_sd": 0.2078,
+   "marginal_gap_ci": [
+    -0.1455,
+    -0.0236
+   ],
+   "worst_stratum_coverage_mean": 0.5365,
+   "worst_stratum_coverage_sd": 0.3106,
+   "worst_stratum_coverage_ci": [
+    0.4447,
+    0.6277
+   ],
+   "max_stratum_gap_mean": 0.3643,
+   "max_stratum_gap_sd": 0.2582,
+   "max_stratum_gap_ci": [
+    0.2911,
+    0.4452
+   ],
+   "mean_width_mean": 10.3471,
+   "mean_width_sd": 3.107,
+   "mean_width_ci": [
+    9.4709,
+    11.434
+   ],
+   "median_width_mean": 9.9199,
+   "median_width_sd": 3.4696,
+   "median_width_ci": [
+    8.9395,
+    11.1116
+   ],
+   "saturated_fraction_mean": 0.0176,
+   "saturated_fraction_sd": 0.1115,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0529
+   ],
+   "value_worst_coverage_mean": 0.6002,
+   "value_worst_coverage_sd": 0.2939,
+   "value_worst_coverage_ci": [
+    0.5092,
+    0.6866
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "normalized",
+   "n": 40,
+   "marginal_coverage_mean": 0.846,
+   "marginal_coverage_sd": 0.119,
+   "marginal_coverage_ci": [
+    0.8105,
+    0.8794
+   ],
+   "marginal_gap_mean": -0.004,
+   "marginal_gap_sd": 0.1101,
+   "marginal_gap_ci": [
+    -0.0389,
+    0.0277
+   ],
+   "worst_stratum_coverage_mean": 0.6929,
+   "worst_stratum_coverage_sd": 0.2553,
+   "worst_stratum_coverage_ci": [
+    0.6169,
+    0.7667
+   ],
+   "max_stratum_gap_mean": 0.2378,
+   "max_stratum_gap_sd": 0.1863,
+   "max_stratum_gap_ci": [
+    0.1841,
+    0.2985
+   ],
+   "mean_width_mean": 11.6014,
+   "mean_width_sd": 3.5553,
+   "mean_width_ci": [
+    10.5878,
+    12.7395
+   ],
+   "median_width_mean": 11.572,
+   "median_width_sd": 3.689,
+   "median_width_ci": [
+    10.5175,
+    12.7555
+   ],
+   "saturated_fraction_mean": 0.0007,
+   "saturated_fraction_sd": 0.003,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0017
+   ],
+   "value_worst_coverage_mean": 0.6985,
+   "value_worst_coverage_sd": 0.2079,
+   "value_worst_coverage_ci": [
+    0.6329,
+    0.7579
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "raw_ensemble",
+   "n": 40,
+   "marginal_coverage_mean": 0.7335,
+   "marginal_coverage_sd": 0.2356,
+   "marginal_coverage_ci": [
+    0.659,
+    0.8013
+   ],
+   "marginal_gap_mean": -0.1165,
+   "marginal_gap_sd": 0.2331,
+   "marginal_gap_ci": [
+    -0.191,
+    -0.0487
+   ],
+   "worst_stratum_coverage_mean": 0.5373,
+   "worst_stratum_coverage_sd": 0.3042,
+   "worst_stratum_coverage_ci": [
+    0.4475,
+    0.6305
+   ],
+   "max_stratum_gap_mean": 0.3537,
+   "max_stratum_gap_sd": 0.2578,
+   "max_stratum_gap_ci": [
+    0.2788,
+    0.4365
+   ],
+   "mean_width_mean": 9.4377,
+   "mean_width_sd": 2.833,
+   "mean_width_ci": [
+    8.6024,
+    10.4176
+   ],
+   "median_width_mean": 9.492,
+   "median_width_sd": 2.8982,
+   "median_width_ci": [
+    8.6341,
+    10.502
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5602,
+   "value_worst_coverage_sd": 0.3002,
+   "value_worst_coverage_ci": [
+    0.4643,
+    0.6456
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "split",
+   "n": 40,
+   "marginal_coverage_mean": 0.7335,
+   "marginal_coverage_sd": 0.2356,
+   "marginal_coverage_ci": [
+    0.659,
+    0.8013
+   ],
+   "marginal_gap_mean": -0.1165,
+   "marginal_gap_sd": 0.2331,
+   "marginal_gap_ci": [
+    -0.191,
+    -0.0487
+   ],
+   "worst_stratum_coverage_mean": 0.5373,
+   "worst_stratum_coverage_sd": 0.3042,
+   "worst_stratum_coverage_ci": [
+    0.4475,
+    0.6305
+   ],
+   "max_stratum_gap_mean": 0.3537,
+   "max_stratum_gap_sd": 0.2578,
+   "max_stratum_gap_ci": [
+    0.2788,
+    0.4365
+   ],
+   "mean_width_mean": 9.4377,
+   "mean_width_sd": 2.833,
+   "mean_width_ci": [
+    8.6024,
+    10.4176
+   ],
+   "median_width_mean": 9.492,
+   "median_width_sd": 2.8982,
+   "median_width_ci": [
+    8.6341,
+    10.502
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5602,
+   "value_worst_coverage_sd": 0.3002,
+   "value_worst_coverage_ci": [
+    0.4643,
+    0.6456
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "weighted_ad",
+   "n": 40,
+   "marginal_coverage_mean": 0.756,
+   "marginal_coverage_sd": 0.2224,
+   "marginal_coverage_ci": [
+    0.6871,
+    0.8226
+   ],
+   "marginal_gap_mean": -0.094,
+   "marginal_gap_sd": 0.2194,
+   "marginal_gap_ci": [
+    -0.1615,
+    -0.0315
+   ],
+   "worst_stratum_coverage_mean": 0.5474,
+   "worst_stratum_coverage_sd": 0.311,
+   "worst_stratum_coverage_ci": [
+    0.4593,
+    0.6423
+   ],
+   "max_stratum_gap_mean": 0.3517,
+   "max_stratum_gap_sd": 0.2556,
+   "max_stratum_gap_ci": [
+    0.2789,
+    0.4323
+   ],
+   "mean_width_mean": 10.1276,
+   "mean_width_sd": 3.5163,
+   "mean_width_ci": [
+    9.1092,
+    11.3494
+   ],
+   "median_width_mean": 10.0855,
+   "median_width_sd": 3.4897,
+   "median_width_ci": [
+    9.086,
+    11.2604
+   ],
+   "saturated_fraction_mean": 0.032,
+   "saturated_fraction_sd": 0.1601,
+   "saturated_fraction_ci": [
+    0.0008,
+    0.0875
+   ],
+   "value_worst_coverage_mean": 0.5862,
+   "value_worst_coverage_sd": 0.3007,
+   "value_worst_coverage_ci": [
+    0.4952,
+    0.6719
+   ],
+   "eff_sample_size_mean": 151.0584,
+   "eff_sample_size_sd": 92.4693,
+   "eff_sample_size_ci": [
+    122.1843,
+    180.3582
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "weighted_disc",
+   "n": 40,
+   "marginal_coverage_mean": 0.8798,
+   "marginal_coverage_sd": 0.1095,
+   "marginal_coverage_ci": [
+    0.8465,
+    0.9129
+   ],
+   "marginal_gap_mean": 0.0298,
+   "marginal_gap_sd": 0.1054,
+   "marginal_gap_ci": [
+    -0.0028,
+    0.0612
+   ],
+   "worst_stratum_coverage_mean": 0.7496,
+   "worst_stratum_coverage_sd": 0.2046,
+   "worst_stratum_coverage_ci": [
+    0.689,
+    0.8126
+   ],
+   "max_stratum_gap_mean": 0.1903,
+   "max_stratum_gap_sd": 0.1186,
+   "max_stratum_gap_ci": [
+    0.1572,
+    0.2269
+   ],
+   "mean_width_mean": 14.7637,
+   "mean_width_sd": 8.3464,
+   "mean_width_ci": [
+    12.26,
+    17.3794
+   ],
+   "median_width_mean": 14.8535,
+   "median_width_sd": 8.774,
+   "median_width_ci": [
+    12.2768,
+    17.6137
+   ],
+   "saturated_fraction_mean": 0.3238,
+   "saturated_fraction_sd": 0.4444,
+   "saturated_fraction_ci": [
+    0.191,
+    0.4626
+   ],
+   "value_worst_coverage_mean": 0.7705,
+   "value_worst_coverage_sd": 0.1904,
+   "value_worst_coverage_ci": [
+    0.7145,
+    0.8308
+   ],
+   "eff_sample_size_mean": 158.9803,
+   "eff_sample_size_sd": 114.6906,
+   "eff_sample_size_ci": [
+    123.914,
+    195.2218
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "weighted_kde",
+   "n": 40,
+   "marginal_coverage_mean": 0.9917,
+   "marginal_coverage_sd": 0.0154,
+   "marginal_coverage_ci": [
+    0.9865,
+    0.9958
+   ],
+   "marginal_gap_mean": 0.1417,
+   "marginal_gap_sd": 0.0521,
+   "marginal_gap_ci": [
+    0.1251,
+    0.1576
+   ],
+   "worst_stratum_coverage_mean": 0.9642,
+   "worst_stratum_coverage_sd": 0.1097,
+   "worst_stratum_coverage_ci": [
+    0.9254,
+    0.991
+   ],
+   "max_stratum_gap_mean": 0.16,
+   "max_stratum_gap_sd": 0.0672,
+   "max_stratum_gap_ci": [
+    0.14,
+    0.18
+   ],
+   "mean_width_mean": 26.767,
+   "mean_width_sd": 2.7682,
+   "mean_width_ci": [
+    25.9614,
+    27.5539
+   ],
+   "median_width_mean": 26.927,
+   "median_width_sd": 2.7417,
+   "median_width_ci": [
+    26.1334,
+    27.6975
+   ],
+   "saturated_fraction_mean": 0.9905,
+   "saturated_fraction_sd": 0.023,
+   "saturated_fraction_ci": [
+    0.9824,
+    0.9965
+   ],
+   "value_worst_coverage_mean": 0.98,
+   "value_worst_coverage_sd": 0.0307,
+   "value_worst_coverage_ci": [
+    0.9697,
+    0.9882
+   ],
+   "eff_sample_size_mean": 181.5717,
+   "eff_sample_size_sd": 113.8544,
+   "eff_sample_size_ci": [
+    146.5154,
+    217.4174
+   ]
+  },
+  {
+   "dataset": "freesolv",
+   "method": "weighted_logistic",
+   "n": 40,
+   "marginal_coverage_mean": 0.9575,
+   "marginal_coverage_sd": 0.0627,
+   "marginal_coverage_ci": [
+    0.937,
+    0.9752
+   ],
+   "marginal_gap_mean": 0.1075,
+   "marginal_gap_sd": 0.073,
+   "marginal_gap_ci": [
+    0.0847,
+    0.1285
+   ],
+   "worst_stratum_coverage_mean": 0.8892,
+   "worst_stratum_coverage_sd": 0.149,
+   "worst_stratum_coverage_ci": [
+    0.8369,
+    0.9337
+   ],
+   "max_stratum_gap_mean": 0.1614,
+   "max_stratum_gap_sd": 0.0683,
+   "max_stratum_gap_ci": [
+    0.1408,
+    0.1819
+   ],
+   "mean_width_mean": 22.066,
+   "mean_width_sd": 5.0472,
+   "mean_width_ci": [
+    20.5566,
+    23.6922
+   ],
+   "median_width_mean": 23.1212,
+   "median_width_sd": 7.1363,
+   "median_width_ci": [
+    20.9356,
+    25.2223
+   ],
+   "saturated_fraction_mean": 0.6787,
+   "saturated_fraction_sd": 0.3169,
+   "saturated_fraction_ci": [
+    0.5842,
+    0.7771
+   ],
+   "value_worst_coverage_mean": 0.9063,
+   "value_worst_coverage_sd": 0.121,
+   "value_worst_coverage_ci": [
+    0.8692,
+    0.941
+   ],
+   "eff_sample_size_mean": 159.7546,
+   "eff_sample_size_sd": 120.8533,
+   "eff_sample_size_ci": [
+    122.2087,
+    197.5978
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "adecp",
+   "n": 40,
+   "marginal_coverage_mean": 0.856,
+   "marginal_coverage_sd": 0.0529,
+   "marginal_coverage_ci": [
+    0.8393,
+    0.8718
+   ],
+   "marginal_gap_mean": 0.006,
+   "marginal_gap_sd": 0.0151,
+   "marginal_gap_ci": [
+    0.0009,
+    0.0103
+   ],
+   "worst_stratum_coverage_mean": 0.8225,
+   "worst_stratum_coverage_sd": 0.0595,
+   "worst_stratum_coverage_ci": [
+    0.8043,
+    0.8396
+   ],
+   "max_stratum_gap_mean": 0.047,
+   "max_stratum_gap_sd": 0.0227,
+   "max_stratum_gap_ci": [
+    0.0403,
+    0.0541
+   ],
+   "mean_width_mean": 2.4047,
+   "mean_width_sd": 0.3066,
+   "mean_width_ci": [
+    2.3117,
+    2.4978
+   ],
+   "median_width_mean": 2.3798,
+   "median_width_sd": 0.3081,
+   "median_width_ci": [
+    2.2871,
+    2.4736
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7959,
+   "value_worst_coverage_sd": 0.0647,
+   "value_worst_coverage_ci": [
+    0.7756,
+    0.8163
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "adwcp",
+   "n": 40,
+   "marginal_coverage_mean": 0.8587,
+   "marginal_coverage_sd": 0.0555,
+   "marginal_coverage_ci": [
+    0.8402,
+    0.8758
+   ],
+   "marginal_gap_mean": 0.0087,
+   "marginal_gap_sd": 0.0239,
+   "marginal_gap_ci": [
+    0.0009,
+    0.0155
+   ],
+   "worst_stratum_coverage_mean": 0.8138,
+   "worst_stratum_coverage_sd": 0.0667,
+   "worst_stratum_coverage_ci": [
+    0.7923,
+    0.8341
+   ],
+   "max_stratum_gap_mean": 0.0623,
+   "max_stratum_gap_sd": 0.027,
+   "max_stratum_gap_ci": [
+    0.0538,
+    0.0706
+   ],
+   "mean_width_mean": 2.4322,
+   "mean_width_sd": 0.3465,
+   "mean_width_ci": [
+    2.3218,
+    2.5341
+   ],
+   "median_width_mean": 2.3933,
+   "median_width_sd": 0.3733,
+   "median_width_ci": [
+    2.2791,
+    2.5084
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7937,
+   "value_worst_coverage_sd": 0.066,
+   "value_worst_coverage_ci": [
+    0.7725,
+    0.8133
+   ],
+   "eff_sample_size_mean": 331.4807,
+   "eff_sample_size_sd": 216.5732,
+   "eff_sample_size_ci": [
+    267.1298,
+    401.5527
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "localized",
+   "n": 40,
+   "marginal_coverage_mean": 0.8882,
+   "marginal_coverage_sd": 0.053,
+   "marginal_coverage_ci": [
+    0.8709,
+    0.9039
+   ],
+   "marginal_gap_mean": 0.0382,
+   "marginal_gap_sd": 0.0179,
+   "marginal_gap_ci": [
+    0.0328,
+    0.0435
+   ],
+   "worst_stratum_coverage_mean": 0.8052,
+   "worst_stratum_coverage_sd": 0.0795,
+   "worst_stratum_coverage_ci": [
+    0.7795,
+    0.829
+   ],
+   "max_stratum_gap_mean": 0.1104,
+   "max_stratum_gap_sd": 0.0308,
+   "max_stratum_gap_ci": [
+    0.1009,
+    0.1204
+   ],
+   "mean_width_mean": 2.6926,
+   "mean_width_sd": 0.4403,
+   "mean_width_ci": [
+    2.5609,
+    2.8275
+   ],
+   "median_width_mean": 2.7219,
+   "median_width_sd": 0.4626,
+   "median_width_ci": [
+    2.5814,
+    2.8656
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8328,
+   "value_worst_coverage_sd": 0.07,
+   "value_worst_coverage_ci": [
+    0.8107,
+    0.8544
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "mondrian",
+   "n": 40,
+   "marginal_coverage_mean": 0.8579,
+   "marginal_coverage_sd": 0.0529,
+   "marginal_coverage_ci": [
+    0.8409,
+    0.8738
+   ],
+   "marginal_gap_mean": 0.0079,
+   "marginal_gap_sd": 0.0186,
+   "marginal_gap_ci": [
+    0.0021,
+    0.0137
+   ],
+   "worst_stratum_coverage_mean": 0.8182,
+   "worst_stratum_coverage_sd": 0.0617,
+   "worst_stratum_coverage_ci": [
+    0.7991,
+    0.8363
+   ],
+   "max_stratum_gap_mean": 0.0565,
+   "max_stratum_gap_sd": 0.0233,
+   "max_stratum_gap_ci": [
+    0.0499,
+    0.0633
+   ],
+   "mean_width_mean": 2.4232,
+   "mean_width_sd": 0.3192,
+   "mean_width_ci": [
+    2.3264,
+    2.5192
+   ],
+   "median_width_mean": 2.3335,
+   "median_width_sd": 0.3668,
+   "median_width_ci": [
+    2.2186,
+    2.4504
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7917,
+   "value_worst_coverage_sd": 0.0628,
+   "value_worst_coverage_ci": [
+    0.7721,
+    0.8111
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "normalized",
+   "n": 40,
+   "marginal_coverage_mean": 0.8531,
+   "marginal_coverage_sd": 0.0544,
+   "marginal_coverage_ci": [
+    0.8366,
+    0.869
+   ],
+   "marginal_gap_mean": 0.0031,
+   "marginal_gap_sd": 0.0243,
+   "marginal_gap_ci": [
+    -0.0044,
+    0.0102
+   ],
+   "worst_stratum_coverage_mean": 0.8136,
+   "worst_stratum_coverage_sd": 0.0634,
+   "worst_stratum_coverage_ci": [
+    0.7951,
+    0.8328
+   ],
+   "max_stratum_gap_mean": 0.0576,
+   "max_stratum_gap_sd": 0.0229,
+   "max_stratum_gap_ci": [
+    0.0505,
+    0.0646
+   ],
+   "mean_width_mean": 2.5702,
+   "mean_width_sd": 0.3745,
+   "mean_width_ci": [
+    2.4601,
+    2.6837
+   ],
+   "median_width_mean": 2.4959,
+   "median_width_sd": 0.3807,
+   "median_width_ci": [
+    2.3853,
+    2.6136
+   ],
+   "saturated_fraction_mean": 0.001,
+   "saturated_fraction_sd": 0.0019,
+   "saturated_fraction_ci": [
+    0.0004,
+    0.0016
+   ],
+   "value_worst_coverage_mean": 0.8172,
+   "value_worst_coverage_sd": 0.0632,
+   "value_worst_coverage_ci": [
+    0.7993,
+    0.836
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "raw_ensemble",
+   "n": 40,
+   "marginal_coverage_mean": 0.8578,
+   "marginal_coverage_sd": 0.0503,
+   "marginal_coverage_ci": [
+    0.8415,
+    0.8727
+   ],
+   "marginal_gap_mean": 0.0078,
+   "marginal_gap_sd": 0.0205,
+   "marginal_gap_ci": [
+    0.0016,
+    0.0139
+   ],
+   "worst_stratum_coverage_mean": 0.7612,
+   "worst_stratum_coverage_sd": 0.0683,
+   "worst_stratum_coverage_ci": [
+    0.7388,
+    0.7822
+   ],
+   "max_stratum_gap_mean": 0.1066,
+   "max_stratum_gap_sd": 0.0293,
+   "max_stratum_gap_ci": [
+    0.0981,
+    0.1158
+   ],
+   "mean_width_mean": 2.4424,
+   "mean_width_sd": 0.3311,
+   "mean_width_ci": [
+    2.3398,
+    2.5444
+   ],
+   "median_width_mean": 2.4647,
+   "median_width_sd": 0.3459,
+   "median_width_ci": [
+    2.3588,
+    2.5716
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7923,
+   "value_worst_coverage_sd": 0.0629,
+   "value_worst_coverage_ci": [
+    0.7722,
+    0.8115
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "split",
+   "n": 40,
+   "marginal_coverage_mean": 0.8578,
+   "marginal_coverage_sd": 0.0503,
+   "marginal_coverage_ci": [
+    0.8415,
+    0.8727
+   ],
+   "marginal_gap_mean": 0.0078,
+   "marginal_gap_sd": 0.0205,
+   "marginal_gap_ci": [
+    0.0016,
+    0.0139
+   ],
+   "worst_stratum_coverage_mean": 0.7612,
+   "worst_stratum_coverage_sd": 0.0683,
+   "worst_stratum_coverage_ci": [
+    0.7388,
+    0.7822
+   ],
+   "max_stratum_gap_mean": 0.1066,
+   "max_stratum_gap_sd": 0.0293,
+   "max_stratum_gap_ci": [
+    0.0981,
+    0.1158
+   ],
+   "mean_width_mean": 2.4424,
+   "mean_width_sd": 0.3311,
+   "mean_width_ci": [
+    2.3398,
+    2.5444
+   ],
+   "median_width_mean": 2.4647,
+   "median_width_sd": 0.3459,
+   "median_width_ci": [
+    2.3588,
+    2.5716
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7923,
+   "value_worst_coverage_sd": 0.0629,
+   "value_worst_coverage_ci": [
+    0.7722,
+    0.8115
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "weighted_ad",
+   "n": 40,
+   "marginal_coverage_mean": 0.8593,
+   "marginal_coverage_sd": 0.0501,
+   "marginal_coverage_ci": [
+    0.8431,
+    0.8742
+   ],
+   "marginal_gap_mean": 0.0093,
+   "marginal_gap_sd": 0.0183,
+   "marginal_gap_ci": [
+    0.0038,
+    0.0149
+   ],
+   "worst_stratum_coverage_mean": 0.7628,
+   "worst_stratum_coverage_sd": 0.0691,
+   "worst_stratum_coverage_ci": [
+    0.7412,
+    0.784
+   ],
+   "max_stratum_gap_mean": 0.106,
+   "max_stratum_gap_sd": 0.0282,
+   "max_stratum_gap_ci": [
+    0.0981,
+    0.115
+   ],
+   "mean_width_mean": 2.4551,
+   "mean_width_sd": 0.3365,
+   "mean_width_ci": [
+    2.3499,
+    2.5594
+   ],
+   "median_width_mean": 2.4782,
+   "median_width_sd": 0.3519,
+   "median_width_ci": [
+    2.3686,
+    2.5875
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7937,
+   "value_worst_coverage_sd": 0.0636,
+   "value_worst_coverage_ci": [
+    0.7732,
+    0.8136
+   ],
+   "eff_sample_size_mean": 836.9925,
+   "eff_sample_size_sd": 6.3498,
+   "eff_sample_size_ci": [
+    835.0329,
+    838.9629
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "weighted_disc",
+   "n": 40,
+   "marginal_coverage_mean": 0.8558,
+   "marginal_coverage_sd": 0.0541,
+   "marginal_coverage_ci": [
+    0.838,
+    0.8719
+   ],
+   "marginal_gap_mean": 0.0058,
+   "marginal_gap_sd": 0.0248,
+   "marginal_gap_ci": [
+    -0.0019,
+    0.013
+   ],
+   "worst_stratum_coverage_mean": 0.7566,
+   "worst_stratum_coverage_sd": 0.0742,
+   "worst_stratum_coverage_ci": [
+    0.7331,
+    0.7784
+   ],
+   "max_stratum_gap_mean": 0.1116,
+   "max_stratum_gap_sd": 0.0324,
+   "max_stratum_gap_ci": [
+    0.1021,
+    0.1218
+   ],
+   "mean_width_mean": 2.4395,
+   "mean_width_sd": 0.3596,
+   "mean_width_ci": [
+    2.3253,
+    2.5466
+   ],
+   "median_width_mean": 2.4587,
+   "median_width_sd": 0.3734,
+   "median_width_ci": [
+    2.34,
+    2.5698
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7907,
+   "value_worst_coverage_sd": 0.0657,
+   "value_worst_coverage_ci": [
+    0.7691,
+    0.8102
+   ],
+   "eff_sample_size_mean": 331.4807,
+   "eff_sample_size_sd": 216.5732,
+   "eff_sample_size_ci": [
+    267.1298,
+    401.5527
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "weighted_kde",
+   "n": 40,
+   "marginal_coverage_mean": 0.9925,
+   "marginal_coverage_sd": 0.0056,
+   "marginal_coverage_ci": [
+    0.9907,
+    0.9942
+   ],
+   "marginal_gap_mean": 0.1425,
+   "marginal_gap_sd": 0.0467,
+   "marginal_gap_ci": [
+    0.1282,
+    0.1564
+   ],
+   "worst_stratum_coverage_mean": 0.9845,
+   "worst_stratum_coverage_sd": 0.0105,
+   "worst_stratum_coverage_ci": [
+    0.9812,
+    0.9877
+   ],
+   "max_stratum_gap_mean": 0.1483,
+   "max_stratum_gap_sd": 0.0493,
+   "max_stratum_gap_ci": [
+    0.1334,
+    0.163
+   ],
+   "mean_width_mean": 5.7201,
+   "mean_width_sd": 0.1279,
+   "mean_width_ci": [
+    5.6793,
+    5.759
+   ],
+   "median_width_mean": 5.99,
+   "median_width_sd": 0.0226,
+   "median_width_ci": [
+    5.9825,
+    5.996
+   ],
+   "saturated_fraction_mean": 0.9127,
+   "saturated_fraction_sd": 0.0327,
+   "saturated_fraction_ci": [
+    0.9018,
+    0.9227
+   ],
+   "value_worst_coverage_mean": 0.9856,
+   "value_worst_coverage_sd": 0.0098,
+   "value_worst_coverage_ci": [
+    0.9825,
+    0.9885
+   ],
+   "eff_sample_size_mean": 743.8196,
+   "eff_sample_size_sd": 14.3845,
+   "eff_sample_size_ci": [
+    738.9731,
+    747.6621
+   ]
+  },
+  {
+   "dataset": "lipophilicity",
+   "method": "weighted_logistic",
+   "n": 40,
+   "marginal_coverage_mean": 0.8622,
+   "marginal_coverage_sd": 0.0533,
+   "marginal_coverage_ci": [
+    0.845,
+    0.8778
+   ],
+   "marginal_gap_mean": 0.0122,
+   "marginal_gap_sd": 0.0221,
+   "marginal_gap_ci": [
+    0.0055,
+    0.0186
+   ],
+   "worst_stratum_coverage_mean": 0.7648,
+   "worst_stratum_coverage_sd": 0.0722,
+   "worst_stratum_coverage_ci": [
+    0.7416,
+    0.7866
+   ],
+   "max_stratum_gap_mean": 0.1066,
+   "max_stratum_gap_sd": 0.0292,
+   "max_stratum_gap_ci": [
+    0.0983,
+    0.1155
+   ],
+   "mean_width_mean": 2.4835,
+   "mean_width_sd": 0.3688,
+   "mean_width_ci": [
+    2.3659,
+    2.5934
+   ],
+   "median_width_mean": 2.495,
+   "median_width_sd": 0.38,
+   "median_width_ci": [
+    2.373,
+    2.6099
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7998,
+   "value_worst_coverage_sd": 0.0663,
+   "value_worst_coverage_ci": [
+    0.7779,
+    0.8196
+   ],
+   "eff_sample_size_mean": 204.3999,
+   "eff_sample_size_sd": 139.7154,
+   "eff_sample_size_ci": [
+    161.8981,
+    247.1673
+   ]
+  }
+ ],
+ "temporal_by_dataset_method": [
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "adecp",
+   "n": 10,
+   "marginal_coverage_mean": 0.739,
+   "marginal_coverage_sd": 0.0846,
+   "marginal_coverage_ci": [
+    0.6899,
+    0.79
+   ],
+   "marginal_gap_mean": -0.111,
+   "marginal_gap_sd": 0.0378,
+   "marginal_gap_ci": [
+    -0.1332,
+    -0.0878
+   ],
+   "worst_stratum_coverage_mean": 0.715,
+   "worst_stratum_coverage_sd": 0.0772,
+   "worst_stratum_coverage_ci": [
+    0.6694,
+    0.7618
+   ],
+   "max_stratum_gap_mean": 0.1355,
+   "max_stratum_gap_sd": 0.0365,
+   "max_stratum_gap_ci": [
+    0.1138,
+    0.156
+   ],
+   "mean_width_mean": 2.6812,
+   "mean_width_sd": 0.385,
+   "mean_width_ci": [
+    2.4513,
+    2.9085
+   ],
+   "median_width_mean": 2.721,
+   "median_width_sd": 0.3945,
+   "median_width_ci": [
+    2.4866,
+    2.9522
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5941,
+   "value_worst_coverage_sd": 0.0977,
+   "value_worst_coverage_ci": [
+    0.5374,
+    0.6539
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "adwcp",
+   "n": 10,
+   "marginal_coverage_mean": 0.6522,
+   "marginal_coverage_sd": 0.1205,
+   "marginal_coverage_ci": [
+    0.5832,
+    0.7255
+   ],
+   "marginal_gap_mean": -0.1978,
+   "marginal_gap_sd": 0.078,
+   "marginal_gap_ci": [
+    -0.2433,
+    -0.1523
+   ],
+   "worst_stratum_coverage_mean": 0.6332,
+   "worst_stratum_coverage_sd": 0.1158,
+   "worst_stratum_coverage_ci": [
+    0.5652,
+    0.7012
+   ],
+   "max_stratum_gap_mean": 0.2168,
+   "max_stratum_gap_sd": 0.075,
+   "max_stratum_gap_ci": [
+    0.1729,
+    0.2591
+   ],
+   "mean_width_mean": 2.4123,
+   "mean_width_sd": 0.6213,
+   "mean_width_ci": [
+    2.0555,
+    2.783
+   ],
+   "median_width_mean": 2.2401,
+   "median_width_sd": 0.5087,
+   "median_width_ci": [
+    1.9519,
+    2.5396
+   ],
+   "saturated_fraction_mean": 0.0441,
+   "saturated_fraction_sd": 0.048,
+   "saturated_fraction_ci": [
+    0.0164,
+    0.0728
+   ],
+   "value_worst_coverage_mean": 0.5121,
+   "value_worst_coverage_sd": 0.1223,
+   "value_worst_coverage_ci": [
+    0.4447,
+    0.5868
+   ],
+   "eff_sample_size_mean": 254.4551,
+   "eff_sample_size_sd": 6.7819,
+   "eff_sample_size_ci": [
+    250.0877,
+    258.0226
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "localized",
+   "n": 10,
+   "marginal_coverage_mean": 0.651,
+   "marginal_coverage_sd": 0.1012,
+   "marginal_coverage_ci": [
+    0.5922,
+    0.7098
+   ],
+   "marginal_gap_mean": -0.199,
+   "marginal_gap_sd": 0.0491,
+   "marginal_gap_ci": [
+    -0.2278,
+    -0.1692
+   ],
+   "worst_stratum_coverage_mean": 0.629,
+   "worst_stratum_coverage_sd": 0.1055,
+   "worst_stratum_coverage_ci": [
+    0.5678,
+    0.6907
+   ],
+   "max_stratum_gap_mean": 0.221,
+   "max_stratum_gap_sd": 0.0534,
+   "max_stratum_gap_ci": [
+    0.1888,
+    0.2522
+   ],
+   "mean_width_mean": 2.2964,
+   "mean_width_sd": 0.4455,
+   "mean_width_ci": [
+    2.0402,
+    2.5566
+   ],
+   "median_width_mean": 2.3297,
+   "median_width_sd": 0.469,
+   "median_width_ci": [
+    2.0578,
+    2.6041
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4979,
+   "value_worst_coverage_sd": 0.0863,
+   "value_worst_coverage_ci": [
+    0.4479,
+    0.5509
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "mondrian",
+   "n": 10,
+   "marginal_coverage_mean": 0.6884,
+   "marginal_coverage_sd": 0.0875,
+   "marginal_coverage_ci": [
+    0.6368,
+    0.7414
+   ],
+   "marginal_gap_mean": -0.1616,
+   "marginal_gap_sd": 0.0428,
+   "marginal_gap_ci": [
+    -0.1858,
+    -0.1361
+   ],
+   "worst_stratum_coverage_mean": 0.6746,
+   "worst_stratum_coverage_sd": 0.0914,
+   "worst_stratum_coverage_ci": [
+    0.6211,
+    0.7292
+   ],
+   "max_stratum_gap_mean": 0.1754,
+   "max_stratum_gap_sd": 0.047,
+   "max_stratum_gap_ci": [
+    0.1474,
+    0.2021
+   ],
+   "mean_width_mean": 2.4217,
+   "mean_width_sd": 0.3996,
+   "mean_width_ci": [
+    2.1901,
+    2.6626
+   ],
+   "median_width_mean": 2.5281,
+   "median_width_sd": 0.4576,
+   "median_width_ci": [
+    2.2643,
+    2.8061
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5308,
+   "value_worst_coverage_sd": 0.0835,
+   "value_worst_coverage_ci": [
+    0.484,
+    0.5822
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "normalized",
+   "n": 10,
+   "marginal_coverage_mean": 0.5894,
+   "marginal_coverage_sd": 0.0743,
+   "marginal_coverage_ci": [
+    0.5443,
+    0.633
+   ],
+   "marginal_gap_mean": -0.2606,
+   "marginal_gap_sd": 0.0236,
+   "marginal_gap_ci": [
+    -0.275,
+    -0.2465
+   ],
+   "worst_stratum_coverage_mean": 0.5676,
+   "worst_stratum_coverage_sd": 0.0757,
+   "worst_stratum_coverage_ci": [
+    0.5218,
+    0.6125
+   ],
+   "max_stratum_gap_mean": 0.2824,
+   "max_stratum_gap_sd": 0.0251,
+   "max_stratum_gap_ci": [
+    0.2675,
+    0.298
+   ],
+   "mean_width_mean": 2.1152,
+   "mean_width_sd": 0.3522,
+   "mean_width_ci": [
+    1.9069,
+    2.3265
+   ],
+   "median_width_mean": 2.0614,
+   "median_width_sd": 0.354,
+   "median_width_ci": [
+    1.8512,
+    2.2745
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4603,
+   "value_worst_coverage_sd": 0.0941,
+   "value_worst_coverage_ci": [
+    0.4061,
+    0.5173
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "raw_ensemble",
+   "n": 10,
+   "marginal_coverage_mean": 0.601,
+   "marginal_coverage_sd": 0.0882,
+   "marginal_coverage_ci": [
+    0.5491,
+    0.6534
+   ],
+   "marginal_gap_mean": -0.249,
+   "marginal_gap_sd": 0.0373,
+   "marginal_gap_ci": [
+    -0.2709,
+    -0.2267
+   ],
+   "worst_stratum_coverage_mean": 0.5762,
+   "worst_stratum_coverage_sd": 0.0915,
+   "worst_stratum_coverage_ci": [
+    0.5227,
+    0.6309
+   ],
+   "max_stratum_gap_mean": 0.2738,
+   "max_stratum_gap_sd": 0.0408,
+   "max_stratum_gap_ci": [
+    0.2498,
+    0.2973
+   ],
+   "mean_width_mean": 2.0764,
+   "mean_width_sd": 0.3635,
+   "mean_width_ci": [
+    1.8648,
+    2.2898
+   ],
+   "median_width_mean": 2.0982,
+   "median_width_sd": 0.3795,
+   "median_width_ci": [
+    1.8777,
+    2.3214
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4548,
+   "value_worst_coverage_sd": 0.0825,
+   "value_worst_coverage_ci": [
+    0.4075,
+    0.5049
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "split",
+   "n": 10,
+   "marginal_coverage_mean": 0.601,
+   "marginal_coverage_sd": 0.0882,
+   "marginal_coverage_ci": [
+    0.5491,
+    0.6534
+   ],
+   "marginal_gap_mean": -0.249,
+   "marginal_gap_sd": 0.0373,
+   "marginal_gap_ci": [
+    -0.2709,
+    -0.2267
+   ],
+   "worst_stratum_coverage_mean": 0.5762,
+   "worst_stratum_coverage_sd": 0.0915,
+   "worst_stratum_coverage_ci": [
+    0.5227,
+    0.6309
+   ],
+   "max_stratum_gap_mean": 0.2738,
+   "max_stratum_gap_sd": 0.0408,
+   "max_stratum_gap_ci": [
+    0.2498,
+    0.2973
+   ],
+   "mean_width_mean": 2.0764,
+   "mean_width_sd": 0.3635,
+   "mean_width_ci": [
+    1.8648,
+    2.2898
+   ],
+   "median_width_mean": 2.0982,
+   "median_width_sd": 0.3795,
+   "median_width_ci": [
+    1.8777,
+    2.3214
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4548,
+   "value_worst_coverage_sd": 0.0825,
+   "value_worst_coverage_ci": [
+    0.4075,
+    0.5049
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "weighted_ad",
+   "n": 10,
+   "marginal_coverage_mean": 0.7914,
+   "marginal_coverage_sd": 0.1106,
+   "marginal_coverage_ci": [
+    0.7188,
+    0.8515
+   ],
+   "marginal_gap_mean": -0.0586,
+   "marginal_gap_sd": 0.0906,
+   "marginal_gap_ci": [
+    -0.1169,
+    -0.0137
+   ],
+   "worst_stratum_coverage_mean": 0.7778,
+   "worst_stratum_coverage_sd": 0.1169,
+   "worst_stratum_coverage_ci": [
+    0.7016,
+    0.8416
+   ],
+   "max_stratum_gap_mean": 0.143,
+   "max_stratum_gap_sd": 0.067,
+   "max_stratum_gap_ci": [
+    0.1077,
+    0.1877
+   ],
+   "mean_width_mean": 2.9595,
+   "mean_width_sd": 0.5644,
+   "mean_width_ci": [
+    2.6063,
+    3.2799
+   ],
+   "median_width_mean": 3.0174,
+   "median_width_sd": 0.593,
+   "median_width_ci": [
+    2.6497,
+    3.3477
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6315,
+   "value_worst_coverage_sd": 0.1338,
+   "value_worst_coverage_ci": [
+    0.5553,
+    0.7119
+   ],
+   "eff_sample_size_mean": 500.1232,
+   "eff_sample_size_sd": 2.6597,
+   "eff_sample_size_ci": [
+    498.5362,
+    501.6284
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "weighted_disc",
+   "n": 10,
+   "marginal_coverage_mean": 0.5365,
+   "marginal_coverage_sd": 0.1044,
+   "marginal_coverage_ci": [
+    0.4742,
+    0.598
+   ],
+   "marginal_gap_mean": -0.3135,
+   "marginal_gap_sd": 0.0649,
+   "marginal_gap_ci": [
+    -0.3491,
+    -0.2753
+   ],
+   "worst_stratum_coverage_mean": 0.5112,
+   "worst_stratum_coverage_sd": 0.1066,
+   "worst_stratum_coverage_ci": [
+    0.4468,
+    0.5738
+   ],
+   "max_stratum_gap_mean": 0.3388,
+   "max_stratum_gap_sd": 0.0666,
+   "max_stratum_gap_ci": [
+    0.2997,
+    0.3751
+   ],
+   "mean_width_mean": 1.8175,
+   "mean_width_sd": 0.4046,
+   "mean_width_ci": [
+    1.5787,
+    2.0572
+   ],
+   "median_width_mean": 1.7791,
+   "median_width_sd": 0.383,
+   "median_width_ci": [
+    1.5536,
+    2.0085
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4061,
+   "value_worst_coverage_sd": 0.0959,
+   "value_worst_coverage_ci": [
+    0.349,
+    0.4632
+   ],
+   "eff_sample_size_mean": 254.4551,
+   "eff_sample_size_sd": 6.7819,
+   "eff_sample_size_ci": [
+    250.0877,
+    258.0226
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "weighted_kde",
+   "n": 10,
+   "marginal_coverage_mean": 0.9923,
+   "marginal_coverage_sd": 0.0047,
+   "marginal_coverage_ci": [
+    0.9895,
+    0.9951
+   ],
+   "marginal_gap_mean": 0.1423,
+   "marginal_gap_sd": 0.049,
+   "marginal_gap_ci": [
+    0.1141,
+    0.1706
+   ],
+   "worst_stratum_coverage_mean": 0.9084,
+   "worst_stratum_coverage_sd": 0.0363,
+   "worst_stratum_coverage_ci": [
+    0.8876,
+    0.9296
+   ],
+   "max_stratum_gap_mean": 0.1475,
+   "max_stratum_gap_sd": 0.051,
+   "max_stratum_gap_ci": [
+    0.1182,
+    0.1773
+   ],
+   "mean_width_mean": 6.45,
+   "mean_width_sd": 0.0808,
+   "mean_width_ci": [
+    6.4006,
+    6.4986
+   ],
+   "median_width_mean": 6.7,
+   "median_width_sd": 0.0,
+   "median_width_ci": [
+    6.7,
+    6.7
+   ],
+   "saturated_fraction_mean": 0.938,
+   "saturated_fraction_sd": 0.0127,
+   "saturated_fraction_ci": [
+    0.9301,
+    0.9459
+   ],
+   "value_worst_coverage_mean": 0.9808,
+   "value_worst_coverage_sd": 0.0103,
+   "value_worst_coverage_ci": [
+    0.9744,
+    0.9867
+   ],
+   "eff_sample_size_mean": 810.5416,
+   "eff_sample_size_sd": 2.9482,
+   "eff_sample_size_ci": [
+    808.916,
+    812.3322
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "lgbm",
+   "method": "weighted_logistic",
+   "n": 10,
+   "marginal_coverage_mean": 0.566,
+   "marginal_coverage_sd": 0.1067,
+   "marginal_coverage_ci": [
+    0.5053,
+    0.6314
+   ],
+   "marginal_gap_mean": -0.284,
+   "marginal_gap_sd": 0.0582,
+   "marginal_gap_ci": [
+    -0.3173,
+    -0.2492
+   ],
+   "worst_stratum_coverage_mean": 0.5422,
+   "worst_stratum_coverage_sd": 0.1103,
+   "worst_stratum_coverage_ci": [
+    0.4783,
+    0.6096
+   ],
+   "max_stratum_gap_mean": 0.3078,
+   "max_stratum_gap_sd": 0.0617,
+   "max_stratum_gap_ci": [
+    0.2704,
+    0.3434
+   ],
+   "mean_width_mean": 1.9317,
+   "mean_width_sd": 0.4331,
+   "mean_width_ci": [
+    1.68,
+    2.195
+   ],
+   "median_width_mean": 1.8488,
+   "median_width_sd": 0.3857,
+   "median_width_ci": [
+    1.6211,
+    2.0795
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.432,
+   "value_worst_coverage_sd": 0.0971,
+   "value_worst_coverage_ci": [
+    0.3772,
+    0.4914
+   ],
+   "eff_sample_size_mean": 265.0333,
+   "eff_sample_size_sd": 15.1811,
+   "eff_sample_size_ci": [
+    256.6778,
+    274.2594
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "adecp",
+   "n": 10,
+   "marginal_coverage_mean": 0.7364,
+   "marginal_coverage_sd": 0.087,
+   "marginal_coverage_ci": [
+    0.684,
+    0.7878
+   ],
+   "marginal_gap_mean": -0.1136,
+   "marginal_gap_sd": 0.0555,
+   "marginal_gap_ci": [
+    -0.1487,
+    -0.0826
+   ],
+   "worst_stratum_coverage_mean": 0.7085,
+   "worst_stratum_coverage_sd": 0.0763,
+   "worst_stratum_coverage_ci": [
+    0.663,
+    0.7531
+   ],
+   "max_stratum_gap_mean": 0.1415,
+   "max_stratum_gap_sd": 0.0466,
+   "max_stratum_gap_ci": [
+    0.1173,
+    0.1704
+   ],
+   "mean_width_mean": 2.5783,
+   "mean_width_sd": 0.3971,
+   "mean_width_ci": [
+    2.3414,
+    2.8136
+   ],
+   "median_width_mean": 2.5967,
+   "median_width_sd": 0.424,
+   "median_width_ci": [
+    2.3411,
+    2.8495
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6393,
+   "value_worst_coverage_sd": 0.0954,
+   "value_worst_coverage_ci": [
+    0.5857,
+    0.6957
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "adwcp",
+   "n": 10,
+   "marginal_coverage_mean": 0.6733,
+   "marginal_coverage_sd": 0.1208,
+   "marginal_coverage_ci": [
+    0.6011,
+    0.7453
+   ],
+   "marginal_gap_mean": -0.1767,
+   "marginal_gap_sd": 0.0717,
+   "marginal_gap_ci": [
+    -0.2191,
+    -0.1338
+   ],
+   "worst_stratum_coverage_mean": 0.6587,
+   "worst_stratum_coverage_sd": 0.1225,
+   "worst_stratum_coverage_ci": [
+    0.5858,
+    0.732
+   ],
+   "max_stratum_gap_mean": 0.1913,
+   "max_stratum_gap_sd": 0.0733,
+   "max_stratum_gap_ci": [
+    0.1469,
+    0.2342
+   ],
+   "mean_width_mean": 2.4173,
+   "mean_width_sd": 0.5825,
+   "mean_width_ci": [
+    2.0754,
+    2.7642
+   ],
+   "median_width_mean": 2.234,
+   "median_width_sd": 0.4426,
+   "median_width_ci": [
+    1.9655,
+    2.5093
+   ],
+   "saturated_fraction_mean": 0.0439,
+   "saturated_fraction_sd": 0.0479,
+   "saturated_fraction_ci": [
+    0.0164,
+    0.0728
+   ],
+   "value_worst_coverage_mean": 0.5752,
+   "value_worst_coverage_sd": 0.1337,
+   "value_worst_coverage_ci": [
+    0.4969,
+    0.6578
+   ],
+   "eff_sample_size_mean": 254.4551,
+   "eff_sample_size_sd": 6.7819,
+   "eff_sample_size_ci": [
+    250.0877,
+    258.0226
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "localized",
+   "n": 10,
+   "marginal_coverage_mean": 0.6935,
+   "marginal_coverage_sd": 0.1202,
+   "marginal_coverage_ci": [
+    0.6238,
+    0.7647
+   ],
+   "marginal_gap_mean": -0.1565,
+   "marginal_gap_sd": 0.0699,
+   "marginal_gap_ci": [
+    -0.1977,
+    -0.1153
+   ],
+   "worst_stratum_coverage_mean": 0.6739,
+   "worst_stratum_coverage_sd": 0.1253,
+   "worst_stratum_coverage_ci": [
+    0.6007,
+    0.7477
+   ],
+   "max_stratum_gap_mean": 0.1761,
+   "max_stratum_gap_sd": 0.0748,
+   "max_stratum_gap_ci": [
+    0.1323,
+    0.2194
+   ],
+   "mean_width_mean": 2.3891,
+   "mean_width_sd": 0.4909,
+   "mean_width_ci": [
+    2.1017,
+    2.678
+   ],
+   "median_width_mean": 2.4047,
+   "median_width_sd": 0.5026,
+   "median_width_ci": [
+    2.112,
+    2.6989
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5709,
+   "value_worst_coverage_sd": 0.1413,
+   "value_worst_coverage_ci": [
+    0.4902,
+    0.6545
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "mondrian",
+   "n": 10,
+   "marginal_coverage_mean": 0.7185,
+   "marginal_coverage_sd": 0.0939,
+   "marginal_coverage_ci": [
+    0.6644,
+    0.772
+   ],
+   "marginal_gap_mean": -0.1315,
+   "marginal_gap_sd": 0.053,
+   "marginal_gap_ci": [
+    -0.1603,
+    -0.0982
+   ],
+   "worst_stratum_coverage_mean": 0.705,
+   "worst_stratum_coverage_sd": 0.0957,
+   "worst_stratum_coverage_ci": [
+    0.6484,
+    0.7599
+   ],
+   "max_stratum_gap_mean": 0.145,
+   "max_stratum_gap_sd": 0.055,
+   "max_stratum_gap_ci": [
+    0.1115,
+    0.1757
+   ],
+   "mean_width_mean": 2.4814,
+   "mean_width_sd": 0.3977,
+   "mean_width_ci": [
+    2.2499,
+    2.713
+   ],
+   "median_width_mean": 2.5545,
+   "median_width_sd": 0.4315,
+   "median_width_ci": [
+    2.3062,
+    2.8068
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6049,
+   "value_worst_coverage_sd": 0.0988,
+   "value_worst_coverage_ci": [
+    0.5482,
+    0.665
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "normalized",
+   "n": 10,
+   "marginal_coverage_mean": 0.6424,
+   "marginal_coverage_sd": 0.0718,
+   "marginal_coverage_ci": [
+    0.5987,
+    0.6862
+   ],
+   "marginal_gap_mean": -0.2076,
+   "marginal_gap_sd": 0.0245,
+   "marginal_gap_ci": [
+    -0.2217,
+    -0.193
+   ],
+   "worst_stratum_coverage_mean": 0.6229,
+   "worst_stratum_coverage_sd": 0.0743,
+   "worst_stratum_coverage_ci": [
+    0.578,
+    0.6685
+   ],
+   "max_stratum_gap_mean": 0.2271,
+   "max_stratum_gap_sd": 0.0269,
+   "max_stratum_gap_ci": [
+    0.2111,
+    0.2424
+   ],
+   "mean_width_mean": 2.256,
+   "mean_width_sd": 0.3229,
+   "mean_width_ci": [
+    2.0632,
+    2.4555
+   ],
+   "median_width_mean": 2.1922,
+   "median_width_sd": 0.3328,
+   "median_width_ci": [
+    1.9928,
+    2.3987
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5337,
+   "value_worst_coverage_sd": 0.0908,
+   "value_worst_coverage_ci": [
+    0.4812,
+    0.5889
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "raw_ensemble",
+   "n": 10,
+   "marginal_coverage_mean": 0.7305,
+   "marginal_coverage_sd": 0.0822,
+   "marginal_coverage_ci": [
+    0.6819,
+    0.779
+   ],
+   "marginal_gap_mean": -0.1195,
+   "marginal_gap_sd": 0.0318,
+   "marginal_gap_ci": [
+    -0.1381,
+    -0.1008
+   ],
+   "worst_stratum_coverage_mean": 0.7084,
+   "worst_stratum_coverage_sd": 0.0756,
+   "worst_stratum_coverage_ci": [
+    0.6638,
+    0.7533
+   ],
+   "max_stratum_gap_mean": 0.1416,
+   "max_stratum_gap_sd": 0.0305,
+   "max_stratum_gap_ci": [
+    0.1219,
+    0.1578
+   ],
+   "mean_width_mean": 2.5125,
+   "mean_width_sd": 0.3191,
+   "mean_width_ci": [
+    2.3278,
+    2.6993
+   ],
+   "median_width_mean": 2.5201,
+   "median_width_sd": 0.3236,
+   "median_width_ci": [
+    2.3333,
+    2.7116
+   ],
+   "saturated_fraction_mean": 0.0001,
+   "saturated_fraction_sd": 0.0004,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0003
+   ],
+   "value_worst_coverage_mean": 0.5954,
+   "value_worst_coverage_sd": 0.0965,
+   "value_worst_coverage_ci": [
+    0.5386,
+    0.6548
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "split",
+   "n": 10,
+   "marginal_coverage_mean": 0.6238,
+   "marginal_coverage_sd": 0.0955,
+   "marginal_coverage_ci": [
+    0.5686,
+    0.6818
+   ],
+   "marginal_gap_mean": -0.2262,
+   "marginal_gap_sd": 0.0465,
+   "marginal_gap_ci": [
+    -0.2525,
+    -0.1993
+   ],
+   "worst_stratum_coverage_mean": 0.6006,
+   "worst_stratum_coverage_sd": 0.0995,
+   "worst_stratum_coverage_ci": [
+    0.5432,
+    0.6614
+   ],
+   "max_stratum_gap_mean": 0.2494,
+   "max_stratum_gap_sd": 0.0503,
+   "max_stratum_gap_ci": [
+    0.2203,
+    0.2775
+   ],
+   "mean_width_mean": 2.1161,
+   "mean_width_sd": 0.3605,
+   "mean_width_ci": [
+    1.9081,
+    2.3369
+   ],
+   "median_width_mean": 2.1207,
+   "median_width_sd": 0.3648,
+   "median_width_ci": [
+    1.9098,
+    2.3437
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.493,
+   "value_worst_coverage_sd": 0.1156,
+   "value_worst_coverage_ci": [
+    0.4266,
+    0.566
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "weighted_ad",
+   "n": 10,
+   "marginal_coverage_mean": 0.8001,
+   "marginal_coverage_sd": 0.1285,
+   "marginal_coverage_ci": [
+    0.7195,
+    0.8714
+   ],
+   "marginal_gap_mean": -0.0499,
+   "marginal_gap_sd": 0.1143,
+   "marginal_gap_ci": [
+    -0.1226,
+    0.0106
+   ],
+   "worst_stratum_coverage_mean": 0.7867,
+   "worst_stratum_coverage_sd": 0.1353,
+   "worst_stratum_coverage_ci": [
+    0.7015,
+    0.8623
+   ],
+   "max_stratum_gap_mean": 0.1601,
+   "max_stratum_gap_sd": 0.0677,
+   "max_stratum_gap_ci": [
+    0.1227,
+    0.2025
+   ],
+   "mean_width_mean": 2.8849,
+   "mean_width_sd": 0.6167,
+   "mean_width_ci": [
+    2.4967,
+    3.2265
+   ],
+   "median_width_mean": 2.877,
+   "median_width_sd": 0.638,
+   "median_width_ci": [
+    2.4898,
+    3.2406
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7046,
+   "value_worst_coverage_sd": 0.1526,
+   "value_worst_coverage_ci": [
+    0.6115,
+    0.7913
+   ],
+   "eff_sample_size_mean": 500.1232,
+   "eff_sample_size_sd": 2.6597,
+   "eff_sample_size_ci": [
+    498.5362,
+    501.6284
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "weighted_disc",
+   "n": 10,
+   "marginal_coverage_mean": 0.5376,
+   "marginal_coverage_sd": 0.1085,
+   "marginal_coverage_ci": [
+    0.4765,
+    0.6023
+   ],
+   "marginal_gap_mean": -0.3124,
+   "marginal_gap_sd": 0.0679,
+   "marginal_gap_ci": [
+    -0.3502,
+    -0.2736
+   ],
+   "worst_stratum_coverage_mean": 0.5123,
+   "worst_stratum_coverage_sd": 0.1119,
+   "worst_stratum_coverage_ci": [
+    0.4491,
+    0.5788
+   ],
+   "max_stratum_gap_mean": 0.3377,
+   "max_stratum_gap_sd": 0.0706,
+   "max_stratum_gap_ci": [
+    0.2972,
+    0.3774
+   ],
+   "mean_width_mean": 1.8029,
+   "mean_width_sd": 0.3852,
+   "mean_width_ci": [
+    1.5841,
+    2.0353
+   ],
+   "median_width_mean": 1.7549,
+   "median_width_sd": 0.3629,
+   "median_width_ci": [
+    1.5512,
+    1.9765
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4167,
+   "value_worst_coverage_sd": 0.1129,
+   "value_worst_coverage_ci": [
+    0.35,
+    0.4828
+   ],
+   "eff_sample_size_mean": 254.4551,
+   "eff_sample_size_sd": 6.7819,
+   "eff_sample_size_ci": [
+    250.0877,
+    258.0226
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "weighted_kde",
+   "n": 10,
+   "marginal_coverage_mean": 0.9936,
+   "marginal_coverage_sd": 0.004,
+   "marginal_coverage_ci": [
+    0.9911,
+    0.996
+   ],
+   "marginal_gap_mean": 0.1436,
+   "marginal_gap_sd": 0.0494,
+   "marginal_gap_ci": [
+    0.1152,
+    0.1719
+   ],
+   "worst_stratum_coverage_mean": 0.909,
+   "worst_stratum_coverage_sd": 0.0378,
+   "worst_stratum_coverage_ci": [
+    0.886,
+    0.9322
+   ],
+   "max_stratum_gap_mean": 0.149,
+   "max_stratum_gap_sd": 0.052,
+   "max_stratum_gap_ci": [
+    0.1192,
+    0.1789
+   ],
+   "mean_width_mean": 6.4558,
+   "mean_width_sd": 0.0802,
+   "mean_width_ci": [
+    6.4064,
+    6.5032
+   ],
+   "median_width_mean": 6.7,
+   "median_width_sd": 0.0,
+   "median_width_ci": [
+    6.7,
+    6.7
+   ],
+   "saturated_fraction_mean": 0.938,
+   "saturated_fraction_sd": 0.0127,
+   "saturated_fraction_ci": [
+    0.9301,
+    0.9459
+   ],
+   "value_worst_coverage_mean": 0.9817,
+   "value_worst_coverage_sd": 0.0114,
+   "value_worst_coverage_ci": [
+    0.9753,
+    0.9881
+   ],
+   "eff_sample_size_mean": 810.5416,
+   "eff_sample_size_sd": 2.9482,
+   "eff_sample_size_ci": [
+    808.916,
+    812.3322
+   ]
+  },
+  {
+   "dataset": "chembl_cox2",
+   "model": "rf",
+   "method": "weighted_logistic",
+   "n": 10,
+   "marginal_coverage_mean": 0.586,
+   "marginal_coverage_sd": 0.1066,
+   "marginal_coverage_ci": [
+    0.5239,
+    0.652
+   ],
+   "marginal_gap_mean": -0.264,
+   "marginal_gap_sd": 0.0618,
+   "marginal_gap_ci": [
+    -0.299,
+    -0.2263
+   ],
+   "worst_stratum_coverage_mean": 0.5626,
+   "worst_stratum_coverage_sd": 0.111,
+   "worst_stratum_coverage_ci": [
+    0.4982,
+    0.6309
+   ],
+   "max_stratum_gap_mean": 0.2874,
+   "max_stratum_gap_sd": 0.0656,
+   "max_stratum_gap_ci": [
+    0.2477,
+    0.3252
+   ],
+   "mean_width_mean": 1.9649,
+   "mean_width_sd": 0.3858,
+   "mean_width_ci": [
+    1.739,
+    2.2036
+   ],
+   "median_width_mean": 1.8666,
+   "median_width_sd": 0.3408,
+   "median_width_ci": [
+    1.6682,
+    2.0786
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.4656,
+   "value_worst_coverage_sd": 0.1269,
+   "value_worst_coverage_ci": [
+    0.3913,
+    0.5434
+   ],
+   "eff_sample_size_mean": 265.0333,
+   "eff_sample_size_sd": 15.1811,
+   "eff_sample_size_ci": [
+    256.6778,
+    274.2594
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "adecp",
+   "n": 10,
+   "marginal_coverage_mean": 0.8399,
+   "marginal_coverage_sd": 0.0605,
+   "marginal_coverage_ci": [
+    0.8047,
+    0.8757
+   ],
+   "marginal_gap_mean": -0.0101,
+   "marginal_gap_sd": 0.0116,
+   "marginal_gap_ci": [
+    -0.0166,
+    -0.0033
+   ],
+   "worst_stratum_coverage_mean": 0.7846,
+   "worst_stratum_coverage_sd": 0.0625,
+   "worst_stratum_coverage_ci": [
+    0.7491,
+    0.8214
+   ],
+   "max_stratum_gap_mean": 0.0654,
+   "max_stratum_gap_sd": 0.0296,
+   "max_stratum_gap_ci": [
+    0.0498,
+    0.0829
+   ],
+   "mean_width_mean": 2.6689,
+   "mean_width_sd": 0.3731,
+   "mean_width_ci": [
+    2.4561,
+    2.8954
+   ],
+   "median_width_mean": 2.8284,
+   "median_width_sd": 0.3979,
+   "median_width_ci": [
+    2.5989,
+    3.0671
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8121,
+   "value_worst_coverage_sd": 0.0722,
+   "value_worst_coverage_ci": [
+    0.7695,
+    0.8555
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "adwcp",
+   "n": 10,
+   "marginal_coverage_mean": 0.7655,
+   "marginal_coverage_sd": 0.0765,
+   "marginal_coverage_ci": [
+    0.7204,
+    0.811
+   ],
+   "marginal_gap_mean": -0.0845,
+   "marginal_gap_sd": 0.0254,
+   "marginal_gap_ci": [
+    -0.0995,
+    -0.0692
+   ],
+   "worst_stratum_coverage_mean": 0.7485,
+   "worst_stratum_coverage_sd": 0.0818,
+   "worst_stratum_coverage_ci": [
+    0.7002,
+    0.7967
+   ],
+   "max_stratum_gap_mean": 0.1015,
+   "max_stratum_gap_sd": 0.031,
+   "max_stratum_gap_ci": [
+    0.0834,
+    0.1199
+   ],
+   "mean_width_mean": 2.2665,
+   "mean_width_sd": 0.3674,
+   "mean_width_ci": [
+    2.0533,
+    2.4866
+   ],
+   "median_width_mean": 2.3145,
+   "median_width_sd": 0.3775,
+   "median_width_ci": [
+    2.0961,
+    2.5404
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7162,
+   "value_worst_coverage_sd": 0.0904,
+   "value_worst_coverage_ci": [
+    0.6609,
+    0.768
+   ],
+   "eff_sample_size_mean": 627.3747,
+   "eff_sample_size_sd": 27.6568,
+   "eff_sample_size_ci": [
+    610.7158,
+    642.3601
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "localized",
+   "n": 10,
+   "marginal_coverage_mean": 0.6755,
+   "marginal_coverage_sd": 0.0847,
+   "marginal_coverage_ci": [
+    0.6251,
+    0.7264
+   ],
+   "marginal_gap_mean": -0.1745,
+   "marginal_gap_sd": 0.0338,
+   "marginal_gap_ci": [
+    -0.1949,
+    -0.1538
+   ],
+   "worst_stratum_coverage_mean": 0.6453,
+   "worst_stratum_coverage_sd": 0.0912,
+   "worst_stratum_coverage_ci": [
+    0.5908,
+    0.6999
+   ],
+   "max_stratum_gap_mean": 0.2047,
+   "max_stratum_gap_sd": 0.0403,
+   "max_stratum_gap_ci": [
+    0.1801,
+    0.2289
+   ],
+   "mean_width_mean": 1.8906,
+   "mean_width_sd": 0.3288,
+   "mean_width_ci": [
+    1.6976,
+    2.0875
+   ],
+   "median_width_mean": 1.8952,
+   "median_width_sd": 0.3339,
+   "median_width_ci": [
+    1.6985,
+    2.0952
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.61,
+   "value_worst_coverage_sd": 0.0974,
+   "value_worst_coverage_ci": [
+    0.5503,
+    0.6675
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "mondrian",
+   "n": 10,
+   "marginal_coverage_mean": 0.7632,
+   "marginal_coverage_sd": 0.0734,
+   "marginal_coverage_ci": [
+    0.7203,
+    0.8057
+   ],
+   "marginal_gap_mean": -0.0868,
+   "marginal_gap_sd": 0.0229,
+   "marginal_gap_ci": [
+    -0.0999,
+    -0.074
+   ],
+   "worst_stratum_coverage_mean": 0.7502,
+   "worst_stratum_coverage_sd": 0.0775,
+   "worst_stratum_coverage_ci": [
+    0.7049,
+    0.7948
+   ],
+   "max_stratum_gap_mean": 0.0998,
+   "max_stratum_gap_sd": 0.0272,
+   "max_stratum_gap_ci": [
+    0.0844,
+    0.1153
+   ],
+   "mean_width_mean": 2.2436,
+   "mean_width_sd": 0.3391,
+   "mean_width_ci": [
+    2.0541,
+    2.4432
+   ],
+   "median_width_mean": 2.3365,
+   "median_width_sd": 0.356,
+   "median_width_ci": [
+    2.137,
+    2.5461
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7135,
+   "value_worst_coverage_sd": 0.0872,
+   "value_worst_coverage_ci": [
+    0.661,
+    0.764
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "normalized",
+   "n": 10,
+   "marginal_coverage_mean": 0.6796,
+   "marginal_coverage_sd": 0.0813,
+   "marginal_coverage_ci": [
+    0.6309,
+    0.7274
+   ],
+   "marginal_gap_mean": -0.1704,
+   "marginal_gap_sd": 0.0345,
+   "marginal_gap_ci": [
+    -0.1906,
+    -0.1489
+   ],
+   "worst_stratum_coverage_mean": 0.6602,
+   "worst_stratum_coverage_sd": 0.0843,
+   "worst_stratum_coverage_ci": [
+    0.6101,
+    0.7101
+   ],
+   "max_stratum_gap_mean": 0.1898,
+   "max_stratum_gap_sd": 0.0375,
+   "max_stratum_gap_ci": [
+    0.1668,
+    0.2115
+   ],
+   "mean_width_mean": 1.9856,
+   "mean_width_sd": 0.3419,
+   "mean_width_ci": [
+    1.7819,
+    2.1904
+   ],
+   "median_width_mean": 1.9354,
+   "median_width_sd": 0.3407,
+   "median_width_ci": [
+    1.7355,
+    2.1385
+   ],
+   "saturated_fraction_mean": 0.0001,
+   "saturated_fraction_sd": 0.0002,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0002
+   ],
+   "value_worst_coverage_mean": 0.6492,
+   "value_worst_coverage_sd": 0.0877,
+   "value_worst_coverage_ci": [
+    0.5974,
+    0.7012
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "raw_ensemble",
+   "n": 10,
+   "marginal_coverage_mean": 0.6562,
+   "marginal_coverage_sd": 0.0788,
+   "marginal_coverage_ci": [
+    0.6092,
+    0.7027
+   ],
+   "marginal_gap_mean": -0.1938,
+   "marginal_gap_sd": 0.0284,
+   "marginal_gap_ci": [
+    -0.2108,
+    -0.1771
+   ],
+   "worst_stratum_coverage_mean": 0.6244,
+   "worst_stratum_coverage_sd": 0.0847,
+   "worst_stratum_coverage_ci": [
+    0.5736,
+    0.675
+   ],
+   "max_stratum_gap_mean": 0.2256,
+   "max_stratum_gap_sd": 0.0342,
+   "max_stratum_gap_ci": [
+    0.2049,
+    0.2462
+   ],
+   "mean_width_mean": 1.81,
+   "mean_width_sd": 0.2941,
+   "mean_width_ci": [
+    1.6339,
+    1.9838
+   ],
+   "median_width_mean": 1.8148,
+   "median_width_sd": 0.2983,
+   "median_width_ci": [
+    1.6363,
+    1.9903
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5846,
+   "value_worst_coverage_sd": 0.0911,
+   "value_worst_coverage_ci": [
+    0.5296,
+    0.6395
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "split",
+   "n": 10,
+   "marginal_coverage_mean": 0.6562,
+   "marginal_coverage_sd": 0.0788,
+   "marginal_coverage_ci": [
+    0.6092,
+    0.7027
+   ],
+   "marginal_gap_mean": -0.1938,
+   "marginal_gap_sd": 0.0284,
+   "marginal_gap_ci": [
+    -0.2108,
+    -0.1771
+   ],
+   "worst_stratum_coverage_mean": 0.6244,
+   "worst_stratum_coverage_sd": 0.0847,
+   "worst_stratum_coverage_ci": [
+    0.5736,
+    0.675
+   ],
+   "max_stratum_gap_mean": 0.2256,
+   "max_stratum_gap_sd": 0.0342,
+   "max_stratum_gap_ci": [
+    0.2049,
+    0.2462
+   ],
+   "mean_width_mean": 1.81,
+   "mean_width_sd": 0.2941,
+   "mean_width_ci": [
+    1.6339,
+    1.9838
+   ],
+   "median_width_mean": 1.8148,
+   "median_width_sd": 0.2983,
+   "median_width_ci": [
+    1.6363,
+    1.9903
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.5846,
+   "value_worst_coverage_sd": 0.0911,
+   "value_worst_coverage_ci": [
+    0.5296,
+    0.6395
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "weighted_ad",
+   "n": 10,
+   "marginal_coverage_mean": 0.8689,
+   "marginal_coverage_sd": 0.0696,
+   "marginal_coverage_ci": [
+    0.8282,
+    0.9102
+   ],
+   "marginal_gap_mean": 0.0189,
+   "marginal_gap_sd": 0.044,
+   "marginal_gap_ci": [
+    -0.0073,
+    0.0441
+   ],
+   "worst_stratum_coverage_mean": 0.8565,
+   "worst_stratum_coverage_sd": 0.0759,
+   "worst_stratum_coverage_ci": [
+    0.8117,
+    0.9013
+   ],
+   "max_stratum_gap_mean": 0.1214,
+   "max_stratum_gap_sd": 0.0394,
+   "max_stratum_gap_ci": [
+    0.0979,
+    0.1453
+   ],
+   "mean_width_mean": 2.9547,
+   "mean_width_sd": 0.6269,
+   "mean_width_ci": [
+    2.6165,
+    3.3476
+   ],
+   "median_width_mean": 2.9931,
+   "median_width_sd": 0.6845,
+   "median_width_ci": [
+    2.6323,
+    3.4282
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8327,
+   "value_worst_coverage_sd": 0.0761,
+   "value_worst_coverage_ci": [
+    0.7896,
+    0.8785
+   ],
+   "eff_sample_size_mean": 870.6408,
+   "eff_sample_size_sd": 11.1286,
+   "eff_sample_size_ci": [
+    864.9995,
+    877.4653
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "weighted_disc",
+   "n": 10,
+   "marginal_coverage_mean": 0.7056,
+   "marginal_coverage_sd": 0.0821,
+   "marginal_coverage_ci": [
+    0.6562,
+    0.7552
+   ],
+   "marginal_gap_mean": -0.1444,
+   "marginal_gap_sd": 0.0313,
+   "marginal_gap_ci": [
+    -0.1637,
+    -0.1249
+   ],
+   "worst_stratum_coverage_mean": 0.6775,
+   "worst_stratum_coverage_sd": 0.0892,
+   "worst_stratum_coverage_ci": [
+    0.6242,
+    0.7316
+   ],
+   "max_stratum_gap_mean": 0.1725,
+   "max_stratum_gap_sd": 0.0384,
+   "max_stratum_gap_ci": [
+    0.149,
+    0.1954
+   ],
+   "mean_width_mean": 2.0197,
+   "mean_width_sd": 0.3422,
+   "mean_width_ci": [
+    1.8156,
+    2.2244
+   ],
+   "median_width_mean": 2.0188,
+   "median_width_sd": 0.346,
+   "median_width_ci": [
+    1.8129,
+    2.2258
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6446,
+   "value_worst_coverage_sd": 0.097,
+   "value_worst_coverage_ci": [
+    0.5857,
+    0.7027
+   ],
+   "eff_sample_size_mean": 627.3747,
+   "eff_sample_size_sd": 27.6568,
+   "eff_sample_size_ci": [
+    610.7158,
+    642.3601
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "weighted_kde",
+   "n": 10,
+   "marginal_coverage_mean": 0.9816,
+   "marginal_coverage_sd": 0.0113,
+   "marginal_coverage_ci": [
+    0.9744,
+    0.9882
+   ],
+   "marginal_gap_mean": 0.1316,
+   "marginal_gap_sd": 0.0432,
+   "marginal_gap_ci": [
+    0.1065,
+    0.157
+   ],
+   "worst_stratum_coverage_mean": 0.93,
+   "worst_stratum_coverage_sd": 0.0414,
+   "worst_stratum_coverage_ci": [
+    0.9053,
+    0.9539
+   ],
+   "max_stratum_gap_mean": 0.138,
+   "max_stratum_gap_sd": 0.0451,
+   "max_stratum_gap_ci": [
+    0.1118,
+    0.1641
+   ],
+   "mean_width_mean": 5.5376,
+   "mean_width_sd": 0.1497,
+   "mean_width_ci": [
+    5.4454,
+    5.6241
+   ],
+   "median_width_mean": 5.838,
+   "median_width_sd": 0.0155,
+   "median_width_ci": [
+    5.829,
+    5.847
+   ],
+   "saturated_fraction_mean": 0.9208,
+   "saturated_fraction_sd": 0.031,
+   "saturated_fraction_ci": [
+    0.9024,
+    0.9392
+   ],
+   "value_worst_coverage_mean": 0.971,
+   "value_worst_coverage_sd": 0.0189,
+   "value_worst_coverage_ci": [
+    0.9592,
+    0.9822
+   ],
+   "eff_sample_size_mean": 1807.5603,
+   "eff_sample_size_sd": 17.5147,
+   "eff_sample_size_ci": [
+    1797.0457,
+    1816.8635
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "lgbm",
+   "method": "weighted_logistic",
+   "n": 10,
+   "marginal_coverage_mean": 0.7085,
+   "marginal_coverage_sd": 0.0811,
+   "marginal_coverage_ci": [
+    0.6604,
+    0.7577
+   ],
+   "marginal_gap_mean": -0.1415,
+   "marginal_gap_sd": 0.0319,
+   "marginal_gap_ci": [
+    -0.1597,
+    -0.122
+   ],
+   "worst_stratum_coverage_mean": 0.6808,
+   "worst_stratum_coverage_sd": 0.0884,
+   "worst_stratum_coverage_ci": [
+    0.6282,
+    0.734
+   ],
+   "max_stratum_gap_mean": 0.1692,
+   "max_stratum_gap_sd": 0.039,
+   "max_stratum_gap_ci": [
+    0.1457,
+    0.1914
+   ],
+   "mean_width_mean": 2.0322,
+   "mean_width_sd": 0.3316,
+   "mean_width_ci": [
+    1.8345,
+    2.2321
+   ],
+   "median_width_mean": 2.0184,
+   "median_width_sd": 0.3278,
+   "median_width_ci": [
+    1.8234,
+    2.2182
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.65,
+   "value_worst_coverage_sd": 0.1008,
+   "value_worst_coverage_ci": [
+    0.5892,
+    0.7084
+   ],
+   "eff_sample_size_mean": 490.2265,
+   "eff_sample_size_sd": 50.7022,
+   "eff_sample_size_ci": [
+    461.6208,
+    520.7583
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "adecp",
+   "n": 10,
+   "marginal_coverage_mean": 0.8474,
+   "marginal_coverage_sd": 0.0521,
+   "marginal_coverage_ci": [
+    0.8175,
+    0.8778
+   ],
+   "marginal_gap_mean": -0.0026,
+   "marginal_gap_sd": 0.0114,
+   "marginal_gap_ci": [
+    -0.0089,
+    0.0039
+   ],
+   "worst_stratum_coverage_mean": 0.8045,
+   "worst_stratum_coverage_sd": 0.063,
+   "worst_stratum_coverage_ci": [
+    0.7674,
+    0.8413
+   ],
+   "max_stratum_gap_mean": 0.0499,
+   "max_stratum_gap_sd": 0.0215,
+   "max_stratum_gap_ci": [
+    0.0372,
+    0.0619
+   ],
+   "mean_width_mean": 2.6444,
+   "mean_width_sd": 0.3391,
+   "mean_width_ci": [
+    2.4504,
+    2.8472
+   ],
+   "median_width_mean": 2.7838,
+   "median_width_sd": 0.3497,
+   "median_width_ci": [
+    2.5863,
+    2.9937
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8083,
+   "value_worst_coverage_sd": 0.0633,
+   "value_worst_coverage_ci": [
+    0.7714,
+    0.8447
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "adwcp",
+   "n": 10,
+   "marginal_coverage_mean": 0.7907,
+   "marginal_coverage_sd": 0.0742,
+   "marginal_coverage_ci": [
+    0.7461,
+    0.8333
+   ],
+   "marginal_gap_mean": -0.0593,
+   "marginal_gap_sd": 0.0252,
+   "marginal_gap_ci": [
+    -0.0739,
+    -0.0447
+   ],
+   "worst_stratum_coverage_mean": 0.7773,
+   "worst_stratum_coverage_sd": 0.0789,
+   "worst_stratum_coverage_ci": [
+    0.7301,
+    0.8227
+   ],
+   "max_stratum_gap_mean": 0.0812,
+   "max_stratum_gap_sd": 0.0241,
+   "max_stratum_gap_ci": [
+    0.0668,
+    0.0952
+   ],
+   "mean_width_mean": 2.2913,
+   "mean_width_sd": 0.3701,
+   "mean_width_ci": [
+    2.0726,
+    2.5075
+   ],
+   "median_width_mean": 2.3428,
+   "median_width_sd": 0.375,
+   "median_width_ci": [
+    2.1193,
+    2.5634
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7558,
+   "value_worst_coverage_sd": 0.0764,
+   "value_worst_coverage_ci": [
+    0.7116,
+    0.8008
+   ],
+   "eff_sample_size_mean": 627.3747,
+   "eff_sample_size_sd": 27.6568,
+   "eff_sample_size_ci": [
+    610.7158,
+    642.3601
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "localized",
+   "n": 10,
+   "marginal_coverage_mean": 0.7097,
+   "marginal_coverage_sd": 0.0899,
+   "marginal_coverage_ci": [
+    0.6564,
+    0.7627
+   ],
+   "marginal_gap_mean": -0.1403,
+   "marginal_gap_sd": 0.0384,
+   "marginal_gap_ci": [
+    -0.1635,
+    -0.117
+   ],
+   "worst_stratum_coverage_mean": 0.6836,
+   "worst_stratum_coverage_sd": 0.0969,
+   "worst_stratum_coverage_ci": [
+    0.6261,
+    0.7405
+   ],
+   "max_stratum_gap_mean": 0.1664,
+   "max_stratum_gap_sd": 0.0455,
+   "max_stratum_gap_ci": [
+    0.1389,
+    0.1938
+   ],
+   "mean_width_mean": 1.953,
+   "mean_width_sd": 0.3613,
+   "mean_width_ci": [
+    1.7394,
+    2.1689
+   ],
+   "median_width_mean": 1.9613,
+   "median_width_sd": 0.3674,
+   "median_width_ci": [
+    1.7445,
+    2.1797
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6713,
+   "value_worst_coverage_sd": 0.0938,
+   "value_worst_coverage_ci": [
+    0.6155,
+    0.7262
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "mondrian",
+   "n": 10,
+   "marginal_coverage_mean": 0.8027,
+   "marginal_coverage_sd": 0.0684,
+   "marginal_coverage_ci": [
+    0.7608,
+    0.844
+   ],
+   "marginal_gap_mean": -0.0473,
+   "marginal_gap_sd": 0.0222,
+   "marginal_gap_ci": [
+    -0.0605,
+    -0.0346
+   ],
+   "worst_stratum_coverage_mean": 0.7916,
+   "worst_stratum_coverage_sd": 0.0689,
+   "worst_stratum_coverage_ci": [
+    0.7494,
+    0.8321
+   ],
+   "max_stratum_gap_mean": 0.0617,
+   "max_stratum_gap_sd": 0.021,
+   "max_stratum_gap_ci": [
+    0.05,
+    0.0744
+   ],
+   "mean_width_mean": 2.34,
+   "mean_width_sd": 0.3491,
+   "mean_width_ci": [
+    2.1298,
+    2.5514
+   ],
+   "median_width_mean": 2.4503,
+   "median_width_sd": 0.3672,
+   "median_width_ci": [
+    2.2284,
+    2.6763
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7689,
+   "value_worst_coverage_sd": 0.0722,
+   "value_worst_coverage_ci": [
+    0.7255,
+    0.8129
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "normalized",
+   "n": 10,
+   "marginal_coverage_mean": 0.7165,
+   "marginal_coverage_sd": 0.072,
+   "marginal_coverage_ci": [
+    0.674,
+    0.761
+   ],
+   "marginal_gap_mean": -0.1335,
+   "marginal_gap_sd": 0.0247,
+   "marginal_gap_ci": [
+    -0.147,
+    -0.1184
+   ],
+   "worst_stratum_coverage_mean": 0.6994,
+   "worst_stratum_coverage_sd": 0.0759,
+   "worst_stratum_coverage_ci": [
+    0.6546,
+    0.7457
+   ],
+   "max_stratum_gap_mean": 0.1506,
+   "max_stratum_gap_sd": 0.0293,
+   "max_stratum_gap_ci": [
+    0.133,
+    0.1669
+   ],
+   "mean_width_mean": 2.0872,
+   "mean_width_sd": 0.3446,
+   "mean_width_ci": [
+    1.8857,
+    2.2964
+   ],
+   "median_width_mean": 2.0758,
+   "median_width_sd": 0.3501,
+   "median_width_ci": [
+    1.8683,
+    2.2883
+   ],
+   "saturated_fraction_mean": 0.0003,
+   "saturated_fraction_sd": 0.0005,
+   "saturated_fraction_ci": [
+    0.0001,
+    0.0006
+   ],
+   "value_worst_coverage_mean": 0.6788,
+   "value_worst_coverage_sd": 0.072,
+   "value_worst_coverage_ci": [
+    0.6373,
+    0.7224
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "raw_ensemble",
+   "n": 10,
+   "marginal_coverage_mean": 0.8217,
+   "marginal_coverage_sd": 0.0478,
+   "marginal_coverage_ci": [
+    0.7927,
+    0.8502
+   ],
+   "marginal_gap_mean": -0.0283,
+   "marginal_gap_sd": 0.0097,
+   "marginal_gap_ci": [
+    -0.0339,
+    -0.0221
+   ],
+   "worst_stratum_coverage_mean": 0.6972,
+   "worst_stratum_coverage_sd": 0.0457,
+   "worst_stratum_coverage_ci": [
+    0.6696,
+    0.7222
+   ],
+   "max_stratum_gap_mean": 0.1528,
+   "max_stratum_gap_sd": 0.0367,
+   "max_stratum_gap_ci": [
+    0.1299,
+    0.1732
+   ],
+   "mean_width_mean": 2.5345,
+   "mean_width_sd": 0.326,
+   "mean_width_ci": [
+    2.3447,
+    2.7285
+   ],
+   "median_width_mean": 2.7016,
+   "median_width_sd": 0.3467,
+   "median_width_ci": [
+    2.4986,
+    2.9072
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7393,
+   "value_worst_coverage_sd": 0.0502,
+   "value_worst_coverage_ci": [
+    0.7097,
+    0.7698
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "split",
+   "n": 10,
+   "marginal_coverage_mean": 0.688,
+   "marginal_coverage_sd": 0.0853,
+   "marginal_coverage_ci": [
+    0.6374,
+    0.7388
+   ],
+   "marginal_gap_mean": -0.162,
+   "marginal_gap_sd": 0.0346,
+   "marginal_gap_ci": [
+    -0.1825,
+    -0.1411
+   ],
+   "worst_stratum_coverage_mean": 0.6599,
+   "worst_stratum_coverage_sd": 0.0917,
+   "worst_stratum_coverage_ci": [
+    0.6056,
+    0.7144
+   ],
+   "max_stratum_gap_mean": 0.1901,
+   "max_stratum_gap_sd": 0.0411,
+   "max_stratum_gap_ci": [
+    0.1652,
+    0.2142
+   ],
+   "mean_width_mean": 1.8658,
+   "mean_width_sd": 0.3292,
+   "mean_width_ci": [
+    1.67,
+    2.0647
+   ],
+   "median_width_mean": 1.8715,
+   "median_width_sd": 0.3349,
+   "median_width_ci": [
+    1.6723,
+    2.073
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6466,
+   "value_worst_coverage_sd": 0.0904,
+   "value_worst_coverage_ci": [
+    0.5925,
+    0.6999
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "weighted_ad",
+   "n": 10,
+   "marginal_coverage_mean": 0.8825,
+   "marginal_coverage_sd": 0.0643,
+   "marginal_coverage_ci": [
+    0.8444,
+    0.9191
+   ],
+   "marginal_gap_mean": 0.0325,
+   "marginal_gap_sd": 0.0424,
+   "marginal_gap_ci": [
+    0.0097,
+    0.0578
+   ],
+   "worst_stratum_coverage_mean": 0.8703,
+   "worst_stratum_coverage_sd": 0.0689,
+   "worst_stratum_coverage_ci": [
+    0.8295,
+    0.9099
+   ],
+   "max_stratum_gap_mean": 0.1254,
+   "max_stratum_gap_sd": 0.0414,
+   "max_stratum_gap_ci": [
+    0.1008,
+    0.1493
+   ],
+   "mean_width_mean": 2.9901,
+   "mean_width_sd": 0.6484,
+   "mean_width_ci": [
+    2.6357,
+    3.3805
+   ],
+   "median_width_mean": 3.0043,
+   "median_width_sd": 0.6979,
+   "median_width_ci": [
+    2.628,
+    3.4441
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8569,
+   "value_worst_coverage_sd": 0.0676,
+   "value_worst_coverage_ci": [
+    0.8166,
+    0.8957
+   ],
+   "eff_sample_size_mean": 870.6408,
+   "eff_sample_size_sd": 11.1286,
+   "eff_sample_size_ci": [
+    864.9995,
+    877.4653
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "weighted_disc",
+   "n": 10,
+   "marginal_coverage_mean": 0.7361,
+   "marginal_coverage_sd": 0.0815,
+   "marginal_coverage_ci": [
+    0.6878,
+    0.7851
+   ],
+   "marginal_gap_mean": -0.1139,
+   "marginal_gap_sd": 0.0309,
+   "marginal_gap_ci": [
+    -0.1322,
+    -0.0953
+   ],
+   "worst_stratum_coverage_mean": 0.7116,
+   "worst_stratum_coverage_sd": 0.0887,
+   "worst_stratum_coverage_ci": [
+    0.6589,
+    0.7644
+   ],
+   "max_stratum_gap_mean": 0.1384,
+   "max_stratum_gap_sd": 0.0381,
+   "max_stratum_gap_ci": [
+    0.1156,
+    0.1611
+   ],
+   "mean_width_mean": 2.0606,
+   "mean_width_sd": 0.3502,
+   "mean_width_ci": [
+    1.8534,
+    2.2701
+   ],
+   "median_width_mean": 2.0648,
+   "median_width_sd": 0.3582,
+   "median_width_ci": [
+    1.8518,
+    2.2788
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7027,
+   "value_worst_coverage_sd": 0.0838,
+   "value_worst_coverage_ci": [
+    0.6522,
+    0.7526
+   ],
+   "eff_sample_size_mean": 627.3747,
+   "eff_sample_size_sd": 27.6568,
+   "eff_sample_size_ci": [
+    610.7158,
+    642.3601
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "weighted_kde",
+   "n": 10,
+   "marginal_coverage_mean": 0.9822,
+   "marginal_coverage_sd": 0.0101,
+   "marginal_coverage_ci": [
+    0.976,
+    0.9882
+   ],
+   "marginal_gap_mean": 0.1322,
+   "marginal_gap_sd": 0.0435,
+   "marginal_gap_ci": [
+    0.1071,
+    0.1575
+   ],
+   "worst_stratum_coverage_mean": 0.933,
+   "worst_stratum_coverage_sd": 0.0364,
+   "worst_stratum_coverage_ci": [
+    0.9106,
+    0.9544
+   ],
+   "max_stratum_gap_mean": 0.1383,
+   "max_stratum_gap_sd": 0.0453,
+   "max_stratum_gap_ci": [
+    0.1118,
+    0.1642
+   ],
+   "mean_width_mean": 5.5411,
+   "mean_width_sd": 0.1493,
+   "mean_width_ci": [
+    5.449,
+    5.627
+   ],
+   "median_width_mean": 5.838,
+   "median_width_sd": 0.0155,
+   "median_width_ci": [
+    5.829,
+    5.847
+   ],
+   "saturated_fraction_mean": 0.9208,
+   "saturated_fraction_sd": 0.031,
+   "saturated_fraction_ci": [
+    0.9024,
+    0.9392
+   ],
+   "value_worst_coverage_mean": 0.9731,
+   "value_worst_coverage_sd": 0.0163,
+   "value_worst_coverage_ci": [
+    0.9629,
+    0.983
+   ],
+   "eff_sample_size_mean": 1807.5603,
+   "eff_sample_size_sd": 17.5147,
+   "eff_sample_size_ci": [
+    1797.0457,
+    1816.8635
+   ]
+  },
+  {
+   "dataset": "chembl_vegfr2",
+   "model": "rf",
+   "method": "weighted_logistic",
+   "n": 10,
+   "marginal_coverage_mean": 0.743,
+   "marginal_coverage_sd": 0.0791,
+   "marginal_coverage_ci": [
+    0.6961,
+    0.7903
+   ],
+   "marginal_gap_mean": -0.107,
+   "marginal_gap_sd": 0.0297,
+   "marginal_gap_ci": [
+    -0.1251,
+    -0.0896
+   ],
+   "worst_stratum_coverage_mean": 0.7194,
+   "worst_stratum_coverage_sd": 0.0859,
+   "worst_stratum_coverage_ci": [
+    0.6683,
+    0.7705
+   ],
+   "max_stratum_gap_mean": 0.1311,
+   "max_stratum_gap_sd": 0.0367,
+   "max_stratum_gap_ci": [
+    0.1096,
+    0.1531
+   ],
+   "mean_width_mean": 2.0931,
+   "mean_width_sd": 0.344,
+   "mean_width_ci": [
+    1.8861,
+    2.3049
+   ],
+   "median_width_mean": 2.0853,
+   "median_width_sd": 0.3438,
+   "median_width_ci": [
+    1.8783,
+    2.2956
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7088,
+   "value_worst_coverage_sd": 0.0804,
+   "value_worst_coverage_ci": [
+    0.6609,
+    0.7571
+   ],
+   "eff_sample_size_mean": 490.2265,
+   "eff_sample_size_sd": 50.7022,
+   "eff_sample_size_ci": [
+    461.6208,
+    520.7583
+   ]
+  }
+ ],
+ "by_model_method_scaffold": [
+  {
+   "model": "lgbm",
+   "method": "adecp",
+   "n": 160,
+   "marginal_coverage_mean": 0.803,
+   "marginal_coverage_sd": 0.1319,
+   "marginal_coverage_ci": [
+    0.7814,
+    0.8213
+   ],
+   "marginal_gap_mean": -0.047,
+   "marginal_gap_sd": 0.1227,
+   "marginal_gap_ci": [
+    -0.0671,
+    -0.0288
+   ],
+   "worst_stratum_coverage_mean": 0.7003,
+   "worst_stratum_coverage_sd": 0.2042,
+   "worst_stratum_coverage_ci": [
+    0.6673,
+    0.7304
+   ],
+   "max_stratum_gap_mean": 0.1793,
+   "max_stratum_gap_sd": 0.1801,
+   "max_stratum_gap_ci": [
+    0.1528,
+    0.2082
+   ],
+   "mean_width_mean": 4.821,
+   "mean_width_sd": 3.3662,
+   "mean_width_ci": [
+    4.3029,
+    5.3622
+   ],
+   "median_width_mean": 4.8102,
+   "median_width_sd": 3.4707,
+   "median_width_ci": [
+    4.27,
+    5.3619
+   ],
+   "saturated_fraction_mean": 0.0033,
+   "saturated_fraction_sd": 0.0408,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0098
+   ],
+   "value_worst_coverage_mean": 0.6867,
+   "value_worst_coverage_sd": 0.2076,
+   "value_worst_coverage_ci": [
+    0.6527,
+    0.7138
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "adwcp",
+   "n": 160,
+   "marginal_coverage_mean": 0.8588,
+   "marginal_coverage_sd": 0.0904,
+   "marginal_coverage_ci": [
+    0.8452,
+    0.8735
+   ],
+   "marginal_gap_mean": 0.0088,
+   "marginal_gap_sd": 0.0779,
+   "marginal_gap_ci": [
+    -0.0027,
+    0.0222
+   ],
+   "worst_stratum_coverage_mean": 0.7822,
+   "worst_stratum_coverage_sd": 0.1379,
+   "worst_stratum_coverage_ci": [
+    0.7618,
+    0.8045
+   ],
+   "max_stratum_gap_mean": 0.1301,
+   "max_stratum_gap_sd": 0.0859,
+   "max_stratum_gap_ci": [
+    0.1176,
+    0.1435
+   ],
+   "mean_width_mean": 6.7686,
+   "mean_width_sd": 6.8859,
+   "mean_width_ci": [
+    5.7414,
+    7.9199
+   ],
+   "median_width_mean": 6.758,
+   "median_width_sd": 7.1571,
+   "median_width_ci": [
+    5.6652,
+    7.9208
+   ],
+   "saturated_fraction_mean": 0.1537,
+   "saturated_fraction_sd": 0.327,
+   "saturated_fraction_ci": [
+    0.1048,
+    0.2064
+   ],
+   "value_worst_coverage_mean": 0.7715,
+   "value_worst_coverage_sd": 0.145,
+   "value_worst_coverage_ci": [
+    0.751,
+    0.7941
+   ],
+   "eff_sample_size_mean": 197.8179,
+   "eff_sample_size_sd": 155.783,
+   "eff_sample_size_ci": [
+    175.7522,
+    221.3066
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "localized",
+   "n": 160,
+   "marginal_coverage_mean": 0.9328,
+   "marginal_coverage_sd": 0.0655,
+   "marginal_coverage_ci": [
+    0.9229,
+    0.9427
+   ],
+   "marginal_gap_mean": 0.0828,
+   "marginal_gap_sd": 0.0512,
+   "marginal_gap_ci": [
+    0.0761,
+    0.0913
+   ],
+   "worst_stratum_coverage_mean": 0.874,
+   "worst_stratum_coverage_sd": 0.1306,
+   "worst_stratum_coverage_ci": [
+    0.8542,
+    0.8935
+   ],
+   "max_stratum_gap_mean": 0.1339,
+   "max_stratum_gap_sd": 0.067,
+   "max_stratum_gap_ci": [
+    0.1243,
+    0.1448
+   ],
+   "mean_width_mean": 9.7307,
+   "mean_width_sd": 9.1044,
+   "mean_width_ci": [
+    8.3148,
+    11.1071
+   ],
+   "median_width_mean": 9.6957,
+   "median_width_sd": 9.2154,
+   "median_width_ci": [
+    8.276,
+    11.1395
+   ],
+   "saturated_fraction_mean": 0.3202,
+   "saturated_fraction_sd": 0.4415,
+   "saturated_fraction_ci": [
+    0.257,
+    0.39
+   ],
+   "value_worst_coverage_mean": 0.8785,
+   "value_worst_coverage_sd": 0.1235,
+   "value_worst_coverage_ci": [
+    0.8598,
+    0.8966
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "mondrian",
+   "n": 160,
+   "marginal_coverage_mean": 0.8075,
+   "marginal_coverage_sd": 0.1379,
+   "marginal_coverage_ci": [
+    0.7855,
+    0.8276
+   ],
+   "marginal_gap_mean": -0.0425,
+   "marginal_gap_sd": 0.1293,
+   "marginal_gap_ci": [
+    -0.0628,
+    -0.0235
+   ],
+   "worst_stratum_coverage_mean": 0.6954,
+   "worst_stratum_coverage_sd": 0.2105,
+   "worst_stratum_coverage_ci": [
+    0.6628,
+    0.7262
+   ],
+   "max_stratum_gap_mean": 0.1901,
+   "max_stratum_gap_sd": 0.1825,
+   "max_stratum_gap_ci": [
+    0.1638,
+    0.2181
+   ],
+   "mean_width_mean": 5.0233,
+   "mean_width_sd": 3.6428,
+   "mean_width_ci": [
+    4.4598,
+    5.5906
+   ],
+   "median_width_mean": 4.8541,
+   "median_width_sd": 3.6113,
+   "median_width_ci": [
+    4.3001,
+    5.4471
+   ],
+   "saturated_fraction_mean": 0.0044,
+   "saturated_fraction_sd": 0.0557,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0132
+   ],
+   "value_worst_coverage_mean": 0.6899,
+   "value_worst_coverage_sd": 0.2117,
+   "value_worst_coverage_ci": [
+    0.6567,
+    0.7207
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "normalized",
+   "n": 160,
+   "marginal_coverage_mean": 0.8397,
+   "marginal_coverage_sd": 0.1024,
+   "marginal_coverage_ci": [
+    0.8245,
+    0.8545
+   ],
+   "marginal_gap_mean": -0.0103,
+   "marginal_gap_sd": 0.0889,
+   "marginal_gap_ci": [
+    -0.0241,
+    0.0029
+   ],
+   "worst_stratum_coverage_mean": 0.7466,
+   "worst_stratum_coverage_sd": 0.1701,
+   "worst_stratum_coverage_ci": [
+    0.721,
+    0.7731
+   ],
+   "max_stratum_gap_mean": 0.1542,
+   "max_stratum_gap_sd": 0.1294,
+   "max_stratum_gap_ci": [
+    0.1337,
+    0.1747
+   ],
+   "mean_width_mean": 5.6987,
+   "mean_width_sd": 4.177,
+   "mean_width_ci": [
+    5.0664,
+    6.3796
+   ],
+   "median_width_mean": 5.6,
+   "median_width_sd": 4.2747,
+   "median_width_ci": [
+    4.9422,
+    6.3055
+   ],
+   "saturated_fraction_mean": 0.0155,
+   "saturated_fraction_sd": 0.0784,
+   "saturated_fraction_ci": [
+    0.0055,
+    0.0292
+   ],
+   "value_worst_coverage_mean": 0.7394,
+   "value_worst_coverage_sd": 0.1767,
+   "value_worst_coverage_ci": [
+    0.7127,
+    0.7654
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "raw_ensemble",
+   "n": 160,
+   "marginal_coverage_mean": 0.8066,
+   "marginal_coverage_sd": 0.1479,
+   "marginal_coverage_ci": [
+    0.7838,
+    0.8283
+   ],
+   "marginal_gap_mean": -0.0434,
+   "marginal_gap_sd": 0.1403,
+   "marginal_gap_ci": [
+    -0.065,
+    -0.0229
+   ],
+   "worst_stratum_coverage_mean": 0.6952,
+   "worst_stratum_coverage_sd": 0.202,
+   "worst_stratum_coverage_ci": [
+    0.6651,
+    0.7253
+   ],
+   "max_stratum_gap_mean": 0.1897,
+   "max_stratum_gap_sd": 0.1723,
+   "max_stratum_gap_ci": [
+    0.1649,
+    0.2156
+   ],
+   "mean_width_mean": 4.8519,
+   "mean_width_sd": 3.284,
+   "mean_width_ci": [
+    4.3598,
+    5.4028
+   ],
+   "median_width_mean": 4.8956,
+   "median_width_sd": 3.3214,
+   "median_width_ci": [
+    4.3996,
+    5.4544
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6864,
+   "value_worst_coverage_sd": 0.2172,
+   "value_worst_coverage_ci": [
+    0.6528,
+    0.7165
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "split",
+   "n": 160,
+   "marginal_coverage_mean": 0.8066,
+   "marginal_coverage_sd": 0.1479,
+   "marginal_coverage_ci": [
+    0.7838,
+    0.8283
+   ],
+   "marginal_gap_mean": -0.0434,
+   "marginal_gap_sd": 0.1403,
+   "marginal_gap_ci": [
+    -0.065,
+    -0.0229
+   ],
+   "worst_stratum_coverage_mean": 0.6952,
+   "worst_stratum_coverage_sd": 0.202,
+   "worst_stratum_coverage_ci": [
+    0.6651,
+    0.7253
+   ],
+   "max_stratum_gap_mean": 0.1897,
+   "max_stratum_gap_sd": 0.1723,
+   "max_stratum_gap_ci": [
+    0.1649,
+    0.2156
+   ],
+   "mean_width_mean": 4.8519,
+   "mean_width_sd": 3.284,
+   "mean_width_ci": [
+    4.3598,
+    5.4028
+   ],
+   "median_width_mean": 4.8956,
+   "median_width_sd": 3.3214,
+   "median_width_ci": [
+    4.3996,
+    5.4544
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.6864,
+   "value_worst_coverage_sd": 0.2172,
+   "value_worst_coverage_ci": [
+    0.6528,
+    0.7165
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "weighted_ad",
+   "n": 160,
+   "marginal_coverage_mean": 0.8095,
+   "marginal_coverage_sd": 0.1425,
+   "marginal_coverage_ci": [
+    0.788,
+    0.8297
+   ],
+   "marginal_gap_mean": -0.0405,
+   "marginal_gap_sd": 0.1338,
+   "marginal_gap_ci": [
+    -0.0613,
+    -0.0209
+   ],
+   "worst_stratum_coverage_mean": 0.6952,
+   "worst_stratum_coverage_sd": 0.2031,
+   "worst_stratum_coverage_ci": [
+    0.6647,
+    0.7242
+   ],
+   "max_stratum_gap_mean": 0.1904,
+   "max_stratum_gap_sd": 0.1714,
+   "max_stratum_gap_ci": [
+    0.1658,
+    0.217
+   ],
+   "mean_width_mean": 4.9804,
+   "mean_width_sd": 3.6672,
+   "mean_width_ci": [
+    4.4314,
+    5.5876
+   ],
+   "median_width_mean": 4.9941,
+   "median_width_sd": 3.6453,
+   "median_width_ci": [
+    4.4568,
+    5.5897
+   ],
+   "saturated_fraction_mean": 0.008,
+   "saturated_fraction_sd": 0.0805,
+   "saturated_fraction_ci": [
+    0.0001,
+    0.0235
+   ],
+   "value_worst_coverage_mean": 0.6903,
+   "value_worst_coverage_sd": 0.2157,
+   "value_worst_coverage_ci": [
+    0.6568,
+    0.72
+   ],
+   "eff_sample_size_mean": 385.1237,
+   "eff_sample_size_sd": 274.7139,
+   "eff_sample_size_ci": [
+    343.2285,
+    427.8219
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "weighted_disc",
+   "n": 160,
+   "marginal_coverage_mean": 0.8558,
+   "marginal_coverage_sd": 0.0947,
+   "marginal_coverage_ci": [
+    0.8418,
+    0.8716
+   ],
+   "marginal_gap_mean": 0.0058,
+   "marginal_gap_sd": 0.0835,
+   "marginal_gap_ci": [
+    -0.0067,
+    0.0204
+   ],
+   "worst_stratum_coverage_mean": 0.7574,
+   "worst_stratum_coverage_sd": 0.1468,
+   "worst_stratum_coverage_ci": [
+    0.7352,
+    0.7813
+   ],
+   "max_stratum_gap_mean": 0.1472,
+   "max_stratum_gap_sd": 0.0901,
+   "max_stratum_gap_ci": [
+    0.134,
+    0.1617
+   ],
+   "mean_width_mean": 6.5552,
+   "mean_width_sd": 6.7076,
+   "mean_width_ci": [
+    5.5318,
+    7.678
+   ],
+   "median_width_mean": 6.6162,
+   "median_width_sd": 6.9178,
+   "median_width_ci": [
+    5.6094,
+    7.7911
+   ],
+   "saturated_fraction_mean": 0.1405,
+   "saturated_fraction_sd": 0.3259,
+   "saturated_fraction_ci": [
+    0.0927,
+    0.1946
+   ],
+   "value_worst_coverage_mean": 0.7638,
+   "value_worst_coverage_sd": 0.1492,
+   "value_worst_coverage_ci": [
+    0.7428,
+    0.7866
+   ],
+   "eff_sample_size_mean": 197.8179,
+   "eff_sample_size_sd": 155.783,
+   "eff_sample_size_ci": [
+    175.7522,
+    221.3066
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "weighted_kde",
+   "n": 160,
+   "marginal_coverage_mean": 0.9801,
+   "marginal_coverage_sd": 0.0252,
+   "marginal_coverage_ci": [
+    0.9763,
+    0.9837
+   ],
+   "marginal_gap_mean": 0.1301,
+   "marginal_gap_sd": 0.0482,
+   "marginal_gap_ci": [
+    0.1231,
+    0.1371
+   ],
+   "worst_stratum_coverage_mean": 0.9593,
+   "worst_stratum_coverage_sd": 0.0654,
+   "worst_stratum_coverage_ci": [
+    0.9495,
+    0.9683
+   ],
+   "max_stratum_gap_mean": 0.1455,
+   "max_stratum_gap_sd": 0.0531,
+   "max_stratum_gap_ci": [
+    0.1372,
+    0.1533
+   ],
+   "mean_width_mean": 12.3122,
+   "mean_width_sd": 8.8307,
+   "mean_width_ci": [
+    10.9101,
+    13.7076
+   ],
+   "median_width_mean": 12.8136,
+   "median_width_sd": 8.6284,
+   "median_width_ci": [
+    11.4245,
+    14.155
+   ],
+   "saturated_fraction_mean": 0.8498,
+   "saturated_fraction_sd": 0.18,
+   "saturated_fraction_ci": [
+    0.822,
+    0.8744
+   ],
+   "value_worst_coverage_mean": 0.9584,
+   "value_worst_coverage_sd": 0.0485,
+   "value_worst_coverage_ci": [
+    0.9508,
+    0.9651
+   ],
+   "eff_sample_size_mean": 339.6644,
+   "eff_sample_size_sd": 247.0287,
+   "eff_sample_size_ci": [
+    304.0049,
+    375.9689
+   ]
+  },
+  {
+   "model": "lgbm",
+   "method": "weighted_logistic",
+   "n": 160,
+   "marginal_coverage_mean": 0.8824,
+   "marginal_coverage_sd": 0.0867,
+   "marginal_coverage_ci": [
+    0.8688,
+    0.896
+   ],
+   "marginal_gap_mean": 0.0324,
+   "marginal_gap_sd": 0.0794,
+   "marginal_gap_ci": [
+    0.0203,
+    0.0452
+   ],
+   "worst_stratum_coverage_mean": 0.7978,
+   "worst_stratum_coverage_sd": 0.1336,
+   "worst_stratum_coverage_ci": [
+    0.7768,
+    0.8196
+   ],
+   "max_stratum_gap_mean": 0.1341,
+   "max_stratum_gap_sd": 0.07,
+   "max_stratum_gap_ci": [
+    0.1234,
+    0.1447
+   ],
+   "mean_width_mean": 8.5438,
+   "mean_width_sd": 8.5471,
+   "mean_width_ci": [
+    7.1852,
+    9.884
+   ],
+   "median_width_mean": 8.7196,
+   "median_width_sd": 9.4063,
+   "median_width_ci": [
+    7.2332,
+    10.2176
+   ],
+   "saturated_fraction_mean": 0.2536,
+   "saturated_fraction_sd": 0.3666,
+   "saturated_fraction_ci": [
+    0.1966,
+    0.3112
+   ],
+   "value_worst_coverage_mean": 0.811,
+   "value_worst_coverage_sd": 0.1293,
+   "value_worst_coverage_ci": [
+    0.7901,
+    0.8315
+   ],
+   "eff_sample_size_mean": 157.0454,
+   "eff_sample_size_sd": 114.4029,
+   "eff_sample_size_ci": [
+    141.1514,
+    174.571
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "adecp",
+   "n": 32,
+   "marginal_coverage_mean": 0.887,
+   "marginal_coverage_sd": 0.0547,
+   "marginal_coverage_ci": [
+    0.8666,
+    0.905
+   ],
+   "marginal_gap_mean": -0.013,
+   "marginal_gap_sd": 0.0547,
+   "marginal_gap_ci": [
+    -0.0334,
+    0.005
+   ],
+   "worst_stratum_coverage_mean": 0.779,
+   "worst_stratum_coverage_sd": 0.1837,
+   "worst_stratum_coverage_ci": [
+    0.7044,
+    0.8336
+   ],
+   "max_stratum_gap_mean": 0.1433,
+   "max_stratum_gap_sd": 0.1696,
+   "max_stratum_gap_ci": [
+    0.0941,
+    0.2132
+   ],
+   "mean_width_mean": 4.8383,
+   "mean_width_sd": 3.0427,
+   "mean_width_ci": [
+    3.8651,
+    5.9189
+   ],
+   "median_width_mean": 4.8313,
+   "median_width_sd": 3.1145,
+   "median_width_ci": [
+    3.8385,
+    5.9415
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8243,
+   "value_worst_coverage_sd": 0.0899,
+   "value_worst_coverage_ci": [
+    0.7937,
+    0.8534
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "adwcp",
+   "n": 32,
+   "marginal_coverage_mean": 0.903,
+   "marginal_coverage_sd": 0.0462,
+   "marginal_coverage_ci": [
+    0.8867,
+    0.9182
+   ],
+   "marginal_gap_mean": 0.003,
+   "marginal_gap_sd": 0.0462,
+   "marginal_gap_ci": [
+    -0.0133,
+    0.0182
+   ],
+   "worst_stratum_coverage_mean": 0.8268,
+   "worst_stratum_coverage_sd": 0.1069,
+   "worst_stratum_coverage_ci": [
+    0.7885,
+    0.8595
+   ],
+   "max_stratum_gap_mean": 0.1042,
+   "max_stratum_gap_sd": 0.0875,
+   "max_stratum_gap_ci": [
+    0.076,
+    0.1367
+   ],
+   "mean_width_mean": 6.1378,
+   "mean_width_sd": 4.5043,
+   "mean_width_ci": [
+    4.6959,
+    7.8253
+   ],
+   "median_width_mean": 5.8039,
+   "median_width_sd": 4.4222,
+   "median_width_ci": [
+    4.3917,
+    7.4369
+   ],
+   "saturated_fraction_mean": 0.1525,
+   "saturated_fraction_sd": 0.3039,
+   "saturated_fraction_ci": [
+    0.06,
+    0.2725
+   ],
+   "value_worst_coverage_mean": 0.8364,
+   "value_worst_coverage_sd": 0.0847,
+   "value_worst_coverage_ci": [
+    0.8014,
+    0.8629
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "localized",
+   "n": 32,
+   "marginal_coverage_mean": 0.9764,
+   "marginal_coverage_sd": 0.022,
+   "marginal_coverage_ci": [
+    0.9689,
+    0.9836
+   ],
+   "marginal_gap_mean": 0.0764,
+   "marginal_gap_sd": 0.022,
+   "marginal_gap_ci": [
+    0.0689,
+    0.0836
+   ],
+   "worst_stratum_coverage_mean": 0.9373,
+   "worst_stratum_coverage_sd": 0.094,
+   "worst_stratum_coverage_ci": [
+    0.9028,
+    0.964
+   ],
+   "max_stratum_gap_mean": 0.1061,
+   "max_stratum_gap_sd": 0.054,
+   "max_stratum_gap_ci": [
+    0.0948,
+    0.1261
+   ],
+   "mean_width_mean": 11.4103,
+   "mean_width_sd": 9.4889,
+   "mean_width_ci": [
+    8.1873,
+    14.7187
+   ],
+   "median_width_mean": 11.4154,
+   "median_width_sd": 9.5298,
+   "median_width_ci": [
+    8.1977,
+    14.733
+   ],
+   "saturated_fraction_mean": 0.4889,
+   "saturated_fraction_sd": 0.4849,
+   "saturated_fraction_ci": [
+    0.3273,
+    0.6621
+   ],
+   "value_worst_coverage_mean": 0.9494,
+   "value_worst_coverage_sd": 0.0455,
+   "value_worst_coverage_ci": [
+    0.9337,
+    0.9631
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "mondrian",
+   "n": 32,
+   "marginal_coverage_mean": 0.9008,
+   "marginal_coverage_sd": 0.0383,
+   "marginal_coverage_ci": [
+    0.8864,
+    0.9133
+   ],
+   "marginal_gap_mean": 0.0008,
+   "marginal_gap_sd": 0.0383,
+   "marginal_gap_ci": [
+    -0.0136,
+    0.0133
+   ],
+   "worst_stratum_coverage_mean": 0.7893,
+   "worst_stratum_coverage_sd": 0.1747,
+   "worst_stratum_coverage_ci": [
+    0.7168,
+    0.8392
+   ],
+   "max_stratum_gap_mean": 0.1384,
+   "max_stratum_gap_sd": 0.1589,
+   "max_stratum_gap_ci": [
+    0.0958,
+    0.207
+   ],
+   "mean_width_mean": 5.0486,
+   "mean_width_sd": 2.9413,
+   "mean_width_ci": [
+    4.095,
+    6.0837
+   ],
+   "median_width_mean": 4.7457,
+   "median_width_sd": 2.6284,
+   "median_width_ci": [
+    3.865,
+    5.693
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8394,
+   "value_worst_coverage_sd": 0.0725,
+   "value_worst_coverage_ci": [
+    0.813,
+    0.8613
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "normalized",
+   "n": 32,
+   "marginal_coverage_mean": 0.8929,
+   "marginal_coverage_sd": 0.0692,
+   "marginal_coverage_ci": [
+    0.869,
+    0.9159
+   ],
+   "marginal_gap_mean": -0.0071,
+   "marginal_gap_sd": 0.0692,
+   "marginal_gap_ci": [
+    -0.031,
+    0.0159
+   ],
+   "worst_stratum_coverage_mean": 0.7898,
+   "worst_stratum_coverage_sd": 0.1933,
+   "worst_stratum_coverage_ci": [
+    0.7106,
+    0.8507
+   ],
+   "max_stratum_gap_mean": 0.141,
+   "max_stratum_gap_sd": 0.1767,
+   "max_stratum_gap_ci": [
+    0.0893,
+    0.2134
+   ],
+   "mean_width_mean": 6.2076,
+   "mean_width_sd": 3.9199,
+   "mean_width_ci": [
+    4.9547,
+    7.5672
+   ],
+   "median_width_mean": 5.966,
+   "median_width_sd": 3.9249,
+   "median_width_ci": [
+    4.7135,
+    7.3467
+   ],
+   "saturated_fraction_mean": 0.0764,
+   "saturated_fraction_sd": 0.0872,
+   "saturated_fraction_ci": [
+    0.0462,
+    0.1075
+   ],
+   "value_worst_coverage_mean": 0.8305,
+   "value_worst_coverage_sd": 0.1079,
+   "value_worst_coverage_ci": [
+    0.7923,
+    0.8655
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "raw_ensemble",
+   "n": 32,
+   "marginal_coverage_mean": 0.8958,
+   "marginal_coverage_sd": 0.0493,
+   "marginal_coverage_ci": [
+    0.8777,
+    0.9125
+   ],
+   "marginal_gap_mean": -0.0042,
+   "marginal_gap_sd": 0.0493,
+   "marginal_gap_ci": [
+    -0.0223,
+    0.0125
+   ],
+   "worst_stratum_coverage_mean": 0.7735,
+   "worst_stratum_coverage_sd": 0.1733,
+   "worst_stratum_coverage_ci": [
+    0.7046,
+    0.8236
+   ],
+   "max_stratum_gap_mean": 0.1514,
+   "max_stratum_gap_sd": 0.1569,
+   "max_stratum_gap_ci": [
+    0.1075,
+    0.2197
+   ],
+   "mean_width_mean": 4.858,
+   "mean_width_sd": 2.897,
+   "mean_width_ci": [
+    3.9381,
+    5.9045
+   ],
+   "median_width_mean": 4.9276,
+   "median_width_sd": 2.9749,
+   "median_width_ci": [
+    3.9894,
+    5.9982
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8315,
+   "value_worst_coverage_sd": 0.0821,
+   "value_worst_coverage_ci": [
+    0.8026,
+    0.8588
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "split",
+   "n": 32,
+   "marginal_coverage_mean": 0.8958,
+   "marginal_coverage_sd": 0.0493,
+   "marginal_coverage_ci": [
+    0.8777,
+    0.9125
+   ],
+   "marginal_gap_mean": -0.0042,
+   "marginal_gap_sd": 0.0493,
+   "marginal_gap_ci": [
+    -0.0223,
+    0.0125
+   ],
+   "worst_stratum_coverage_mean": 0.7735,
+   "worst_stratum_coverage_sd": 0.1733,
+   "worst_stratum_coverage_ci": [
+    0.7046,
+    0.8236
+   ],
+   "max_stratum_gap_mean": 0.1514,
+   "max_stratum_gap_sd": 0.1569,
+   "max_stratum_gap_ci": [
+    0.1075,
+    0.2197
+   ],
+   "mean_width_mean": 4.858,
+   "mean_width_sd": 2.897,
+   "mean_width_ci": [
+    3.9381,
+    5.9045
+   ],
+   "median_width_mean": 4.9276,
+   "median_width_sd": 2.9749,
+   "median_width_ci": [
+    3.9894,
+    5.9982
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8315,
+   "value_worst_coverage_sd": 0.0821,
+   "value_worst_coverage_ci": [
+    0.8026,
+    0.8588
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "weighted_ad",
+   "n": 32,
+   "marginal_coverage_mean": 0.8951,
+   "marginal_coverage_sd": 0.0497,
+   "marginal_coverage_ci": [
+    0.8763,
+    0.9122
+   ],
+   "marginal_gap_mean": -0.0049,
+   "marginal_gap_sd": 0.0497,
+   "marginal_gap_ci": [
+    -0.0237,
+    0.0122
+   ],
+   "worst_stratum_coverage_mean": 0.7708,
+   "worst_stratum_coverage_sd": 0.1726,
+   "worst_stratum_coverage_ci": [
+    0.7033,
+    0.8224
+   ],
+   "max_stratum_gap_mean": 0.1497,
+   "max_stratum_gap_sd": 0.1582,
+   "max_stratum_gap_ci": [
+    0.1052,
+    0.2188
+   ],
+   "mean_width_mean": 4.9287,
+   "mean_width_sd": 3.0567,
+   "mean_width_ci": [
+    3.9563,
+    5.9953
+   ],
+   "median_width_mean": 4.983,
+   "median_width_sd": 3.1097,
+   "median_width_ci": [
+    3.9976,
+    6.0797
+   ],
+   "saturated_fraction_mean": 0.0002,
+   "saturated_fraction_sd": 0.0011,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0006
+   ],
+   "value_worst_coverage_mean": 0.8296,
+   "value_worst_coverage_sd": 0.0836,
+   "value_worst_coverage_ci": [
+    0.8,
+    0.858
+   ],
+   "eff_sample_size_mean": 373.0756,
+   "eff_sample_size_sd": 287.9667,
+   "eff_sample_size_ci": [
+    275.9133,
+    477.7045
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "weighted_disc",
+   "n": 32,
+   "marginal_coverage_mean": 0.8991,
+   "marginal_coverage_sd": 0.048,
+   "marginal_coverage_ci": [
+    0.8816,
+    0.9143
+   ],
+   "marginal_gap_mean": -0.0009,
+   "marginal_gap_sd": 0.048,
+   "marginal_gap_ci": [
+    -0.0184,
+    0.0143
+   ],
+   "worst_stratum_coverage_mean": 0.7718,
+   "worst_stratum_coverage_sd": 0.1714,
+   "worst_stratum_coverage_ci": [
+    0.6986,
+    0.8209
+   ],
+   "max_stratum_gap_mean": 0.1468,
+   "max_stratum_gap_sd": 0.1596,
+   "max_stratum_gap_ci": [
+    0.103,
+    0.2171
+   ],
+   "mean_width_mean": 5.8086,
+   "mean_width_sd": 4.1844,
+   "mean_width_ci": [
+    4.5012,
+    7.3506
+   ],
+   "median_width_mean": 5.7349,
+   "median_width_sd": 4.332,
+   "median_width_ci": [
+    4.3915,
+    7.3311
+   ],
+   "saturated_fraction_mean": 0.1305,
+   "saturated_fraction_sd": 0.3001,
+   "saturated_fraction_ci": [
+    0.042,
+    0.2444
+   ],
+   "value_worst_coverage_mean": 0.8354,
+   "value_worst_coverage_sd": 0.0755,
+   "value_worst_coverage_ci": [
+    0.8066,
+    0.8579
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "weighted_kde",
+   "n": 32,
+   "marginal_coverage_mean": 0.9858,
+   "marginal_coverage_sd": 0.0172,
+   "marginal_coverage_ci": [
+    0.9799,
+    0.991
+   ],
+   "marginal_gap_mean": 0.0858,
+   "marginal_gap_sd": 0.0172,
+   "marginal_gap_ci": [
+    0.0799,
+    0.091
+   ],
+   "worst_stratum_coverage_mean": 0.9585,
+   "worst_stratum_coverage_sd": 0.0897,
+   "worst_stratum_coverage_ci": [
+    0.9242,
+    0.9807
+   ],
+   "max_stratum_gap_mean": 0.1072,
+   "max_stratum_gap_sd": 0.0539,
+   "max_stratum_gap_ci": [
+    0.0957,
+    0.1274
+   ],
+   "mean_width_mean": 12.4573,
+   "mean_width_sd": 8.7139,
+   "mean_width_ci": [
+    9.5257,
+    15.4308
+   ],
+   "median_width_mean": 12.9981,
+   "median_width_sd": 8.3546,
+   "median_width_ci": [
+    10.1772,
+    15.8879
+   ],
+   "saturated_fraction_mean": 0.8685,
+   "saturated_fraction_sd": 0.1771,
+   "saturated_fraction_ci": [
+    0.8062,
+    0.9262
+   ],
+   "value_worst_coverage_mean": 0.9646,
+   "value_worst_coverage_sd": 0.0453,
+   "value_worst_coverage_ci": [
+    0.9479,
+    0.9783
+   ],
+   "eff_sample_size_mean": 327.437,
+   "eff_sample_size_sd": 260.9119,
+   "eff_sample_size_ci": [
+    240.477,
+    422.0862
+   ]
+  },
+  {
+   "model": "mlp",
+   "method": "weighted_logistic",
+   "n": 32,
+   "marginal_coverage_mean": 0.9339,
+   "marginal_coverage_sd": 0.0327,
+   "marginal_coverage_ci": [
+    0.9236,
+    0.945
+   ],
+   "marginal_gap_mean": 0.0339,
+   "marginal_gap_sd": 0.0327,
+   "marginal_gap_ci": [
+    0.0236,
+    0.045
+   ],
+   "worst_stratum_coverage_mean": 0.8229,
+   "worst_stratum_coverage_sd": 0.1769,
+   "worst_stratum_coverage_ci": [
+    0.7511,
+    0.8735
+   ],
+   "max_stratum_gap_mean": 0.128,
+   "max_stratum_gap_sd": 0.1535,
+   "max_stratum_gap_ci": [
+    0.0902,
+    0.1934
+   ],
+   "mean_width_mean": 8.9362,
+   "mean_width_sd": 7.6442,
+   "mean_width_ci": [
+    6.4825,
+    11.7011
+   ],
+   "median_width_mean": 9.1837,
+   "median_width_sd": 8.8366,
+   "median_width_ci": [
+    6.2767,
+    12.1653
+   ],
+   "saturated_fraction_mean": 0.2953,
+   "saturated_fraction_sd": 0.3633,
+   "saturated_fraction_ci": [
+    0.1735,
+    0.4252
+   ],
+   "value_worst_coverage_mean": 0.8876,
+   "value_worst_coverage_sd": 0.049,
+   "value_worst_coverage_ci": [
+    0.8721,
+    0.9046
+   ],
+   "eff_sample_size_mean": 156.3087,
+   "eff_sample_size_sd": 111.4632,
+   "eff_sample_size_ci": [
+    120.1459,
+    196.0351
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "adecp",
+   "n": 32,
+   "marginal_coverage_mean": 0.8556,
+   "marginal_coverage_sd": 0.0983,
+   "marginal_coverage_ci": [
+    0.8201,
+    0.8856
+   ],
+   "marginal_gap_mean": -0.0444,
+   "marginal_gap_sd": 0.0983,
+   "marginal_gap_ci": [
+    -0.0799,
+    -0.0144
+   ],
+   "worst_stratum_coverage_mean": 0.754,
+   "worst_stratum_coverage_sd": 0.1629,
+   "worst_stratum_coverage_ci": [
+    0.6989,
+    0.8038
+   ],
+   "max_stratum_gap_mean": 0.1601,
+   "max_stratum_gap_sd": 0.1525,
+   "max_stratum_gap_ci": [
+    0.1113,
+    0.2108
+   ],
+   "mean_width_mean": 5.0323,
+   "mean_width_sd": 2.8472,
+   "mean_width_ci": [
+    4.0794,
+    6.0423
+   ],
+   "median_width_mean": 5.0696,
+   "median_width_sd": 3.0091,
+   "median_width_ci": [
+    4.0536,
+    6.1407
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7605,
+   "value_worst_coverage_sd": 0.1679,
+   "value_worst_coverage_ci": [
+    0.7019,
+    0.8115
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "adwcp",
+   "n": 32,
+   "marginal_coverage_mean": 0.8971,
+   "marginal_coverage_sd": 0.0593,
+   "marginal_coverage_ci": [
+    0.8756,
+    0.9165
+   ],
+   "marginal_gap_mean": -0.0029,
+   "marginal_gap_sd": 0.0593,
+   "marginal_gap_ci": [
+    -0.0244,
+    0.0165
+   ],
+   "worst_stratum_coverage_mean": 0.8132,
+   "worst_stratum_coverage_sd": 0.1165,
+   "worst_stratum_coverage_ci": [
+    0.7728,
+    0.8486
+   ],
+   "max_stratum_gap_mean": 0.1164,
+   "max_stratum_gap_sd": 0.0975,
+   "max_stratum_gap_ci": [
+    0.0867,
+    0.1512
+   ],
+   "mean_width_mean": 6.4576,
+   "mean_width_sd": 4.5627,
+   "mean_width_ci": [
+    5.0074,
+    8.1865
+   ],
+   "median_width_mean": 6.2539,
+   "median_width_sd": 4.406,
+   "median_width_ci": [
+    4.8565,
+    7.8654
+   ],
+   "saturated_fraction_mean": 0.1525,
+   "saturated_fraction_sd": 0.3039,
+   "saturated_fraction_ci": [
+    0.06,
+    0.2725
+   ],
+   "value_worst_coverage_mean": 0.808,
+   "value_worst_coverage_sd": 0.1194,
+   "value_worst_coverage_ci": [
+    0.7618,
+    0.8463
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "localized",
+   "n": 32,
+   "marginal_coverage_mean": 0.9742,
+   "marginal_coverage_sd": 0.0235,
+   "marginal_coverage_ci": [
+    0.9662,
+    0.9817
+   ],
+   "marginal_gap_mean": 0.0742,
+   "marginal_gap_sd": 0.0235,
+   "marginal_gap_ci": [
+    0.0662,
+    0.0817
+   ],
+   "worst_stratum_coverage_mean": 0.9321,
+   "worst_stratum_coverage_sd": 0.0949,
+   "worst_stratum_coverage_ci": [
+    0.8996,
+    0.959
+   ],
+   "max_stratum_gap_mean": 0.1064,
+   "max_stratum_gap_sd": 0.054,
+   "max_stratum_gap_ci": [
+    0.0948,
+    0.1265
+   ],
+   "mean_width_mean": 11.4557,
+   "mean_width_sd": 9.4484,
+   "mean_width_ci": [
+    8.2131,
+    14.7385
+   ],
+   "median_width_mean": 11.436,
+   "median_width_sd": 9.5014,
+   "median_width_ci": [
+    8.2015,
+    14.7024
+   ],
+   "saturated_fraction_mean": 0.4883,
+   "saturated_fraction_sd": 0.4854,
+   "saturated_fraction_ci": [
+    0.3264,
+    0.6621
+   ],
+   "value_worst_coverage_mean": 0.9454,
+   "value_worst_coverage_sd": 0.0494,
+   "value_worst_coverage_ci": [
+    0.9277,
+    0.96
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "mondrian",
+   "n": 32,
+   "marginal_coverage_mean": 0.8739,
+   "marginal_coverage_sd": 0.0777,
+   "marginal_coverage_ci": [
+    0.8456,
+    0.8985
+   ],
+   "marginal_gap_mean": -0.0261,
+   "marginal_gap_sd": 0.0777,
+   "marginal_gap_ci": [
+    -0.0544,
+    -0.0015
+   ],
+   "worst_stratum_coverage_mean": 0.7625,
+   "worst_stratum_coverage_sd": 0.1541,
+   "worst_stratum_coverage_ci": [
+    0.7056,
+    0.8104
+   ],
+   "max_stratum_gap_mean": 0.1551,
+   "max_stratum_gap_sd": 0.1393,
+   "max_stratum_gap_ci": [
+    0.1115,
+    0.2057
+   ],
+   "mean_width_mean": 5.4753,
+   "mean_width_sd": 3.2598,
+   "mean_width_ci": [
+    4.3965,
+    6.681
+   ],
+   "median_width_mean": 5.3494,
+   "median_width_sd": 3.0752,
+   "median_width_ci": [
+    4.2758,
+    6.4881
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7723,
+   "value_worst_coverage_sd": 0.1573,
+   "value_worst_coverage_ci": [
+    0.7162,
+    0.8219
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "normalized",
+   "n": 32,
+   "marginal_coverage_mean": 0.8954,
+   "marginal_coverage_sd": 0.0834,
+   "marginal_coverage_ci": [
+    0.8655,
+    0.9207
+   ],
+   "marginal_gap_mean": -0.0046,
+   "marginal_gap_sd": 0.0834,
+   "marginal_gap_ci": [
+    -0.0345,
+    0.0207
+   ],
+   "worst_stratum_coverage_mean": 0.8209,
+   "worst_stratum_coverage_sd": 0.1384,
+   "worst_stratum_coverage_ci": [
+    0.7713,
+    0.8642
+   ],
+   "max_stratum_gap_mean": 0.1283,
+   "max_stratum_gap_sd": 0.1057,
+   "max_stratum_gap_ci": [
+    0.0949,
+    0.168
+   ],
+   "mean_width_mean": 6.4368,
+   "mean_width_sd": 4.3773,
+   "mean_width_ci": [
+    5.028,
+    7.9555
+   ],
+   "median_width_mean": 6.4593,
+   "median_width_sd": 4.6444,
+   "median_width_ci": [
+    4.9509,
+    8.0446
+   ],
+   "saturated_fraction_mean": 0.0486,
+   "saturated_fraction_sd": 0.136,
+   "saturated_fraction_ci": [
+    0.0078,
+    0.0992
+   ],
+   "value_worst_coverage_mean": 0.8338,
+   "value_worst_coverage_sd": 0.1525,
+   "value_worst_coverage_ci": [
+    0.7763,
+    0.8794
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "raw_ensemble",
+   "n": 32,
+   "marginal_coverage_mean": 0.8074,
+   "marginal_coverage_sd": 0.1316,
+   "marginal_coverage_ci": [
+    0.7569,
+    0.8483
+   ],
+   "marginal_gap_mean": -0.0926,
+   "marginal_gap_sd": 0.1316,
+   "marginal_gap_ci": [
+    -0.1431,
+    -0.0517
+   ],
+   "worst_stratum_coverage_mean": 0.7081,
+   "worst_stratum_coverage_sd": 0.1884,
+   "worst_stratum_coverage_ci": [
+    0.6396,
+    0.7646
+   ],
+   "max_stratum_gap_mean": 0.2031,
+   "max_stratum_gap_sd": 0.1792,
+   "max_stratum_gap_ci": [
+    0.1485,
+    0.2676
+   ],
+   "mean_width_mean": 4.4687,
+   "mean_width_sd": 2.2607,
+   "mean_width_ci": [
+    3.7375,
+    5.2546
+   ],
+   "median_width_mean": 4.2752,
+   "median_width_sd": 2.0428,
+   "median_width_ci": [
+    3.5911,
+    4.9817
+   ],
+   "saturated_fraction_mean": 0.0002,
+   "saturated_fraction_sd": 0.0009,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0005
+   ],
+   "value_worst_coverage_mean": 0.7137,
+   "value_worst_coverage_sd": 0.1939,
+   "value_worst_coverage_ci": [
+    0.6443,
+    0.771
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "split",
+   "n": 32,
+   "marginal_coverage_mean": 0.8796,
+   "marginal_coverage_sd": 0.0767,
+   "marginal_coverage_ci": [
+    0.8529,
+    0.9041
+   ],
+   "marginal_gap_mean": -0.0204,
+   "marginal_gap_sd": 0.0767,
+   "marginal_gap_ci": [
+    -0.0471,
+    0.0041
+   ],
+   "worst_stratum_coverage_mean": 0.7837,
+   "worst_stratum_coverage_sd": 0.1266,
+   "worst_stratum_coverage_ci": [
+    0.7395,
+    0.8243
+   ],
+   "max_stratum_gap_mean": 0.1437,
+   "max_stratum_gap_sd": 0.102,
+   "max_stratum_gap_ci": [
+    0.1121,
+    0.1795
+   ],
+   "mean_width_mean": 5.357,
+   "mean_width_sd": 3.1953,
+   "mean_width_ci": [
+    4.3264,
+    6.5293
+   ],
+   "median_width_mean": 5.4034,
+   "median_width_sd": 3.2225,
+   "median_width_ci": [
+    4.3688,
+    6.5913
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.7808,
+   "value_worst_coverage_sd": 0.1517,
+   "value_worst_coverage_ci": [
+    0.7255,
+    0.8276
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "weighted_ad",
+   "n": 32,
+   "marginal_coverage_mean": 0.8782,
+   "marginal_coverage_sd": 0.082,
+   "marginal_coverage_ci": [
+    0.8474,
+    0.9039
+   ],
+   "marginal_gap_mean": -0.0218,
+   "marginal_gap_sd": 0.082,
+   "marginal_gap_ci": [
+    -0.0526,
+    0.0039
+   ],
+   "worst_stratum_coverage_mean": 0.7836,
+   "worst_stratum_coverage_sd": 0.1252,
+   "worst_stratum_coverage_ci": [
+    0.7384,
+    0.8234
+   ],
+   "max_stratum_gap_mean": 0.1431,
+   "max_stratum_gap_sd": 0.1021,
+   "max_stratum_gap_ci": [
+    0.1112,
+    0.1819
+   ],
+   "mean_width_mean": 5.3619,
+   "mean_width_sd": 3.2417,
+   "mean_width_ci": [
+    4.2997,
+    6.5378
+   ],
+   "median_width_mean": 5.3948,
+   "median_width_sd": 3.2514,
+   "median_width_ci": [
+    4.329,
+    6.5795
+   ],
+   "saturated_fraction_mean": 0.0002,
+   "saturated_fraction_sd": 0.0011,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0006
+   ],
+   "value_worst_coverage_mean": 0.7803,
+   "value_worst_coverage_sd": 0.1586,
+   "value_worst_coverage_ci": [
+    0.7213,
+    0.8295
+   ],
+   "eff_sample_size_mean": 373.0756,
+   "eff_sample_size_sd": 287.9667,
+   "eff_sample_size_ci": [
+    275.9133,
+    477.7045
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "weighted_disc",
+   "n": 32,
+   "marginal_coverage_mean": 0.893,
+   "marginal_coverage_sd": 0.0631,
+   "marginal_coverage_ci": [
+    0.8705,
+    0.9137
+   ],
+   "marginal_gap_mean": -0.007,
+   "marginal_gap_sd": 0.0631,
+   "marginal_gap_ci": [
+    -0.0295,
+    0.0137
+   ],
+   "worst_stratum_coverage_mean": 0.7982,
+   "worst_stratum_coverage_sd": 0.1163,
+   "worst_stratum_coverage_ci": [
+    0.7592,
+    0.8361
+   ],
+   "max_stratum_gap_mean": 0.1303,
+   "max_stratum_gap_sd": 0.092,
+   "max_stratum_gap_ci": [
+    0.103,
+    0.1637
+   ],
+   "mean_width_mean": 6.04,
+   "mean_width_sd": 4.1821,
+   "mean_width_ci": [
+    4.7002,
+    7.5426
+   ],
+   "median_width_mean": 5.917,
+   "median_width_sd": 4.2841,
+   "median_width_ci": [
+    4.609,
+    7.4614
+   ],
+   "saturated_fraction_mean": 0.1305,
+   "saturated_fraction_sd": 0.3001,
+   "saturated_fraction_ci": [
+    0.042,
+    0.2444
+   ],
+   "value_worst_coverage_mean": 0.8037,
+   "value_worst_coverage_sd": 0.1306,
+   "value_worst_coverage_ci": [
+    0.7531,
+    0.8434
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "weighted_kde",
+   "n": 32,
+   "marginal_coverage_mean": 0.9856,
+   "marginal_coverage_sd": 0.0179,
+   "marginal_coverage_ci": [
+    0.9795,
+    0.991
+   ],
+   "marginal_gap_mean": 0.0856,
+   "marginal_gap_sd": 0.0179,
+   "marginal_gap_ci": [
+    0.0795,
+    0.091
+   ],
+   "worst_stratum_coverage_mean": 0.9596,
+   "worst_stratum_coverage_sd": 0.0901,
+   "worst_stratum_coverage_ci": [
+    0.9254,
+    0.9822
+   ],
+   "max_stratum_gap_mean": 0.1078,
+   "max_stratum_gap_sd": 0.0535,
+   "max_stratum_gap_ci": [
+    0.097,
+    0.1274
+   ],
+   "mean_width_mean": 12.4839,
+   "mean_width_sd": 8.693,
+   "mean_width_ci": [
+    9.562,
+    15.4618
+   ],
+   "median_width_mean": 12.9981,
+   "median_width_sd": 8.3546,
+   "median_width_ci": [
+    10.1772,
+    15.8879
+   ],
+   "saturated_fraction_mean": 0.8684,
+   "saturated_fraction_sd": 0.1773,
+   "saturated_fraction_ci": [
+    0.8059,
+    0.9261
+   ],
+   "value_worst_coverage_mean": 0.9633,
+   "value_worst_coverage_sd": 0.0443,
+   "value_worst_coverage_ci": [
+    0.9479,
+    0.9764
+   ],
+   "eff_sample_size_mean": 327.437,
+   "eff_sample_size_sd": 260.9119,
+   "eff_sample_size_ci": [
+    240.477,
+    422.0862
+   ]
+  },
+  {
+   "model": "rf",
+   "method": "weighted_logistic",
+   "n": 32,
+   "marginal_coverage_mean": 0.9236,
+   "marginal_coverage_sd": 0.0479,
+   "marginal_coverage_ci": [
+    0.9075,
+    0.9399
+   ],
+   "marginal_gap_mean": 0.0236,
+   "marginal_gap_sd": 0.0479,
+   "marginal_gap_ci": [
+    0.0075,
+    0.0399
+   ],
+   "worst_stratum_coverage_mean": 0.836,
+   "worst_stratum_coverage_sd": 0.1257,
+   "worst_stratum_coverage_ci": [
+    0.791,
+    0.8772
+   ],
+   "max_stratum_gap_mean": 0.1155,
+   "max_stratum_gap_sd": 0.0962,
+   "max_stratum_gap_ci": [
+    0.0888,
+    0.1498
+   ],
+   "mean_width_mean": 9.0702,
+   "mean_width_sd": 7.7325,
+   "mean_width_ci": [
+    6.5427,
+    11.8452
+   ],
+   "median_width_mean": 9.3432,
+   "median_width_sd": 8.9311,
+   "median_width_ci": [
+    6.4081,
+    12.3922
+   ],
+   "saturated_fraction_mean": 0.2953,
+   "saturated_fraction_sd": 0.3633,
+   "saturated_fraction_ci": [
+    0.1735,
+    0.4252
+   ],
+   "value_worst_coverage_mean": 0.8664,
+   "value_worst_coverage_sd": 0.0858,
+   "value_worst_coverage_ci": [
+    0.8386,
+    0.8941
+   ],
+   "eff_sample_size_mean": 156.3087,
+   "eff_sample_size_sd": 111.4632,
+   "eff_sample_size_ci": [
+    120.1459,
+    196.0351
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "adecp",
+   "n": 32,
+   "marginal_coverage_mean": 0.8807,
+   "marginal_coverage_sd": 0.0606,
+   "marginal_coverage_ci": [
+    0.8573,
+    0.9003
+   ],
+   "marginal_gap_mean": -0.0193,
+   "marginal_gap_sd": 0.0606,
+   "marginal_gap_ci": [
+    -0.0427,
+    0.0003
+   ],
+   "worst_stratum_coverage_mean": 0.7725,
+   "worst_stratum_coverage_sd": 0.1471,
+   "worst_stratum_coverage_ci": [
+    0.7204,
+    0.8178
+   ],
+   "max_stratum_gap_mean": 0.1414,
+   "max_stratum_gap_sd": 0.1383,
+   "max_stratum_gap_ci": [
+    0.0996,
+    0.1895
+   ],
+   "mean_width_mean": 5.059,
+   "mean_width_sd": 2.4977,
+   "mean_width_ci": [
+    4.2016,
+    5.923
+   ],
+   "median_width_mean": 5.048,
+   "median_width_sd": 2.5099,
+   "median_width_ci": [
+    4.1935,
+    5.9104
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8009,
+   "value_worst_coverage_sd": 0.0974,
+   "value_worst_coverage_ci": [
+    0.7632,
+    0.832
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "adwcp",
+   "n": 32,
+   "marginal_coverage_mean": 0.9127,
+   "marginal_coverage_sd": 0.0428,
+   "marginal_coverage_ci": [
+    0.8978,
+    0.927
+   ],
+   "marginal_gap_mean": 0.0127,
+   "marginal_gap_sd": 0.0428,
+   "marginal_gap_ci": [
+    -0.0022,
+    0.027
+   ],
+   "worst_stratum_coverage_mean": 0.797,
+   "worst_stratum_coverage_sd": 0.148,
+   "worst_stratum_coverage_ci": [
+    0.7433,
+    0.8443
+   ],
+   "max_stratum_gap_mean": 0.1304,
+   "max_stratum_gap_sd": 0.1315,
+   "max_stratum_gap_ci": [
+    0.0897,
+    0.1775
+   ],
+   "mean_width_mean": 6.4153,
+   "mean_width_sd": 4.4217,
+   "mean_width_ci": [
+    4.9867,
+    8.0431
+   ],
+   "median_width_mean": 6.1878,
+   "median_width_sd": 4.3521,
+   "median_width_ci": [
+    4.8501,
+    7.801
+   ],
+   "saturated_fraction_mean": 0.1525,
+   "saturated_fraction_sd": 0.3039,
+   "saturated_fraction_ci": [
+    0.06,
+    0.2725
+   ],
+   "value_worst_coverage_mean": 0.847,
+   "value_worst_coverage_sd": 0.0738,
+   "value_worst_coverage_ci": [
+    0.8192,
+    0.8721
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "localized",
+   "n": 32,
+   "marginal_coverage_mean": 0.9739,
+   "marginal_coverage_sd": 0.0247,
+   "marginal_coverage_ci": [
+    0.9652,
+    0.9816
+   ],
+   "marginal_gap_mean": 0.0739,
+   "marginal_gap_sd": 0.0247,
+   "marginal_gap_ci": [
+    0.0652,
+    0.0816
+   ],
+   "worst_stratum_coverage_mean": 0.9308,
+   "worst_stratum_coverage_sd": 0.0974,
+   "worst_stratum_coverage_ci": [
+    0.8962,
+    0.9587
+   ],
+   "max_stratum_gap_mean": 0.1053,
+   "max_stratum_gap_sd": 0.0543,
+   "max_stratum_gap_ci": [
+    0.0934,
+    0.1253
+   ],
+   "mean_width_mean": 11.5732,
+   "mean_width_sd": 9.3478,
+   "mean_width_ci": [
+    8.4069,
+    14.8087
+   ],
+   "median_width_mean": 11.6064,
+   "median_width_sd": 9.3661,
+   "median_width_ci": [
+    8.468,
+    14.8288
+   ],
+   "saturated_fraction_mean": 0.4896,
+   "saturated_fraction_sd": 0.4843,
+   "saturated_fraction_ci": [
+    0.3275,
+    0.6624
+   ],
+   "value_worst_coverage_mean": 0.9424,
+   "value_worst_coverage_sd": 0.0545,
+   "value_worst_coverage_ci": [
+    0.9229,
+    0.9594
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "mondrian",
+   "n": 32,
+   "marginal_coverage_mean": 0.8959,
+   "marginal_coverage_sd": 0.055,
+   "marginal_coverage_ci": [
+    0.876,
+    0.9128
+   ],
+   "marginal_gap_mean": -0.0041,
+   "marginal_gap_sd": 0.055,
+   "marginal_gap_ci": [
+    -0.024,
+    0.0128
+   ],
+   "worst_stratum_coverage_mean": 0.8057,
+   "worst_stratum_coverage_sd": 0.1353,
+   "worst_stratum_coverage_ci": [
+    0.7601,
+    0.8498
+   ],
+   "max_stratum_gap_mean": 0.1262,
+   "max_stratum_gap_sd": 0.1167,
+   "max_stratum_gap_ci": [
+    0.0894,
+    0.1682
+   ],
+   "mean_width_mean": 5.4275,
+   "mean_width_sd": 2.8012,
+   "mean_width_ci": [
+    4.4995,
+    6.4248
+   ],
+   "median_width_mean": 5.2104,
+   "median_width_sd": 2.8038,
+   "median_width_ci": [
+    4.2938,
+    6.1855
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8207,
+   "value_worst_coverage_sd": 0.0864,
+   "value_worst_coverage_ci": [
+    0.7892,
+    0.8487
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "normalized",
+   "n": 32,
+   "marginal_coverage_mean": 0.9077,
+   "marginal_coverage_sd": 0.0444,
+   "marginal_coverage_ci": [
+    0.8932,
+    0.922
+   ],
+   "marginal_gap_mean": 0.0077,
+   "marginal_gap_sd": 0.0444,
+   "marginal_gap_ci": [
+    -0.0068,
+    0.022
+   ],
+   "worst_stratum_coverage_mean": 0.8265,
+   "worst_stratum_coverage_sd": 0.1089,
+   "worst_stratum_coverage_ci": [
+    0.7909,
+    0.8607
+   ],
+   "max_stratum_gap_mean": 0.1124,
+   "max_stratum_gap_sd": 0.0835,
+   "max_stratum_gap_ci": [
+    0.0851,
+    0.1407
+   ],
+   "mean_width_mean": 6.0514,
+   "mean_width_sd": 2.9522,
+   "mean_width_ci": [
+    5.0464,
+    7.0517
+   ],
+   "median_width_mean": 5.9352,
+   "median_width_sd": 3.0429,
+   "median_width_ci": [
+    4.8999,
+    6.9695
+   ],
+   "saturated_fraction_mean": 0.0255,
+   "saturated_fraction_sd": 0.0451,
+   "saturated_fraction_ci": [
+    0.0122,
+    0.0424
+   ],
+   "value_worst_coverage_mean": 0.8494,
+   "value_worst_coverage_sd": 0.0732,
+   "value_worst_coverage_ci": [
+    0.8254,
+    0.8738
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "raw_ensemble",
+   "n": 32,
+   "marginal_coverage_mean": 0.888,
+   "marginal_coverage_sd": 0.0515,
+   "marginal_coverage_ci": [
+    0.8696,
+    0.9046
+   ],
+   "marginal_gap_mean": -0.012,
+   "marginal_gap_sd": 0.0515,
+   "marginal_gap_ci": [
+    -0.0304,
+    0.0046
+   ],
+   "worst_stratum_coverage_mean": 0.7742,
+   "worst_stratum_coverage_sd": 0.1228,
+   "worst_stratum_coverage_ci": [
+    0.7306,
+    0.8136
+   ],
+   "max_stratum_gap_mean": 0.1464,
+   "max_stratum_gap_sd": 0.1032,
+   "max_stratum_gap_ci": [
+    0.1149,
+    0.1832
+   ],
+   "mean_width_mean": 5.1935,
+   "mean_width_sd": 2.7207,
+   "mean_width_ci": [
+    4.3532,
+    6.1453
+   ],
+   "median_width_mean": 5.3517,
+   "median_width_sd": 2.7635,
+   "median_width_ci": [
+    4.5054,
+    6.3275
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8077,
+   "value_worst_coverage_sd": 0.0912,
+   "value_worst_coverage_ci": [
+    0.7754,
+    0.8366
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "split",
+   "n": 32,
+   "marginal_coverage_mean": 0.888,
+   "marginal_coverage_sd": 0.0515,
+   "marginal_coverage_ci": [
+    0.8696,
+    0.9046
+   ],
+   "marginal_gap_mean": -0.012,
+   "marginal_gap_sd": 0.0515,
+   "marginal_gap_ci": [
+    -0.0304,
+    0.0046
+   ],
+   "worst_stratum_coverage_mean": 0.7742,
+   "worst_stratum_coverage_sd": 0.1228,
+   "worst_stratum_coverage_ci": [
+    0.7306,
+    0.8136
+   ],
+   "max_stratum_gap_mean": 0.1464,
+   "max_stratum_gap_sd": 0.1032,
+   "max_stratum_gap_ci": [
+    0.1149,
+    0.1832
+   ],
+   "mean_width_mean": 5.1935,
+   "mean_width_sd": 2.7207,
+   "mean_width_ci": [
+    4.3532,
+    6.1453
+   ],
+   "median_width_mean": 5.3517,
+   "median_width_sd": 2.7635,
+   "median_width_ci": [
+    4.5054,
+    6.3275
+   ],
+   "saturated_fraction_mean": 0.0,
+   "saturated_fraction_sd": 0.0,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0
+   ],
+   "value_worst_coverage_mean": 0.8077,
+   "value_worst_coverage_sd": 0.0912,
+   "value_worst_coverage_ci": [
+    0.7754,
+    0.8366
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "weighted_ad",
+   "n": 32,
+   "marginal_coverage_mean": 0.8913,
+   "marginal_coverage_sd": 0.0478,
+   "marginal_coverage_ci": [
+    0.875,
+    0.9067
+   ],
+   "marginal_gap_mean": -0.0087,
+   "marginal_gap_sd": 0.0478,
+   "marginal_gap_ci": [
+    -0.025,
+    0.0067
+   ],
+   "worst_stratum_coverage_mean": 0.7723,
+   "worst_stratum_coverage_sd": 0.1206,
+   "worst_stratum_coverage_ci": [
+    0.7289,
+    0.8122
+   ],
+   "max_stratum_gap_mean": 0.146,
+   "max_stratum_gap_sd": 0.1028,
+   "max_stratum_gap_ci": [
+    0.1133,
+    0.1824
+   ],
+   "mean_width_mean": 5.3,
+   "mean_width_sd": 2.8515,
+   "mean_width_ci": [
+    4.3975,
+    6.3172
+   ],
+   "median_width_mean": 5.4699,
+   "median_width_sd": 2.9158,
+   "median_width_ci": [
+    4.5347,
+    6.5036
+   ],
+   "saturated_fraction_mean": 0.0002,
+   "saturated_fraction_sd": 0.0011,
+   "saturated_fraction_ci": [
+    0.0,
+    0.0006
+   ],
+   "value_worst_coverage_mean": 0.8102,
+   "value_worst_coverage_sd": 0.0866,
+   "value_worst_coverage_ci": [
+    0.7802,
+    0.8382
+   ],
+   "eff_sample_size_mean": 373.0756,
+   "eff_sample_size_sd": 287.9667,
+   "eff_sample_size_ci": [
+    275.9133,
+    477.7045
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "weighted_disc",
+   "n": 32,
+   "marginal_coverage_mean": 0.9108,
+   "marginal_coverage_sd": 0.0416,
+   "marginal_coverage_ci": [
+    0.896,
+    0.9248
+   ],
+   "marginal_gap_mean": 0.0108,
+   "marginal_gap_sd": 0.0416,
+   "marginal_gap_ci": [
+    -0.004,
+    0.0248
+   ],
+   "worst_stratum_coverage_mean": 0.7915,
+   "worst_stratum_coverage_sd": 0.1284,
+   "worst_stratum_coverage_ci": [
+    0.7454,
+    0.8324
+   ],
+   "max_stratum_gap_mean": 0.1355,
+   "max_stratum_gap_sd": 0.1104,
+   "max_stratum_gap_ci": [
+    0.1015,
+    0.1757
+   ],
+   "mean_width_mean": 6.1334,
+   "mean_width_sd": 4.0588,
+   "mean_width_ci": [
+    4.8513,
+    7.5877
+   ],
+   "median_width_mean": 6.1997,
+   "median_width_sd": 4.1831,
+   "median_width_ci": [
+    4.9278,
+    7.7027
+   ],
+   "saturated_fraction_mean": 0.1305,
+   "saturated_fraction_sd": 0.3001,
+   "saturated_fraction_ci": [
+    0.042,
+    0.2444
+   ],
+   "value_worst_coverage_mean": 0.8401,
+   "value_worst_coverage_sd": 0.0782,
+   "value_worst_coverage_ci": [
+    0.8116,
+    0.8641
+   ],
+   "eff_sample_size_mean": 201.8303,
+   "eff_sample_size_sd": 177.9103,
+   "eff_sample_size_ci": [
+    146.4405,
+    264.3684
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "weighted_kde",
+   "n": 32,
+   "marginal_coverage_mean": 0.9862,
+   "marginal_coverage_sd": 0.0157,
+   "marginal_coverage_ci": [
+    0.9809,
+    0.9912
+   ],
+   "marginal_gap_mean": 0.0862,
+   "marginal_gap_sd": 0.0157,
+   "marginal_gap_ci": [
+    0.0809,
+    0.0912
+   ],
+   "worst_stratum_coverage_mean": 0.9584,
+   "worst_stratum_coverage_sd": 0.0901,
+   "worst_stratum_coverage_ci": [
+    0.9247,
+    0.9815
+   ],
+   "max_stratum_gap_mean": 0.1078,
+   "max_stratum_gap_sd": 0.0536,
+   "max_stratum_gap_ci": [
+    0.0969,
+    0.1274
+   ],
+   "mean_width_mean": 12.4804,
+   "mean_width_sd": 8.6944,
+   "mean_width_ci": [
+    9.5526,
+    15.4398
+   ],
+   "median_width_mean": 12.9981,
+   "median_width_sd": 8.3546,
+   "median_width_ci": [
+    10.1772,
+    15.8879
+   ],
+   "saturated_fraction_mean": 0.8688,
+   "saturated_fraction_sd": 0.1772,
+   "saturated_fraction_ci": [
+    0.8065,
+    0.9267
+   ],
+   "value_worst_coverage_mean": 0.9675,
+   "value_worst_coverage_sd": 0.0408,
+   "value_worst_coverage_ci": [
+    0.9525,
+    0.9802
+   ],
+   "eff_sample_size_mean": 327.437,
+   "eff_sample_size_sd": 260.9119,
+   "eff_sample_size_ci": [
+    240.477,
+    422.0862
+   ]
+  },
+  {
+   "model": "ridge",
+   "method": "weighted_logistic",
+   "n": 32,
+   "marginal_coverage_mean": 0.928,
+   "marginal_coverage_sd": 0.0278,
+   "marginal_coverage_ci": [
+    0.9191,
+    0.938
+   ],
+   "marginal_gap_mean": 0.028,
+   "marginal_gap_sd": 0.0278,
+   "marginal_gap_ci": [
+    0.0191,
+    0.038
+   ],
+   "worst_stratum_coverage_mean": 0.798,
+   "worst_stratum_coverage_sd": 0.186,
+   "worst_stratum_coverage_ci": [
+    0.7261,
+    0.8511
+   ],
+   "max_stratum_gap_mean": 0.1375,
+   "max_stratum_gap_sd": 0.1692,
+   "max_stratum_gap_ci": [
+    0.0899,
+    0.2042
+   ],
+   "mean_width_mean": 9.0112,
+   "mean_width_sd": 7.4073,
+   "mean_width_ci": [
+    6.6321,
+    11.634
+   ],
+   "median_width_mean": 9.3014,
+   "median_width_sd": 8.6245,
+   "median_width_ci": [
+    6.4961,
+    12.1871
+   ],
+   "saturated_fraction_mean": 0.2953,
+   "saturated_fraction_sd": 0.3633,
+   "saturated_fraction_ci": [
+    0.1735,
+    0.4252
+   ],
+   "value_worst_coverage_mean": 0.8785,
+   "value_worst_coverage_sd": 0.0505,
+   "value_worst_coverage_ci": [
+    0.862,
+    0.8947
+   ],
+   "eff_sample_size_mean": 156.3087,
+   "eff_sample_size_sd": 111.4632,
+   "eff_sample_size_ci": [
+    120.1459,
+    196.0351
+   ]
+  }
+ ]
+}

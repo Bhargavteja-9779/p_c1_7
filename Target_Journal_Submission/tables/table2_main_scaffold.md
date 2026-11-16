@@ -1,0 +1,13 @@
+| Method | Marginal cov. | Worst-stratum cov. | Mean width | Saturated frac. | n |
+|---|---|---|---|---|---|
+| Raw ensemble (B0) | 0.853$\pm$0.133 | 0.753$\pm$0.200 | 5.44$\pm$3.49 | 0.00$\pm$0.00 | 80 |
+| Split CP (B1) | 0.853$\pm$0.133 | 0.753$\pm$0.200 | 5.44$\pm$3.49 | 0.00$\pm$0.00 | 80 |
+| Normalized CP (B2) | 0.890$\pm$0.077 | 0.813$\pm$0.137 | 6.48$\pm$4.55 | 0.03$\pm$0.11 | 80 |
+| Mondrian-AD CP (B3) | 0.855$\pm$0.121 | 0.752$\pm$0.207 | 5.53$\pm$3.65 | 0.00$\pm$0.00 | 80 |
+| Localized CP (B4) | 0.974$\pm$0.026 | 0.945$\pm$0.072 | 11.38$\pm$9.65 | 0.48$\pm$0.48 | 80 |
+| Weighted CP, FP discriminator (B5) | 0.901$\pm$0.061 | 0.820$\pm$0.107 | 7.16$\pm$6.80 | 0.16$\pm$0.33 | 80 |
+| Weighted CP, logistic (CoDrug-style) | 0.920$\pm$0.060 | 0.851$\pm$0.105 | 9.24$\pm$8.83 | 0.28$\pm$0.38 | 80 |
+| Weighted CP, KDE (CoDrug-style) | 0.988$\pm$0.014 | 0.971$\pm$0.060 | 12.51$\pm$8.78 | 0.88$\pm$0.16 | 80 |
+| AD-reweighted CP [ADR-CP, ours] | 0.858$\pm$0.126 | 0.757$\pm$0.203 | 5.62$\pm$3.99 | 0.01$\pm$0.11 | 80 |
+| AD-stratified weighted CP | 0.905$\pm$0.058 | 0.840$\pm$0.107 | 7.41$\pm$6.96 | 0.17$\pm$0.33 | 80 |
+| AD-extrapolated CP [ADE-CP, ours] | 0.851$\pm$0.117 | 0.753$\pm$0.202 | 5.40$\pm$3.69 | 0.01$\pm$0.06 | 80 |

@@ -95,3 +95,7 @@
 15:52:56 | INFO | [sweep 95/100] bace q=0.9 s8 auc=0.96
 15:52:59 | INFO | [sweep 96/100] bace q=0.0 s9 auc=0.63
 15:53:01 | INFO | [sweep 97/100] bace q=0.25 s9 auc=0.71
+15:53:04 | INFO | [sweep 98/100] bace q=0.5 s9 auc=0.79
+15:53:06 | INFO | [sweep 99/100] bace q=0.75 s9 auc=0.90
+15:53:08 | INFO | [sweep 100/100] bace q=0.9 s9 auc=0.96
+15:53:08 | INFO | compiled 4356 rows -> raw_results.csv
