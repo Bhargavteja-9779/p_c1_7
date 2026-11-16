@@ -1,0 +1,2588 @@
+{
+ "summary": {
+  "journal": "Phys Med Biol",
+  "years": [
+   2025,
+   2026
+  ],
+  "n_searched": 400,
+  "n_with_dates": 367,
+  "median": 126,
+  "mean": 139.7,
+  "q1": 102.0,
+  "q3": 167.0,
+  "pct_le_60": 3.0,
+  "pct_le_100": 24.0
+ },
+ "records": [
+  {
+   "pmid": "43021576",
+   "received": "2026-08-20",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 62
+  },
+  {
+   "pmid": "42981699",
+   "received": "2026-06-04",
+   "accepted": "2026-11-04",
+   "revised": "",
+   "days": 153
+  },
+  {
+   "pmid": "42976481",
+   "received": "2026-05-25",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 162
+  },
+  {
+   "pmid": "42976478",
+   "received": "2026-06-02",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 154
+  },
+  {
+   "pmid": "42976458",
+   "received": "2026-05-09",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 178
+  },
+  {
+   "pmid": "42976457",
+   "received": "2026-07-26",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 100
+  },
+  {
+   "pmid": "42976453",
+   "received": "2026-07-23",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 103
+  },
+  {
+   "pmid": "42962366",
+   "received": "2026-06-22",
+   "accepted": "2026-10-30",
+   "revised": "",
+   "days": 130
+  },
+  {
+   "pmid": "42945684",
+   "received": "2026-07-07",
+   "accepted": "2026-10-27",
+   "revised": "",
+   "days": 112
+  },
+  {
+   "pmid": "42962370",
+   "received": "2026-08-04",
+   "accepted": "2026-10-30",
+   "revised": "",
+   "days": 87
+  },
+  {
+   "pmid": "42896602",
+   "received": "2026-06-22",
+   "accepted": "2026-10-19",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "43010656",
+   "received": "2026-08-15",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 80
+  },
+  {
+   "pmid": "42976461",
+   "received": "2026-06-25",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 131
+  },
+  {
+   "pmid": "42976452",
+   "received": "2026-08-05",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 90
+  },
+  {
+   "pmid": "42976450",
+   "received": "2026-07-16",
+   "accepted": "2026-11-03",
+   "revised": "",
+   "days": 110
+  },
+  {
+   "pmid": "42962372",
+   "received": "2026-06-04",
+   "accepted": "2026-10-30",
+   "revised": "",
+   "days": 148
+  },
+  {
+   "pmid": "42962374",
+   "received": "2026-06-12",
+   "accepted": "2026-10-30",
+   "revised": "",
+   "days": 140
+  },
+  {
+   "pmid": "42962369",
+   "received": "2026-08-18",
+   "accepted": "2026-10-30",
+   "revised": "",
+   "days": 73
+  },
+  {
+   "pmid": "42956465",
+   "received": "2026-03-03",
+   "accepted": "2026-10-29",
+   "revised": "",
+   "days": 240
+  },
+  {
+   "pmid": "42906606",
+   "received": "2026-03-27",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 208
+  },
+  {
+   "pmid": "42906599",
+   "received": "2026-07-24",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 89
+  },
+  {
+   "pmid": "42887542",
+   "received": "2026-06-06",
+   "accepted": "2026-10-16",
+   "revised": "",
+   "days": 132
+  },
+  {
+   "pmid": "42933125",
+   "received": "2026-07-27",
+   "accepted": "2026-10-26",
+   "revised": "",
+   "days": 91
+  },
+  {
+   "pmid": "42915498",
+   "received": "2026-06-26",
+   "accepted": "2026-10-23",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42913709",
+   "received": "2026-07-06",
+   "accepted": "2026-10-22",
+   "revised": "",
+   "days": 108
+  },
+  {
+   "pmid": "42906613",
+   "received": "2026-08-07",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 75
+  },
+  {
+   "pmid": "42896599",
+   "received": "2026-06-26",
+   "accepted": "2026-10-19",
+   "revised": "",
+   "days": 115
+  },
+  {
+   "pmid": "42887549",
+   "received": "2026-04-07",
+   "accepted": "2026-10-16",
+   "revised": "",
+   "days": 192
+  },
+  {
+   "pmid": "42913713",
+   "received": "2026-07-12",
+   "accepted": "2026-10-22",
+   "revised": "",
+   "days": 102
+  },
+  {
+   "pmid": "42910494",
+   "received": "2026-02-19",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 244
+  },
+  {
+   "pmid": "42896591",
+   "received": "2026-05-21",
+   "accepted": "2026-10-19",
+   "revised": "",
+   "days": 151
+  },
+  {
+   "pmid": "42874653",
+   "received": "2026-07-03",
+   "accepted": "2026-10-14",
+   "revised": "",
+   "days": 103
+  },
+  {
+   "pmid": "42790514",
+   "received": "2026-08-21",
+   "accepted": "2026-09-25",
+   "revised": "",
+   "days": 35
+  },
+  {
+   "pmid": "42743984",
+   "received": "2026-03-14",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 185
+  },
+  {
+   "pmid": "42906595",
+   "received": "2026-05-31",
+   "accepted": "2026-10-21",
+   "revised": "",
+   "days": 143
+  },
+  {
+   "pmid": "42899676",
+   "received": "2026-07-27",
+   "accepted": "2026-10-20",
+   "revised": "",
+   "days": 85
+  },
+  {
+   "pmid": "42887548",
+   "received": "2026-08-07",
+   "accepted": "2026-10-16",
+   "revised": "",
+   "days": 70
+  },
+  {
+   "pmid": "42887546",
+   "received": "2026-06-17",
+   "accepted": "2026-10-16",
+   "revised": "",
+   "days": 121
+  },
+  {
+   "pmid": "42887544",
+   "received": "2026-07-12",
+   "accepted": "2026-10-16",
+   "revised": "",
+   "days": 96
+  },
+  {
+   "pmid": "42854720",
+   "received": "2026-05-26",
+   "accepted": "2026-10-09",
+   "revised": "",
+   "days": 136
+  },
+  {
+   "pmid": "42822509",
+   "received": "2026-06-01",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42874657",
+   "received": "2026-07-14",
+   "accepted": "2026-10-14",
+   "revised": "",
+   "days": 92
+  },
+  {
+   "pmid": "42849505",
+   "received": "2026-06-19",
+   "accepted": "2026-10-08",
+   "revised": "",
+   "days": 111
+  },
+  {
+   "pmid": "42833268",
+   "received": "2026-06-10",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 117
+  },
+  {
+   "pmid": "42826741",
+   "received": "2026-02-12",
+   "accepted": "2026-10-02",
+   "revised": "",
+   "days": 232
+  },
+  {
+   "pmid": "42874664",
+   "received": "2026-04-30",
+   "accepted": "2026-10-14",
+   "revised": "",
+   "days": 167
+  },
+  {
+   "pmid": "42863495",
+   "received": "2026-06-11",
+   "accepted": "2026-10-12",
+   "revised": "",
+   "days": 123
+  },
+  {
+   "pmid": "42854723",
+   "received": "2025-12-11",
+   "accepted": "2026-10-09",
+   "revised": "",
+   "days": 302
+  },
+  {
+   "pmid": "42852513",
+   "received": "2026-05-28",
+   "accepted": "2026-10-08",
+   "revised": "",
+   "days": 133
+  },
+  {
+   "pmid": "42849508",
+   "received": "2026-04-18",
+   "accepted": "2026-10-08",
+   "revised": "",
+   "days": 173
+  },
+  {
+   "pmid": "42833250",
+   "received": "2026-03-09",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 210
+  },
+  {
+   "pmid": "42826740",
+   "received": "2026-05-13",
+   "accepted": "2026-10-02",
+   "revised": "",
+   "days": 142
+  },
+  {
+   "pmid": "42854724",
+   "received": "2026-06-02",
+   "accepted": "2026-10-09",
+   "revised": "",
+   "days": 129
+  },
+  {
+   "pmid": "42854721",
+   "received": "2026-01-04",
+   "accepted": "2026-10-09",
+   "revised": "",
+   "days": 278
+  },
+  {
+   "pmid": "42849509",
+   "received": "2026-05-12",
+   "accepted": "2026-10-08",
+   "revised": "",
+   "days": 149
+  },
+  {
+   "pmid": "42822510",
+   "received": "2026-05-24",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 130
+  },
+  {
+   "pmid": "42849503",
+   "received": "2026-06-16",
+   "accepted": "2026-10-08",
+   "revised": "",
+   "days": 114
+  },
+  {
+   "pmid": "42833242",
+   "received": "2026-06-30",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 97
+  },
+  {
+   "pmid": "42822511",
+   "received": "2026-03-26",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 189
+  },
+  {
+   "pmid": "42843404",
+   "received": "2026-03-13",
+   "accepted": "2026-10-07",
+   "revised": "",
+   "days": 208
+  },
+  {
+   "pmid": "42833245",
+   "received": "2026-07-06",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 91
+  },
+  {
+   "pmid": "42826755",
+   "received": "2026-05-28",
+   "accepted": "2026-10-02",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42838098",
+   "received": "2026-02-25",
+   "accepted": "2026-10-06",
+   "revised": "",
+   "days": 223
+  },
+  {
+   "pmid": "42833266",
+   "received": "2026-04-20",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 168
+  },
+  {
+   "pmid": "42767267",
+   "received": "2026-03-31",
+   "accepted": "2026-09-21",
+   "revised": "",
+   "days": 174
+  },
+  {
+   "pmid": "42885389",
+   "received": "2026-07-15",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 82
+  },
+  {
+   "pmid": "42833271",
+   "received": "2026-04-11",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 177
+  },
+  {
+   "pmid": "42826752",
+   "received": "2026-07-07",
+   "accepted": "2026-10-02",
+   "revised": "",
+   "days": 87
+  },
+  {
+   "pmid": "42777776",
+   "received": "2026-05-01",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 145
+  },
+  {
+   "pmid": "42777770",
+   "received": "2026-06-04",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 111
+  },
+  {
+   "pmid": "42876248",
+   "received": "2026-06-18",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 105
+  },
+  {
+   "pmid": "42833244",
+   "received": "2026-01-30",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 248
+  },
+  {
+   "pmid": "42833243",
+   "received": "2026-06-28",
+   "accepted": "2026-10-05",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42822512",
+   "received": "2026-04-29",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 155
+  },
+  {
+   "pmid": "42810394",
+   "received": "2026-04-06",
+   "accepted": "2026-09-14",
+   "revised": "",
+   "days": 161
+  },
+  {
+   "pmid": "42777773",
+   "received": "2025-11-03",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 324
+  },
+  {
+   "pmid": "42735723",
+   "received": "2026-02-26",
+   "accepted": "2026-09-14",
+   "revised": "",
+   "days": 200
+  },
+  {
+   "pmid": "42822513",
+   "received": "2026-06-11",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 112
+  },
+  {
+   "pmid": "42826757",
+   "received": "2026-06-25",
+   "accepted": "2026-10-02",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42815533",
+   "received": "2026-07-22",
+   "accepted": "2026-09-30",
+   "revised": "",
+   "days": 70
+  },
+  {
+   "pmid": "42822504",
+   "received": "2026-03-12",
+   "accepted": "2026-10-01",
+   "revised": "",
+   "days": 203
+  },
+  {
+   "pmid": "42815539",
+   "received": "2026-02-17",
+   "accepted": "2026-09-30",
+   "revised": "",
+   "days": 225
+  },
+  {
+   "pmid": "42777768",
+   "received": "2026-03-21",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 186
+  },
+  {
+   "pmid": "42743982",
+   "received": "2026-02-09",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 218
+  },
+  {
+   "pmid": "42810381",
+   "received": "2026-07-07",
+   "accepted": "2026-09-29",
+   "revised": "",
+   "days": 84
+  },
+  {
+   "pmid": "42777780",
+   "received": "2026-03-15",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 192
+  },
+  {
+   "pmid": "42767262",
+   "received": "2026-07-17",
+   "accepted": "2026-09-21",
+   "revised": "",
+   "days": 66
+  },
+  {
+   "pmid": "42767249",
+   "received": "2026-04-09",
+   "accepted": "2026-09-21",
+   "revised": "",
+   "days": 165
+  },
+  {
+   "pmid": "42748954",
+   "received": "2026-08-17",
+   "accepted": "2026-09-16",
+   "revised": "",
+   "days": 30
+  },
+  {
+   "pmid": "42716112",
+   "received": "2026-05-30",
+   "accepted": "2026-09-09",
+   "revised": "",
+   "days": 102
+  },
+  {
+   "pmid": "42562011",
+   "received": "2025-12-11",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 238
+  },
+  {
+   "pmid": "42013901",
+   "received": "2025-10-24",
+   "accepted": "2026-04-21",
+   "revised": "",
+   "days": 179
+  },
+  {
+   "pmid": "42777766",
+   "received": "2026-07-11",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 74
+  },
+  {
+   "pmid": "42743981",
+   "received": "2026-05-25",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42705321",
+   "received": "2026-02-11",
+   "accepted": "2026-09-07",
+   "revised": "",
+   "days": 208
+  },
+  {
+   "pmid": "42777775",
+   "received": "2026-05-22",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 124
+  },
+  {
+   "pmid": "42743967",
+   "received": "2026-05-15",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 123
+  },
+  {
+   "pmid": "42722026",
+   "received": "2025-12-16",
+   "accepted": "2026-09-10",
+   "revised": "",
+   "days": 268
+  },
+  {
+   "pmid": "42705327",
+   "received": "2026-03-13",
+   "accepted": "2026-09-07",
+   "revised": "",
+   "days": 178
+  },
+  {
+   "pmid": "42777767",
+   "received": "2026-07-17",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 68
+  },
+  {
+   "pmid": "42556419",
+   "received": "2026-03-30",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 128
+  },
+  {
+   "pmid": "42767247",
+   "received": "2026-05-19",
+   "accepted": "2026-09-21",
+   "revised": "",
+   "days": 125
+  },
+  {
+   "pmid": "42777781",
+   "received": "2026-02-28",
+   "accepted": "2026-09-23",
+   "revised": "",
+   "days": 207
+  },
+  {
+   "pmid": "42767261",
+   "received": "2026-05-14",
+   "accepted": "2026-09-21",
+   "revised": "",
+   "days": 130
+  },
+  {
+   "pmid": "42748957",
+   "received": "2026-05-11",
+   "accepted": "2026-09-16",
+   "revised": "",
+   "days": 128
+  },
+  {
+   "pmid": "42743993",
+   "received": "2026-05-18",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42722016",
+   "received": "2026-05-19",
+   "accepted": "2026-09-10",
+   "revised": "",
+   "days": 114
+  },
+  {
+   "pmid": "42697233",
+   "received": "2026-05-04",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 123
+  },
+  {
+   "pmid": "42759556",
+   "received": "2026-05-22",
+   "accepted": "2026-09-18",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42759548",
+   "received": "2026-05-11",
+   "accepted": "2026-09-18",
+   "revised": "",
+   "days": 130
+  },
+  {
+   "pmid": "42748965",
+   "received": "2026-07-03",
+   "accepted": "2026-09-16",
+   "revised": "",
+   "days": 75
+  },
+  {
+   "pmid": "42716115",
+   "received": "2026-01-13",
+   "accepted": "2026-09-09",
+   "revised": "",
+   "days": 239
+  },
+  {
+   "pmid": "42748962",
+   "received": "2026-05-15",
+   "accepted": "2026-09-16",
+   "revised": "",
+   "days": 124
+  },
+  {
+   "pmid": "42743978",
+   "received": "2026-05-20",
+   "accepted": "2026-09-15",
+   "revised": "",
+   "days": 118
+  },
+  {
+   "pmid": "42735706",
+   "received": "2026-05-25",
+   "accepted": "2026-09-14",
+   "revised": "",
+   "days": 112
+  },
+  {
+   "pmid": "42722011",
+   "received": "2026-04-30",
+   "accepted": "2026-09-10",
+   "revised": "",
+   "days": 133
+  },
+  {
+   "pmid": "42710547",
+   "received": "2026-06-16",
+   "accepted": "2026-09-08",
+   "revised": "",
+   "days": 84
+  },
+  {
+   "pmid": "42705340",
+   "received": "2026-04-02",
+   "accepted": "2026-09-07",
+   "revised": "",
+   "days": 158
+  },
+  {
+   "pmid": "42697242",
+   "received": "2026-07-03",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 63
+  },
+  {
+   "pmid": "42727609",
+   "received": "2025-11-05",
+   "accepted": "2026-09-11",
+   "revised": "",
+   "days": 310
+  },
+  {
+   "pmid": "42705322",
+   "received": "2026-03-30",
+   "accepted": "2026-09-07",
+   "revised": "",
+   "days": 161
+  },
+  {
+   "pmid": "42722034",
+   "received": "2026-06-02",
+   "accepted": "2026-09-10",
+   "revised": "",
+   "days": 100
+  },
+  {
+   "pmid": "42722028",
+   "received": "2026-03-14",
+   "accepted": "2026-09-10",
+   "revised": "",
+   "days": 180
+  },
+  {
+   "pmid": "42716117",
+   "received": "2026-04-27",
+   "accepted": "2026-09-09",
+   "revised": "",
+   "days": 135
+  },
+  {
+   "pmid": "42685782",
+   "received": "2026-05-14",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 111
+  },
+  {
+   "pmid": "42600654",
+   "received": "2026-05-05",
+   "accepted": "2026-08-14",
+   "revised": "",
+   "days": 101
+  },
+  {
+   "pmid": "42586165",
+   "received": "2026-03-08",
+   "accepted": "2026-08-11",
+   "revised": "",
+   "days": 156
+  },
+  {
+   "pmid": "42765361",
+   "received": "2025-12-11",
+   "accepted": "2026-07-31",
+   "revised": "",
+   "days": 232
+  },
+  {
+   "pmid": "42765352",
+   "received": "2026-04-13",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 144
+  },
+  {
+   "pmid": "42716111",
+   "received": "2026-05-10",
+   "accepted": "2026-09-09",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42716107",
+   "received": "2026-02-16",
+   "accepted": "2026-09-09",
+   "revised": "",
+   "days": 205
+  },
+  {
+   "pmid": "42697239",
+   "received": "2026-05-28",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42697236",
+   "received": "2026-04-21",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 136
+  },
+  {
+   "pmid": "42628568",
+   "received": "2026-06-30",
+   "accepted": "2026-08-21",
+   "revised": "",
+   "days": 52
+  },
+  {
+   "pmid": "42697241",
+   "received": "2026-04-19",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 138
+  },
+  {
+   "pmid": "42697234",
+   "received": "2026-05-08",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42697230",
+   "received": "2026-05-17",
+   "accepted": "2026-09-04",
+   "revised": "",
+   "days": 110
+  },
+  {
+   "pmid": "42685770",
+   "received": "2026-04-20",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 135
+  },
+  {
+   "pmid": "42508458",
+   "received": "2026-03-12",
+   "accepted": "2026-07-27",
+   "revised": "",
+   "days": 137
+  },
+  {
+   "pmid": "42685776",
+   "received": "2026-05-18",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 107
+  },
+  {
+   "pmid": "42660181",
+   "received": "2026-02-06",
+   "accepted": "2026-08-27",
+   "revised": "",
+   "days": 202
+  },
+  {
+   "pmid": "42612697",
+   "received": "2026-02-13",
+   "accepted": "2026-08-18",
+   "revised": "",
+   "days": 186
+  },
+  {
+   "pmid": "42723441",
+   "received": "2026-03-24",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 134
+  },
+  {
+   "pmid": "42685799",
+   "received": "2026-04-09",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 146
+  },
+  {
+   "pmid": "42685798",
+   "received": "2026-05-13",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 112
+  },
+  {
+   "pmid": "42685785",
+   "received": "2026-05-09",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 116
+  },
+  {
+   "pmid": "42685772",
+   "received": "2026-04-09",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 146
+  },
+  {
+   "pmid": "42685767",
+   "received": "2026-03-06",
+   "accepted": "2026-09-02",
+   "revised": "",
+   "days": 180
+  },
+  {
+   "pmid": "42628570",
+   "received": "2026-03-21",
+   "accepted": "2026-08-21",
+   "revised": "",
+   "days": 153
+  },
+  {
+   "pmid": "42556394",
+   "received": "2026-03-04",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 154
+  },
+  {
+   "pmid": "42586152",
+   "received": "2026-02-07",
+   "accepted": "2026-08-12",
+   "revised": "",
+   "days": 186
+  },
+  {
+   "pmid": "42665011",
+   "received": "2026-05-22",
+   "accepted": "2026-08-28",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42665000",
+   "received": "2026-04-22",
+   "accepted": "2026-08-28",
+   "revised": "",
+   "days": 128
+  },
+  {
+   "pmid": "42641660",
+   "received": "2026-03-11",
+   "accepted": "2026-08-25",
+   "revised": "",
+   "days": 167
+  },
+  {
+   "pmid": "42660182",
+   "received": "2026-05-06",
+   "accepted": "2026-08-27",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42641655",
+   "received": "2026-05-11",
+   "accepted": "2026-08-25",
+   "revised": "",
+   "days": 106
+  },
+  {
+   "pmid": "42624161",
+   "received": "2026-03-24",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 149
+  },
+  {
+   "pmid": "42624160",
+   "received": "2026-05-14",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42644250",
+   "received": "2026-05-04",
+   "accepted": "2026-08-25",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42641644",
+   "received": "2026-03-02",
+   "accepted": "2026-08-25",
+   "revised": "",
+   "days": 176
+  },
+  {
+   "pmid": "42628571",
+   "received": "2026-04-16",
+   "accepted": "2026-08-21",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42628569",
+   "received": "2026-03-18",
+   "accepted": "2026-08-21",
+   "revised": "",
+   "days": 156
+  },
+  {
+   "pmid": "42628565",
+   "received": "2026-05-18",
+   "accepted": "2026-08-21",
+   "revised": "",
+   "days": 95
+  },
+  {
+   "pmid": "42624163",
+   "received": "2026-04-20",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42624162",
+   "received": "2026-04-22",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42624158",
+   "received": "2026-04-15",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42594955",
+   "received": "2026-04-09",
+   "accepted": "2026-08-13",
+   "revised": "",
+   "days": 126
+  },
+  {
+   "pmid": "42575124",
+   "received": "2026-03-23",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 140
+  },
+  {
+   "pmid": "42567188",
+   "received": "2025-10-08",
+   "accepted": "2026-07-27",
+   "revised": "",
+   "days": 292
+  },
+  {
+   "pmid": "42567181",
+   "received": "2026-01-31",
+   "accepted": "2026-08-07",
+   "revised": "",
+   "days": 188
+  },
+  {
+   "pmid": "42562002",
+   "received": "2026-02-22",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 165
+  },
+  {
+   "pmid": "42556401",
+   "received": "2026-02-24",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 162
+  },
+  {
+   "pmid": "42551486",
+   "received": "2026-03-15",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 142
+  },
+  {
+   "pmid": "42508466",
+   "received": "2026-03-13",
+   "accepted": "2026-07-27",
+   "revised": "",
+   "days": 136
+  },
+  {
+   "pmid": "42677971",
+   "received": "2026-05-20",
+   "accepted": "2026-08-13",
+   "revised": "",
+   "days": 85
+  },
+  {
+   "pmid": "42624159",
+   "received": "2026-04-02",
+   "accepted": "2026-08-20",
+   "revised": "",
+   "days": 140
+  },
+  {
+   "pmid": "42600649",
+   "received": "2026-04-10",
+   "accepted": "2026-08-14",
+   "revised": "",
+   "days": 126
+  },
+  {
+   "pmid": "42586150",
+   "received": "2026-01-27",
+   "accepted": "2026-08-11",
+   "revised": "",
+   "days": 196
+  },
+  {
+   "pmid": "42575160",
+   "received": "2026-02-08",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 183
+  },
+  {
+   "pmid": "42575158",
+   "received": "2026-01-05",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 217
+  },
+  {
+   "pmid": "42480615",
+   "received": "2026-03-12",
+   "accepted": "2026-07-21",
+   "revised": "",
+   "days": 131
+  },
+  {
+   "pmid": "42600637",
+   "received": "2026-01-17",
+   "accepted": "2026-08-14",
+   "revised": "",
+   "days": 209
+  },
+  {
+   "pmid": "42594945",
+   "received": "2026-05-03",
+   "accepted": "2026-08-13",
+   "revised": "",
+   "days": 102
+  },
+  {
+   "pmid": "42586167",
+   "received": "2026-03-02",
+   "accepted": "2026-08-11",
+   "revised": "",
+   "days": 162
+  },
+  {
+   "pmid": "42600639",
+   "received": "2026-06-09",
+   "accepted": "2026-08-14",
+   "revised": "",
+   "days": 66
+  },
+  {
+   "pmid": "42594950",
+   "received": "2026-05-28",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 74
+  },
+  {
+   "pmid": "42586151",
+   "received": "2026-06-02",
+   "accepted": "2026-08-11",
+   "revised": "",
+   "days": 70
+  },
+  {
+   "pmid": "42575140",
+   "received": "2026-06-07",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 64
+  },
+  {
+   "pmid": "42526495",
+   "received": "2026-04-28",
+   "accepted": "2026-07-29",
+   "revised": "",
+   "days": 92
+  },
+  {
+   "pmid": "42635000",
+   "received": "2026-03-26",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 133
+  },
+  {
+   "pmid": "42578794",
+   "received": "2025-12-24",
+   "accepted": "2026-08-11",
+   "revised": "",
+   "days": 230
+  },
+  {
+   "pmid": "42575159",
+   "received": "2026-04-22",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 110
+  },
+  {
+   "pmid": "42575134",
+   "received": "2026-05-04",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42567186",
+   "received": "2026-04-26",
+   "accepted": "2026-08-07",
+   "revised": "",
+   "days": 103
+  },
+  {
+   "pmid": "42567180",
+   "received": "2026-04-02",
+   "accepted": "2026-08-07",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42562016",
+   "received": "2026-03-05",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 154
+  },
+  {
+   "pmid": "42556413",
+   "received": "2026-02-02",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 184
+  },
+  {
+   "pmid": "42556395",
+   "received": "2026-05-15",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 82
+  },
+  {
+   "pmid": "42551490",
+   "received": "2026-05-10",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 86
+  },
+  {
+   "pmid": "42551487",
+   "received": "2026-04-09",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 117
+  },
+  {
+   "pmid": "42575152",
+   "received": "2026-06-29",
+   "accepted": "2026-08-10",
+   "revised": "",
+   "days": 42
+  },
+  {
+   "pmid": "42562003",
+   "received": "2026-04-01",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42556412",
+   "received": "2026-05-25",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 72
+  },
+  {
+   "pmid": "42551492",
+   "received": "2026-02-10",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 175
+  },
+  {
+   "pmid": "42551479",
+   "received": "2025-09-07",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 331
+  },
+  {
+   "pmid": "42562017",
+   "received": "2026-03-27",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 132
+  },
+  {
+   "pmid": "42556407",
+   "received": "2026-04-28",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42556398",
+   "received": "2026-03-02",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 156
+  },
+  {
+   "pmid": "42425149",
+   "received": "2026-03-11",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42610227",
+   "received": "2026-04-07",
+   "accepted": "2026-08-07",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42561998",
+   "received": "2026-03-08",
+   "accepted": "2026-08-06",
+   "revised": "",
+   "days": 151
+  },
+  {
+   "pmid": "42556417",
+   "received": "2026-04-03",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 124
+  },
+  {
+   "pmid": "42556403",
+   "received": "2026-05-18",
+   "accepted": "2026-08-05",
+   "revised": "",
+   "days": 79
+  },
+  {
+   "pmid": "42551488",
+   "received": "2026-05-17",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 79
+  },
+  {
+   "pmid": "42551482",
+   "received": "2026-04-13",
+   "accepted": "2026-08-04",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42546758",
+   "received": "2026-06-04",
+   "accepted": "2026-08-03",
+   "revised": "",
+   "days": 60
+  },
+  {
+   "pmid": "42581658",
+   "received": "2025-12-19",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 210
+  },
+  {
+   "pmid": "42447911",
+   "received": "2026-05-05",
+   "accepted": "2026-07-14",
+   "revised": "",
+   "days": 70
+  },
+  {
+   "pmid": "42341822",
+   "received": "2026-04-17",
+   "accepted": "2026-06-24",
+   "revised": "",
+   "days": 68
+  },
+  {
+   "pmid": "42492582",
+   "received": "2026-03-26",
+   "accepted": "2026-07-23",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42520842",
+   "received": "2026-03-28",
+   "accepted": "2026-07-28",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42492579",
+   "received": "2026-03-23",
+   "accepted": "2026-07-23",
+   "revised": "",
+   "days": 122
+  },
+  {
+   "pmid": "42468567",
+   "received": "2026-02-24",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 143
+  },
+  {
+   "pmid": "42462786",
+   "received": "2026-03-18",
+   "accepted": "2026-07-16",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42361841",
+   "received": "2025-12-01",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 207
+  },
+  {
+   "pmid": "42486165",
+   "received": "2026-02-23",
+   "accepted": "2026-07-22",
+   "revised": "",
+   "days": 149
+  },
+  {
+   "pmid": "42486159",
+   "received": "2026-03-10",
+   "accepted": "2026-07-22",
+   "revised": "",
+   "days": 134
+  },
+  {
+   "pmid": "42456748",
+   "received": "2026-04-01",
+   "accepted": "2026-07-15",
+   "revised": "",
+   "days": 105
+  },
+  {
+   "pmid": "42413567",
+   "received": "2026-01-19",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 158
+  },
+  {
+   "pmid": "42372790",
+   "received": "2026-03-12",
+   "accepted": "2026-06-29",
+   "revised": "",
+   "days": 109
+  },
+  {
+   "pmid": "42492581",
+   "received": "2026-05-13",
+   "accepted": "2026-07-23",
+   "revised": "",
+   "days": 71
+  },
+  {
+   "pmid": "42486155",
+   "received": "2026-04-09",
+   "accepted": "2026-07-22",
+   "revised": "",
+   "days": 104
+  },
+  {
+   "pmid": "42486167",
+   "received": "2026-01-19",
+   "accepted": "2026-07-22",
+   "revised": "",
+   "days": 184
+  },
+  {
+   "pmid": "42486154",
+   "received": "2026-01-31",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 159
+  },
+  {
+   "pmid": "42480595",
+   "received": "2026-04-03",
+   "accepted": "2026-07-21",
+   "revised": "",
+   "days": 109
+  },
+  {
+   "pmid": "42468562",
+   "received": "2026-03-19",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42544448",
+   "received": "2026-05-31",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 47
+  },
+  {
+   "pmid": "42468568",
+   "received": "2026-04-07",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 101
+  },
+  {
+   "pmid": "42468563",
+   "received": "2026-01-21",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 177
+  },
+  {
+   "pmid": "42468558",
+   "received": "2026-04-16",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 92
+  },
+  {
+   "pmid": "42425159",
+   "received": "2026-03-15",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 116
+  },
+  {
+   "pmid": "42425155",
+   "received": "2026-04-02",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42468565",
+   "received": "2026-04-15",
+   "accepted": "2026-07-17",
+   "revised": "",
+   "days": 93
+  },
+  {
+   "pmid": "42425163",
+   "received": "2026-02-06",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 153
+  },
+  {
+   "pmid": "42462785",
+   "received": "2026-03-24",
+   "accepted": "2026-07-16",
+   "revised": "",
+   "days": 114
+  },
+  {
+   "pmid": "42431225",
+   "received": "2026-03-24",
+   "accepted": "2026-07-10",
+   "revised": "",
+   "days": 108
+  },
+  {
+   "pmid": "42431229",
+   "received": "2025-11-28",
+   "accepted": "2026-07-10",
+   "revised": "",
+   "days": 224
+  },
+  {
+   "pmid": "42413566",
+   "received": "2026-02-03",
+   "accepted": "2026-07-07",
+   "revised": "",
+   "days": 154
+  },
+  {
+   "pmid": "42504094",
+   "received": "2026-03-15",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 116
+  },
+  {
+   "pmid": "42504087",
+   "received": "2026-03-08",
+   "accepted": "2026-07-07",
+   "revised": "",
+   "days": 121
+  },
+  {
+   "pmid": "42447916",
+   "received": "2026-05-06",
+   "accepted": "2026-07-14",
+   "revised": "",
+   "days": 69
+  },
+  {
+   "pmid": "42431235",
+   "received": "2025-11-11",
+   "accepted": "2026-07-10",
+   "revised": "",
+   "days": 241
+  },
+  {
+   "pmid": "42425148",
+   "received": "2026-01-30",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 160
+  },
+  {
+   "pmid": "42349491",
+   "received": "2026-04-20",
+   "accepted": "2026-06-25",
+   "revised": "",
+   "days": 66
+  },
+  {
+   "pmid": "42248184",
+   "received": "2026-02-08",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 117
+  },
+  {
+   "pmid": "42361840",
+   "received": "2026-02-18",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 128
+  },
+  {
+   "pmid": "42425165",
+   "received": "2026-03-10",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 121
+  },
+  {
+   "pmid": "42425147",
+   "received": "2026-02-24",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 135
+  },
+  {
+   "pmid": "42392152",
+   "received": "2026-03-18",
+   "accepted": "2026-07-01",
+   "revised": "",
+   "days": 105
+  },
+  {
+   "pmid": "42425166",
+   "received": "2026-02-17",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 142
+  },
+  {
+   "pmid": "42425156",
+   "received": "2025-12-01",
+   "accepted": "2026-07-09",
+   "revised": "",
+   "days": 220
+  },
+  {
+   "pmid": "42413556",
+   "received": "2026-05-15",
+   "accepted": "2026-07-07",
+   "revised": "",
+   "days": 53
+  },
+  {
+   "pmid": "42309144",
+   "received": "2025-11-20",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 209
+  },
+  {
+   "pmid": "42413563",
+   "received": "2026-01-13",
+   "accepted": "2026-07-07",
+   "revised": "",
+   "days": 175
+  },
+  {
+   "pmid": "42392174",
+   "received": "2026-03-22",
+   "accepted": "2026-07-01",
+   "revised": "",
+   "days": 101
+  },
+  {
+   "pmid": "42392155",
+   "received": "2025-12-01",
+   "accepted": "2026-07-01",
+   "revised": "",
+   "days": 212
+  },
+  {
+   "pmid": "42392154",
+   "received": "2025-11-24",
+   "accepted": "2026-07-01",
+   "revised": "",
+   "days": 219
+  },
+  {
+   "pmid": "42361834",
+   "received": "2026-04-02",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 85
+  },
+  {
+   "pmid": "42335965",
+   "received": "2025-12-23",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 182
+  },
+  {
+   "pmid": "42248181",
+   "received": "2026-02-17",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 108
+  },
+  {
+   "pmid": "42361839",
+   "received": "2026-03-31",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 87
+  },
+  {
+   "pmid": "42361836",
+   "received": "2026-02-13",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 133
+  },
+  {
+   "pmid": "42259369",
+   "received": "2026-03-16",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 84
+  },
+  {
+   "pmid": "42361846",
+   "received": "2026-03-05",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42361842",
+   "received": "2026-02-26",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 120
+  },
+  {
+   "pmid": "42361838",
+   "received": "2025-07-09",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 352
+  },
+  {
+   "pmid": "42361837",
+   "received": "2026-02-11",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 135
+  },
+  {
+   "pmid": "42361832",
+   "received": "2026-02-08",
+   "accepted": "2026-06-26",
+   "revised": "",
+   "days": 138
+  },
+  {
+   "pmid": "42335958",
+   "received": "2026-01-13",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 161
+  },
+  {
+   "pmid": "42335951",
+   "received": "2025-12-21",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 184
+  },
+  {
+   "pmid": "42335949",
+   "received": "2025-12-22",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 183
+  },
+  {
+   "pmid": "42285131",
+   "received": "2024-12-10",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 549
+  },
+  {
+   "pmid": "42341831",
+   "received": "2026-01-19",
+   "accepted": "2026-06-24",
+   "revised": "",
+   "days": 156
+  },
+  {
+   "pmid": "42335968",
+   "received": "2026-02-16",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42341816",
+   "received": "2026-03-25",
+   "accepted": "2026-06-24",
+   "revised": "",
+   "days": 91
+  },
+  {
+   "pmid": "42335962",
+   "received": "2026-05-07",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 47
+  },
+  {
+   "pmid": "42335957",
+   "received": "2025-12-04",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 201
+  },
+  {
+   "pmid": "42335955",
+   "received": "2026-03-02",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 113
+  },
+  {
+   "pmid": "42335952",
+   "received": "2026-02-09",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 134
+  },
+  {
+   "pmid": "42314745",
+   "received": "2025-04-21",
+   "accepted": "2026-06-18",
+   "revised": "",
+   "days": 423
+  },
+  {
+   "pmid": "42309138",
+   "received": "2026-02-19",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 118
+  },
+  {
+   "pmid": "42140280",
+   "received": "2025-08-05",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 283
+  },
+  {
+   "pmid": "42314751",
+   "received": "2026-05-02",
+   "accepted": "2026-06-18",
+   "revised": "",
+   "days": 47
+  },
+  {
+   "pmid": "42302829",
+   "received": "2025-12-12",
+   "accepted": "2026-06-16",
+   "revised": "",
+   "days": 186
+  },
+  {
+   "pmid": "42335950",
+   "received": "2026-02-25",
+   "accepted": "2026-06-23",
+   "revised": "",
+   "days": 118
+  },
+  {
+   "pmid": "42248192",
+   "received": "2026-01-22",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 134
+  },
+  {
+   "pmid": "42314760",
+   "received": "2026-02-02",
+   "accepted": "2026-06-18",
+   "revised": "",
+   "days": 136
+  },
+  {
+   "pmid": "42309151",
+   "received": "2026-02-18",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42309142",
+   "received": "2026-02-10",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42309141",
+   "received": "2026-03-18",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 91
+  },
+  {
+   "pmid": "42285147",
+   "received": "2025-12-16",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 178
+  },
+  {
+   "pmid": "42285137",
+   "received": "2025-12-18",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 176
+  },
+  {
+   "pmid": "42259355",
+   "received": "2026-02-02",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 126
+  },
+  {
+   "pmid": "42248182",
+   "received": "2026-03-26",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 71
+  },
+  {
+   "pmid": "42173137",
+   "received": "2026-03-02",
+   "accepted": "2026-05-22",
+   "revised": "",
+   "days": 81
+  },
+  {
+   "pmid": "42381417",
+   "received": "2025-10-29",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 226
+  },
+  {
+   "pmid": "42309140",
+   "received": "2026-04-30",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 48
+  },
+  {
+   "pmid": "42309137",
+   "received": "2026-02-13",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 124
+  },
+  {
+   "pmid": "42309131",
+   "received": "2025-12-04",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 195
+  },
+  {
+   "pmid": "42285143",
+   "received": "2026-03-23",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 81
+  },
+  {
+   "pmid": "42285133",
+   "received": "2026-03-11",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 93
+  },
+  {
+   "pmid": "42248203",
+   "received": "2026-02-11",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 114
+  },
+  {
+   "pmid": "42248177",
+   "received": "2026-02-01",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 124
+  },
+  {
+   "pmid": "42309149",
+   "received": "2026-02-02",
+   "accepted": "2026-06-17",
+   "revised": "",
+   "days": 135
+  },
+  {
+   "pmid": "42285158",
+   "received": "2026-03-26",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 78
+  },
+  {
+   "pmid": "42285148",
+   "received": "2026-04-24",
+   "accepted": "2026-06-12",
+   "revised": "",
+   "days": 49
+  },
+  {
+   "pmid": "42269673",
+   "received": "2025-10-25",
+   "accepted": "2026-06-10",
+   "revised": "",
+   "days": 228
+  },
+  {
+   "pmid": "42259368",
+   "received": "2025-12-03",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 187
+  },
+  {
+   "pmid": "42246140",
+   "received": "2026-01-29",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 126
+  },
+  {
+   "pmid": "42248183",
+   "received": "2025-10-18",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 230
+  },
+  {
+   "pmid": "42212429",
+   "received": "2026-02-18",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42173149",
+   "received": "2026-01-15",
+   "accepted": "2026-05-22",
+   "revised": "",
+   "days": 127
+  },
+  {
+   "pmid": "42102858",
+   "received": "2025-12-22",
+   "accepted": "2026-05-08",
+   "revised": "",
+   "days": 137
+  },
+  {
+   "pmid": "42269669",
+   "received": "2026-03-07",
+   "accepted": "2026-06-10",
+   "revised": "",
+   "days": 95
+  },
+  {
+   "pmid": "42259364",
+   "received": "2025-12-17",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 173
+  },
+  {
+   "pmid": "42248205",
+   "received": "2026-01-09",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 147
+  },
+  {
+   "pmid": "42248187",
+   "received": "2026-03-18",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 79
+  },
+  {
+   "pmid": "42246143",
+   "received": "2026-02-09",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 115
+  },
+  {
+   "pmid": "42246137",
+   "received": "2025-12-29",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 157
+  },
+  {
+   "pmid": "42214426",
+   "received": "2025-02-14",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 469
+  },
+  {
+   "pmid": "42214414",
+   "received": "2025-11-23",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 187
+  },
+  {
+   "pmid": "42339743",
+   "received": "2026-03-19",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 81
+  },
+  {
+   "pmid": "42269676",
+   "received": "2025-09-23",
+   "accepted": "2026-06-10",
+   "revised": "",
+   "days": 260
+  },
+  {
+   "pmid": "42269668",
+   "received": "2026-01-05",
+   "accepted": "2026-06-10",
+   "revised": "",
+   "days": 156
+  },
+  {
+   "pmid": "42259354",
+   "received": "2026-02-12",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 116
+  },
+  {
+   "pmid": "42248200",
+   "received": "2025-12-20",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 167
+  },
+  {
+   "pmid": "42214429",
+   "received": "2026-02-20",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42208575",
+   "received": "2026-01-29",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42140286",
+   "received": "2025-08-20",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 268
+  },
+  {
+   "pmid": "42140284",
+   "received": "2025-09-22",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 235
+  },
+  {
+   "pmid": "42140276",
+   "received": "2025-09-22",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 235
+  },
+  {
+   "pmid": "42248208",
+   "received": "2026-03-16",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 81
+  },
+  {
+   "pmid": "42248186",
+   "received": "2026-02-06",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 119
+  },
+  {
+   "pmid": "42246132",
+   "received": "2025-12-06",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 173
+  },
+  {
+   "pmid": "42235582",
+   "received": "2026-02-05",
+   "accepted": "2026-06-03",
+   "revised": "",
+   "days": 118
+  },
+  {
+   "pmid": "42259373",
+   "received": "2026-02-25",
+   "accepted": "2026-06-08",
+   "revised": "",
+   "days": 103
+  },
+  {
+   "pmid": "42246123",
+   "received": "2025-12-23",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 163
+  },
+  {
+   "pmid": "42235590",
+   "received": "2026-02-06",
+   "accepted": "2026-06-03",
+   "revised": "",
+   "days": 117
+  },
+  {
+   "pmid": "42235583",
+   "received": "2026-01-14",
+   "accepted": "2026-06-03",
+   "revised": "",
+   "days": 140
+  },
+  {
+   "pmid": "42214412",
+   "received": "2026-03-19",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 71
+  },
+  {
+   "pmid": "42311210",
+   "received": "2026-03-30",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 66
+  },
+  {
+   "pmid": "42248199",
+   "received": "2026-01-08",
+   "accepted": "2026-06-05",
+   "revised": "",
+   "days": 148
+  },
+  {
+   "pmid": "42246148",
+   "received": "2026-04-01",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 64
+  },
+  {
+   "pmid": "42246136",
+   "received": "2026-03-24",
+   "accepted": "2026-06-04",
+   "revised": "",
+   "days": 72
+  },
+  {
+   "pmid": "42214408",
+   "received": "2026-02-02",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 116
+  },
+  {
+   "pmid": "42208595",
+   "received": "2026-03-18",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 71
+  },
+  {
+   "pmid": "42208573",
+   "received": "2025-11-11",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 198
+  },
+  {
+   "pmid": "42190706",
+   "received": "2025-11-27",
+   "accepted": "2026-05-26",
+   "revised": "",
+   "days": 180
+  },
+  {
+   "pmid": "42190709",
+   "received": "2025-09-26",
+   "accepted": "2026-05-26",
+   "revised": "",
+   "days": 242
+  },
+  {
+   "pmid": "42214415",
+   "received": "2026-02-19",
+   "accepted": "2026-05-29",
+   "revised": "",
+   "days": 99
+  },
+  {
+   "pmid": "42208572",
+   "received": "2026-01-30",
+   "accepted": "2026-05-28",
+   "revised": "",
+   "days": 118
+  },
+  {
+   "pmid": "42190719",
+   "received": "2026-02-05",
+   "accepted": "2026-05-26",
+   "revised": "",
+   "days": 110
+  },
+  {
+   "pmid": "42128006",
+   "received": "2026-02-04",
+   "accepted": "2026-05-13",
+   "revised": "",
+   "days": 98
+  },
+  {
+   "pmid": "42173146",
+   "received": "2026-02-09",
+   "accepted": "2026-05-22",
+   "revised": "",
+   "days": 102
+  },
+  {
+   "pmid": "42155529",
+   "received": "2026-03-02",
+   "accepted": "2026-05-19",
+   "revised": "",
+   "days": 78
+  },
+  {
+   "pmid": "42140285",
+   "received": "2025-10-25",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 202
+  },
+  {
+   "pmid": "42140281",
+   "received": "2026-01-22",
+   "accepted": "2026-05-15",
+   "revised": "",
+   "days": 113
+  }
+ ]
+}

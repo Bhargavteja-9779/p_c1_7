@@ -1,0 +1,9 @@
+# Downloadable/regenerable data (fetched by code; not source of record)
+Target_Journal_Submission/code/data/raw/
+Target_Journal_Submission/code/data/processed/
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# OS
+.DS_Store

@@ -1,0 +1,66 @@
+# Default configuration. Values here define the FULL experiment.
+# run_all.py --mode quick overrides a subset for a fast smoke test.
+
+seed_list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+alphas: [0.1, 0.2]            # nominal miscoverage (1-alpha = coverage target)
+primary_alpha: 0.1
+
+features:
+  fp_radius: 2               # ECFP4
+  fp_bits: 2048
+
+split:
+  train_frac: 0.60
+  calib_frac: 0.20
+  test_frac: 0.20
+  n_ad_strata: 4             # applicability-domain similarity strata (Mondrian bins)
+
+models: [ridge, rf, lgbm, mlp]
+primary_model: lgbm           # fast, strong, standard; RF/Ridge/MLP = model-agnosticism ablation
+ablation_models: [rf, ridge, mlp]
+ablation_seeds: 8             # seeds for the model-agnosticism ablation
+
+conformal_methods:
+  - raw_ensemble            # B0 non-conformal reference
+  - split                   # B1 standard split conformal
+  - normalized              # B2 normalized (local-sigma) conformal
+  - mondrian                # B3 AD-stratified (Mondrian) conformal
+  - localized               # B4 Tanimoto-kernel localized conformal (Guan/dAD-style)
+  - weighted_disc           # B5  covariate-shift weighted CP, PCA fingerprint discriminator (pool)
+  - weighted_ad             # B5a covariate-shift weighted CP, 1-D applicability-domain density ratio
+  - weighted_logistic       # B5' CoDrug-style logistic density ratio (calib-vs-test)
+  - weighted_kde            # B5' CoDrug-style KDE density ratio (calib-vs-test)
+  - adwcp                   # M1  AD-stratified weighted CP (combination)
+  - adecp                   # M2  PROPOSED: AD conformal extrapolation
+# calib_update (Morger reference, uses test labels) is run separately via
+# experiments/run_reference.py and excluded from the deployment-feasible comparison.
+
+weighting:
+  clip_prob: [0.01, 0.99]   # Tibshirani probability clip
+  weight_cap: 50.0          # hard cap on density ratio
+  discriminator: logistic   # logistic | gbm  (classifier for P(pool|x))
+
+localized:
+  kernel: tanimoto
+  bandwidth: 0.25           # k(x,x') = exp(sim(x,x')/bandwidth)
+
+scaffold_datasets: [esol, freesolv, lipophilicity, bace]
+temporal_datasets: [chembl_vegfr2, chembl_cox2]
+sweep_datasets: [lipophilicity, bace]
+
+chembl_targets:
+  chembl_vegfr2: {target_chembl_id: CHEMBL279, standard_type: IC50, name: "VEGFR2 (KDR)"}
+  chembl_cox2:   {target_chembl_id: CHEMBL230, standard_type: IC50, name: "Cyclooxygenase-2"}
+
+robustness:
+  calib_sizes: [100, 200, 400, 800]   # calibration-size sweep (where data allow)
+  shift_sweep_quantiles: [0.0, 0.25, 0.5, 0.75, 0.9]  # controlled similarity split
+
+decision:
+  select_fractions: [0.05, 0.10, 0.20]  # top-fraction selected in screening utility test
+
+paths:
+  data_dir: data
+  results_dir: results
+  figures_dir: figures
+  tables_dir: tables
