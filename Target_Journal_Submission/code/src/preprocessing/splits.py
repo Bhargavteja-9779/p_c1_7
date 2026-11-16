@@ -61,31 +61,33 @@ def temporal_split(df: pd.DataFrame, fracs=(0.6, 0.2, 0.2), seed: int = 0):
 
 
 def similarity_shift_split(df, X, q: float, fracs=(0.6, 0.2, 0.2), seed: int = 0):
-    """Controlled-shift split with a monotone shift knob q in [0,1].
+    """Controlled covariate-shift split with a monotone shift knob q in [0,1], along a
+    genuine chemical-space axis (the first principal component of the fingerprints).
 
-    train/calib are a random subset (resembling the full distribution). The test set is
-    a mixture: a fraction q of it is taken from the compounds FARTHEST (lowest
-    max-Tanimoto) from the training set; the remaining (1-q) is drawn at random from the
-    leftover pool. q=0 -> ~no shift (random test); q=1 -> maximal shift (farthest test).
-    `X` is the dense fingerprint matrix aligned with df rows. Returns index arrays."""
-    from .features import max_sim_to_ref_matrix
+    Compounds are ranked by PC1. The test set is a mixture: a fraction q of it is taken
+    from the high-PC1 tail (a displaced region of chemical space) and the remaining
+    (1-q) at random; train/calibration are drawn from the rest. Shifting along a global
+    variance direction makes the magnitude of covariate shift increase monotonically
+    with q (verified by the train-vs-pool discriminator AUC). q=0 -> ~no shift;
+    q=1 -> maximal shift. `X` is the dense fingerprint matrix aligned with df rows."""
+    from sklearn.decomposition import PCA
     rng = np.random.default_rng(seed)
     idx = df.index.to_numpy()
     n = len(idx)
-    perm = rng.permutation(n)
-    n_train = int(fracs[0] * n); n_calib = int(fracs[1] * n); n_test = n - n_train - n_calib
-    train_pos = perm[:n_train]
-    calib_pos = perm[n_train:n_train + n_calib]
-    pool_pos = perm[n_train + n_calib:]
-    sims = max_sim_to_ref_matrix(X[pool_pos], X[train_pos])
-    n_far = int(round(q * n_test))
-    far_order = np.argsort(sims)                      # ascending similarity: farthest first
-    far_idx = far_order[:n_far].tolist()
-    far_set = set(far_idx)
-    rest = [i for i in range(len(pool_pos)) if i not in far_set]
+    n_test = int(fracs[2] * n)
+    pc1 = PCA(n_components=1, random_state=seed).fit_transform(X).ravel()
+    order_hi = np.argsort(-pc1)                       # highest PC1 first (the shifted tail)
+    n_tail = int(round(q * n_test))
+    tail = order_hi[:n_tail]
+    tail_set = set(tail.tolist())
+    rest = np.array([i for i in range(n) if i not in tail_set])
     rng.shuffle(rest)
-    chosen = far_idx + rest[:max(0, n_test - n_far)]
-    test_pos = pool_pos[np.array(chosen, dtype=int)]
+    test_pos = np.concatenate([tail, rest[:max(0, n_test - n_tail)]]).astype(int)
+    remaining = np.array([i for i in range(n) if i not in set(test_pos.tolist())])
+    rng.shuffle(remaining)
+    n_train = int(fracs[0] * n)
+    train_pos = remaining[:n_train]
+    calib_pos = remaining[n_train:]
     return (np.array(sorted(idx[train_pos])), np.array(sorted(idx[calib_pos])),
             np.array(sorted(idx[test_pos])))
 

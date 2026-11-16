@@ -238,3 +238,174 @@
 15:16:12 | INFO | [scaffold 226/256] lipophilicity/mlp/s1/a0.1 auc=0.66 t=37.54s
 15:17:24 | INFO | [scaffold 227/256] lipophilicity/mlp/s2/a0.1 auc=0.67 t=71.7s
 15:17:52 | INFO | [scaffold 228/256] lipophilicity/mlp/s3/a0.1 auc=0.63 t=28.51s
+15:18:34 | INFO | [scaffold 229/256] lipophilicity/mlp/s4/a0.1 auc=0.62 t=41.59s
+15:19:29 | INFO | [scaffold 230/256] lipophilicity/mlp/s5/a0.1 auc=0.64 t=54.68s
+15:20:25 | INFO | [scaffold 231/256] lipophilicity/mlp/s6/a0.1 auc=0.66 t=55.9s
+15:20:50 | INFO | [scaffold 232/256] lipophilicity/mlp/s7/a0.1 auc=0.64 t=25.7s
+15:20:55 | INFO | [scaffold 233/256] bace/rf/s0/a0.1 auc=0.79 t=4.74s
+15:21:00 | INFO | [scaffold 234/256] bace/rf/s1/a0.1 auc=0.73 t=4.75s
+15:21:05 | INFO | [scaffold 235/256] bace/rf/s2/a0.1 auc=0.74 t=5.46s
+15:21:10 | INFO | [scaffold 236/256] bace/rf/s3/a0.1 auc=0.77 t=4.68s
+15:21:16 | INFO | [scaffold 237/256] bace/rf/s4/a0.1 auc=0.80 t=6.04s
+15:21:21 | INFO | [scaffold 238/256] bace/rf/s5/a0.1 auc=0.78 t=4.49s
+15:21:24 | INFO | [scaffold 239/256] bace/rf/s6/a0.1 auc=0.72 t=3.94s
+15:21:29 | INFO | [scaffold 240/256] bace/rf/s7/a0.1 auc=0.72 t=4.26s
+15:21:30 | INFO | [scaffold 241/256] bace/ridge/s0/a0.1 auc=0.79 t=1.37s
+15:21:32 | INFO | [scaffold 242/256] bace/ridge/s1/a0.1 auc=0.73 t=1.57s
+15:21:33 | INFO | [scaffold 243/256] bace/ridge/s2/a0.1 auc=0.74 t=1.53s
+15:21:35 | INFO | [scaffold 244/256] bace/ridge/s3/a0.1 auc=0.77 t=1.67s
+15:21:37 | INFO | [scaffold 245/256] bace/ridge/s4/a0.1 auc=0.80 t=1.59s
+15:21:38 | INFO | [scaffold 246/256] bace/ridge/s5/a0.1 auc=0.78 t=1.93s
+15:21:40 | INFO | [scaffold 247/256] bace/ridge/s6/a0.1 auc=0.72 t=1.93s
+15:21:42 | INFO | [scaffold 248/256] bace/ridge/s7/a0.1 auc=0.72 t=1.28s
+15:21:50 | INFO | [scaffold 249/256] bace/mlp/s0/a0.1 auc=0.79 t=8.0s
+15:21:58 | INFO | [scaffold 250/256] bace/mlp/s1/a0.1 auc=0.73 t=8.25s
+15:22:07 | INFO | [scaffold 251/256] bace/mlp/s2/a0.1 auc=0.74 t=8.91s
+15:22:17 | INFO | [scaffold 252/256] bace/mlp/s3/a0.1 auc=0.77 t=10.37s
+15:22:31 | INFO | [scaffold 253/256] bace/mlp/s4/a0.1 auc=0.80 t=13.81s
+15:22:41 | INFO | [scaffold 254/256] bace/mlp/s5/a0.1 auc=0.78 t=9.4s
+15:22:50 | INFO | [scaffold 255/256] bace/mlp/s6/a0.1 auc=0.72 t=9.57s
+15:23:17 | INFO | [scaffold 256/256] bace/mlp/s7/a0.1 auc=0.72 t=27.13s
+15:23:28 | INFO | [temporal 1/40] chembl_vegfr2/lgbm/s0/a0.1 auc=0.76
+15:23:36 | INFO | [temporal 2/40] chembl_vegfr2/lgbm/s0/a0.2 auc=0.76
+15:23:43 | INFO | [temporal 3/40] chembl_vegfr2/lgbm/s1/a0.1 auc=0.76
+15:23:52 | INFO | [temporal 4/40] chembl_vegfr2/lgbm/s1/a0.2 auc=0.76
+15:24:01 | INFO | [temporal 5/40] chembl_vegfr2/lgbm/s2/a0.1 auc=0.76
+15:24:11 | INFO | [temporal 6/40] chembl_vegfr2/lgbm/s2/a0.2 auc=0.76
+15:24:20 | INFO | [temporal 7/40] chembl_vegfr2/lgbm/s3/a0.1 auc=0.77
+15:24:28 | INFO | [temporal 8/40] chembl_vegfr2/lgbm/s3/a0.2 auc=0.77
+15:24:37 | INFO | [temporal 9/40] chembl_vegfr2/lgbm/s4/a0.1 auc=0.76
+15:24:47 | INFO | [temporal 10/40] chembl_vegfr2/lgbm/s4/a0.2 auc=0.76
+15:25:52 | INFO | [temporal 11/40] chembl_vegfr2/rf/s0/a0.1 auc=0.76
+/home/user/p_c1_7/Target_Journal_Submission/code/src/conformal/methods.py:165: IterationLimitWarning: Maximum number of iterations (2000) reached.
+  mod = sm.QuantReg(s, Xc).fit(q=tau, max_iter=2000)
+15:27:00 | INFO | [temporal 12/40] chembl_vegfr2/rf/s0/a0.2 auc=0.76
+15:28:06 | INFO | [temporal 13/40] chembl_vegfr2/rf/s1/a0.1 auc=0.76
+15:29:09 | INFO | [temporal 14/40] chembl_vegfr2/rf/s1/a0.2 auc=0.76
+15:30:12 | INFO | [temporal 15/40] chembl_vegfr2/rf/s2/a0.1 auc=0.76
+15:31:20 | INFO | [temporal 16/40] chembl_vegfr2/rf/s2/a0.2 auc=0.76
+15:32:27 | INFO | [temporal 17/40] chembl_vegfr2/rf/s3/a0.1 auc=0.77
+15:33:33 | INFO | [temporal 18/40] chembl_vegfr2/rf/s3/a0.2 auc=0.77
+15:34:39 | INFO | [temporal 19/40] chembl_vegfr2/rf/s4/a0.1 auc=0.76
+15:35:42 | INFO | [temporal 20/40] chembl_vegfr2/rf/s4/a0.2 auc=0.76
+15:35:47 | INFO | [temporal 21/40] chembl_cox2/lgbm/s0/a0.1 auc=0.87
+15:35:50 | INFO | [temporal 22/40] chembl_cox2/lgbm/s0/a0.2 auc=0.87
+15:35:54 | INFO | [temporal 23/40] chembl_cox2/lgbm/s1/a0.1 auc=0.87
+15:35:58 | INFO | [temporal 24/40] chembl_cox2/lgbm/s1/a0.2 auc=0.87
+15:36:01 | INFO | [temporal 25/40] chembl_cox2/lgbm/s2/a0.1 auc=0.87
+15:36:05 | INFO | [temporal 26/40] chembl_cox2/lgbm/s2/a0.2 auc=0.87
+15:36:09 | INFO | [temporal 27/40] chembl_cox2/lgbm/s3/a0.1 auc=0.87
+15:36:13 | INFO | [temporal 28/40] chembl_cox2/lgbm/s3/a0.2 auc=0.87
+15:36:16 | INFO | [temporal 29/40] chembl_cox2/lgbm/s4/a0.1 auc=0.87
+15:36:20 | INFO | [temporal 30/40] chembl_cox2/lgbm/s4/a0.2 auc=0.87
+15:36:39 | INFO | [temporal 31/40] chembl_cox2/rf/s0/a0.1 auc=0.87
+15:36:57 | INFO | [temporal 32/40] chembl_cox2/rf/s0/a0.2 auc=0.87
+15:37:17 | INFO | [temporal 33/40] chembl_cox2/rf/s1/a0.1 auc=0.87
+15:37:37 | INFO | [temporal 34/40] chembl_cox2/rf/s1/a0.2 auc=0.87
+15:37:56 | INFO | [temporal 35/40] chembl_cox2/rf/s2/a0.1 auc=0.87
+15:38:15 | INFO | [temporal 36/40] chembl_cox2/rf/s2/a0.2 auc=0.87
+15:38:34 | INFO | [temporal 37/40] chembl_cox2/rf/s3/a0.1 auc=0.87
+15:38:53 | INFO | [temporal 38/40] chembl_cox2/rf/s3/a0.2 auc=0.87
+15:39:12 | INFO | [temporal 39/40] chembl_cox2/rf/s4/a0.1 auc=0.87
+15:39:30 | INFO | [temporal 40/40] chembl_cox2/rf/s4/a0.2 auc=0.87
+15:39:34 | INFO | [sweep 1/100] lipophilicity q=0.0 s0 auc=0.58
+15:39:38 | INFO | [sweep 2/100] lipophilicity q=0.25 s0 auc=0.58
+15:39:42 | INFO | [sweep 3/100] lipophilicity q=0.5 s0 auc=0.58
+15:39:46 | INFO | [sweep 4/100] lipophilicity q=0.75 s0 auc=0.58
+15:39:51 | INFO | [sweep 5/100] lipophilicity q=0.9 s0 auc=0.58
+15:39:55 | INFO | [sweep 6/100] lipophilicity q=0.0 s1 auc=0.58
+15:39:59 | INFO | [sweep 7/100] lipophilicity q=0.25 s1 auc=0.58
+15:40:03 | INFO | [sweep 8/100] lipophilicity q=0.5 s1 auc=0.58
+15:40:07 | INFO | [sweep 9/100] lipophilicity q=0.75 s1 auc=0.58
+15:40:11 | INFO | [sweep 10/100] lipophilicity q=0.9 s1 auc=0.58
+15:40:15 | INFO | [sweep 11/100] lipophilicity q=0.0 s2 auc=0.58
+15:40:20 | INFO | [sweep 12/100] lipophilicity q=0.25 s2 auc=0.58
+15:40:24 | INFO | [sweep 13/100] lipophilicity q=0.5 s2 auc=0.58
+15:40:28 | INFO | [sweep 14/100] lipophilicity q=0.75 s2 auc=0.58
+15:40:31 | INFO | [sweep 15/100] lipophilicity q=0.9 s2 auc=0.58
+15:40:35 | INFO | [sweep 16/100] lipophilicity q=0.0 s3 auc=0.56
+15:40:38 | INFO | [sweep 17/100] lipophilicity q=0.25 s3 auc=0.56
+15:40:42 | INFO | [sweep 18/100] lipophilicity q=0.5 s3 auc=0.56
+15:40:46 | INFO | [sweep 19/100] lipophilicity q=0.75 s3 auc=0.56
+15:40:50 | INFO | [sweep 20/100] lipophilicity q=0.9 s3 auc=0.56
+15:40:54 | INFO | [sweep 21/100] lipophilicity q=0.0 s4 auc=0.58
+15:40:58 | INFO | [sweep 22/100] lipophilicity q=0.25 s4 auc=0.58
+15:41:02 | INFO | [sweep 23/100] lipophilicity q=0.5 s4 auc=0.58
+15:41:07 | INFO | [sweep 24/100] lipophilicity q=0.75 s4 auc=0.58
+15:41:11 | INFO | [sweep 25/100] lipophilicity q=0.9 s4 auc=0.58
+15:41:15 | INFO | [sweep 26/100] lipophilicity q=0.0 s5 auc=0.55
+15:41:18 | INFO | [sweep 27/100] lipophilicity q=0.25 s5 auc=0.55
+15:41:22 | INFO | [sweep 28/100] lipophilicity q=0.5 s5 auc=0.55
+15:41:26 | INFO | [sweep 29/100] lipophilicity q=0.75 s5 auc=0.55
+15:41:30 | INFO | [sweep 30/100] lipophilicity q=0.9 s5 auc=0.55
+15:41:34 | INFO | [sweep 31/100] lipophilicity q=0.0 s6 auc=0.56
+15:41:38 | INFO | [sweep 32/100] lipophilicity q=0.25 s6 auc=0.56
+15:41:41 | INFO | [sweep 33/100] lipophilicity q=0.5 s6 auc=0.56
+15:41:45 | INFO | [sweep 34/100] lipophilicity q=0.75 s6 auc=0.56
+15:41:49 | INFO | [sweep 35/100] lipophilicity q=0.9 s6 auc=0.56
+15:41:53 | INFO | [sweep 36/100] lipophilicity q=0.0 s7 auc=0.55
+15:41:57 | INFO | [sweep 37/100] lipophilicity q=0.25 s7 auc=0.55
+15:42:01 | INFO | [sweep 38/100] lipophilicity q=0.5 s7 auc=0.55
+15:42:04 | INFO | [sweep 39/100] lipophilicity q=0.75 s7 auc=0.55
+15:42:08 | INFO | [sweep 40/100] lipophilicity q=0.9 s7 auc=0.55
+15:42:12 | INFO | [sweep 41/100] lipophilicity q=0.0 s8 auc=0.57
+15:42:15 | INFO | [sweep 42/100] lipophilicity q=0.25 s8 auc=0.57
+15:42:20 | INFO | [sweep 43/100] lipophilicity q=0.5 s8 auc=0.57
+15:42:24 | INFO | [sweep 44/100] lipophilicity q=0.75 s8 auc=0.57
+15:42:28 | INFO | [sweep 45/100] lipophilicity q=0.9 s8 auc=0.57
+15:42:32 | INFO | [sweep 46/100] lipophilicity q=0.0 s9 auc=0.57
+15:42:36 | INFO | [sweep 47/100] lipophilicity q=0.25 s9 auc=0.57
+15:42:40 | INFO | [sweep 48/100] lipophilicity q=0.5 s9 auc=0.57
+15:42:43 | INFO | [sweep 49/100] lipophilicity q=0.75 s9 auc=0.57
+15:42:48 | INFO | [sweep 50/100] lipophilicity q=0.9 s9 auc=0.57
+15:42:50 | INFO | [sweep 51/100] bace q=0.0 s0 auc=0.63
+15:42:52 | INFO | [sweep 52/100] bace q=0.25 s0 auc=0.63
+15:42:54 | INFO | [sweep 53/100] bace q=0.5 s0 auc=0.63
+15:42:56 | INFO | [sweep 54/100] bace q=0.75 s0 auc=0.63
+15:42:58 | INFO | [sweep 55/100] bace q=0.9 s0 auc=0.63
+15:43:00 | INFO | [sweep 56/100] bace q=0.0 s1 auc=0.61
+15:43:02 | INFO | [sweep 57/100] bace q=0.25 s1 auc=0.61
+15:43:04 | INFO | [sweep 58/100] bace q=0.5 s1 auc=0.61
+15:43:06 | INFO | [sweep 59/100] bace q=0.75 s1 auc=0.61
+15:43:08 | INFO | [sweep 60/100] bace q=0.9 s1 auc=0.61
+15:43:09 | INFO | [sweep 61/100] bace q=0.0 s2 auc=0.60
+15:43:11 | INFO | [sweep 62/100] bace q=0.25 s2 auc=0.60
+15:43:13 | INFO | [sweep 63/100] bace q=0.5 s2 auc=0.60
+15:43:15 | INFO | [sweep 64/100] bace q=0.75 s2 auc=0.60
+15:43:17 | INFO | [sweep 65/100] bace q=0.9 s2 auc=0.60
+15:43:18 | INFO | [sweep 66/100] bace q=0.0 s3 auc=0.61
+15:43:20 | INFO | [sweep 67/100] bace q=0.25 s3 auc=0.61
+15:43:23 | INFO | [sweep 68/100] bace q=0.5 s3 auc=0.61
+15:43:25 | INFO | [sweep 69/100] bace q=0.75 s3 auc=0.61
+15:43:26 | INFO | [sweep 70/100] bace q=0.9 s3 auc=0.61
+15:43:28 | INFO | [sweep 71/100] bace q=0.0 s4 auc=0.62
+15:43:29 | INFO | [sweep 72/100] bace q=0.25 s4 auc=0.62
+15:43:32 | INFO | [sweep 73/100] bace q=0.5 s4 auc=0.62
+15:43:34 | INFO | [sweep 74/100] bace q=0.75 s4 auc=0.62
+15:43:36 | INFO | [sweep 75/100] bace q=0.9 s4 auc=0.62
+15:43:38 | INFO | [sweep 76/100] bace q=0.0 s5 auc=0.61
+15:43:40 | INFO | [sweep 77/100] bace q=0.25 s5 auc=0.61
+15:43:42 | INFO | [sweep 78/100] bace q=0.5 s5 auc=0.61
+15:43:44 | INFO | [sweep 79/100] bace q=0.75 s5 auc=0.61
+15:43:46 | INFO | [sweep 80/100] bace q=0.9 s5 auc=0.61
+15:43:48 | INFO | [sweep 81/100] bace q=0.0 s6 auc=0.57
+15:43:50 | INFO | [sweep 82/100] bace q=0.25 s6 auc=0.57
+15:43:52 | INFO | [sweep 83/100] bace q=0.5 s6 auc=0.57
+15:43:54 | INFO | [sweep 84/100] bace q=0.75 s6 auc=0.57
+15:43:57 | INFO | [sweep 85/100] bace q=0.9 s6 auc=0.57
+15:43:59 | INFO | [sweep 86/100] bace q=0.0 s7 auc=0.62
+15:44:01 | INFO | [sweep 87/100] bace q=0.25 s7 auc=0.62
+15:44:03 | INFO | [sweep 88/100] bace q=0.5 s7 auc=0.62
+15:44:05 | INFO | [sweep 89/100] bace q=0.75 s7 auc=0.62
+15:44:07 | INFO | [sweep 90/100] bace q=0.9 s7 auc=0.62
+15:44:09 | INFO | [sweep 91/100] bace q=0.0 s8 auc=0.61
+15:44:10 | INFO | [sweep 92/100] bace q=0.25 s8 auc=0.61
+15:44:12 | INFO | [sweep 93/100] bace q=0.5 s8 auc=0.61
+15:44:14 | INFO | [sweep 94/100] bace q=0.75 s8 auc=0.61
+15:44:17 | INFO | [sweep 95/100] bace q=0.9 s8 auc=0.61
+15:44:19 | INFO | [sweep 96/100] bace q=0.0 s9 auc=0.61
+15:44:21 | INFO | [sweep 97/100] bace q=0.25 s9 auc=0.61
+15:44:23 | INFO | [sweep 98/100] bace q=0.5 s9 auc=0.61
+15:44:25 | INFO | [sweep 99/100] bace q=0.75 s9 auc=0.61
+15:44:28 | INFO | [sweep 100/100] bace q=0.9 s9 auc=0.61
+15:44:28 | INFO | compiled 4356 rows -> raw_results.csv
