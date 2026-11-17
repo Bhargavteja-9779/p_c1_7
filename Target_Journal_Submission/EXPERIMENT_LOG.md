@@ -41,3 +41,19 @@ Observed (worst-stratum coverage vs nominal 0.90; mean width; saturated %):
 - Temporal ChEMBL (VEGFR2, COX-2): chronological split (held-out confirmation).
 - Controlled similarity-shift sweep (diagnostic law).
 - Ablations, decision-utility, statistics (Wilcoxon + Holm + bootstrap CIs), figures/tables.
+
+## 2026-11-17/18 — Round-2 expanded validation (13 ChEMBL targets, 6 families)
+HONEST, consequential findings from the rigorous expansion the reviewer demanded:
+- Pooled worst-stratum coverage (temporal, 13 targets, lgbm, target 0.90):
+  Split 0.670 | KMM 0.715 | Mondrian 0.732 | ADE-CP 0.742 | MW-CP 0.755 | ADR-CP 0.839 |
+  Localized 0.852 (15% saturated) | KDE 0.965 (96% saturated).
+- **ADR-CP (simple global 1-D AD reweighting) is the best DEPLOYABLE method**, significantly
+  beating MW-CP (median Δ +0.073, Holm p<0.001), Mondrian, KMM, ADE-CP, with low saturation (6%).
+- **MW-CP (the group-conditional-GUARANTEED method) underperforms ADR-CP** (stratification
+  fragments calibration). It beats split/KMM/Mondrian-on-rank but not ADR-CP.
+- **Diagnostic FAILS target-level validation**: Spearman(AUC, achievable worst-cov) rho=-0.016,
+  p=0.96 across 13 targets; LOTO false-safe 0.54. The earlier split-level rho=-0.56 was inflated
+  by non-independent repeated splits (the exact flaw the reviewer flagged). The universal-AUC-
+  threshold deployment rule is NOT supported across targets and is withdrawn.
+Implication: the novel method does not dominate the simple baseline, and the diagnostic does not
+generalize. This materially weakens the intended contributions and must drive an honest decision.
