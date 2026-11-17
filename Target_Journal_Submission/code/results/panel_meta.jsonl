@@ -15,3 +15,7 @@
 {"dataset": "panel_egfr", "model": "rf", "seed": 1, "window": "w20", "shift_auc": 0.8458317527484369, "n": [2804, 400, 801]}
 {"dataset": "panel_egfr", "model": "rf", "seed": 2, "window": "w40", "shift_auc": 0.8552771654004635, "n": [2003, 400, 1602]}
 {"dataset": "panel_egfr", "model": "rf", "seed": 2, "window": "w30", "shift_auc": 0.8466859286700905, "n": [2404, 400, 1201]}
+{"dataset": "panel_egfr", "model": "rf", "seed": 2, "window": "w20", "shift_auc": 0.8433885246865099, "n": [2804, 400, 801]}
+{"dataset": "panel_vegfr2", "model": "lgbm", "seed": 0, "window": "w40", "shift_auc": 0.7849227465280783, "n": [2233, 446, 1785]}
+{"dataset": "panel_vegfr2", "model": "lgbm", "seed": 0, "window": "w30", "shift_auc": 0.801244208195795, "n": [2679, 446, 1339]}
+{"dataset": "panel_vegfr2", "model": "lgbm", "seed": 0, "window": "w20", "shift_auc": 0.8113968552484729, "n": [3126, 446, 892]}

@@ -16,3 +16,9 @@
 20:02:10 | INFO | [panel 15/234] egfr/rf/s1/w20 auc=0.85 n=[2804, 400, 801]
 20:02:21 | INFO | [panel 16/234] egfr/rf/s2/w40 auc=0.86 n=[2003, 400, 1602]
 20:02:36 | INFO | [panel 17/234] egfr/rf/s2/w30 auc=0.85 n=[2404, 400, 1201]
+/home/user/p_c1_7/Target_Journal_Submission/code/src/conformal/methods.py:235: IterationLimitWarning: Maximum number of iterations (2000) reached.
+  mod = sm.QuantReg(s[A], XcA).fit(q=tau, max_iter=2000)
+20:02:53 | INFO | [panel 18/234] egfr/rf/s2/w20 auc=0.84 n=[2804, 400, 801]
+20:02:59 | INFO | [panel 19/234] vegfr2/lgbm/s0/w40 auc=0.78 n=[2233, 446, 1785]
+20:03:04 | INFO | [panel 20/234] vegfr2/lgbm/s0/w30 auc=0.80 n=[2679, 446, 1339]
+20:03:08 | INFO | [panel 21/234] vegfr2/lgbm/s0/w20 auc=0.81 n=[3126, 446, 892]
