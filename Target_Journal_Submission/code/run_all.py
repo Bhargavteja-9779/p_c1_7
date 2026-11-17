@@ -37,6 +37,19 @@ def main():
     if args.stage in ("all", "experiments"):
         from experiments.run_experiments import run_all_experiments
         run_all_experiments(cfg, which=tuple(args.which.split(",")))
+        if args.mode == "full":
+            # expanded temporal panel (>=10 ChEMBL targets, multiple windows)
+            try:
+                import experiments.run_panel as rp
+                rp.main()
+            except Exception as e:
+                log.warning(f"panel stage skipped: {e}")
+            # graph-model demonstration (N7) and representation ablation (E5)
+            for mod in ("experiments.run_gnn_subset", "experiments.run_representation_ablation"):
+                try:
+                    __import__(mod).main() if False else __import__(mod, fromlist=["main"]).main()
+                except Exception as e:
+                    log.warning(f"{mod} skipped: {e}")
     if args.stage in ("all", "analysis"):
         from experiments.run_experiments import compile_csv
         compile_csv(cfg)
@@ -46,6 +59,17 @@ def main():
         generate_all_tables(cfg)
         from src.visualization.plots import generate_all_figures
         generate_all_figures(cfg)
+        # expanded-panel analysis, diagnostic validation (no-ops if data absent)
+        try:
+            from src.statistics.panel_analysis import panel_tables_and_stats, fig_panel_forest
+            panel_tables_and_stats(cfg); fig_panel_forest(cfg)
+        except Exception as e:
+            log.warning(f"panel analysis skipped: {e}")
+        try:
+            from src.statistics.diagnostic import validate_diagnostic
+            validate_diagnostic(cfg)
+        except Exception as e:
+            log.warning(f"diagnostic validation skipped: {e}")
     log.info(f"run_all complete in {time.time()-t0:.1f}s. See results/, tables/, figures/.")
 
 

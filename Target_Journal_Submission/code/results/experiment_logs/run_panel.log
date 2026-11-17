@@ -14,3 +14,5 @@
 20:01:38 | INFO | [panel 13/234] egfr/rf/s1/w40 auc=0.86 n=[2003, 400, 1602]
 20:01:52 | INFO | [panel 14/234] egfr/rf/s1/w30 auc=0.84 n=[2404, 400, 1201]
 20:02:10 | INFO | [panel 15/234] egfr/rf/s1/w20 auc=0.85 n=[2804, 400, 801]
+20:02:21 | INFO | [panel 16/234] egfr/rf/s2/w40 auc=0.86 n=[2003, 400, 1602]
+20:02:36 | INFO | [panel 17/234] egfr/rf/s2/w30 auc=0.85 n=[2404, 400, 1201]

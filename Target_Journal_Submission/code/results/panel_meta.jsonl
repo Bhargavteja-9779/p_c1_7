@@ -13,3 +13,5 @@
 {"dataset": "panel_egfr", "model": "rf", "seed": 1, "window": "w40", "shift_auc": 0.8564545503841614, "n": [2003, 400, 1602]}
 {"dataset": "panel_egfr", "model": "rf", "seed": 1, "window": "w30", "shift_auc": 0.8432873118768192, "n": [2404, 400, 1201]}
 {"dataset": "panel_egfr", "model": "rf", "seed": 1, "window": "w20", "shift_auc": 0.8458317527484369, "n": [2804, 400, 801]}
+{"dataset": "panel_egfr", "model": "rf", "seed": 2, "window": "w40", "shift_auc": 0.8552771654004635, "n": [2003, 400, 1602]}
+{"dataset": "panel_egfr", "model": "rf", "seed": 2, "window": "w30", "shift_auc": 0.8466859286700905, "n": [2404, 400, 1201]}
