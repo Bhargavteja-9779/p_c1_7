@@ -25,3 +25,16 @@ OK ar 2356 nuclear_receptor 1996-2025
 19:46:45 | INFO | ChEMBL panel CHEMBL206: 6637 records -> panel_CHEMBL206.jsonl
 19:46:54 | INFO | panel eralpha (Estrogen Ra, IC50): 3064 unique molecules, years 1999-2025
 OK eralpha 3064 nuclear_receptor 1999-2025
+19:53:04 | INFO | ChEMBL panel CHEMBL2034: 4739 records -> panel_CHEMBL2034.jsonl
+19:53:09 | INFO | panel gr (Glucocorticoid R, IC50): 2088 unique molecules, years 1991-2024
+OK gr 2088 nuclear_receptor 1991-2024
+19:55:06 | INFO | ChEMBL panel CHEMBL2039: 6468 records -> panel_CHEMBL2039.jsonl
+19:55:13 | INFO | panel maob (MAO-B, IC50): 4584 unique molecules, years 1996-2025
+OK maob 4584 enzyme 1996-2025
+19:55:57 | INFO | ChEMBL panel CHEMBL284: 5362 records -> panel_CHEMBL284.jsonl
+19:56:03 | INFO | panel dpp4 (DPP-4, IC50): 3885 unique molecules, years 1996-2025
+OK dpp4 3885 enzyme 1996-2025
+19:59:29 | INFO | ChEMBL panel CHEMBL230: 6027 records -> panel_CHEMBL230.jsonl
+19:59:37 | INFO | panel cox2 (COX-2, IC50): 4292 unique molecules, years 1994-2024
+OK cox2 4292 enzyme 1994-2024
+PANEL DONE: 13 targets

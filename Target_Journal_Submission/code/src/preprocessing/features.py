@@ -5,12 +5,22 @@ from rdkit import Chem, DataStructs
 from rdkit.Chem import rdFingerprintGenerator
 
 _GEN_CACHE = {}
+_USE_FEATURES = {"v": False}   # False = ECFP (connectivity), True = FCFP (functional-class)
+
+
+def set_fp_variant(use_features: bool):
+    """Switch between ECFP (use_features=False) and FCFP (use_features=True) for the
+    representation-robustness ablation. Clears the generator cache."""
+    _USE_FEATURES["v"] = bool(use_features)
+    _GEN_CACHE.clear()
 
 
 def _gen(radius: int, nbits: int):
-    key = (radius, nbits)
+    key = (radius, nbits, _USE_FEATURES["v"])
     if key not in _GEN_CACHE:
-        _GEN_CACHE[key] = rdFingerprintGenerator.GetMorganGenerator(radius=radius, fpSize=nbits)
+        inv = rdFingerprintGenerator.GetMorganFeatureAtomInvGen() if _USE_FEATURES["v"] else None
+        _GEN_CACHE[key] = rdFingerprintGenerator.GetMorganGenerator(
+            radius=radius, fpSize=nbits, atomInvariantsGenerator=inv)
     return _GEN_CACHE[key]
 
 
