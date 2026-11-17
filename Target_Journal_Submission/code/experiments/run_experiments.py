@@ -19,7 +19,7 @@ from src.data.datasets import load_dataset, dataset_summary
 
 log = get_logger()
 
-SCALAR_KEYS = ["method", "dataset", "model", "seed", "split_type", "alpha", "sweep_q",
+SCALAR_KEYS = ["method", "dataset", "model", "seed", "split_type", "alpha", "sweep_q", "window",
                "marginal_coverage", "marginal_gap", "target", "mean_width", "median_width",
                "inf_fraction", "saturated_fraction", "worst_stratum_coverage",
                "max_stratum_gap", "value_worst_coverage", "value_max_gap",

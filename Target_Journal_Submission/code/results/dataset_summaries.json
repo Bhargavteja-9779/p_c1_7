@@ -27,18 +27,6 @@
   "year_min": 1994,
   "year_max": 2025
  },
- "bace": {
-  "key": "bace",
-  "name": "BACE-1 inhibition",
-  "unit": "pIC50",
-  "shift": "scaffold",
-  "n": 1510,
-  "n_scaffolds": 724,
-  "y_mean": 6.5224926403311265,
-  "y_std": 1.3432302200157513,
-  "y_min": 2.5445461,
-  "y_max": 10.522879
- },
  "freesolv": {
   "key": "freesolv",
   "name": "FreeSolv (hydration free energy)",
@@ -62,6 +50,18 @@
   "y_std": 1.203003713387104,
   "y_min": -1.5,
   "y_max": 4.5
+ },
+ "bace": {
+  "key": "bace",
+  "name": "BACE-1 inhibition",
+  "unit": "pIC50",
+  "shift": "scaffold",
+  "n": 1510,
+  "n_scaffolds": 724,
+  "y_mean": 6.5224926403311265,
+  "y_std": 1.3432302200157513,
+  "y_min": 2.5445461,
+  "y_max": 10.522879
  },
  "esol": {
   "key": "esol",

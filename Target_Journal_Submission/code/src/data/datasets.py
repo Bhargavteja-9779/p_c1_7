@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from ..utils import get_logger
-from .download import download_molnet, download_chembl_target
+from .download import download_molnet, download_chembl_target, download_chembl_panel_target
 from ..preprocessing.standardize import standardize_smiles, bemis_murcko_scaffold
 
 log = get_logger()
@@ -90,6 +90,42 @@ def load_dataset(key: str, cfg: dict) -> pd.DataFrame:
     log.info(f"{key}: {len(out)} unique molecules "
              f"(y mean={out['y'].mean():.2f} sd={out['y'].std():.2f})")
     return out
+
+
+def load_panel_target(key: str, cfg: dict) -> pd.DataFrame:
+    """Load a ChEMBL panel target, restricted to its dominant assay type (IC50 or Ki)
+    for within-target homogeneity. Returns the canonical temporal DataFrame."""
+    meta = cfg["chembl_panel"][key]
+    cache = Path(cfg["paths"]["data_dir"]) / "processed" / f"panel_{key}.csv"
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    if cache.exists():
+        return pd.read_csv(cache)
+    path = download_chembl_panel_target(meta["id"])
+    rows = [json.loads(l) for l in open(path)]
+    raw = pd.DataFrame(rows)
+    if raw.empty:
+        return raw
+    # choose dominant standard type for homogeneity
+    dom = raw["standard_type"].value_counts().idxmax()
+    raw = raw[raw["standard_type"] == dom].copy()
+    raw = raw.rename(columns={"canonical_smiles": "smiles"})
+    raw["y"] = pd.to_numeric(raw["pchembl_value"], errors="coerce")
+    raw["year"] = pd.to_numeric(raw["document_year"], errors="coerce")
+    raw = raw.dropna(subset=["smiles", "y"])
+    out = _finalize(raw[["smiles", "y", "year"]], temporal=True)
+    out.attrs["assay_type"] = dom
+    out.to_csv(cache, index=False)
+    log.info(f"panel {key} ({meta['name']}, {dom}): {len(out)} unique molecules, "
+             f"years {out['year'].min()}-{out['year'].max()}")
+    return out
+
+
+def panel_summary(key: str, df: pd.DataFrame, cfg: dict) -> dict:
+    meta = cfg["chembl_panel"][key]
+    return {"key": key, "name": meta["name"], "family": meta["family"], "n": int(len(df)),
+            "n_scaffolds": int(df["scaffold"].nunique()),
+            "year_min": int(df["year"].min()), "year_max": int(df["year"].max()),
+            "y_mean": float(df["y"].mean()), "y_std": float(df["y"].std())}
 
 
 def dataset_summary(key: str, df: pd.DataFrame) -> dict:

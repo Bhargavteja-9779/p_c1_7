@@ -39,14 +39,18 @@ def _make_split(df, X, split_type, fracs, seed, sweep_q=None):
 
 
 def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
-               methods=None, sweep_q=None, decision_fracs=None, return_arrays=False):
-    """Execute one run. df must have columns smiles,y (and year for temporal)."""
+               methods=None, sweep_q=None, decision_fracs=None, return_arrays=False,
+               fracs=None, window=None):
+    """Execute one run. df must have columns smiles,y (and year for temporal).
+    `fracs` overrides the (train,calib,test) proportions (used for multiple temporal
+    windows). `window` is a label recorded in the output rows."""
     t0 = time.time()
     set_global_seed(seed)
     level = 1.0 - alpha
     methods = methods or cfg["conformal_methods"]
     fr = cfg["split"]
-    fracs = (fr["train_frac"], fr["calib_frac"], fr["test_frac"])
+    if fracs is None:
+        fracs = (fr["train_frac"], fr["calib_frac"], fr["test_frac"])
     n_strata = fr["n_ad_strata"]
 
     smiles = df["smiles"].to_numpy()
@@ -97,7 +101,7 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
     if "weighted_kde" in methods:
         dk = DensityRatioWeights(kind="kde", clip_prob=clipp, cap=cap, seed=seed).fit(Xca, Xte)
         weights["codrug_kde"] = (dk.weights(Xca), dk.weights(Xte))
-    if "weighted_ad" in methods:
+    if "weighted_ad" in methods or "mwcp" in methods:
         # Robust 1-D density ratio along the applicability-domain coordinate
         # (similarity-to-training). Non-degenerate by construction; targets the exact
         # axis along which chemical covariate shift occurs. Estimated from the
@@ -124,7 +128,7 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
             wc, wt = weights["codrug_logistic"]
         elif method == "weighted_kde":
             wc, wt = weights["codrug_kde"]
-        elif method == "weighted_ad":
+        elif method == "weighted_ad" or method == "mwcp":
             wc, wt = weights["ad1d"]
         elif method == "weighted_kmm":
             wc, wt = weights["kmm"]
@@ -150,10 +154,10 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
         lo = np.maximum(lo, y_lo_tr)
         hi = np.minimum(hi, y_hi_tr)
         extra = {"dataset": dataset_key, "model": model_name, "seed": seed,
-                 "split_type": split_type, "alpha": alpha, "sweep_q": sweep_q,
+                 "split_type": split_type, "alpha": alpha, "sweep_q": sweep_q, "window": window,
                  "n_train": len(tr), "n_calib": len(ca), "n_test": len(te),
                  "shift_auc": shift_auc, "ad_test_median": float(np.median(ad_te))}
-        wt_for_neff = ctx_for(m).w_test if m in ("weighted_disc", "adwcp", "weighted_ad",
+        wt_for_neff = ctx_for(m).w_test if m in ("weighted_disc", "adwcp", "weighted_ad", "mwcp",
                                                   "weighted_logistic", "weighted_kde") else None
         if m == "weighted_kmm":
             wt_for_neff = ctx_for(m).w_calib

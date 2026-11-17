@@ -21,7 +21,6 @@ ablation_models: [rf, ridge, mlp]
 ablation_seeds: 8             # seeds for the model-agnosticism ablation
 
 conformal_methods:
-  - raw_ensemble            # B0 non-conformal reference
   - split                   # B1 standard split conformal
   - normalized              # B2 normalized (local-sigma) conformal
   - mondrian                # B3 AD-stratified (Mondrian) conformal
@@ -32,6 +31,7 @@ conformal_methods:
   - weighted_kde            # B5' CoDrug-style KDE density ratio (calib-vs-test)
   - weighted_kmm            # B5'' KMM-CP-style kernel-mean-matching weights (Laghuvarapu 2026)
   - adwcp                   # M1  AD-stratified weighted CP (combination)
+  - mwcp                    # M3  PROPOSED PRIMARY: Mondrian-weighted CP (group-conditional guarantee)
   - adecp                   # M2  PROPOSED: AD conformal extrapolation
 # calib_update (Morger reference, uses test labels) is run separately via
 # experiments/run_reference.py and excluded from the deployment-feasible comparison.
@@ -52,6 +52,23 @@ sweep_datasets: [lipophilicity, bace]
 chembl_targets:
   chembl_vegfr2: {target_chembl_id: CHEMBL279, standard_type: IC50, name: "VEGFR2 (KDR)"}
   chembl_cox2:   {target_chembl_id: CHEMBL230, standard_type: IC50, name: "Cyclooxygenase-2"}
+
+# Expanded multi-target panel (>=10 targets, >=5 families) for temporal evaluation.
+# Each target is restricted to its single dominant assay type (IC50 or Ki) for homogeneity.
+chembl_panel:
+  egfr:    {id: CHEMBL203,  name: "EGFR",        family: kinase}
+  vegfr2:  {id: CHEMBL279,  name: "VEGFR2/KDR",  family: kinase}
+  jak2:    {id: CHEMBL2971, name: "JAK2",        family: kinase}
+  src:     {id: CHEMBL267,  name: "SRC",         family: kinase}
+  bace1:   {id: CHEMBL4822, name: "BACE-1",      family: protease}
+  herg:    {id: CHEMBL240,  name: "hERG",        family: ion_channel}
+  mor:     {id: CHEMBL233,  name: "mu-opioid R", family: gpcr}
+  ar:      {id: CHEMBL1871, name: "Androgen R",  family: nuclear_receptor}
+  eralpha: {id: CHEMBL206,  name: "Estrogen Ra", family: nuclear_receptor}
+  gr:      {id: CHEMBL2034, name: "Glucocorticoid R", family: nuclear_receptor}
+  maob:    {id: CHEMBL2039, name: "MAO-B",       family: enzyme}
+  dpp4:    {id: CHEMBL284,  name: "DPP-4",       family: enzyme}
+  cox2:    {id: CHEMBL230,  name: "COX-2",       family: enzyme}
 
 robustness:
   calib_sizes: [100, 200, 400, 800]   # calibration-size sweep (where data allow)
