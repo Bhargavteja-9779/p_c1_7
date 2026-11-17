@@ -27,7 +27,9 @@
  "chembl_2019": 26,
  "ash_2025": 27,
  "merz_editorial_2020": 28,
- "sklearn_2011": 29,
- "lightgbm_2017": 30,
- "rdkit": 31
+ "kmmcp_2026": 29,
+ "sklearn_2011": 30,
+ "lightgbm_2017": 31,
+ "rdkit": 32,
+ "lee_labelshift_2025": 33
 }

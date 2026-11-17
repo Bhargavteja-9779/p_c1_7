@@ -1,4 +1,18 @@
 {
+ "chembl_vegfr2": {
+  "key": "chembl_vegfr2",
+  "name": "VEGFR2/KDR (CHEMBL279)",
+  "unit": "pChEMBL",
+  "shift": "temporal",
+  "n": 9651,
+  "n_scaffolds": 3649,
+  "y_mean": 6.827245881255829,
+  "y_std": 1.1155719667541155,
+  "y_min": 4.0,
+  "y_max": 10.64,
+  "year_min": 1999,
+  "year_max": 2025
+ },
  "chembl_cox2": {
   "key": "chembl_cox2",
   "name": "COX-2 (CHEMBL230)",
@@ -25,6 +39,18 @@
   "y_min": 2.5445461,
   "y_max": 10.522879
  },
+ "freesolv": {
+  "key": "freesolv",
+  "name": "FreeSolv (hydration free energy)",
+  "unit": "kcal/mol",
+  "shift": "scaffold",
+  "n": 642,
+  "n_scaffolds": 62,
+  "y_mean": -3.8030062305295944,
+  "y_std": 3.8478201171088116,
+  "y_min": -25.47,
+  "y_max": 3.43
+ },
  "lipophilicity": {
   "key": "lipophilicity",
   "name": "Lipophilicity (logD 7.4)",
@@ -48,31 +74,5 @@
   "y_std": 2.095456965333364,
   "y_min": -11.6,
   "y_max": 1.58
- },
- "freesolv": {
-  "key": "freesolv",
-  "name": "FreeSolv (hydration free energy)",
-  "unit": "kcal/mol",
-  "shift": "scaffold",
-  "n": 642,
-  "n_scaffolds": 62,
-  "y_mean": -3.8030062305295944,
-  "y_std": 3.8478201171088116,
-  "y_min": -25.47,
-  "y_max": 3.43
- },
- "chembl_vegfr2": {
-  "key": "chembl_vegfr2",
-  "name": "VEGFR2/KDR (CHEMBL279)",
-  "unit": "pChEMBL",
-  "shift": "temporal",
-  "n": 9651,
-  "n_scaffolds": 3649,
-  "y_mean": 6.827245881255829,
-  "y_std": 1.1155719667541155,
-  "y_min": 4.0,
-  "y_max": 10.64,
-  "year_min": 1999,
-  "year_max": 2025
  }
 }

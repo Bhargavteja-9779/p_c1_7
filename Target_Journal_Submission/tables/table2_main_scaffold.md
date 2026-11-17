@@ -8,6 +8,7 @@
 | Weighted CP, FP discriminator (B5) | 0.901$\pm$0.061 | 0.820$\pm$0.107 | 7.16$\pm$6.80 | 0.16$\pm$0.33 | 80 |
 | Weighted CP, logistic (CoDrug-style) | 0.920$\pm$0.060 | 0.851$\pm$0.105 | 9.24$\pm$8.83 | 0.28$\pm$0.38 | 80 |
 | Weighted CP, KDE (CoDrug-style) | 0.988$\pm$0.014 | 0.971$\pm$0.060 | 12.51$\pm$8.78 | 0.88$\pm$0.16 | 80 |
+| KMM-weighted CP (KMM-CP-style) | 0.861$\pm$0.124 | 0.771$\pm$0.169 | 5.88$\pm$4.90 | 0.03$\pm$0.16 | 80 |
 | AD-reweighted CP [ADR-CP, ours] | 0.858$\pm$0.126 | 0.757$\pm$0.203 | 5.62$\pm$3.99 | 0.01$\pm$0.11 | 80 |
 | AD-stratified weighted CP | 0.905$\pm$0.058 | 0.840$\pm$0.107 | 7.41$\pm$6.96 | 0.17$\pm$0.33 | 80 |
 | AD-extrapolated CP [ADE-CP, ours] | 0.851$\pm$0.117 | 0.753$\pm$0.202 | 5.40$\pm$3.69 | 0.01$\pm$0.06 | 80 |

@@ -39,13 +39,12 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - Manuscript stable sections drafted (`manuscript/manuscript.md`); Results/Abstract numbers pending.
 - DOCX builder (`manuscript/build_docx.py`) validated; cover letter drafted.
 
-## NEXT STEP
-1. When experiments finish: `python run_all.py --mode full --stage analysis` → metrics/statistics/tables/figures.
-2. Inspect numbers; write Results/Abstract/Limitations/Conclusions with real values + table/figure markers.
-3. Build final DOCX. 4. Run 10-reviewer Workflow (GU5/6). 5. Audits, risk report, decision.
-
-## Files of record
-- Journal: `journal_selection/{selected_journal,journal_comparison,journal_verification}.md` (+ `evidence/`)
-- Design: `supplementary/experimental_design.md`, `supplementary/literature/{literature_matrix,gap_and_novelty}.md`
-- Code: `code/` (to build)
-- Logs: EXPERIMENT_LOG.md, REVIEW_HISTORY.md, CHANGELOG.md, REPRODUCIBILITY_STATUS.md (to create as work proceeds)
+## STATUS: COMPLETE (2026-11-17) — READY FOR SUBMISSION
+All 42 phases + global updates executed. Final decision: READY FOR SUBMISSION with disclosed
+novelty risk (see FINAL_DECISION.md, REJECTION_RISK_REPORT.md).
+- Experiments: 4,652 result rows (6 datasets, 4 models, 12 conformal methods incl. KMM baseline).
+- Adversarial review (10 perspectives + 2 AI agents) caught + fixed missing prior art (KMM-CP, Lee);
+  implemented KMM baseline; repositioned contributions honestly; 11/11 consistency checks pass.
+- Deliverables: Final_Manuscript.docx, cover_letter.docx, 9 figures, 6 tables, full code, 33 verified refs.
+- Headline result: AD-aligned conformal (ADR-CP/ADE-CP) restores conditional coverage under temporal
+  shift (0.88 vs split 0.70, Holm p<0.001) where KMM/CoDrug-style weighting does not; diagnostic predicts regime.

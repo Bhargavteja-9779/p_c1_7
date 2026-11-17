@@ -1,0 +1,122 @@
+18:11:24 | INFO | [scaffold 180/256] esol/mlp/s3/a0.1 auc=0.84 t=19.35s
+18:11:31 | INFO | [scaffold 181/256] esol/mlp/s4/a0.1 auc=0.97 t=7.01s
+18:11:37 | INFO | [scaffold 182/256] esol/mlp/s5/a0.1 auc=0.99 t=6.08s
+18:11:48 | INFO | [scaffold 183/256] esol/mlp/s6/a0.1 auc=0.95 t=11.02s
+18:11:54 | INFO | [scaffold 184/256] esol/mlp/s7/a0.1 auc=0.91 t=5.29s
+18:11:56 | INFO | [scaffold 185/256] freesolv/rf/s0/a0.1 auc=0.94 t=2.11s
+18:11:58 | INFO | [scaffold 186/256] freesolv/rf/s1/a0.1 auc=0.98 t=2.18s
+18:12:00 | INFO | [scaffold 187/256] freesolv/rf/s2/a0.1 auc=0.97 t=2.36s
+18:12:02 | INFO | [scaffold 188/256] freesolv/rf/s3/a0.1 auc=0.97 t=1.94s
+18:12:04 | INFO | [scaffold 189/256] freesolv/rf/s4/a0.1 auc=0.95 t=1.86s
+18:12:06 | INFO | [scaffold 190/256] freesolv/rf/s5/a0.1 auc=0.98 t=2.25s
+18:12:08 | INFO | [scaffold 191/256] freesolv/rf/s6/a0.1 auc=0.99 t=2.12s
+18:12:11 | INFO | [scaffold 192/256] freesolv/rf/s7/a0.1 auc=0.99 t=2.57s
+18:12:13 | INFO | [scaffold 193/256] freesolv/ridge/s0/a0.1 auc=0.94 t=2.13s
+18:12:14 | INFO | [scaffold 194/256] freesolv/ridge/s1/a0.1 auc=0.98 t=1.15s
+18:12:16 | INFO | [scaffold 195/256] freesolv/ridge/s2/a0.1 auc=0.97 t=1.47s
+18:12:17 | INFO | [scaffold 196/256] freesolv/ridge/s3/a0.1 auc=0.97 t=1.2s
+18:12:18 | INFO | [scaffold 197/256] freesolv/ridge/s4/a0.1 auc=0.95 t=1.15s
+18:12:20 | INFO | [scaffold 198/256] freesolv/ridge/s5/a0.1 auc=0.98 t=1.69s
+18:12:22 | INFO | [scaffold 199/256] freesolv/ridge/s6/a0.1 auc=0.99 t=1.68s
+18:12:23 | INFO | [scaffold 200/256] freesolv/ridge/s7/a0.1 auc=0.99 t=1.51s
+18:12:27 | INFO | [scaffold 201/256] freesolv/mlp/s0/a0.1 auc=0.94 t=4.16s
+18:12:33 | INFO | [scaffold 202/256] freesolv/mlp/s1/a0.1 auc=0.98 t=5.41s
+18:12:44 | INFO | [scaffold 203/256] freesolv/mlp/s2/a0.1 auc=0.97 t=11.38s
+18:12:49 | INFO | [scaffold 204/256] freesolv/mlp/s3/a0.1 auc=0.97 t=5.28s
+18:12:54 | INFO | [scaffold 205/256] freesolv/mlp/s4/a0.1 auc=0.95 t=4.98s
+18:13:09 | INFO | [scaffold 206/256] freesolv/mlp/s5/a0.1 auc=0.98 t=15.01s
+18:13:17 | INFO | [scaffold 207/256] freesolv/mlp/s6/a0.1 auc=0.99 t=8.06s
+18:13:28 | INFO | [scaffold 208/256] freesolv/mlp/s7/a0.1 auc=0.99 t=10.98s
+18:13:53 | INFO | [scaffold 209/256] lipophilicity/rf/s0/a0.1 auc=0.66 t=24.07s
+18:14:17 | INFO | [scaffold 210/256] lipophilicity/rf/s1/a0.1 auc=0.66 t=24.51s
+18:14:43 | INFO | [scaffold 211/256] lipophilicity/rf/s2/a0.1 auc=0.67 t=26.23s
+18:15:07 | INFO | [scaffold 212/256] lipophilicity/rf/s3/a0.1 auc=0.63 t=23.61s
+18:15:33 | INFO | [scaffold 213/256] lipophilicity/rf/s4/a0.1 auc=0.62 t=26.21s
+18:15:58 | INFO | [scaffold 214/256] lipophilicity/rf/s5/a0.1 auc=0.64 t=24.94s
+18:16:27 | INFO | [scaffold 215/256] lipophilicity/rf/s6/a0.1 auc=0.66 t=28.56s
+18:16:53 | INFO | [scaffold 216/256] lipophilicity/rf/s7/a0.1 auc=0.64 t=25.85s
+18:16:58 | INFO | [scaffold 217/256] lipophilicity/ridge/s0/a0.1 auc=0.66 t=5.13s
+18:17:02 | INFO | [scaffold 218/256] lipophilicity/ridge/s1/a0.1 auc=0.66 t=4.09s
+18:17:06 | INFO | [scaffold 219/256] lipophilicity/ridge/s2/a0.1 auc=0.67 t=3.8s
+/home/user/p_c1_7/Target_Journal_Submission/code/src/conformal/methods.py:165: IterationLimitWarning: Maximum number of iterations (2000) reached.
+  mod = sm.QuantReg(s, Xc).fit(q=tau, max_iter=2000)
+18:17:09 | INFO | [scaffold 220/256] lipophilicity/ridge/s3/a0.1 auc=0.63 t=3.75s
+18:17:13 | INFO | [scaffold 221/256] lipophilicity/ridge/s4/a0.1 auc=0.62 t=3.89s
+18:17:18 | INFO | [scaffold 222/256] lipophilicity/ridge/s5/a0.1 auc=0.64 t=4.49s
+18:17:22 | INFO | [scaffold 223/256] lipophilicity/ridge/s6/a0.1 auc=0.66 t=4.38s
+18:17:26 | INFO | [scaffold 224/256] lipophilicity/ridge/s7/a0.1 auc=0.64 t=4.14s
+18:17:54 | INFO | [scaffold 225/256] lipophilicity/mlp/s0/a0.1 auc=0.66 t=27.84s
+18:18:25 | INFO | [scaffold 226/256] lipophilicity/mlp/s1/a0.1 auc=0.66 t=30.46s
+18:19:18 | INFO | [scaffold 227/256] lipophilicity/mlp/s2/a0.1 auc=0.67 t=53.04s
+18:19:40 | INFO | [scaffold 228/256] lipophilicity/mlp/s3/a0.1 auc=0.63 t=22.65s
+18:20:15 | INFO | [scaffold 229/256] lipophilicity/mlp/s4/a0.1 auc=0.62 t=34.68s
+18:20:53 | INFO | [scaffold 230/256] lipophilicity/mlp/s5/a0.1 auc=0.64 t=38.29s
+18:21:43 | INFO | [scaffold 231/256] lipophilicity/mlp/s6/a0.1 auc=0.66 t=49.16s
+18:22:07 | INFO | [scaffold 232/256] lipophilicity/mlp/s7/a0.1 auc=0.64 t=24.27s
+18:22:12 | INFO | [scaffold 233/256] bace/rf/s0/a0.1 auc=0.79 t=4.88s
+18:22:16 | INFO | [scaffold 234/256] bace/rf/s1/a0.1 auc=0.73 t=4.54s
+18:22:21 | INFO | [scaffold 235/256] bace/rf/s2/a0.1 auc=0.74 t=5.11s
+18:22:26 | INFO | [scaffold 236/256] bace/rf/s3/a0.1 auc=0.77 t=4.9s
+18:22:32 | INFO | [scaffold 237/256] bace/rf/s4/a0.1 auc=0.80 t=5.18s
+18:22:36 | INFO | [scaffold 238/256] bace/rf/s5/a0.1 auc=0.78 t=4.22s
+18:22:40 | INFO | [scaffold 239/256] bace/rf/s6/a0.1 auc=0.72 t=4.14s
+18:22:44 | INFO | [scaffold 240/256] bace/rf/s7/a0.1 auc=0.72 t=3.89s
+18:22:45 | INFO | [scaffold 241/256] bace/ridge/s0/a0.1 auc=0.79 t=1.32s
+18:22:47 | INFO | [scaffold 242/256] bace/ridge/s1/a0.1 auc=0.73 t=1.45s
+18:22:48 | INFO | [scaffold 243/256] bace/ridge/s2/a0.1 auc=0.74 t=1.66s
+18:22:50 | INFO | [scaffold 244/256] bace/ridge/s3/a0.1 auc=0.77 t=1.86s
+18:22:52 | INFO | [scaffold 245/256] bace/ridge/s4/a0.1 auc=0.80 t=2.15s
+18:22:54 | INFO | [scaffold 246/256] bace/ridge/s5/a0.1 auc=0.78 t=2.03s
+18:22:56 | INFO | [scaffold 247/256] bace/ridge/s6/a0.1 auc=0.72 t=1.93s
+18:22:58 | INFO | [scaffold 248/256] bace/ridge/s7/a0.1 auc=0.72 t=1.81s
+18:23:06 | INFO | [scaffold 249/256] bace/mlp/s0/a0.1 auc=0.79 t=7.7s
+18:23:13 | INFO | [scaffold 250/256] bace/mlp/s1/a0.1 auc=0.73 t=7.22s
+18:23:21 | INFO | [scaffold 251/256] bace/mlp/s2/a0.1 auc=0.74 t=7.8s
+18:23:30 | INFO | [scaffold 252/256] bace/mlp/s3/a0.1 auc=0.77 t=9.09s
+18:23:41 | INFO | [scaffold 253/256] bace/mlp/s4/a0.1 auc=0.80 t=10.98s
+18:23:49 | INFO | [scaffold 254/256] bace/mlp/s5/a0.1 auc=0.78 t=8.42s
+18:23:57 | INFO | [scaffold 255/256] bace/mlp/s6/a0.1 auc=0.72 t=7.49s
+18:24:16 | INFO | [scaffold 256/256] bace/mlp/s7/a0.1 auc=0.72 t=19.26s
+18:24:30 | INFO | [temporal 1/40] chembl_vegfr2/lgbm/s0/a0.1 auc=0.76
+18:24:40 | INFO | [temporal 2/40] chembl_vegfr2/lgbm/s0/a0.2 auc=0.76
+18:24:51 | INFO | [temporal 3/40] chembl_vegfr2/lgbm/s1/a0.1 auc=0.76
+18:25:01 | INFO | [temporal 4/40] chembl_vegfr2/lgbm/s1/a0.2 auc=0.76
+18:25:12 | INFO | [temporal 5/40] chembl_vegfr2/lgbm/s2/a0.1 auc=0.76
+18:25:23 | INFO | [temporal 6/40] chembl_vegfr2/lgbm/s2/a0.2 auc=0.76
+18:25:34 | INFO | [temporal 7/40] chembl_vegfr2/lgbm/s3/a0.1 auc=0.77
+18:25:44 | INFO | [temporal 8/40] chembl_vegfr2/lgbm/s3/a0.2 auc=0.77
+18:25:55 | INFO | [temporal 9/40] chembl_vegfr2/lgbm/s4/a0.1 auc=0.76
+18:26:06 | INFO | [temporal 10/40] chembl_vegfr2/lgbm/s4/a0.2 auc=0.76
+18:27:03 | INFO | [temporal 11/40] chembl_vegfr2/rf/s0/a0.1 auc=0.76
+/home/user/p_c1_7/Target_Journal_Submission/code/src/conformal/methods.py:165: IterationLimitWarning: Maximum number of iterations (2000) reached.
+  mod = sm.QuantReg(s, Xc).fit(q=tau, max_iter=2000)
+18:28:03 | INFO | [temporal 12/40] chembl_vegfr2/rf/s0/a0.2 auc=0.76
+18:29:01 | INFO | [temporal 13/40] chembl_vegfr2/rf/s1/a0.1 auc=0.76
+18:29:55 | INFO | [temporal 14/40] chembl_vegfr2/rf/s1/a0.2 auc=0.76
+18:30:53 | INFO | [temporal 15/40] chembl_vegfr2/rf/s2/a0.1 auc=0.76
+18:31:50 | INFO | [temporal 16/40] chembl_vegfr2/rf/s2/a0.2 auc=0.76
+18:32:47 | INFO | [temporal 17/40] chembl_vegfr2/rf/s3/a0.1 auc=0.77
+18:33:46 | INFO | [temporal 18/40] chembl_vegfr2/rf/s3/a0.2 auc=0.77
+18:34:44 | INFO | [temporal 19/40] chembl_vegfr2/rf/s4/a0.1 auc=0.76
+18:35:42 | INFO | [temporal 20/40] chembl_vegfr2/rf/s4/a0.2 auc=0.76
+18:35:49 | INFO | [temporal 21/40] chembl_cox2/lgbm/s0/a0.1 auc=0.87
+18:35:53 | INFO | [temporal 22/40] chembl_cox2/lgbm/s0/a0.2 auc=0.87
+18:35:59 | INFO | [temporal 23/40] chembl_cox2/lgbm/s1/a0.1 auc=0.87
+18:36:05 | INFO | [temporal 24/40] chembl_cox2/lgbm/s1/a0.2 auc=0.87
+18:36:11 | INFO | [temporal 25/40] chembl_cox2/lgbm/s2/a0.1 auc=0.87
+18:36:17 | INFO | [temporal 26/40] chembl_cox2/lgbm/s2/a0.2 auc=0.87
+18:36:23 | INFO | [temporal 27/40] chembl_cox2/lgbm/s3/a0.1 auc=0.87
+18:36:28 | INFO | [temporal 28/40] chembl_cox2/lgbm/s3/a0.2 auc=0.87
+18:36:34 | INFO | [temporal 29/40] chembl_cox2/lgbm/s4/a0.1 auc=0.87
+18:36:39 | INFO | [temporal 30/40] chembl_cox2/lgbm/s4/a0.2 auc=0.87
+18:36:59 | INFO | [temporal 31/40] chembl_cox2/rf/s0/a0.1 auc=0.87
+18:37:17 | INFO | [temporal 32/40] chembl_cox2/rf/s0/a0.2 auc=0.87
+18:37:38 | INFO | [temporal 33/40] chembl_cox2/rf/s1/a0.1 auc=0.87
+18:37:57 | INFO | [temporal 34/40] chembl_cox2/rf/s1/a0.2 auc=0.87
+18:38:15 | INFO | [temporal 35/40] chembl_cox2/rf/s2/a0.1 auc=0.87
+18:38:35 | INFO | [temporal 36/40] chembl_cox2/rf/s2/a0.2 auc=0.87
+18:38:53 | INFO | [temporal 37/40] chembl_cox2/rf/s3/a0.1 auc=0.87
+18:39:13 | INFO | [temporal 38/40] chembl_cox2/rf/s3/a0.2 auc=0.87
+18:39:33 | INFO | [temporal 39/40] chembl_cox2/rf/s4/a0.1 auc=0.87
+18:39:51 | INFO | [temporal 40/40] chembl_cox2/rf/s4/a0.2 auc=0.87
+18:39:52 | INFO | compiled 4652 rows -> raw_results.csv

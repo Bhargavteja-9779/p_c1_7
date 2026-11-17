@@ -38,9 +38,11 @@ ORDER = [
     "chembl_2019",            # 26 ChEMBL
     "ash_2025",               # 27 method-comparison protocols (JCIM)
     "merz_editorial_2020",    # 28 data/software sharing editorial (JCIM)
-    "sklearn_2011",           # 29 scikit-learn
-    "lightgbm_2017",          # 30 LightGBM
-    "rdkit",                  # 31 RDKit
+    "kmmcp_2026",             # 29 KMM-CP (covariate-shift CP for molecules)
+    "sklearn_2011",           # 30 scikit-learn
+    "lightgbm_2017",          # 31 LightGBM
+    "rdkit",                  # 32 RDKit
+    "lee_labelshift_2025",    # 33 molecular CP under label shift
 ]
 
 

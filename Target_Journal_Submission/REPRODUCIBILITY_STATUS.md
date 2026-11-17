@@ -2,15 +2,18 @@
 
 | Item | Status |
 |---|---|
-| Public datasets, auto-download | YES (MoleculeNet S3, ChEMBL API) |
-| Deterministic seeds | YES (config seed_list; model seeds explicit) |
-| One-command run | YES (`python run_all.py --mode full`) |
-| Resumable | YES (run_meta.jsonl skip-completed) |
-| Tables/figures auto-generated | YES (no hand-entered numbers) |
-| Unit tests | YES (tests/test_conformal.py, 6 pass) |
-| Leakage audit | YES (experiments/leakage_audit.py, all pass) |
-| CPU-only | YES (no GPU dependency) |
-| Pinned deps | YES (requirements.txt, environment.yml) |
+| Public datasets, auto-download (MoleculeNet, ChEMBL) | YES |
+| Deterministic seeds (config; explicit model seeds) | YES |
+| One-command run (`python run_all.py --mode full`) | YES |
+| Resumable (run_meta.jsonl skip-completed) | YES |
+| Tables/figures auto-generated (no hand-entered numbers) | YES |
+| Manuscript↔data consistency (11/11 checks) | YES |
+| Unit tests (tests/test_conformal.py, 6 pass) | YES |
+| Leakage audit (experiments/leakage_audit.py, all pass) | YES |
+| CPU-only, no GPU | YES |
+| Pinned deps (requirements.txt, environment.yml) | YES |
+| KMM baseline (cvxopt) | YES (added in review) |
+| 33 references Crossref/arXiv-verified, all cited inline | YES |
 
-Residual: Chemprop/D-MPNN not trained (CPU budget) — DL baseline is a fingerprint MLP;
-noted as a limitation.
+Residual: Chemprop/D-MPNN not trained at scale (CPU budget) — DL baseline is fingerprint MLP;
+methods are model-agnostic wrappers (limitation disclosed). cvxopt added to requirements.

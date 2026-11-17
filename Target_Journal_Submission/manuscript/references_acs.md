@@ -28,6 +28,8 @@
 26. Mendez, David; Gaulton, Anna; Bento, A Patrícia; Chambers, Jon; De Veij, Marleen; Félix, Eloy; Magariños, María Paula; Mosquera, Juan F; Mutowo, Prudence; Nowotka, Michał. ChEMBL: towards direct deposition of bioassay data. *Nucleic Acids Research* **2018**, *47*, D930-D940. DOI: 10.1093/nar/gky1075.
 27. Ash, Jeremy R.; Wognum, Cas; Rodríguez-Pérez, Raquel; Aldeghi, Matteo; Cheng, Alan C.; Clevert, Djork-Arné; Engkvist, Ola; Fang, Cheng; Price, Daniel J.; Hughes-Oliver, Jacqueline M. Practically Significant Method Comparison Protocols for Machine Learning in Small Molecule Drug Discovery. *Journal of Chemical Information and Modeling* **2025**, *65*, 9398-9411. DOI: 10.1021/acs.jcim.5c01609.
 28. Merz, Kenneth M.; Amaro, Rommie; Cournia, Zoe; Rarey, Matthias; Soares, Thereza; Tropsha, Alexander; Wahab, Habibah A.; Wang, Renxiao. Editorial: Method and Data Sharing and Reproducibility of Scientific Results. *Journal of Chemical Information and Modeling* **2020**, *60*, 5868-5869. DOI: 10.1021/acs.jcim.0c01389.
-29. Pedregosa, F.; et al. Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research* **2011**, *12*, 2825-2830.
-30. Ke, Guolin; et al. LightGBM: A Highly Efficient Gradient Boosting Decision Tree. *Advances in Neural Information Processing Systems (NeurIPS)* **2017**.
-31. Landrum, Greg; et al. RDKit: Open-source cheminformatics. https://www.rdkit.org (2024).
+29. Laghuvarapu, Siddhartha; Deb, Rohan; Sun, Jimeng. KMM-CP: Practical Conformal Prediction under Covariate Shift via Selective Kernel Mean Matching. *arXiv* **2026**. arXiv:2603.26415.
+30. Pedregosa, F.; et al. Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research* **2011**, *12*, 2825-2830.
+31. Ke, Guolin; et al. LightGBM: A Highly Efficient Gradient Boosting Decision Tree. *Advances in Neural Information Processing Systems (NeurIPS)* **2017**.
+32. Landrum, Greg; et al. RDKit: Open-source cheminformatics. https://www.rdkit.org (2024).
+33. Lee, Hyeonsu; Kim, Juyeon; Jadamba, Erkhembayar; Choi, Seungjin; Shin, Hyunjin. Conformal Prediction for Molecular Properties under Label Shift. *NeurIPS 2025 Workshop on Reliable ML from Unreliable Data* **2025**. arXiv:2608.17678.

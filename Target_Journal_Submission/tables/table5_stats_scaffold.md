@@ -1,22 +1,24 @@
 | Proposed | vs Baseline | Median Δ | Mean Δ [95% CI] | p (Holm) | Effect (rb) | Sig. |
 |---|---|---|---|---|---|---|
-| AD-extrapolated CP [ADE-CP, ours] | AD-stratified weighted CP | 0.000 | -0.082 [-0.122, -0.046] | 0.0976 | -0.25 | no |
+| AD-extrapolated CP [ADE-CP, ours] | AD-stratified weighted CP | 0.000 | -0.082 [-0.122, -0.046] | 0.1139 | -0.25 | no |
 | AD-extrapolated CP [ADE-CP, ours] | Localized CP (B4) | -0.115 | -0.174 [-0.212, -0.140] | 0.0000 | -0.85 | yes |
 | AD-extrapolated CP [ADE-CP, ours] | Mondrian-AD CP (B3) | 0.000 | 0.005 [-0.007, 0.017] | 1.0000 | 0.10 | no |
-| AD-extrapolated CP [ADE-CP, ours] | Normalized CP (B2) | -0.002 | -0.046 [-0.072, -0.024] | 0.4350 | -0.20 | no |
+| AD-extrapolated CP [ADE-CP, ours] | Normalized CP (B2) | -0.002 | -0.046 [-0.072, -0.024] | 0.5141 | -0.20 | no |
 | AD-extrapolated CP [ADE-CP, ours] | Raw ensemble (B0) | 0.000 | 0.005 [-0.009, 0.018] | 1.0000 | 0.13 | no |
 | AD-extrapolated CP [ADE-CP, ours] | Split CP (B1) | 0.000 | 0.005 [-0.009, 0.018] | 1.0000 | 0.13 | no |
-| AD-extrapolated CP [ADE-CP, ours] | AD-reweighted CP [ADR-CP, ours] | 0.000 | 0.005 [-0.010, 0.019] | 0.9484 | 0.17 | no |
+| AD-extrapolated CP [ADE-CP, ours] | AD-reweighted CP [ADR-CP, ours] | 0.000 | 0.005 [-0.010, 0.019] | 1.0000 | 0.17 | no |
 | AD-extrapolated CP [ADE-CP, ours] | Weighted CP, FP discriminator (B5) | 0.000 | -0.057 [-0.097, -0.022] | 1.0000 | -0.07 | no |
 | AD-extrapolated CP [ADE-CP, ours] | Weighted CP, KDE (CoDrug-style) | -0.200 | -0.259 [-0.294, -0.224] | 0.0000 | -1.00 | yes |
-| AD-extrapolated CP [ADE-CP, ours] | Weighted CP, logistic (CoDrug-style) | -0.006 | -0.098 [-0.138, -0.060] | 0.0290 | -0.29 | yes |
-| AD-reweighted CP [ADR-CP, ours] | AD-extrapolated CP [ADE-CP, ours] | 0.000 | -0.005 [-0.019, 0.010] | 0.9484 | -0.17 | no |
+| AD-extrapolated CP [ADE-CP, ours] | KMM-weighted CP (KMM-CP-style) | 0.016 | -0.014 [-0.046, 0.011] | 1.0000 | 0.16 | no |
+| AD-extrapolated CP [ADE-CP, ours] | Weighted CP, logistic (CoDrug-style) | -0.006 | -0.098 [-0.138, -0.060] | 0.0335 | -0.29 | yes |
+| AD-reweighted CP [ADR-CP, ours] | AD-extrapolated CP [ADE-CP, ours] | 0.000 | -0.005 [-0.019, 0.010] | 1.0000 | -0.17 | no |
 | AD-reweighted CP [ADR-CP, ours] | AD-stratified weighted CP | -0.032 | -0.087 [-0.124, -0.054] | 0.0000 | -0.51 | yes |
 | AD-reweighted CP [ADR-CP, ours] | Localized CP (B4) | -0.095 | -0.179 [-0.213, -0.147] | 0.0000 | -1.00 | yes |
 | AD-reweighted CP [ADR-CP, ours] | Mondrian-AD CP (B3) | 0.000 | -0.000 [-0.012, 0.011] | 1.0000 | -0.02 | no |
-| AD-reweighted CP [ADR-CP, ours] | Normalized CP (B2) | -0.024 | -0.051 [-0.076, -0.029] | 0.0018 | -0.36 | yes |
+| AD-reweighted CP [ADR-CP, ours] | Normalized CP (B2) | -0.024 | -0.051 [-0.076, -0.029] | 0.0020 | -0.36 | yes |
 | AD-reweighted CP [ADR-CP, ours] | Raw ensemble (B0) | 0.000 | -0.000 [-0.006, 0.006] | 1.0000 | -0.05 | no |
 | AD-reweighted CP [ADR-CP, ours] | Split CP (B1) | 0.000 | -0.000 [-0.006, 0.006] | 1.0000 | -0.05 | no |
-| AD-reweighted CP [ADR-CP, ours] | Weighted CP, FP discriminator (B5) | 0.000 | -0.062 [-0.099, -0.031] | 0.9484 | -0.17 | no |
+| AD-reweighted CP [ADR-CP, ours] | Weighted CP, FP discriminator (B5) | 0.000 | -0.062 [-0.099, -0.031] | 1.0000 | -0.17 | no |
 | AD-reweighted CP [ADR-CP, ours] | Weighted CP, KDE (CoDrug-style) | -0.211 | -0.264 [-0.297, -0.230] | 0.0000 | -1.00 | yes |
+| AD-reweighted CP [ADR-CP, ours] | KMM-weighted CP (KMM-CP-style) | 0.000 | -0.019 [-0.047, 0.005] | 1.0000 | 0.02 | no |
 | AD-reweighted CP [ADR-CP, ours] | Weighted CP, logistic (CoDrug-style) | -0.013 | -0.103 [-0.141, -0.065] | 0.0000 | -0.56 | yes |
