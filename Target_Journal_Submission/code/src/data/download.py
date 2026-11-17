@@ -70,7 +70,7 @@ def _fetch_type(target_chembl_id, stype, fields, max_records, max_retries=10):
     return got
 
 
-def download_chembl_panel_target(target_chembl_id: str, max_records: int = 15000) -> Path:
+def download_chembl_panel_target(target_chembl_id: str, max_records: int = 6000) -> Path:
     """Pull IC50 and Ki pChEMBL activities (single-type queries; __in filter is unstable
     server-side) for a panel target. Cached as JSONL keyed by target id."""
     out = _raw_dir() / f"panel_{target_chembl_id}.jsonl"

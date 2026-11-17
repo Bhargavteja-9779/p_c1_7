@@ -1,0 +1,6 @@
+19:15:42 | INFO | ChEMBL panel CHEMBL203: 6661 records -> panel_CHEMBL203.jsonl
+19:15:50 | INFO | panel egfr (EGFR, IC50): 4005 unique molecules, years 1989-2015
+OK egfr 4005 kinase 1989-2015
+19:18:31 | INFO | ChEMBL panel CHEMBL279: 7119 records -> panel_CHEMBL279.jsonl
+19:18:40 | INFO | panel vegfr2 (VEGFR2/KDR, IC50): 4464 unique molecules, years 1999-2015
+OK vegfr2 4464 kinase 1999-2015

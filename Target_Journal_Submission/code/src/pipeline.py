@@ -68,16 +68,24 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
     Xtr, Xca, Xte = X[tr], X[ca], X[te]
     ytr, yca, yte = y[tr], y[ca], y[te]
 
-    # Model
-    reg = make_regressor(model_name, seed=seed).fit(Xtr, ytr)
-    yhat_ca, yhat_te = reg.predict(Xca), reg.predict(Xte)
+    # Model. The GNN consumes SMILES graphs; all other models consume fingerprints.
+    # The conformal layer is model-agnostic and uses only the resulting predictions.
+    if model_name == "gnn":
+        from .models.gnn import GNNRegressor
+        smi_tr, smi_ca, smi_te = smiles[tr], smiles[ca], smiles[te]
+        reg = GNNRegressor(seed=seed).fit(smi_tr, ytr)
+        yhat_tr = reg.predict(smi_tr); yhat_ca = reg.predict(smi_ca); yhat_te = reg.predict(smi_te)
+        raw_std_te = None
+    else:
+        reg = make_regressor(model_name, seed=seed).fit(Xtr, ytr)
+        yhat_tr = reg.predict(Xtr); yhat_ca, yhat_te = reg.predict(Xca), reg.predict(Xte)
+        raw_std_te = reg.ensemble_std(Xte)
     resid_ca = np.abs(yca - yhat_ca)
-    resid_tr = np.abs(ytr - reg.predict(Xtr))
+    resid_tr = np.abs(ytr - yhat_tr)
 
     # Normalized-CP sigma (model-agnostic local residual scale)
     sigma_ca = knn_local_sigma(Xtr, resid_tr, Xca, k=10)
     sigma_te = knn_local_sigma(Xtr, resid_tr, Xte, k=10)
-    raw_std_te = reg.ensemble_std(Xte)
 
     # Applicability-domain similarity (max Tanimoto to TRAIN only) + strata
     ad_ca = max_sim_to_ref_matrix(Xca, Xtr)
