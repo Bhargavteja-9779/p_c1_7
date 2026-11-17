@@ -54,7 +54,9 @@ def add_table_from_csv(doc, name, caption):
         return
     cap = doc.add_paragraph()
     cr = cap.add_run(f"Table. {caption}"); cr.bold = True; cr.font.size = Pt(10)
-    t = doc.add_table(rows=len(rows), cols=len(rows[0]))
+    ncols = max(len(r) for r in rows)
+    rows = [r + [""] * (ncols - len(r)) for r in rows]  # pad ragged rows
+    t = doc.add_table(rows=len(rows), cols=ncols)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     t.style = "Light Grid Accent 1"
     for i, row in enumerate(rows):

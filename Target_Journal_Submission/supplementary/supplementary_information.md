@@ -61,3 +61,36 @@ Features: ECFP4 (radius 2, 2048 bits). Models: LightGBM (400 trees, lr 0.05, 63 
 ## S8. Scaffold paired-test table (transparency)
 
 Pooled over the four scaffold datasets (`results/statistics.json::scaffold_primary_worstcov`), neither ADR-CP nor ADE-CP differs significantly from split CP on worst-stratum coverage (Holm p = 1.0), because the pooled average mixes recoverable (mild) and unrecoverable (severe) regimes. The recoverable-regime gains are established per-dataset (S1), on temporal data (Table 4), and in the controlled sweep (S4). We report the null pooled scaffold result rather than omit it.
+
+---
+# Supporting Information — Round 2 (expanded multi-target validation)
+
+## S-panel. Per-target temporal panel
+Thirteen ChEMBL targets across six families (Table 1), each split chronologically over three
+windows (test = latest 40/30/20 %), three calibration seeds, LightGBM. Worst-stratum coverage
+(target 0.90) per target and method is in `tables/table_panel_per_target.csv`; pooled values in
+`tables/table_panel_pooled.csv` (Table 2). ADR-CP improves over split CP on **13/13 targets**
+(median paired Δ +0.153, Holm p<0.001, rank-biserial 1.00).
+
+## S-model. Model-agnosticism
+`tables/tableS_model.csv`: the method ranking holds for LightGBM and random forest (ADR-CP pooled
+worst-stratum 0.839 / 0.853 vs split 0.670 / 0.683).
+
+## S-gnn. Graph neural network base model
+`tables/tableS_gnn.csv`: with a D-MPNN-style message-passing GNN as the base model, ADR-CP again
+leads (EGFR 0.819, μ-opioid 0.836 vs split 0.659 / 0.774), confirming the conformal layer and the
+AD-axis advantage are model-agnostic.
+
+## S-repr. Representation robustness
+`tables/tableS_repr.csv`: conclusions hold under FCFP4 as well as ECFP4 fingerprints.
+
+## S-diag. Diagnostic validation (target-level)
+`tables/tableS_diag.csv`: across targets, shift AUC does not predict achievable worst-stratum
+coverage (Spearman ρ = −0.02, p = 0.96); leave-one-target-out false-safe rate 0.54. The universal
+AUC-threshold rule is refuted; the within-dataset sweep relationship (strong) does not transfer
+across targets.
+
+## S-mwcp. MW-CP guarantee
+Theorem 1 (group-conditional coverage) and proof are in Section 4; the assumption check
+(within-stratum discriminator AUC) and the guarantee–efficiency trade-off vs ADR-CP are discussed
+in Section 6.3. MW-CP is the certified option; ADR-CP is the empirically strongest deployable one.
