@@ -22,13 +22,13 @@ OI = {"black": "#000000", "orange": "#E69F00", "skyblue": "#56B4E9", "green": "#
 METHOD_COLOR = {
     "split": OI["black"], "normalized": "#777777", "mondrian": OI["skyblue"],
     "localized": OI["yellow"], "weighted_disc": OI["orange"], "weighted_logistic": OI["purple"],
-    "weighted_kde": "#B07AA1", "weighted_ad": OI["blue"], "adwcp": OI["vermillion"],
+    "weighted_kde": "#B07AA1", "weighted_kmm": "#7F7F7F", "weighted_ad": OI["blue"], "adwcp": OI["vermillion"],
     "adecp": OI["green"], "raw_ensemble": "#BBBBBB"}
 METHOD_LABEL = {
     "split": "Split CP", "normalized": "Normalized CP", "mondrian": "Mondrian-AD CP",
     "localized": "Localized CP", "weighted_disc": "Weighted (FP disc.)",
     "weighted_logistic": "Weighted (logistic)", "weighted_kde": "Weighted (KDE)",
-    "weighted_ad": "ADR-CP (ours)", "adwcp": "AD-strat. weighted", "adecp": "ADE-CP (ours)",
+    "weighted_ad": "ADR-CP (ours)", "weighted_kmm": "KMM-CP (weighting)", "adwcp": "AD-strat. weighted", "adecp": "ADE-CP (ours)",
     "raw_ensemble": "Raw ensemble"}
 
 plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False,

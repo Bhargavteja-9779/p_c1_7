@@ -30,6 +30,7 @@ conformal_methods:
   - weighted_ad             # B5a covariate-shift weighted CP, 1-D applicability-domain density ratio
   - weighted_logistic       # B5' CoDrug-style logistic density ratio (calib-vs-test)
   - weighted_kde            # B5' CoDrug-style KDE density ratio (calib-vs-test)
+  - weighted_kmm            # B5'' KMM-CP-style kernel-mean-matching weights (Laghuvarapu 2026)
   - adwcp                   # M1  AD-stratified weighted CP (combination)
   - adecp                   # M2  PROPOSED: AD conformal extrapolation
 # calib_update (Morger reference, uses test labels) is run separately via

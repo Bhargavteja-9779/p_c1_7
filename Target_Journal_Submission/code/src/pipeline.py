@@ -112,6 +112,10 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
             w = (p / (1 - p)) * (len(ad_ca) / max(1, len(ad_te)))
             return np.clip(w, 1.0 / cap, cap)
         weights["ad1d"] = (_adw(ad_ca), _adw(ad_te))
+    if "weighted_kmm" in methods:
+        from .conformal.weighting import kmm_weights
+        wk = kmm_weights(Xca, Xte, seed=seed)
+        weights["kmm"] = (wk, np.zeros(len(yhat_te)))
 
     def ctx_for(method):
         if method == "weighted_disc" or method == "adwcp":
@@ -122,6 +126,8 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
             wc, wt = weights["codrug_kde"]
         elif method == "weighted_ad":
             wc, wt = weights["ad1d"]
+        elif method == "weighted_kmm":
+            wc, wt = weights["kmm"]
         else:
             wc = np.ones(len(resid_ca)); wt = np.ones(len(yhat_te))
         return CPContext(level=level, yhat_calib=yhat_ca, y_calib=yca, yhat_test=yhat_te,
@@ -149,6 +155,8 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
                  "shift_auc": shift_auc, "ad_test_median": float(np.median(ad_te))}
         wt_for_neff = ctx_for(m).w_test if m in ("weighted_disc", "adwcp", "weighted_ad",
                                                   "weighted_logistic", "weighted_kde") else None
+        if m == "weighted_kmm":
+            wt_for_neff = ctx_for(m).w_calib
         row = summarize(m, yte, lo, hi, test_bin, level, yhat=yhat_te,
                         value_bins=value_bins, w_test=wt_for_neff, extra=extra, span=span)
         # decision utility across requested selection fractions

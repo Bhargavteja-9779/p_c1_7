@@ -175,8 +175,17 @@ def method_adecp(ctx: CPContext):
     return _interval(ctx.yhat_test, hw)
 
 
+def method_kmm(ctx: CPContext):
+    """KMM-weighted conformal (KMM-CP style): normalized weighted quantile of
+    calibration scores using Kernel-Mean-Matching importance weights (no test atom),
+    giving a single reweighted threshold. ctx.w_calib holds the KMM weights."""
+    q = weighted_quantile_threshold(ctx.resid_calib, ctx.w_calib, 0.0, ctx.level)
+    return _interval(ctx.yhat_test, np.full(len(ctx.yhat_test), q))
+
+
 DISPATCH = {
     "raw_ensemble": method_raw_ensemble,
+    "weighted_kmm": method_kmm,
     "split": method_split,
     "normalized": method_normalized,
     "mondrian": method_mondrian,

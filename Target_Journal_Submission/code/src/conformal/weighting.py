@@ -45,6 +45,59 @@ def unweighted_quantile_threshold(scores, level):
     return float(np.sort(scores)[k - 1])
 
 
+def kmm_weights(X_calib, X_pool, pca_dim=32, B=30.0, eps=None, seed=0, max_src=900):
+    """Kernel Mean Matching importance weights (Huang et al. 2007), as used by
+    KMM-CP (Laghuvarapu et al. 2026). Returns per-calibration-point weights w_i that
+    match the calibration (source) mean embedding to the pool (target) mean embedding
+    in an RBF RKHS: min_w 1/2 wᵀKw − κᵀw s.t. 0≤w_i≤B, |mean(w)−1|≤eps.
+    Computed on PCA-reduced fingerprints for tractability; capped source size for the QP."""
+    from sklearn.decomposition import PCA
+    from sklearn.metrics.pairwise import rbf_kernel
+    from cvxopt import matrix, solvers
+    solvers.options["show_progress"] = False
+    rng = np.random.default_rng(seed)
+    d = min(pca_dim, X_calib.shape[1], max(2, len(X_calib) + len(X_pool) - 1))
+    pca = PCA(n_components=d, random_state=seed).fit(np.vstack([X_calib, X_pool]))
+    Zc_full = pca.transform(X_calib); Zp = pca.transform(X_pool)
+    # subsample source points for the QP if very large; weights for the rest via NN copy
+    if len(Zc_full) > max_src:
+        idx = rng.choice(len(Zc_full), max_src, replace=False)
+    else:
+        idx = np.arange(len(Zc_full))
+    Zc = Zc_full[idx]
+    n, m = len(Zc), len(Zp)
+    # RBF bandwidth: median heuristic on source
+    from scipy.spatial.distance import pdist
+    med = np.median(pdist(Zc)) if n > 1 else 1.0
+    gamma = 1.0 / (2.0 * (med ** 2) + 1e-9)
+    K = rbf_kernel(Zc, Zc, gamma=gamma).astype(np.double)
+    K += 1e-6 * np.eye(n)
+    kappa = (float(n) / m) * rbf_kernel(Zc, Zp, gamma=gamma).sum(axis=1).astype(np.double)
+    if eps is None:
+        eps = B / np.sqrt(n)
+    P = matrix(K); q = matrix(-kappa)
+    # constraints: 0<=w<=B  and  |sum(w)-n|<=n*eps
+    G = np.vstack([np.eye(n), -np.eye(n), np.ones((1, n)), -np.ones((1, n))])
+    h = np.concatenate([B * np.ones(n), np.zeros(n), [n * (1 + eps)], [-n * (1 - eps)]])
+    try:
+        sol = solvers.qp(P, q, matrix(G), matrix(h))
+        w_sub = np.array(sol["x"]).ravel()
+        w_sub = np.clip(w_sub, 0, B)
+    except Exception:
+        w_sub = np.ones(n)
+    # map back to all calibration points (NN in Z space for the held-out source rows)
+    w_full = np.ones(len(Zc_full))
+    w_full[idx] = w_sub
+    if len(idx) < len(Zc_full):
+        from sklearn.neighbors import NearestNeighbors
+        nn = NearestNeighbors(n_neighbors=1).fit(Zc)
+        miss = np.setdiff1d(np.arange(len(Zc_full)), idx)
+        _, j = nn.kneighbors(Zc_full[miss])
+        w_full[miss] = w_sub[j.ravel()]
+    w_full = np.maximum(w_full, 1e-6)
+    return w_full
+
+
 class DensityRatioWeights:
     """Estimate w(x) = p_pool(x)/p_train(x) from the UNLABELED deployment pool.
 

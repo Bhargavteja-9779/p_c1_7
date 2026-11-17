@@ -16,10 +16,10 @@ METHOD_LABELS = {
     "normalized": "Normalized CP (B2)", "mondrian": "Mondrian-AD CP (B3)",
     "localized": "Localized CP (B4)", "weighted_disc": "Weighted CP, FP discriminator (B5)",
     "weighted_ad": "AD-reweighted CP [ADR-CP, ours]", "weighted_logistic": "Weighted CP, logistic (CoDrug-style)",
-    "weighted_kde": "Weighted CP, KDE (CoDrug-style)", "adwcp": "AD-stratified weighted CP",
+    "weighted_kde": "Weighted CP, KDE (CoDrug-style)", "weighted_kmm": "KMM-weighted CP (KMM-CP-style)", "adwcp": "AD-stratified weighted CP",
     "adecp": "AD-extrapolated CP [ADE-CP, ours]"}
 METHOD_ORDER = ["raw_ensemble", "split", "normalized", "mondrian", "localized",
-                "weighted_disc", "weighted_logistic", "weighted_kde", "weighted_ad", "adwcp", "adecp"]
+                "weighted_disc", "weighted_logistic", "weighted_kde", "weighted_kmm", "weighted_ad", "adwcp", "adecp"]
 
 
 def _fmt(mean, sd=None, p=3):

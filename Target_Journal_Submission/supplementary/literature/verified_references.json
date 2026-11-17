@@ -343,5 +343,21 @@
   "container": "https://www.rdkit.org",
   "year": 2024,
   "verified": "software"
+ },
+ "kmmcp_2026": {
+  "authors": "Laghuvarapu, Siddhartha; Deb, Rohan; Sun, Jimeng",
+  "title": "KMM-CP: Practical Conformal Prediction under Covariate Shift via Selective Kernel Mean Matching",
+  "container": "arXiv",
+  "year": 2026,
+  "arxiv": "2603.26415",
+  "verified": "arxiv"
+ },
+ "lee_labelshift_2025": {
+  "authors": "Lee, Hyeonsu; Kim, Juyeon; Jadamba, Erkhembayar; Choi, Seungjin; Shin, Hyunjin",
+  "title": "Conformal Prediction for Molecular Properties under Label Shift",
+  "container": "NeurIPS 2025 Workshop on Reliable ML from Unreliable Data",
+  "year": 2025,
+  "arxiv": "2608.17678",
+  "verified": "arxiv"
  }
 }
