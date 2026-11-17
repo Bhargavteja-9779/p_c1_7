@@ -301,3 +301,10 @@
 {"dataset": "freesolv", "model": "mlp", "seed": 0, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9357044357618938, "n": [229, 337, 76], "runtime_s": 3.37}
 {"dataset": "freesolv", "model": "mlp", "seed": 1, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.982397075798384, "n": [368, 161, 113], "runtime_s": 4.46}
 {"dataset": "freesolv", "model": "mlp", "seed": 2, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9735576923076923, "n": [512, 65, 65], "runtime_s": 10.29}
+{"dataset": "freesolv", "model": "mlp", "seed": 3, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9695536231884058, "n": [375, 152, 115], "runtime_s": 5.12}
+{"dataset": "freesolv", "model": "mlp", "seed": 4, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9536907327586207, "n": [232, 330, 80], "runtime_s": 4.11}
+{"dataset": "freesolv", "model": "mlp", "seed": 5, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9829360043509789, "n": [394, 192, 56], "runtime_s": 12.33}
+{"dataset": "freesolv", "model": "mlp", "seed": 6, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9918883154691014, "n": [229, 83, 330], "runtime_s": 5.79}
+{"dataset": "freesolv", "model": "mlp", "seed": 7, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.9944748589236081, "n": [383, 104, 155], "runtime_s": 8.67}
+{"dataset": "lipophilicity", "model": "rf", "seed": 0, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.6623445767195766, "n": [2520, 840, 840], "runtime_s": 22.91}
+{"dataset": "lipophilicity", "model": "rf", "seed": 1, "alpha": 0.1, "split_type": "scaffold", "sweep_q": null, "shift_auc": 0.6631700686175923, "n": [2518, 840, 842], "runtime_s": 23.71}

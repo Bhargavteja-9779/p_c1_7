@@ -201,3 +201,10 @@
 19:19:13 | INFO | [scaffold 201/256] freesolv/mlp/s0/a0.1 auc=0.94 t=3.37s
 19:19:17 | INFO | [scaffold 202/256] freesolv/mlp/s1/a0.1 auc=0.98 t=4.46s
 19:19:28 | INFO | [scaffold 203/256] freesolv/mlp/s2/a0.1 auc=0.97 t=10.29s
+19:19:33 | INFO | [scaffold 204/256] freesolv/mlp/s3/a0.1 auc=0.97 t=5.12s
+19:19:37 | INFO | [scaffold 205/256] freesolv/mlp/s4/a0.1 auc=0.95 t=4.11s
+19:19:49 | INFO | [scaffold 206/256] freesolv/mlp/s5/a0.1 auc=0.98 t=12.33s
+19:19:55 | INFO | [scaffold 207/256] freesolv/mlp/s6/a0.1 auc=0.99 t=5.79s
+19:20:04 | INFO | [scaffold 208/256] freesolv/mlp/s7/a0.1 auc=0.99 t=8.67s
+19:20:27 | INFO | [scaffold 209/256] lipophilicity/rf/s0/a0.1 auc=0.66 t=22.91s
+19:20:50 | INFO | [scaffold 210/256] lipophilicity/rf/s1/a0.1 auc=0.66 t=23.71s
