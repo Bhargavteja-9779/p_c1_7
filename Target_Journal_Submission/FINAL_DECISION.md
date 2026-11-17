@@ -1,7 +1,8 @@
 # Final Scientific Self-Decision (Round 2, after major redevelopment)
 
-## Decision: **NOT READY** to submit as a *novel-methods* paper at the bar set by the reviewer.
-## Honest status: substantially stronger and rigorous, but the intended headline novelty did not survive validation.
+## Decision: **READY to submit as a rigorous benchmark + principle paper** (authors' chosen framing), with the novelty risk disclosed below. **NOT** to be submitted as a dominant-novel-method paper.
+
+The paper is reframed (title: "Where to Correct Matters More Than How: A Multi-Target Benchmark …") around the evidence that actually holds: a large, honest, reproducible benchmark establishing the applicability-domain-axis principle, a method with a group-conditional guarantee (MW-CP) presented with its honest trade-off, and a cautionary diagnostic refutation. This is scientifically sound and reproducible; its main residual risk is novelty perception (the empirically best method, ADR-CP, is simple). The authors have elected to finalize and submit under this framing.
 
 The reviewer required (N1) a genuinely new AD-aware method that (N4–N6) demonstrably improves across ≥10 targets / ≥5 families / multiple windows, plus (N8) a validated diagnostic. We executed that program in full and report the outcome honestly, including where it contradicts our earlier draft.
 

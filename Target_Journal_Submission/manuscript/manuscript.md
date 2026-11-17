@@ -1,4 +1,4 @@
-# Applicability-Domain–Aware Conformal Prediction for Molecular Property Regression under Covariate Shift: When Correction Helps, When It Cannot, and a Deployment Diagnostic
+# Where to Correct Matters More Than How: A Multi-Target Benchmark of Conformal Prediction for Molecular Property Regression under Covariate Shift, with a Group-Conditional Guarantee
 
 **Authors:** [Author One]¹, [Author Two]¹ · ¹[Affiliation]
 Corresponding author: [email]
