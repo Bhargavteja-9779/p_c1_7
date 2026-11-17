@@ -4,3 +4,24 @@ OK egfr 4005 kinase 1989-2015
 19:18:31 | INFO | ChEMBL panel CHEMBL279: 7119 records -> panel_CHEMBL279.jsonl
 19:18:40 | INFO | panel vegfr2 (VEGFR2/KDR, IC50): 4464 unique molecules, years 1999-2015
 OK vegfr2 4464 kinase 1999-2015
+19:22:29 | INFO | ChEMBL panel CHEMBL2971: 9333 records -> panel_CHEMBL2971.jsonl
+19:22:38 | INFO | panel jak2 (JAK2, IC50): 5163 unique molecules, years 2002-2022
+OK jak2 5163 kinase 2002-2022
+19:23:51 | INFO | ChEMBL panel CHEMBL267: 5442 records -> panel_CHEMBL267.jsonl
+19:23:59 | INFO | panel src (SRC, IC50): 3447 unique molecules, years 1992-2025
+OK src 3447 kinase 1992-2025
+19:30:44 | INFO | ChEMBL panel CHEMBL4822: 8534 records -> panel_CHEMBL4822.jsonl
+19:30:53 | INFO | panel bace1 (BACE-1, IC50): 4381 unique molecules, years 2002-2017
+OK bace1 4381 protease 2002-2017
+19:40:32 | INFO | ChEMBL panel CHEMBL240: 7812 records -> panel_CHEMBL240.jsonl
+19:40:41 | INFO | panel herg (hERG, IC50): 4943 unique molecules, years 1995-2016
+OK herg 4943 ion_channel 1995-2016
+19:45:05 | INFO | ChEMBL panel CHEMBL233: 7689 records -> panel_CHEMBL233.jsonl
+19:45:16 | INFO | panel mor (mu-opioid R, Ki): 4959 unique molecules, years 1989-2024
+OK mor 4959 gpcr 1989-2024
+19:45:54 | INFO | ChEMBL panel CHEMBL1871: 4788 records -> panel_CHEMBL1871.jsonl
+19:45:59 | INFO | panel ar (Androgen R, IC50): 2356 unique molecules, years 1996-2025
+OK ar 2356 nuclear_receptor 1996-2025
+19:46:45 | INFO | ChEMBL panel CHEMBL206: 6637 records -> panel_CHEMBL206.jsonl
+19:46:54 | INFO | panel eralpha (Estrogen Ra, IC50): 3064 unique molecules, years 1999-2025
+OK eralpha 3064 nuclear_receptor 1999-2025

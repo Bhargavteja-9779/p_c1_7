@@ -1,4 +1,16 @@
 {
+ "esol": {
+  "key": "esol",
+  "name": "ESOL (aqueous solubility)",
+  "unit": "log mol/L",
+  "shift": "scaffold",
+  "n": 1117,
+  "n_scaffolds": 268,
+  "y_mean": -3.0500581915846015,
+  "y_std": 2.095456965333364,
+  "y_min": -11.6,
+  "y_max": 1.58
+ },
  "chembl_vegfr2": {
   "key": "chembl_vegfr2",
   "name": "VEGFR2/KDR (CHEMBL279)",
@@ -11,20 +23,6 @@
   "y_min": 4.0,
   "y_max": 10.64,
   "year_min": 1999,
-  "year_max": 2025
- },
- "chembl_cox2": {
-  "key": "chembl_cox2",
-  "name": "COX-2 (CHEMBL230)",
-  "unit": "pChEMBL",
-  "shift": "temporal",
-  "n": 4374,
-  "n_scaffolds": 1218,
-  "y_mean": 6.216183127572016,
-  "y_std": 1.1201177672716822,
-  "y_min": 4.0,
-  "y_max": 10.7,
-  "year_min": 1994,
   "year_max": 2025
  },
  "freesolv": {
@@ -63,16 +61,18 @@
   "y_min": 2.5445461,
   "y_max": 10.522879
  },
- "esol": {
-  "key": "esol",
-  "name": "ESOL (aqueous solubility)",
-  "unit": "log mol/L",
-  "shift": "scaffold",
-  "n": 1117,
-  "n_scaffolds": 268,
-  "y_mean": -3.0500581915846015,
-  "y_std": 2.095456965333364,
-  "y_min": -11.6,
-  "y_max": 1.58
+ "chembl_cox2": {
+  "key": "chembl_cox2",
+  "name": "COX-2 (CHEMBL230)",
+  "unit": "pChEMBL",
+  "shift": "temporal",
+  "n": 4374,
+  "n_scaffolds": 1218,
+  "y_mean": 6.216183127572016,
+  "y_std": 1.1201177672716822,
+  "y_min": 4.0,
+  "y_max": 10.7,
+  "year_min": 1994,
+  "year_max": 2025
  }
 }

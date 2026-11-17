@@ -23,12 +23,12 @@ METHOD_COLOR = {
     "split": OI["black"], "normalized": "#777777", "mondrian": OI["skyblue"],
     "localized": OI["yellow"], "weighted_disc": OI["orange"], "weighted_logistic": OI["purple"],
     "weighted_kde": "#B07AA1", "weighted_kmm": "#7F7F7F", "weighted_ad": OI["blue"], "adwcp": OI["vermillion"],
-    "adecp": OI["green"], "raw_ensemble": "#BBBBBB"}
+    "adecp": OI["green"], "mwcp": "#D55E00", "raw_ensemble": "#BBBBBB"}
 METHOD_LABEL = {
     "split": "Split CP", "normalized": "Normalized CP", "mondrian": "Mondrian-AD CP",
     "localized": "Localized CP", "weighted_disc": "Weighted (FP disc.)",
     "weighted_logistic": "Weighted (logistic)", "weighted_kde": "Weighted (KDE)",
-    "weighted_ad": "ADR-CP (ours)", "weighted_kmm": "KMM-CP (weighting)", "adwcp": "AD-strat. weighted", "adecp": "ADE-CP (ours)",
+    "weighted_ad": "ADR-CP (ours)", "weighted_kmm": "KMM-CP (weighting)", "adwcp": "AD-strat. weighted", "adecp": "ADE-CP", "mwcp": "MW-CP (ours)",
     "raw_ensemble": "Raw ensemble"}
 
 plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False,
@@ -168,7 +168,7 @@ def fig_main_bars(raw, outdir, model, split_type="scaffold"):
     if d.empty:
         return
     order = ["split", "normalized", "mondrian", "localized", "weighted_disc",
-             "weighted_logistic", "weighted_kde", "weighted_ad", "adwcp", "adecp"]
+             "weighted_logistic", "weighted_kde", "weighted_kmm", "weighted_ad", "adwcp", "mwcp", "adecp"]
     order = [m for m in order if m in set(d.method)]
     marg = [pd.to_numeric(d[d.method == m].marginal_coverage).mean() for m in order]
     worst = [pd.to_numeric(d[d.method == m].worst_stratum_coverage).mean() for m in order]

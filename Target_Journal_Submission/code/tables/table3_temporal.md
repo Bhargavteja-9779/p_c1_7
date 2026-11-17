@@ -1,6 +1,5 @@
 | Method | Marginal cov. | Worst-stratum cov. | Mean width | Saturated frac. | n |
 |---|---|---|---|---|---|
-| Raw ensemble (B0) | 0.772$\pm$0.073 | 0.718$\pm$0.047 | 2.54$\pm$0.32 | 0.00$\pm$0.00 | 20 |
 | Split CP (B1) | 0.723$\pm$0.035 | 0.701$\pm$0.035 | 2.28$\pm$0.17 | 0.00$\pm$0.00 | 20 |
 | Normalized CP (B2) | 0.726$\pm$0.051 | 0.709$\pm$0.053 | 2.43$\pm$0.13 | 0.00$\pm$0.00 | 20 |
 | Mondrian-AD CP (B3) | 0.815$\pm$0.047 | 0.804$\pm$0.048 | 2.70$\pm$0.18 | 0.00$\pm$0.00 | 20 |
@@ -11,4 +10,5 @@
 | KMM-weighted CP (KMM-CP-style) | 0.702$\pm$0.086 | 0.679$\pm$0.088 | 2.21$\pm$0.25 | 0.00$\pm$0.00 | 20 |
 | AD-reweighted CP [ADR-CP, ours] | 0.889$\pm$0.080 | 0.880$\pm$0.084 | 3.31$\pm$0.53 | 0.00$\pm$0.00 | 20 |
 | AD-stratified weighted CP | 0.808$\pm$0.056 | 0.793$\pm$0.061 | 2.79$\pm$0.22 | 0.04$\pm$0.05 | 20 |
-| AD-extrapolated CP [ADE-CP, ours] | 0.852$\pm$0.055 | 0.811$\pm$0.053 | 2.97$\pm$0.17 | 0.00$\pm$0.00 | 20 |
+| MW-CP [ours, proposed] | 0.891$\pm$0.076 | 0.835$\pm$0.064 | 3.27$\pm$0.45 | 0.00$\pm$0.00 | 20 |
+| AD-extrapolated CP [ADE-CP, ours] | 0.850$\pm$0.072 | 0.808$\pm$0.068 | 2.97$\pm$0.26 | 0.00$\pm$0.00 | 20 |
