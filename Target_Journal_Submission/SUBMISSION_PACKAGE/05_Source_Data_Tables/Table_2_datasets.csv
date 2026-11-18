@@ -1,0 +1,18 @@
+Dataset / Target,Family,Shift,N,#Scaffolds,Years
+ESOL (aqueous solubility),(MoleculeNet),scaffold,1117,268,—
+FreeSolv (hydration free energy),(MoleculeNet),scaffold,642,62,—
+Lipophilicity (logD 7.4),(MoleculeNet),scaffold,4200,2442,—
+BACE-1 inhibition,(MoleculeNet),scaffold,1510,724,—
+EGFR,kinase,temporal,4005,1361,1989-2015
+VEGFR2/KDR,kinase,temporal,4464,1862,1999-2015
+JAK2,kinase,temporal,5163,1920,2002-2022
+SRC,kinase,temporal,3447,1511,1992-2025
+BACE-1,protease,temporal,4381,1826,2002-2017
+hERG,ion channel,temporal,4943,2569,1995-2016
+mu-opioid R,GPCR,temporal,4959,2244,1989-2024
+Androgen R,nuclear receptor,temporal,2356,849,1996-2025
+Estrogen Ra,nuclear receptor,temporal,3064,896,1999-2025
+Glucocorticoid R,nuclear receptor,temporal,2088,726,1991-2024
+MAO-B,enzyme,temporal,4584,1479,1996-2025
+DPP-4,enzyme,temporal,3885,1493,1996-2025
+COX-2,enzyme,temporal,4292,1177,1994-2024

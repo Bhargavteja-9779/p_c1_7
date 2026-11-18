@@ -1,0 +1,11 @@
+Model,Method,Worst-stratum cov.
+lgbm,Split,0.67
+lgbm,Mondrian,0.732
+lgbm,KMM,0.715
+lgbm,ADR-CP,0.839
+lgbm,MW-CP,0.755
+rf,Split,0.683
+rf,Mondrian,0.731
+rf,KMM,0.717
+rf,ADR-CP,0.853
+rf,MW-CP,0.757

@@ -43,6 +43,9 @@ def add_runs_with_markup(paragraph, text):
             paragraph.add_run(tok)
 
 
+_COUNTERS = {"table": 0, "figure": 0}
+
+
 def add_table_from_csv(doc, name, caption):
     path = TABLES / f"{name}.csv"
     if not path.exists():
@@ -52,8 +55,9 @@ def add_table_from_csv(doc, name, caption):
         rows = list(csv.reader(f))
     if not rows:
         return
+    _COUNTERS["table"] += 1
     cap = doc.add_paragraph()
-    cr = cap.add_run(f"Table. {caption}"); cr.bold = True; cr.font.size = Pt(10)
+    cr = cap.add_run(f"Table {_COUNTERS['table']}. {caption}"); cr.bold = True; cr.font.size = Pt(10)
     ncols = max(len(r) for r in rows)
     rows = [r + [""] * (ncols - len(r)) for r in rows]  # pad ragged rows
     t = doc.add_table(rows=len(rows), cols=ncols)
@@ -71,15 +75,37 @@ def add_table_from_csv(doc, name, caption):
     doc.add_paragraph()
 
 
+def add_md_table(doc, rows):
+    """Render a parsed markdown pipe-table (list of row-cell-lists) as a real DOCX table."""
+    ncols = max(len(r) for r in rows)
+    rows = [r + [""] * (ncols - len(r)) for r in rows]
+    t = doc.add_table(rows=len(rows), cols=ncols)
+    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    t.style = "Light Grid Accent 1"
+    for i, row in enumerate(rows):
+        for j, val in enumerate(row):
+            cell = t.cell(i, j)
+            cell.text = ""
+            p = cell.paragraphs[0]
+            # strip simple markdown emphasis for cell text
+            txt = val.replace("**", "").replace("*", "")
+            run = p.add_run(txt)
+            run.font.size = Pt(8.5)
+            if i == 0:
+                run.bold = True
+    doc.add_paragraph()
+
+
 def add_figure(doc, name, caption):
     for ext in ("png", "pdf"):
         path = FIGURES / f"{name}.{ext}"
         if path.exists() and ext == "png":
+            _COUNTERS["figure"] += 1
             doc.add_picture(str(path), width=Inches(5.2))
             doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
             cap = doc.add_paragraph()
             cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            cr = cap.add_run(f"Figure. {caption}"); cr.italic = True; cr.font.size = Pt(9)
+            cr = cap.add_run(f"Figure {_COUNTERS['figure']}. {caption}"); cr.italic = True; cr.font.size = Pt(9)
             return
     doc.add_paragraph(f"[figure {name} not found]")
 
@@ -106,6 +132,21 @@ def build(md_path, out_path):
             add_table_from_csv(doc, mt.group(1).strip(), mt.group(2).strip()); i += 1; continue
         if mf:
             add_figure(doc, mf.group(1).strip(), mf.group(2).strip()); i += 1; continue
+        if s.startswith("|"):
+            # collect a contiguous markdown pipe-table block and render as a real table
+            block = []
+            while i < len(md) and md[i].strip().startswith("|"):
+                block.append(md[i].strip()); i += 1
+            def _cells(row):
+                r = row.strip()
+                if r.startswith("|"): r = r[1:]
+                if r.endswith("|"): r = r[:-1]
+                return [c.strip() for c in r.split("|")]
+            rows = [_cells(b) for b in block
+                    if not re.fullmatch(r"[\s|:\-]+", b)]  # drop the ---|--- separator
+            if rows:
+                add_md_table(doc, rows)
+            continue
         if s.startswith("# "):
             p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             r = p.add_run(s[2:]); r.bold = True; r.font.size = Pt(15)
@@ -119,9 +160,6 @@ def build(md_path, out_path):
             p = doc.add_heading(level=2)
             r = p.add_run(s[4:]); r.bold = True; r.font.size = Pt(11.5)
             r.font.color.rgb = RGBColor(0, 0, 0)
-        elif s.startswith("|") and "---" not in s:
-            # inline markdown table rows that are not marker-driven: render as text
-            doc.add_paragraph(s)
         elif s == "---" or s == "":
             if s == "":
                 doc.add_paragraph()

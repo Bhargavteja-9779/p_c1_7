@@ -1,0 +1,9 @@
+vs Baseline,Median Δ worst-cov,Effect (rb),p (Holm),Sig.
+Split,+0.153,+1.00,0.0000,yes
+Normalized,+0.137,+0.99,0.0000,yes
+Mondrian-AD,+0.086,+0.95,0.0000,yes
+Localized,-0.012,-0.21,0.0526,no
+KMM,+0.114,+0.89,0.0000,yes
+KDE-wt,-0.128,-0.92,0.0000,yes
+ADE-CP,+0.075,+0.80,0.0000,yes
+MW-CP,+0.073,+0.85,0.0000,yes

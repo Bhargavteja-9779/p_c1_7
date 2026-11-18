@@ -39,6 +39,28 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - Manuscript stable sections drafted (`manuscript/manuscript.md`); Results/Abstract numbers pending.
 - DOCX builder (`manuscript/build_docx.py`) validated; cover letter drafted.
 
+## STATUS: ROUND-3 — professor review #2 addressed + submission ZIP built (2026-11-18)
+Responded to external JCIM review #2 and user's finalization instructions:
+- **Retitled** to "Applicability-Domain–Aligned Conformal Prediction for Reliable Molecular Property
+  Prediction under Chemical-Space Shift" (R2 preferred title).
+- **Theorem clarity (R2):** added Remark 1 — implemented estimated-weight MW-CP is an empirically
+  evaluated approximation; Theorem 1 is the exact-weight idealized target. Abstract softened to match.
+- **Dataset consistency (R3):** all descriptions unified to the 13-target panel; table/figure
+  cross-references renumbered and made internally consistent (Tables 1–5, Figures 1–2); build_docx now
+  auto-numbers tables/figures and renders markdown pipe-tables (SI) as real tables.
+- **Screening case study (R4), §6.5 + Table 5 + SI S-screen:** prospective selection across budgets
+  (top 5/10/20 %), pooled over 13 targets × 3 windows × 2 base models × 3 seeds, from real
+  `panel_decision.jsonl`. Hit/enrichment identical across CP methods (shared ranking); ADR-CP roughly
+  halves split CP's surprise rate at every budget (0.152/0.148/0.139 vs 0.254/0.262/0.266).
+- **Honesty fix:** removed overclaim that the panel ran α∈{0.90,0.80,0.95}; panel is 90 % only
+  (α=0.10), 80 % is on scaffold/earlier-temporal data (SI S2). 95 % and the AD-definition sensitivity
+  (max-Tanimoto vs mean-top-k) were NOT run — now stated as limitations/future work, not claimed.
+- **Author/availability/declarations (user):** P. N. Bhargav Teja first author; corresponding/second
+  author left as placeholder; Data Availability = real public links + 13 ChEMBL IDs; Code = available
+  on request; CRediT (Teja = most roles, co-author = supervision); funding = none; competing = none.
+- **Deliverable:** `SUBMISSION_PACKAGE/` + `JCIM_Submission_Package.zip` (cover letter, manuscript, SI,
+  figures, source-data tables; DOCX + PDF). All headline numbers re-verified against results/.
+
 ## STATUS: ROUND-2 REDEVELOPMENT COMPLETE (2026-11-18) — finalized as rigorous benchmark
 Responded to external do-not-submit verdict. Key honest outcomes:
 - ADR-CP (1-D AD reweighting) is the best deployable method: beats split/Mondrian/KMM/MW-CP, 13/13 targets (Holm p<0.001).

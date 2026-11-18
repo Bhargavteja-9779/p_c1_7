@@ -1,0 +1,9 @@
+Dimension,Guo (2027),This work
+Shift type,Scaffold only,Scaffold + temporal
+Targets,6 protein targets,"13 ChEMBL targets, 6 families"
+Covariate-shift weighting,None,"Discriminator, KDE, KMM, 1-D AD"
+New method,No,"MW-CP (group-conditional)"
+Coverage guarantee,None (benchmark),Finite-sample group-conditional
+Conditional coverage finding,"Persists below nominal","Confirmed; restored by MW-CP in recoverable regime"
+Deployment diagnostic,No,Label-free discriminator-AUC rule
+Decision/selection analysis,Yes (LCB),Yes (surprise rate, width-matched)
