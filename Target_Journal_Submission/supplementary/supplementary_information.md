@@ -82,7 +82,7 @@ leads (EGFR 0.819, μ-opioid 0.836 vs split 0.659 / 0.774), confirming the confo
 AD-axis advantage are model-agnostic.
 
 ## S-repr. Representation robustness
-`tables/tableS_repr.csv`: conclusions hold under FCFP4 as well as ECFP4 fingerprints.
+`tables/tableS_repr.csv`: the method ranking is preserved under an alternative fingerprint — ADR-CP leads under both ECFP4 (pooled worst-stratum 0.784) and FCFP4 (0.737), above split (0.704/0.691) and MW-CP (0.730/0.676).
 
 ## S-diag. Diagnostic validation (target-level)
 `tables/tableS_diag.csv`: across targets, shift AUC does not predict achievable worst-stratum

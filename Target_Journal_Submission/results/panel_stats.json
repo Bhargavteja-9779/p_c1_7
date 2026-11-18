@@ -1,0 +1,361 @@
+{
+ "n_targets": 13,
+ "pooled": [
+  {
+   "method": "Split",
+   "marginal": 0.707,
+   "worst_stratum": 0.67,
+   "mean_width": 2.134,
+   "saturated": 0.0
+  },
+  {
+   "method": "Normalized",
+   "marginal": 0.708,
+   "worst_stratum": 0.676,
+   "mean_width": 2.285,
+   "saturated": 0.005
+  },
+  {
+   "method": "Mondrian-AD",
+   "marginal": 0.79,
+   "worst_stratum": 0.732,
+   "mean_width": 2.574,
+   "saturated": 0.0
+  },
+  {
+   "method": "Localized",
+   "marginal": 0.871,
+   "worst_stratum": 0.852,
+   "mean_width": 3.534,
+   "saturated": 0.147
+  },
+  {
+   "method": "ADR-CP",
+   "marginal": 0.864,
+   "worst_stratum": 0.839,
+   "mean_width": 3.302,
+   "saturated": 0.057
+  },
+  {
+   "method": "KMM",
+   "marginal": 0.745,
+   "worst_stratum": 0.715,
+   "mean_width": 2.439,
+   "saturated": 0.0
+  },
+  {
+   "method": "KDE-wt",
+   "marginal": 0.994,
+   "worst_stratum": 0.965,
+   "mean_width": 6.425,
+   "saturated": 0.956
+  },
+  {
+   "method": "ADE-CP",
+   "marginal": 0.828,
+   "worst_stratum": 0.742,
+   "mean_width": 2.836,
+   "saturated": 0.0
+  },
+  {
+   "method": "MW-CP",
+   "marginal": 0.858,
+   "worst_stratum": 0.755,
+   "mean_width": 3.173,
+   "saturated": 0.044
+  }
+ ],
+ "mwcp_vs_baselines": [
+  {
+   "baseline": "split",
+   "label": "Split",
+   "median_diff": 0.08216136195410806,
+   "mean_diff": 0.0848,
+   "ci95": [
+    0.069,
+    0.0997
+   ],
+   "p": 3.756676044308181e-16,
+   "rank_biserial": 0.8948402948402948,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "normalized",
+   "label": "Normalized",
+   "median_diff": 0.08372608189513897,
+   "mean_diff": 0.0791,
+   "ci95": [
+    0.0622,
+    0.095
+   ],
+   "p": 5.5003852716137516e-14,
+   "rank_biserial": 0.811441647597254,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "mondrian",
+   "label": "Mondrian-AD",
+   "median_diff": 0.0,
+   "mean_diff": 0.0226,
+   "ci95": [
+    0.0155,
+    0.0304
+   ],
+   "p": 9.988326126002134e-09,
+   "rank_biserial": 0.8883116883116883,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "localized",
+   "label": "Localized",
+   "median_diff": -0.08333333333333337,
+   "mean_diff": -0.0974,
+   "ci95": [
+    -0.1161,
+    -0.0807
+   ],
+   "p": 3.8882191091683723e-17,
+   "rank_biserial": -0.9003831417624522,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "weighted_ad",
+   "label": "ADR-CP",
+   "median_diff": -0.07267460853278751,
+   "mean_diff": -0.0839,
+   "ci95": [
+    -0.1019,
+    -0.0677
+   ],
+   "p": 2.645805184136013e-15,
+   "rank_biserial": -0.8458591217211907,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "weighted_kmm",
+   "label": "KMM",
+   "median_diff": 0.05890269151138716,
+   "mean_diff": 0.0394,
+   "ci95": [
+    0.0159,
+    0.0602
+   ],
+   "p": 0.0005138032408836267,
+   "rank_biserial": 0.3748283752860412,
+   "n": 117,
+   "p_holm": 0.00103,
+   "significant": true
+  },
+  {
+   "baseline": "weighted_kde",
+   "label": "KDE-wt",
+   "median_diff": -0.19851190476190472,
+   "mean_diff": -0.2105,
+   "ci95": [
+    -0.2259,
+    -0.196
+   ],
+   "p": 8.98474598902732e-21,
+   "rank_biserial": -1.0,
+   "n": 117,
+   "p_holm": 0.0,
+   "significant": true
+  },
+  {
+   "baseline": "adecp",
+   "label": "ADE-CP",
+   "median_diff": 0.0,
+   "mean_diff": 0.0127,
+   "ci95": [
+    -0.0014,
+    0.0271
+   ],
+   "p": 0.22858085283074026,
+   "rank_biserial": 0.13472050784694056,
+   "n": 117,
+   "p_holm": 0.22858,
+   "significant": false
+  }
+ ],
+ "per_target": [
+  {
+   "target": "herg",
+   "shift_auc": 0.76,
+   "Split": 0.788,
+   "Normalized": 0.786,
+   "Mondrian-AD": 0.836,
+   "Localized": 0.891,
+   "ADR-CP": 0.885,
+   "KMM": 0.76,
+   "KDE-wt": 0.994,
+   "ADE-CP": 0.848,
+   "MW-CP": 0.844
+  },
+  {
+   "target": "vegfr2",
+   "shift_auc": 0.79,
+   "Split": 0.609,
+   "Normalized": 0.626,
+   "Mondrian-AD": 0.749,
+   "Localized": 0.781,
+   "ADR-CP": 0.791,
+   "KMM": 0.64,
+   "KDE-wt": 0.977,
+   "ADE-CP": 0.801,
+   "MW-CP": 0.748
+  },
+  {
+   "target": "maob",
+   "shift_auc": 0.8,
+   "Split": 0.643,
+   "Normalized": 0.671,
+   "Mondrian-AD": 0.728,
+   "Localized": 0.79,
+   "ADR-CP": 0.814,
+   "KMM": 0.686,
+   "KDE-wt": 0.995,
+   "ADE-CP": 0.763,
+   "MW-CP": 0.764
+  },
+  {
+   "target": "egfr",
+   "shift_auc": 0.85,
+   "Split": 0.67,
+   "Normalized": 0.663,
+   "Mondrian-AD": 0.705,
+   "Localized": 0.803,
+   "ADR-CP": 0.747,
+   "KMM": 0.68,
+   "KDE-wt": 0.946,
+   "ADE-CP": 0.696,
+   "MW-CP": 0.712
+  },
+  {
+   "target": "mor",
+   "shift_auc": 0.86,
+   "Split": 0.652,
+   "Normalized": 0.68,
+   "Mondrian-AD": 0.628,
+   "Localized": 0.762,
+   "ADR-CP": 0.748,
+   "KMM": 0.753,
+   "KDE-wt": 0.943,
+   "ADE-CP": 0.661,
+   "MW-CP": 0.628
+  },
+  {
+   "target": "dpp4",
+   "shift_auc": 0.88,
+   "Split": 0.583,
+   "Normalized": 0.63,
+   "Mondrian-AD": 0.682,
+   "Localized": 0.818,
+   "ADR-CP": 0.779,
+   "KMM": 0.703,
+   "KDE-wt": 0.964,
+   "ADE-CP": 0.698,
+   "MW-CP": 0.721
+  },
+  {
+   "target": "cox2",
+   "shift_auc": 0.88,
+   "Split": 0.656,
+   "Normalized": 0.668,
+   "Mondrian-AD": 0.732,
+   "Localized": 0.846,
+   "ADR-CP": 0.889,
+   "KMM": 0.577,
+   "KDE-wt": 0.945,
+   "ADE-CP": 0.687,
+   "MW-CP": 0.806
+  },
+  {
+   "target": "jak2",
+   "shift_auc": 0.9,
+   "Split": 0.621,
+   "Normalized": 0.609,
+   "Mondrian-AD": 0.715,
+   "Localized": 0.754,
+   "ADR-CP": 0.847,
+   "KMM": 0.71,
+   "KDE-wt": 0.95,
+   "ADE-CP": 0.724,
+   "MW-CP": 0.744
+  },
+  {
+   "target": "ar",
+   "shift_auc": 0.92,
+   "Split": 0.712,
+   "Normalized": 0.703,
+   "Mondrian-AD": 0.741,
+   "Localized": 0.971,
+   "ADR-CP": 0.861,
+   "KMM": 0.687,
+   "KDE-wt": 0.992,
+   "ADE-CP": 0.75,
+   "MW-CP": 0.745
+  },
+  {
+   "target": "eralpha",
+   "shift_auc": 0.92,
+   "Split": 0.68,
+   "Normalized": 0.729,
+   "Mondrian-AD": 0.718,
+   "Localized": 0.9,
+   "ADR-CP": 0.84,
+   "KMM": 0.732,
+   "KDE-wt": 0.982,
+   "ADE-CP": 0.758,
+   "MW-CP": 0.73
+  },
+  {
+   "target": "src",
+   "shift_auc": 0.93,
+   "Split": 0.628,
+   "Normalized": 0.6,
+   "Mondrian-AD": 0.763,
+   "Localized": 0.876,
+   "ADR-CP": 0.906,
+   "KMM": 0.807,
+   "KDE-wt": 0.995,
+   "ADE-CP": 0.757,
+   "MW-CP": 0.819
+  },
+  {
+   "target": "bace1",
+   "shift_auc": 0.93,
+   "Split": 0.768,
+   "Normalized": 0.741,
+   "Mondrian-AD": 0.797,
+   "Localized": 0.903,
+   "ADR-CP": 0.893,
+   "KMM": 0.746,
+   "KDE-wt": 0.985,
+   "ADE-CP": 0.775,
+   "MW-CP": 0.825
+  },
+  {
+   "target": "gr",
+   "shift_auc": 0.96,
+   "Split": 0.698,
+   "Normalized": 0.678,
+   "Mondrian-AD": 0.724,
+   "Localized": 0.981,
+   "ADR-CP": 0.902,
+   "KMM": 0.818,
+   "KDE-wt": 0.882,
+   "ADE-CP": 0.726,
+   "MW-CP": 0.725
+  }
+ ]
+}

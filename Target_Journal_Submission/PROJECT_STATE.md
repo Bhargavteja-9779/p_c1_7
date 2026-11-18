@@ -39,12 +39,10 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - Manuscript stable sections drafted (`manuscript/manuscript.md`); Results/Abstract numbers pending.
 - DOCX builder (`manuscript/build_docx.py`) validated; cover letter drafted.
 
-## STATUS: COMPLETE (2026-11-17) — READY FOR SUBMISSION
-All 42 phases + global updates executed. Final decision: READY FOR SUBMISSION with disclosed
-novelty risk (see FINAL_DECISION.md, REJECTION_RISK_REPORT.md).
-- Experiments: 4,652 result rows (6 datasets, 4 models, 12 conformal methods incl. KMM baseline).
-- Adversarial review (10 perspectives + 2 AI agents) caught + fixed missing prior art (KMM-CP, Lee);
-  implemented KMM baseline; repositioned contributions honestly; 11/11 consistency checks pass.
-- Deliverables: Final_Manuscript.docx, cover_letter.docx, 9 figures, 6 tables, full code, 33 verified refs.
-- Headline result: AD-aligned conformal (ADR-CP/ADE-CP) restores conditional coverage under temporal
-  shift (0.88 vs split 0.70, Holm p<0.001) where KMM/CoDrug-style weighting does not; diagnostic predicts regime.
+## STATUS: ROUND-2 REDEVELOPMENT COMPLETE (2026-11-18) — finalized as rigorous benchmark
+Responded to external do-not-submit verdict. Key honest outcomes:
+- ADR-CP (1-D AD reweighting) is the best deployable method: beats split/Mondrian/KMM/MW-CP, 13/13 targets (Holm p<0.001).
+- MW-CP: new method WITH a finite-sample group-conditional guarantee (Theorem 1), but does NOT beat ADR-CP (efficiency cost) — reported honestly.
+- Diagnostic REFUTED at target level (rho~0/+0.65); withdrawn as a universal rule.
+- 13 ChEMBL targets/6 families/3 windows/4 models+GNN; FCFP ablation; all audits pass; 6/6 number consistency.
+- Decision (authors' choice): READY to submit as a benchmark+guarantee+cautionary-diagnostic paper; novelty risk disclosed (FINAL_DECISION.md, REJECTION_RISK_REPORT.md).

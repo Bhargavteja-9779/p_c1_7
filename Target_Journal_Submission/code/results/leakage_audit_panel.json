@@ -1,0 +1,57 @@
+{
+ "panel": {
+  "egfr": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "vegfr2": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "jak2": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "src": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "bace1": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "herg": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "mor": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "ar": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "eralpha": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "gr": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "maob": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "dpp4": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  },
+  "cox2": {
+   "dedup_ok": true,
+   "temporal_monotone_ok": true
+  }
+ },
+ "all_passed": true
+}

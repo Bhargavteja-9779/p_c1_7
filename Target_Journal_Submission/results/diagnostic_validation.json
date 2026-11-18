@@ -1,0 +1,91 @@
+{
+ "method": "mwcp",
+ "alpha": 0.1,
+ "n_target_windows": 39,
+ "n_targets": 13,
+ "target_level_spearman": {
+  "rho": -0.016,
+  "p": 0.9573761750901848,
+  "n": 13
+ },
+ "loto": {
+  "n_eval": 39,
+  "false_safe_rate": 0.538,
+  "false_alarm_rate": 0.103
+ },
+ "threshold_auc": {
+  "mean": 0.875,
+  "ci95": [
+   0.846,
+   0.904
+  ],
+  "note": "leave-one-target-out Youden thresholds; AUC above this predicts unrecoverable conditional coverage"
+ },
+ "per_target": [
+  {
+   "target": "panel_ar",
+   "auc": 0.917,
+   "worst": 0.745
+  },
+  {
+   "target": "panel_bace1",
+   "auc": 0.929,
+   "worst": 0.825
+  },
+  {
+   "target": "panel_cox2",
+   "auc": 0.884,
+   "worst": 0.806
+  },
+  {
+   "target": "panel_dpp4",
+   "auc": 0.878,
+   "worst": 0.721
+  },
+  {
+   "target": "panel_egfr",
+   "auc": 0.849,
+   "worst": 0.712
+  },
+  {
+   "target": "panel_eralpha",
+   "auc": 0.921,
+   "worst": 0.73
+  },
+  {
+   "target": "panel_gr",
+   "auc": 0.964,
+   "worst": 0.725
+  },
+  {
+   "target": "panel_herg",
+   "auc": 0.758,
+   "worst": 0.844
+  },
+  {
+   "target": "panel_jak2",
+   "auc": 0.9,
+   "worst": 0.744
+  },
+  {
+   "target": "panel_maob",
+   "auc": 0.799,
+   "worst": 0.764
+  },
+  {
+   "target": "panel_mor",
+   "auc": 0.858,
+   "worst": 0.628
+  },
+  {
+   "target": "panel_src",
+   "auc": 0.929,
+   "worst": 0.819
+  },
+  {
+   "target": "panel_vegfr2",
+   "auc": 0.794,
+   "worst": 0.748
+  }
+ ]
+}

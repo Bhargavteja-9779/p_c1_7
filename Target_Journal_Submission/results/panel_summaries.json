@@ -1,0 +1,145 @@
+{
+ "egfr": {
+  "key": "egfr",
+  "name": "EGFR",
+  "family": "kinase",
+  "n": 4005,
+  "n_scaffolds": 1361,
+  "year_min": 1989,
+  "year_max": 2015,
+  "y_mean": 6.428776529338326,
+  "y_std": 1.3335076569249094
+ },
+ "vegfr2": {
+  "key": "vegfr2",
+  "name": "VEGFR2/KDR",
+  "family": "kinase",
+  "n": 4464,
+  "n_scaffolds": 1862,
+  "year_min": 1999,
+  "year_max": 2015,
+  "y_mean": 6.787311827956989,
+  "y_std": 1.1565297034441326
+ },
+ "jak2": {
+  "key": "jak2",
+  "name": "JAK2",
+  "family": "kinase",
+  "n": 5163,
+  "n_scaffolds": 1920,
+  "year_min": 2002,
+  "year_max": 2022,
+  "y_mean": 7.2854483827232235,
+  "y_std": 1.1117462630425143
+ },
+ "src": {
+  "key": "src",
+  "name": "SRC",
+  "family": "kinase",
+  "n": 3447,
+  "n_scaffolds": 1511,
+  "year_min": 1992,
+  "year_max": 2025,
+  "y_mean": 6.621640557006092,
+  "y_std": 1.2801785457546477
+ },
+ "bace1": {
+  "key": "bace1",
+  "name": "BACE-1",
+  "family": "protease",
+  "n": 4381,
+  "n_scaffolds": 1826,
+  "year_min": 2002,
+  "year_max": 2017,
+  "y_mean": 6.505154074412235,
+  "y_std": 1.1968460808826458
+ },
+ "herg": {
+  "key": "herg",
+  "name": "hERG",
+  "family": "ion_channel",
+  "n": 4943,
+  "n_scaffolds": 2569,
+  "year_min": 1995,
+  "year_max": 2016,
+  "y_mean": 5.476903702205139,
+  "y_std": 0.9004837874326371
+ },
+ "mor": {
+  "key": "mor",
+  "name": "mu-opioid R",
+  "family": "gpcr",
+  "n": 4959,
+  "n_scaffolds": 2244,
+  "year_min": 1989,
+  "year_max": 2024,
+  "y_mean": 7.29080157289776,
+  "y_std": 1.298315268746716
+ },
+ "ar": {
+  "key": "ar",
+  "name": "Androgen R",
+  "family": "nuclear_receptor",
+  "n": 2356,
+  "n_scaffolds": 849,
+  "year_min": 1996,
+  "year_max": 2025,
+  "y_mean": 6.483155772495755,
+  "y_std": 0.9445708563620479
+ },
+ "eralpha": {
+  "key": "eralpha",
+  "name": "Estrogen Ra",
+  "family": "nuclear_receptor",
+  "n": 3064,
+  "n_scaffolds": 896,
+  "year_min": 1999,
+  "year_max": 2025,
+  "y_mean": 7.257852480417754,
+  "y_std": 1.3553909145642933
+ },
+ "gr": {
+  "key": "gr",
+  "name": "Glucocorticoid R",
+  "family": "nuclear_receptor",
+  "n": 2088,
+  "n_scaffolds": 726,
+  "year_min": 1991,
+  "year_max": 2024,
+  "y_mean": 7.199837164750958,
+  "y_std": 1.0529677625992728
+ },
+ "maob": {
+  "key": "maob",
+  "name": "MAO-B",
+  "family": "enzyme",
+  "n": 4584,
+  "n_scaffolds": 1479,
+  "year_min": 1996,
+  "year_max": 2025,
+  "y_mean": 5.985190881326352,
+  "y_std": 1.1959431851521627
+ },
+ "dpp4": {
+  "key": "dpp4",
+  "name": "DPP-4",
+  "family": "enzyme",
+  "n": 3885,
+  "n_scaffolds": 1493,
+  "year_min": 1996,
+  "year_max": 2025,
+  "y_mean": 7.112795366795367,
+  "y_std": 1.2073738153312883
+ },
+ "cox2": {
+  "key": "cox2",
+  "name": "COX-2",
+  "family": "enzyme",
+  "n": 4292,
+  "n_scaffolds": 1177,
+  "year_min": 1994,
+  "year_max": 2024,
+  "y_mean": 6.210397250698974,
+  "y_std": 1.119067037395408
+ }
+}

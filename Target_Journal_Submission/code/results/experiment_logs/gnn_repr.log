@@ -1,3 +1,32 @@
 20:47:35 | INFO | [gnn] egfr auc=nan mwcp_worst=[0.6582278481012658]
 20:49:12 | INFO | [gnn] mor auc=nan mwcp_worst=[0.7454545454545455]
 21:07:18 | INFO | [gnn] cox2 auc=nan mwcp_worst=[0.7272727272727273]
+21:23:30 | INFO | [gnn] herg auc=nan mwcp_worst=[0.8857142857142857]
+21:23:30 | INFO | compiled gnn_results.csv
+21:23:34 | INFO | [repr ECFP4] esol done
+21:23:37 | INFO | [repr ECFP4] bace done
+21:23:43 | INFO | [repr ECFP4] panel_egfr done
+21:23:49 | INFO | [repr ECFP4] panel_cox2 done
+21:23:51 | INFO | [repr FCFP4] esol done
+21:23:54 | INFO | [repr FCFP4] bace done
+21:24:00 | INFO | [repr FCFP4] panel_egfr done
+21:24:06 | INFO | [repr FCFP4] panel_cox2 done
+21:24:06 | INFO | MW-CP worst-stratum by representation:
+representation    dataset  worst_stratum_coverage
+         ECFP4       bace                   0.805
+         ECFP4       esol                   0.627
+         ECFP4 panel_cox2                   0.819
+         ECFP4 panel_egfr                   0.669
+         FCFP4       bace                   0.802
+         FCFP4       esol                   0.702
+         FCFP4 panel_cox2                   0.628
+         FCFP4 panel_egfr                   0.572
+representation    dataset  worst_stratum_coverage
+         ECFP4       bace                   0.805
+         ECFP4       esol                   0.627
+         ECFP4 panel_cox2                   0.819
+         ECFP4 panel_egfr                   0.669
+         FCFP4       bace                   0.802
+         FCFP4       esol                   0.702
+         FCFP4 panel_cox2                   0.628
+         FCFP4 panel_egfr                   0.572

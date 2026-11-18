@@ -4,3 +4,24 @@
 21:07:34 | INFO | [repr ECFP4] panel_cox2 done
 21:09:50 | INFO | [repr FCFP4] esol done
 21:11:31 | INFO | [repr FCFP4] bace done
+21:16:41 | INFO | [repr FCFP4] panel_egfr done
+21:22:44 | INFO | [repr FCFP4] panel_cox2 done
+21:22:44 | INFO | MW-CP worst-stratum by representation:
+representation    dataset  worst_stratum_coverage
+         ECFP4       bace                   0.805
+         ECFP4       esol                   0.627
+         ECFP4 panel_cox2                   0.819
+         ECFP4 panel_egfr                   0.669
+         FCFP4       bace                   0.802
+         FCFP4       esol                   0.702
+         FCFP4 panel_cox2                   0.628
+         FCFP4 panel_egfr                   0.572
+representation    dataset  worst_stratum_coverage
+         ECFP4       bace                   0.805
+         ECFP4       esol                   0.627
+         ECFP4 panel_cox2                   0.819
+         ECFP4 panel_egfr                   0.669
+         FCFP4       bace                   0.802
+         FCFP4       esol                   0.702
+         FCFP4 panel_cox2                   0.628
+         FCFP4 panel_egfr                   0.572
