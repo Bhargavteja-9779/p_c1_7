@@ -39,6 +39,27 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - Manuscript stable sections drafted (`manuscript/manuscript.md`); Results/Abstract numbers pending.
 - DOCX builder (`manuscript/build_docx.py`) validated; cover letter drafted.
 
+## STATUS: ROUND-4 — professor review #3 addressed (2026-11-18)
+Addressed the detailed JCIM-style review #3 with real analysis (no fabrication):
+- **W1 (Critical) — ADR-CP 1-D justification.** New `experiments/residual_analysis.py` + three SI
+  tables: within-AD-stratum calib-vs-test discriminator AUC stays ~0.78–0.84 (vs 0.86 global) →
+  a(x) is NOT a sufficient statistic; ADR-CP stated as an empirically effective approximation. But
+  coverage is restored UNIFORMLY across all MW/logP quartiles (0.66–0.71→0.81–0.84, Table S-desc)
+  and all six families (Table S-fam), and the 1-D ratio is stable where KMM/KDE degenerate. Explicit
+  assumption added in §4.
+- **W2 — MW-CP.** Abstract + §6.3 now separate (i) Theorem (exact weights), (ii) implemented
+  estimated-weight method (no unconditional guarantee), (iii) measured empirical coverage; removed
+  "certified deployment" language.
+- **W3 — screening.** §6.5 reframed as risk-aware screening (not better hits); states 14.8% still
+  > 10% nominal and the 55% width cost (3.30 vs 2.13).
+- **W4 — novelty.** C2 marked the central contribution; theorem supports, not carries, it.
+- **W5 — temporal.** Family-coverage result in §6.6; §7 expanded on document-year proxy, assay-source
+  control, and 3-window cutoff sensitivity.
+- **Blockers.** Fixed code-availability conflict (abstract/SI/cover letter now "available on request",
+  consistent); ref 29 → UAI 2026 (verified via web; no fabricated pages); created `figures/TOC_graphic`
+  (data-driven ACS graphical TOC); added ASSOCIATED CONTENT/SI section. Author placeholder kept per
+  user. Rebuilt all DOCX+PDF; package now 32 files incl. TOC + 3 new SI tables.
+
 ## STATUS: ROUND-3 — professor review #2 addressed + submission ZIP built (2026-11-18)
 Responded to external JCIM review #2 and user's finalization instructions:
 - **Retitled** to "Applicability-Domain–Aligned Conformal Prediction for Reliable Molecular Property

@@ -16,7 +16,8 @@
 | 02_Manuscript | Manuscript.docx / .pdf | Main text, 22 pp., figures + tables embedded, ACS references |
 | 03_Supporting_Information | Supporting_Information.docx / .pdf | SI (S1–S8 + round-2 S-panel/S-model/S-gnn/S-repr/S-diag/S-mwcp/S-screen) |
 | 04_Figures | Figure_1.(png/pdf), Figure_2.(png/pdf) | Figure 1 = per-target forest plot; Figure 2 = diagnostic (within-dataset vs across-target) |
-| 05_Source_Data_Tables | Table_1..5_*.csv, Table_S_*.csv | Machine-readable source data for every table |
+| 05_Source_Data_Tables | Table_1..5_*.csv, Table_S_*.csv | Machine-readable source data for every main and SI table |
+| 06_Graphical_TOC | TOC_graphic.(png/pdf) | ACS graphical Table-of-Contents entry (300 dpi) |
 
 ## Author information (to complete before upload)
 
@@ -36,7 +37,7 @@
 
 ## Before you click submit
 
-- Fill in the second/corresponding author name, affiliation, e-mail and ORCID (search for the bracketed `[...]` placeholders).
+- Fill in the second/corresponding author name, affiliation, e-mail and ORCID (search for the bracketed `[...]` placeholders in the manuscript, cover letter and author block). The first author (P. N. Bhargav Teja) is complete; the second/corresponding author is intentionally left blank for your supervisor.
 - Add the date to the cover letter.
-- Supply a Table-of-Contents (TOC) graphic — required by ACS; not included here.
-- Confirm the preferred figure format for ACS Paragon (PNG ≥300 dpi and vector PDF are both provided).
+- A graphical Table-of-Contents entry is included (06_Graphical_TOC); replace it if you prefer a different design.
+- PNG (≥300 dpi) and vector PDF are provided for every figure and the TOC; use whichever ACS Paragon requests.

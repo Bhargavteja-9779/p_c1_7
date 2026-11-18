@@ -1,0 +1,7 @@
+Family,n,Split CP marginal cov,ADR-CP marginal cov,ADR-CP mean width
+enzyme,3827,0.643,0.767,3.09
+gpcr,1487,0.691,0.771,3.10
+ion_channel,1482,0.769,0.883,2.45
+kinase,5122,0.618,0.798,3.22
+nuclear_receptor,2251,0.765,0.944,4.03
+protease,1314,0.811,0.928,3.25
