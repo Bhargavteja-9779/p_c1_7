@@ -17,6 +17,7 @@ from .conformal.weighting import DensityRatioWeights
 from .evaluation.metrics import summarize, value_quartile_bins, decision_utility
 
 _FEATURE_CACHE = {}
+_AD_AUX_CACHE = {}   # dataset_key -> {"fcfp": matrix, "physchem": matrix}
 
 
 def get_features(dataset_key, smiles, radius, nbits):
@@ -26,6 +27,70 @@ def get_features(dataset_key, smiles, radius, nbits):
     if key not in _FEATURE_CACHE:
         _FEATURE_CACHE[key] = ecfp_matrix(smiles, radius, nbits)
     return _FEATURE_CACHE[key]
+
+
+def _physchem_matrix(smiles):
+    """Standardizable physicochemical descriptor matrix (MW, logP, TPSA, HBD, HBA, RotB)."""
+    from rdkit import Chem
+    from rdkit.Chem import Descriptors, Crippen, rdMolDescriptors
+    rows = []
+    for s in smiles:
+        m = Chem.MolFromSmiles(s) if isinstance(s, str) else None
+        if m is None:
+            rows.append([np.nan] * 6)
+        else:
+            rows.append([Descriptors.MolWt(m), Crippen.MolLogP(m),
+                         rdMolDescriptors.CalcTPSA(m),
+                         rdMolDescriptors.CalcNumHBD(m), rdMolDescriptors.CalcNumHBA(m),
+                         rdMolDescriptors.CalcNumRotatableBonds(m)])
+    A = np.array(rows, dtype=float)
+    col_med = np.nanmedian(A, axis=0)
+    inds = np.where(np.isnan(A))
+    A[inds] = np.take(col_med, inds[1])
+    return A
+
+
+def _ad_coordinate(variant, dataset_key, smiles, X, tr, ca, te, radius, nbits):
+    """Applicability-domain coordinate a(x) (higher = more in-domain) for calib and test,
+    under four reasonable definitions of chemical novelty. Model features stay ECFP; only the
+    AD axis changes, isolating the effect of the AD definition (reviewer Experiment A)."""
+    from .preprocessing.features import (max_sim_to_ref_matrix, tanimoto_matrix,
+                                         set_fp_variant, ecfp_matrix)
+    if variant == "max_ecfp":
+        return max_sim_to_ref_matrix(X[ca], X[tr]), max_sim_to_ref_matrix(X[te], X[tr])
+    if variant == "meantop5_ecfp":
+        def _mtop(Xq):
+            out = np.zeros(len(Xq), dtype=np.float32)
+            for i in range(0, len(Xq), 256):
+                T = tanimoto_matrix(Xq[i:i+256], X[tr])
+                T.sort(axis=1)
+                out[i:i+256] = T[:, -5:].mean(axis=1)
+            return out
+        return _mtop(X[ca]), _mtop(X[te])
+    if variant == "max_fcfp":
+        aux = _AD_AUX_CACHE.setdefault(dataset_key, {})
+        if "fcfp" not in aux:
+            set_fp_variant(True)
+            aux["fcfp"] = ecfp_matrix(smiles, radius, nbits)
+            set_fp_variant(False)
+        Xf = aux["fcfp"]
+        return max_sim_to_ref_matrix(Xf[ca], Xf[tr]), max_sim_to_ref_matrix(Xf[te], Xf[tr])
+    if variant == "physchem":
+        aux = _AD_AUX_CACHE.setdefault(dataset_key, {})
+        if "physchem" not in aux:
+            aux["physchem"] = _physchem_matrix(smiles)
+        P = aux["physchem"]
+        mu, sd = P[tr].mean(axis=0), P[tr].std(axis=0) + 1e-9
+        Ptr = (P[tr] - mu) / sd
+        def _nn_sim(idx):
+            Q = (P[idx] - mu) / sd
+            out = np.zeros(len(Q), dtype=np.float32)
+            for i in range(0, len(Q), 256):
+                d = np.sqrt(((Q[i:i+256, None, :] - Ptr[None, :, :]) ** 2).sum(axis=2))
+                out[i:i+256] = 1.0 / (1.0 + d.min(axis=1))   # higher = closer = in-domain
+            return out
+        return _nn_sim(ca), _nn_sim(te)
+    raise KeyError(variant)
 
 
 def _make_split(df, X, split_type, fracs, seed, sweep_q=None):
@@ -40,7 +105,7 @@ def _make_split(df, X, split_type, fracs, seed, sweep_q=None):
 
 def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
                methods=None, sweep_q=None, decision_fracs=None, return_arrays=False,
-               fracs=None, window=None):
+               fracs=None, window=None, ad_variant="max_ecfp"):
     """Execute one run. df must have columns smiles,y (and year for temporal).
     `fracs` overrides the (train,calib,test) proportions (used for multiple temporal
     windows). `window` is a label recorded in the output rows."""
@@ -87,9 +152,10 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
     sigma_ca = knn_local_sigma(Xtr, resid_tr, Xca, k=10)
     sigma_te = knn_local_sigma(Xtr, resid_tr, Xte, k=10)
 
-    # Applicability-domain similarity (max Tanimoto to TRAIN only) + strata
-    ad_ca = max_sim_to_ref_matrix(Xca, Xtr)
-    ad_te = max_sim_to_ref_matrix(Xte, Xtr)
+    # Applicability-domain coordinate a(x) (higher = more in-domain) + strata.
+    # Default is max Tanimoto to TRAIN on ECFP; `ad_variant` selects alternative definitions
+    # (mean-top5 ECFP, max FCFP, physicochemical-distance) for the AD-robustness experiment.
+    ad_ca, ad_te = _ad_coordinate(ad_variant, dataset_key, smiles, X, tr, ca, te, radius, nbits)
     calib_bin, test_bin = ad_strata(ad_ca, ad_te, n_strata)
     sim_te_ca = tanimoto_matrix(Xte, Xca) if "localized" in methods else None
     value_bins = value_quartile_bins(yhat_te, n=min(4, n_strata if n_strata > 1 else 2))

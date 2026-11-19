@@ -1,0 +1,108 @@
+{
+ "n_targets": 13,
+ "runs_per_method": 117,
+ "comparisons": {
+  "split": {
+   "mean_delta": 0.16874831033965362,
+   "ci95": [
+    0.1381090042590936,
+    0.19962059974532054
+   ],
+   "targets_improved": 13,
+   "n": 13,
+   "rank_biserial": 1.0,
+   "ci_excludes_zero": true
+  },
+  "normalized": {
+   "mean_delta": 0.16296385501031363,
+   "ci95": [
+    0.12929295116085507,
+    0.1997172328424327
+   ],
+   "targets_improved": 13,
+   "n": 13,
+   "rank_biserial": 1.0,
+   "ci_excludes_zero": true
+  },
+  "mondrian": {
+   "mean_delta": 0.10647398240397955,
+   "ci95": [
+    0.08391880343615495,
+    0.1287256122432057
+   ],
+   "targets_improved": 13,
+   "n": 13,
+   "rank_biserial": 1.0,
+   "ci_excludes_zero": true
+  },
+  "localized": {
+   "mean_delta": -0.013480965801725992,
+   "ci95": [
+    -0.041268331420065356,
+    0.015495109351143843
+   ],
+   "targets_improved": 5,
+   "n": 13,
+   "rank_biserial": -0.23076923076923078,
+   "ci_excludes_zero": false
+  },
+  "weighted_kmm": {
+   "mean_delta": 0.12329845107377525,
+   "ci95": [
+    0.08708423663445776,
+    0.1638969963902517
+   ],
+   "targets_improved": 12,
+   "n": 13,
+   "rank_biserial": 0.8461538461538461,
+   "ci_excludes_zero": true
+  },
+  "weighted_kde": {
+   "mean_delta": -0.12656506706388007,
+   "ci95": [
+    -0.15877050761475567,
+    -0.09143503972955944
+   ],
+   "targets_improved": 1,
+   "n": 13,
+   "rank_biserial": -0.8461538461538461,
+   "ci_excludes_zero": false
+  },
+  "adecp": {
+   "mean_delta": 0.096644156914,
+   "ci95": [
+    0.06665534569380395,
+    0.1272398045351683
+   ],
+   "targets_improved": 12,
+   "n": 13,
+   "rank_biserial": 0.8461538461538461,
+   "ci_excludes_zero": true
+  },
+  "mwcp": {
+   "mean_delta": 0.08391205506503356,
+   "ci95": [
+    0.06366186635160215,
+    0.10592053592556382
+   ],
+   "targets_improved": 13,
+   "n": 13,
+   "rank_biserial": 1.0,
+   "ci_excludes_zero": true
+  }
+ },
+ "adr_worst_cov_target_level": {
+  "mean": 0.8385979037159697,
+  "ci95": [
+   0.8075363700003575,
+   0.868205425182909
+  ]
+ },
+ "adr_width_target_level": {
+  "mean": 3.3023873679940783,
+  "ci95": [
+   3.05076392461205,
+   3.559868770296243
+  ]
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "max_ecfp": {
+  "adr_worst_mean": 0.8429969624112699,
+  "adr_marg_mean": 0.8693023399105988,
+  "width_mean": 3.446793143953132,
+  "split_worst_mean": 0.6486776550312362,
+  "delta_mean": 0.1943193073800336,
+  "targets_improved": 13,
+  "n_targets": 13,
+  "per_target": {
+   "egfr": 0.716,
+   "vegfr2": 0.825,
+   "jak2": 0.866,
+   "src": 0.945,
+   "bace1": 0.904,
+   "herg": 0.878,
+   "mor": 0.723,
+   "ar": 0.919,
+   "eralpha": 0.831,
+   "gr": 0.892,
+   "maob": 0.803,
+   "dpp4": 0.755,
+   "cox2": 0.903
+  }
+ },
+ "meantop5_ecfp": {
+  "adr_worst_mean": 0.8110576690975227,
+  "adr_marg_mean": 0.8479116739509275,
+  "width_mean": 3.197700984726428,
+  "split_worst_mean": 0.6493523171136845,
+  "delta_mean": 0.16170535198383812,
+  "targets_improved": 13,
+  "n_targets": 13,
+  "per_target": {
+   "egfr": 0.643,
+   "vegfr2": 0.809,
+   "jak2": 0.877,
+   "src": 0.889,
+   "bace1": 0.889,
+   "herg": 0.869,
+   "mor": 0.728,
+   "ar": 0.889,
+   "eralpha": 0.799,
+   "gr": 0.813,
+   "maob": 0.775,
+   "dpp4": 0.732,
+   "cox2": 0.833
+  }
+ },
+ "max_fcfp": {
+  "adr_worst_mean": 0.8409976494632999,
+  "adr_marg_mean": 0.8668793122602613,
+  "width_mean": 3.491289876627621,
+  "split_worst_mean": 0.6447097525619883,
+  "delta_mean": 0.19628789690131196,
+  "targets_improved": 13,
+  "n_targets": 13,
+  "per_target": {
+   "egfr": 0.597,
+   "vegfr2": 0.824,
+   "jak2": 0.89,
+   "src": 0.957,
+   "bace1": 0.911,
+   "herg": 0.862,
+   "mor": 0.751,
+   "ar": 0.926,
+   "eralpha": 0.87,
+   "gr": 0.934,
+   "maob": 0.787,
+   "dpp4": 0.758,
+   "cox2": 0.865
+  }
+ },
+ "physchem": {
+  "adr_worst_mean": 0.688511842132367,
+  "adr_marg_mean": 0.753142342897634,
+  "width_mean": 2.5095311553629105,
+  "split_worst_mean": 0.6435250262325489,
+  "delta_mean": 0.04498681589981813,
+  "targets_improved": 11,
+  "n_targets": 13,
+  "per_target": {
+   "egfr": 0.609,
+   "vegfr2": 0.635,
+   "jak2": 0.73,
+   "src": 0.627,
+   "bace1": 0.793,
+   "herg": 0.754,
+   "mor": 0.676,
+   "ar": 0.681,
+   "eralpha": 0.861,
+   "gr": 0.6,
+   "maob": 0.65,
+   "dpp4": 0.671,
+   "cox2": 0.663
+  }
+ }
+}

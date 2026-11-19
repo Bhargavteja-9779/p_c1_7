@@ -1,0 +1,9 @@
+Budget,Method,Surprise rate,Hit rate,Enrichment,Mean width (selected)
+5%,Split CP,0.298,0.248,4.97,2.16
+5%,ADR-CP,0.187,0.248,4.97,3.03
+10%,Split CP,0.297,0.310,3.10,2.17
+10%,ADR-CP,0.171,0.310,3.10,3.13
+20%,Split CP,0.286,0.417,2.09,2.18
+20%,ADR-CP,0.150,0.417,2.09,3.23
+30%,Split CP,0.288,0.522,1.74,2.18
+30%,ADR-CP,0.147,0.522,1.74,3.27

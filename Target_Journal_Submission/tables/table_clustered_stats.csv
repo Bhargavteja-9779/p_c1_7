@@ -1,0 +1,9 @@
+"ADR-CP vs baseline (target-level, n=13 targets)",Mean Δ worst-cov,95% cluster-bootstrap CI,Targets improved,Effect (rb),CI excludes 0
+Split CP,+0.169,"[+0.138, +0.200]",13/13,+1.00,yes
+Normalized,+0.163,"[+0.129, +0.200]",13/13,+1.00,yes
+Mondrian-AD,+0.106,"[+0.084, +0.129]",13/13,+1.00,yes
+Localized,+-0.013,"[-0.041, +0.015]",5/13,-0.23,no
+KMM-CP,+0.123,"[+0.087, +0.164]",12/13,+0.85,yes
+KDE-wt,+-0.127,"[-0.159, -0.091]",1/13,-0.85,no
+ADE-CP,+0.097,"[+0.067, +0.127]",12/13,+0.85,yes
+MW-CP,+0.084,"[+0.064, +0.106]",13/13,+1.00,yes

@@ -39,6 +39,25 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - Manuscript stable sections drafted (`manuscript/manuscript.md`); Results/Abstract numbers pending.
 - DOCX builder (`manuscript/build_docx.py`) validated; cover letter drafted.
 
+## STATUS: ROUND-5 — professor review #4 addressed with 3 new real experiments (2026-11-19)
+- **Experiment A (AD-representation robustness, MUST):** `experiments/ad_representation.py`; added
+  `ad_variant` to `run_single`. ADR-CP under 4 pre-defined AD coordinates (13 targets, w30, 3 seeds):
+  max-ECFP 0.843 (+0.194, 13/13), mean-top5-ECFP 0.811 (+0.162, 13/13), max-FCFP 0.841 (+0.196,
+  13/13), physchem-distance 0.689 (+0.045, 11/13). Robust across structural coordinates; physchem
+  weaker. Table S-adrep; §6.2.
+- **Experiment C (target-clustered stats, MUST):** `experiments/clustered_stats.py`. Target-level
+  (n=13, not 117 runs) cluster bootstrap: ADR-CP vs split +0.169 CI[+0.138,+0.200]; CI excludes 0 vs
+  all deployable baselines. Table S-clust; §6.2.
+- **Experiment B/E (screening + chemical space):** `experiments/screening_chem.py`. Budgets 5/10/20/30%
+  + width-among-selected (surprise ~0.15 ADR vs ~0.29 split; width 2.2→3.2); uncertainty-aware
+  decision rule (calib-set thresholds; high-tier err 0.90 vs 0.51, split cov 0.68 vs 0.89); coverage
+  across 6 descriptors (MW/logP/TPSA/HBD/HBA/RotB) all restored. Tables S-screen-decision, S-rule,
+  S-desc(extended); §6.5.
+- **Text:** retitled "...under Scaffold and Temporal Chemical-Space Shift"; abstract notes residual
+  gap (0.84 vs 0.90) + 55% width cost + AD-robustness; §6.5 reframed retrospective simulation;
+  "When to use what" guidance in §8; ESS reported; code stays "on request" (no conflict).
+- Rebuilt DOCX+PDF; package 36 files. All numbers verified; committed + pushed.
+
 ## STATUS: ROUND-4 — professor review #3 addressed (2026-11-18)
 Addressed the detailed JCIM-style review #3 with real analysis (no fabrication):
 - **W1 (Critical) — ADR-CP 1-D justification.** New `experiments/residual_analysis.py` + three SI

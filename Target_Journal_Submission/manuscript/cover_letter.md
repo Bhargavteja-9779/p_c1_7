@@ -7,7 +7,7 @@ To the Editors,
 
 Dear Editor-in-Chief and Editorial Board,
 
-We are pleased to submit our manuscript, **"Applicability-Domain–Aligned Conformal Prediction for Reliable Molecular Property Prediction under Chemical-Space Shift,"** for consideration as an Article in the *Journal of Chemical Information and Modeling*.
+We are pleased to submit our manuscript, **"Applicability-Domain–Aligned Conformal Prediction for Reliable Molecular Property Prediction under Scaffold and Temporal Chemical-Space Shift,"** for consideration as an Article in the *Journal of Chemical Information and Modeling*.
 
 **Problem and motivation.** Conformal prediction is now a leading way to attach a distribution-free applicability-domain statement to machine-learning predictions of molecular properties, and it appears frequently in this journal. Its coverage guarantee, however, assumes exchangeability — precisely the assumption that fails in prospective deployment, where the compounds to be scored are novel scaffolds or later-synthesized molecules (covariate shift). Recent JCIM work shows that uncertainty estimates become unreliable out-of-domain and that no single remedy dominates; a NeurIPS 2023 method restores *marginal* coverage for molecular *classification* via density-ratio weighting. What the field lacks — and what decisions actually depend on — is whether such correction restores **conditional** coverage (coverage for the out-of-domain compounds one acts on) in the **regression** setting native to potency and ADMET, together with a method that is deployable from only the unlabeled screening pool, and a rule for when any of this can be trusted.
 
