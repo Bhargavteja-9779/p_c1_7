@@ -27,6 +27,27 @@ CPU-only (4 cores, 15 GB). Installed: numpy 2.5, pandas 3.0, scikit-learn, scipy
 - [ ] Phases 24–33 / GU5–6 ten-reviewer cycles
 - [ ] Phases 34–42 audits, DOCX, cover letter, package, risk report, decision
 
+## ROUND-6 NOVELTY UPGRADE (started 2026-11-21) — goal: avoid desk rejection
+User report: submissions were desk-rejected; wants more novelty + level-check vs recent JCIM papers.
+Diagnosis (desk-reject drivers): (1) no new method that wins — abstract says so explicitly;
+(2) 600-word hedged abstract, "we do not claim" framing; (3) code "available on request" conflicts
+with JCIM 2021 data/software policy (doi 10.1021/acs.jcim.0c01389) -> must be public (GitHub+Zenodo);
+(4) author/affiliation placeholders.
+Plan:
+ 1. NEW METHOD ADCC-CP = function-class conditional conformal (Gibbs-Cherian-Candes JRSSB 2025)
+    on an applicability-domain function class F_AD (stratum indicators + within-stratum linear tilt
+    in a(x)). Finite-sample guarantee simultaneously for every AD stratum AND every covariate shift
+    whose density ratio (as function of a) lies in F_AD — no density-ratio estimation. Lit search
+    (2026-11-21): not yet applied to molecules/AD (gap open). Code: src/conformal/methods.py (adcc*).
+ 2. Dev selection of variant on MoleculeNet scaffold ONLY (experiments/dev_adcc.py ->
+    results/dev_adcc_rows.jsonl); ChEMBL panel held out. Lock variant in supplementary/adcc_preregistration.md.
+ 3. Panel run (13 targets x 3 windows x lgbm,rf x 3 seeds) with split,mondrian,weighted_ad,mwcp,adcc
+    -> experiments/run_panel_adcc.py -> results/panel_adcc_rows.jsonl. Target-clustered stats.
+ 4. Rewrite manuscript around ADCC-CP (short abstract <=250 words, positive framing), rebuild DOCX/PDF/ZIP.
+NEXT STEP: (update as you go)
+ - [x] step 2 dev selection (spline locked; supplementary/adcc_preregistration.md)
+ - [ ] step 3 panel running: `cd code && nohup python experiments/run_panel_adcc.py 4` (resumable; check results/panel_adcc_rows.jsonl, 234 runs)
+
 ## Status 2026-11-16 (checkpoint)
 - Full pipeline built, tested (6 unit tests pass), leakage audit passes.
 - Proposed methods: **ADR-CP** (`weighted_ad`) + **ADE-CP** (`adecp`). Thesis: align conformal

@@ -272,3 +272,138 @@ DISPATCH = {
 
 def run_method(name: str, ctx: CPContext):
     return DISPATCH[name](ctx)
+
+
+# ---------------------------------------------------------------------------
+# ADCC-CP: Applicability-Domain Conditional Conformal prediction (round-6 method)
+# ---------------------------------------------------------------------------
+# Function-class conditional conformal (Gibbs, Cherian & Candes, JRSSB 2025)
+# instantiated on a low-dimensional applicability-domain function class F_AD.
+# For every nonnegative f in F_AD the augmented quantile-regression set satisfies
+#     E[ f(X) (1{Y in C(X)} - (1-alpha)) ] >= 0,
+# i.e. (i) exact finite-sample coverage within every AD stratum G_k (f = 1{G_k}) and
+# (ii) coverage under EVERY covariate shift whose density ratio, as a function of the
+# AD coordinate, lies in F_AD (f = dP_test/dP_cal) -- simultaneously, and WITHOUT
+# estimating any density ratio. Computed exactly via the dual of the augmented
+# quantile regression (the test score is in the set iff its dual variable < 1-alpha),
+# with a bisection over the imputed test score.
+
+def _ad_edges(ad_calib, n_strata):
+    qs = np.linspace(0, 1, n_strata + 1)[1:-1]
+    return np.unique(np.quantile(ad_calib, qs))
+
+
+def ad_basis(a, edges, kind="pl", sigma=None, wfun=None):
+    """Feature map phi(a) spanning the AD function class F_AD.
+    pl     : stratum indicators + within-stratum linear tilt  (d = 2K)
+    grp    : stratum indicators only (Mondrian-equivalent class; d = K)
+    spline : continuous linear spline in a with knots at stratum edges (d = K+1)
+    pl_sig : pl + local difficulty sigma(x) (adaptive width)
+    pl_w   : pl + an externally supplied (estimated) density ratio w(a)."""
+    a = np.asarray(a, float)
+    K = len(edges) + 1
+    k = np.digitize(a, edges)
+    n = len(a)
+    if kind == "spline":
+        cols = [np.ones(n), a] + [np.maximum(a - e, 0.0) for e in edges]
+        return np.column_stack(cols)
+    G = np.zeros((n, K)); G[np.arange(n), k] = 1.0
+    if kind == "grp":
+        return G
+    L = G * a[:, None]
+    P = np.hstack([G, L])
+    if kind == "pl_sig":
+        P = np.hstack([P, np.asarray(sigma, float)[:, None]])
+    elif kind == "pl_w":
+        P = np.hstack([P, np.asarray(wfun(a), float)[:, None]])
+    return P
+
+
+def _drop_empty_cols(Pc):
+    keep = np.abs(Pc).sum(axis=0) > 0
+    return keep
+
+
+def conditional_conformal_threshold(S_cal, P_cal, p_test, level, n_bisect=18):
+    """Largest imputed score S such that the augmented quantile regression leaves the
+    test point strictly inside (dual variable eta_{n+1} < level). Exact up to bisection
+    tolerance (max(S)*2^-n_bisect). Returns +inf if the test point is never covered."""
+    from scipy.optimize import linprog
+    tau = level
+    A = np.vstack([P_cal, p_test[None, :]]).T          # d x (n+1)
+    keep = np.abs(A).sum(axis=1) > 0
+    A = A[keep]
+    b = np.zeros(A.shape[0])
+
+    def eta_last(s):
+        c = -np.append(S_cal, s)
+        r = linprog(c, A_eq=A, b_eq=b, bounds=(tau - 1.0, tau), method="highs")
+        if r.status != 0:
+            return tau
+        return r.x[-1]
+
+    hi = 2.0 * float(np.max(S_cal)) + 1e-6
+    if eta_last(hi) < tau - 1e-9:
+        return np.inf
+    lo = 0.0
+    for _ in range(n_bisect):
+        mid = 0.5 * (lo + hi)
+        if eta_last(mid) < tau - 1e-9:
+            lo = mid
+        else:
+            hi = mid
+    return hi   # conservative end of the bracket
+
+
+def _adcc_generic(ctx: CPContext, kind="pl", score="abs", round_a=0.01, wfun=None):
+    edges = _ad_edges(ctx.ad_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
+    ac = np.asarray(ctx.ad_calib, float); at = np.asarray(ctx.ad_test, float)
+    if round_a and kind != "pl_sig":
+        ac = np.round(ac / round_a) * round_a; at = np.round(at / round_a) * round_a
+    if score == "norm":
+        S = ctx.resid_calib / ctx.sigma_calib
+        scale = ctx.sigma_test
+    else:
+        S = ctx.resid_calib
+        scale = np.ones(len(at))
+    Pc = ad_basis(ac, edges, kind, sigma=ctx.sigma_calib, wfun=wfun)
+    Pt = ad_basis(at, edges, kind, sigma=ctx.sigma_test, wfun=wfun)
+    hw = np.empty(len(at))
+    cache = {}
+    for j in range(len(at)):
+        key = tuple(np.round(Pt[j], 6))
+        if key not in cache:
+            cache[key] = conditional_conformal_threshold(S, Pc, Pt[j], ctx.level)
+        hw[j] = cache[key]
+    return _interval(ctx.yhat_test, hw * scale)
+
+
+def method_adcc(ctx):
+    """ADCC-CP primary (locked 2026-11-21 by dev selection on MoleculeNet scaffold sets only):
+    F_AD = continuous linear splines in a(x) with knots at the AD-stratum edges."""
+    return _adcc_generic(ctx, "spline")
+
+
+def method_adcc_pl(ctx):
+    return _adcc_generic(ctx, "pl")
+
+
+def method_adcc_grp(ctx):
+    return _adcc_generic(ctx, "grp")
+
+
+def method_adcc_sig(ctx):
+    return _adcc_generic(ctx, "pl_sig", round_a=None)
+
+
+def method_adcc_norm(ctx):
+    return _adcc_generic(ctx, "pl", score="norm")
+
+
+DISPATCH.update({
+    "adcc": method_adcc,
+    "adcc_grp": method_adcc_grp,
+    "adcc_pl": method_adcc_pl,
+    "adcc_sig": method_adcc_sig,
+    "adcc_norm": method_adcc_norm,
+})
