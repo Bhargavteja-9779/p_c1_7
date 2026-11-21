@@ -7,7 +7,7 @@ import sys, json, itertools, os
 from pathlib import Path
 from multiprocessing import Pool
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-os.environ.setdefault("OMP_NUM_THREADS", "1")
+os.environ["OMP_NUM_THREADS"] = "1"; os.environ["CP_NJOBS"] = "1"
 import numpy as np
 from src.utils import load_config
 from src.data.datasets import load_panel_target
@@ -15,7 +15,7 @@ from src.pipeline import run_single
 
 WINDOWS = {"w40": (0.50, 0.10, 0.40), "w30": (0.60, 0.10, 0.30), "w20": (0.70, 0.10, 0.20)}
 METHODS = ["split", "normalized", "mondrian", "weighted_ad", "weighted_kmm", "mwcp",
-           "adcc", "adcc_grp", "adcc_pl", "adcc_sig", "adcc_norm"]
+           "adcc", "adcc_grp", "adcc_pl", "adcc_norm"]
 OUT = Path("results/panel_adcc_rows.jsonl")
 _CFG = None; _DF = {}
 
@@ -67,7 +67,8 @@ def main():
               if c not in done]
     print(f"{len(combos)} runs to do", flush=True)
     nproc = int(sys.argv[1]) if len(sys.argv) > 1 else 4
-    with Pool(nproc, maxtasksperchild=6) as pool:
+    import multiprocessing as mp
+    with mp.get_context("spawn").Pool(nproc, maxtasksperchild=6) as pool:
         for rows in pool.imap_unordered(_job, combos):
             if rows:
                 with open(OUT, "a") as fh:

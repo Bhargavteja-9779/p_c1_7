@@ -98,6 +98,13 @@ def _make_split(df, X, split_type, fracs, seed, sweep_q=None):
         return scaffold_split(df, fracs, seed)
     if split_type == "temporal":
         return temporal_split(df, fracs, seed)
+    if split_type == "random":
+        from .preprocessing.splits import random_split
+        return random_split(df, fracs, seed)
+    if split_type.startswith("adtilt"):
+        # adtilt_exp / adtilt_pl ; sweep_q carries the tilt strength lambda
+        from .preprocessing.splits import ad_tilt_split
+        return ad_tilt_split(df, X, sweep_q, fracs, seed, kind=split_type.split("_")[1])
     if split_type == "similarity":
         return similarity_shift_split(df, X, sweep_q, fracs, seed)
     raise KeyError(split_type)
@@ -195,6 +202,24 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
         wk = kmm_weights(Xca, Xte, seed=seed)
         weights["kmm"] = (wk, np.zeros(len(yhat_te)))
 
+    shift_calib = shift_test = test_fold = None
+    if any(m.startswith("adcc_plus") for m in methods):
+        # cross-fitted label-free shift score p(x)=P(pool|x): PCA-32 + logistic, train vs pool
+        from sklearn.decomposition import PCA
+        from sklearn.linear_model import LogisticRegression
+        n_folds = 5
+        rng_f = np.random.default_rng(seed + 7919)
+        test_fold = rng_f.permutation(np.arange(len(te)) % n_folds)
+        shift_calib = np.zeros((n_folds, len(ca))); shift_test = np.zeros(len(te))
+        for k in range(n_folds):
+            pool_k = Xte[test_fold != k]
+            pca = PCA(n_components=min(32, Xtr.shape[1]), random_state=seed).fit(np.vstack([Xtr, pool_k]))
+            Z = pca.transform(np.vstack([Xtr, pool_k]))
+            lab = np.concatenate([np.zeros(len(Xtr)), np.ones(len(pool_k))])
+            clf = LogisticRegression(max_iter=2000, C=0.1, class_weight="balanced").fit(Z, lab)
+            shift_calib[k] = clf.predict_proba(pca.transform(Xca))[:, 1]
+            shift_test[test_fold == k] = clf.predict_proba(pca.transform(Xte[test_fold == k]))[:, 1]
+
     def ctx_for(method):
         if method == "weighted_disc" or method == "adwcp":
             wc, wt = weights["ours"]
@@ -212,7 +237,8 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
                          resid_calib=resid_ca, sigma_calib=sigma_ca, sigma_test=sigma_te,
                          ad_calib=ad_ca, ad_test=ad_te, calib_bin=calib_bin, test_bin=test_bin,
                          w_calib=wc, w_test=wt, raw_std_test=raw_std_te,
-                         sim_te_ca=sim_te_ca, bandwidth=cfg["localized"]["bandwidth"])
+                         sim_te_ca=sim_te_ca, bandwidth=cfg["localized"]["bandwidth"],
+                         shift_calib=shift_calib, shift_test=shift_test, test_fold=test_fold)
 
     # Trivial full-range interval used to clip unbounded/degenerate conformal
     # intervals (an interval wider than the plausible property range is replaced by

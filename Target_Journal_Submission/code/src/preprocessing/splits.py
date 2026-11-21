@@ -103,3 +103,37 @@ def ad_strata(ad_calib: np.ndarray, ad_test: np.ndarray, n_strata: int = 4):
     calib_bin = np.digitize(ad_calib, edges)
     test_bin = np.digitize(ad_test, edges)
     return calib_bin.astype(int), test_bin.astype(int)
+
+
+def random_split(df, fracs=(0.6, 0.2, 0.2), seed: int = 0):
+    """Exchangeable i.i.d. split (validity control: no covariate shift)."""
+    rng = np.random.default_rng(seed)
+    idx = rng.permutation(len(df))
+    n_tr = int(fracs[0] * len(df)); n_ca = int(fracs[1] * len(df))
+    return np.sort(idx[:n_tr]), np.sort(idx[n_tr:n_tr + n_ca]), np.sort(idx[n_tr + n_ca:])
+
+
+def ad_tilt_split(df, X, lam: float, fracs=(0.6, 0.2, 0.2), seed: int = 0, kind="exp"):
+    """Controlled covariate shift whose density ratio is a KNOWN function of the AD
+    coordinate a(x)=max Tanimoto to train. Train = random 60 %; the remaining compounds are
+    split at random into a calibration half (untilted, P) and a candidate half from which the
+    test set is drawn WITHOUT replacement with probability proportional to f(a):
+      kind='exp' : f(a) = exp(-lam * a)               (smooth, outside the spline class)
+      kind='pl'  : f(a) = max(0, 1 - lam*(a - a_min)) (piecewise linear, inside the class)
+    Test size = fracs[2]*n/2 so that resampling is non-degenerate."""
+    from .features import max_sim_to_ref_matrix
+    rng = np.random.default_rng(seed)
+    idx = rng.permutation(len(df))
+    n_tr = int(fracs[0] * len(df))
+    tr = np.sort(idx[:n_tr]); rest = idx[n_tr:]
+    half = len(rest) // 2
+    ca = np.sort(rest[:half]); cand = rest[half:]
+    a = max_sim_to_ref_matrix(X[cand], X[tr]).astype(float)
+    if kind == "exp":
+        f = np.exp(-lam * (a - a.min()))
+    else:
+        f = np.maximum(1e-6, 1.0 - lam * (a - a.min()) / max(1e-9, np.ptp(a)))
+    p = f / f.sum()
+    m = max(10, int(0.5 * len(cand)))
+    te = np.sort(rng.choice(cand, size=m, replace=False, p=p))
+    return tr, ca, te

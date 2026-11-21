@@ -33,3 +33,7 @@
 31. Ke, Guolin; et al. LightGBM: A Highly Efficient Gradient Boosting Decision Tree. *Advances in Neural Information Processing Systems (NeurIPS)* **2017**.
 32. Landrum, Greg; et al. RDKit: Open-source cheminformatics. https://www.rdkit.org (2024).
 33. Lee, Hyeonsu; Kim, Juyeon; Jadamba, Erkhembayar; Choi, Seungjin; Shin, Hyunjin. Conformal Prediction for Molecular Properties under Label Shift. *NeurIPS 2025 Workshop on Reliable ML from Unreliable Data* **2025**. arXiv:2608.17678.
+34. Gibbs, Isaac; Cherian, John J.; Candès, Emmanuel J. Conformal prediction with conditional guarantees. *Journal of the Royal Statistical Society Series B: Statistical Methodology* **2025**, *87*, 1100-1126. DOI: 10.1093/jrsssb/qkaf008.
+35. Koenker, Roger; Bassett, Gilbert. Regression Quantiles. *Econometrica* **1978**, *46*, 33-50. DOI: 10.2307/1913643.
+36. Jung, Christopher; Noarov, Georgy; Ramalingam, Ramya; Roth, Aaron. Batch Multivalid Conformal Prediction. *International Conference on Learning Representations (ICLR)* **2023**. arXiv:2209.15145.
+37. Srivastava, Arnav; Kassetty, Krishna. Abstention Spends Its Budget on Local Label Variance More Than on Novelty: Auditing Conformal Calibration and Selective Prediction under Molecular Scaffold Shift. *arXiv preprint* **2026**. arXiv:2611.01512.

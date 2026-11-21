@@ -56,5 +56,9 @@ class RegressorWrapper:
         return None
 
 
-def make_regressor(name: str, seed: int = 0, n_jobs: int = -1) -> RegressorWrapper:
+def make_regressor(name: str, seed: int = 0, n_jobs: int | None = None) -> RegressorWrapper:
+    # CP_NJOBS lets parallel drivers pin one thread per worker (avoids OpenMP oversubscription)
+    import os
+    if n_jobs is None:
+        n_jobs = int(os.environ.get("CP_NJOBS", "-1"))
     return RegressorWrapper(name, seed=seed, n_jobs=n_jobs)

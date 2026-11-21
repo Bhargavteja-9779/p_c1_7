@@ -31,5 +31,9 @@
  "sklearn_2011": 30,
  "lightgbm_2017": 31,
  "rdkit": 32,
- "lee_labelshift_2025": 33
+ "lee_labelshift_2025": 33,
+ "gibbs_ccc_2025": 34,
+ "koenker_1978": 35,
+ "jung_multivalid_2023": 36,
+ "srivastava_2026": 37
 }

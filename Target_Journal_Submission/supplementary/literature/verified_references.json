@@ -2,7 +2,7 @@
  "angelopoulos_bates": {
   "doi": "10.1561/2200000101",
   "title": "Conformal Prediction: A Gentle Introduction",
-  "container": "Foundations and Trends\u00ae in Machine Learning",
+  "container": "Foundations and Trends® in Machine Learning",
   "year": 2023,
   "volume": "16",
   "issue": "4",
@@ -19,7 +19,7 @@
   "volume": "10",
   "issue": "2",
   "page": "455-482",
-  "authors": "Foygel Barber, Rina; Cand\u00e8s, Emmanuel J; Ramdas, Aaditya; Tibshirani, Ryan J",
+  "authors": "Foygel Barber, Rina; Candès, Emmanuel J; Ramdas, Aaditya; Tibshirani, Ryan J",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -31,7 +31,7 @@
   "volume": "113",
   "issue": "523",
   "page": "1094-1111",
-  "authors": "Lei, Jing; G\u2019Sell, Max; Rinaldo, Alessandro; Tibshirani, Ryan J.; Wasserman, Larry",
+  "authors": "Lei, Jing; G’Sell, Max; Rinaldo, Alessandro; Tibshirani, Ryan J.; Wasserman, Larry",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -79,7 +79,7 @@
   "volume": "66",
   "issue": "2",
   "page": "923-935",
-  "authors": "Parrondo-Pizarro, Raquel; Lanini, Jessica; Rodr\u00edguez-P\u00e9rez, Raquel",
+  "authors": "Parrondo-Pizarro, Raquel; Lanini, Jessica; Rodríguez-Pérez, Raquel",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -127,7 +127,7 @@
   "volume": "65",
   "issue": "18",
   "page": "9398-9411",
-  "authors": "Ash, Jeremy R.; Wognum, Cas; Rodr\u00edguez-P\u00e9rez, Raquel; Aldeghi, Matteo; Cheng, Alan C.; Clevert, Djork-Arn\u00e9; Engkvist, Ola; Fang, Cheng; Price, Daniel J.; Hughes-Oliver, Jacqueline M.",
+  "authors": "Ash, Jeremy R.; Wognum, Cas; Rodríguez-Pérez, Raquel; Aldeghi, Matteo; Cheng, Alan C.; Clevert, Djork-Arné; Engkvist, Ola; Fang, Cheng; Price, Daniel J.; Hughes-Oliver, Jacqueline M.",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -151,13 +151,13 @@
   "volume": "9",
   "issue": "2",
   "page": "513-530",
-  "authors": "Wu, Zhenqin; Ramsundar, Bharath; Feinberg, Evan\u00a0N.; Gomes, Joseph; Geniesse, Caleb; Pappu, Aneesh S.; Leswing, Karl; Pande, Vijay",
+  "authors": "Wu, Zhenqin; Ramsundar, Bharath; Feinberg, Evan N.; Gomes, Joseph; Geniesse, Caleb; Pappu, Aneesh S.; Leswing, Karl; Pande, Vijay",
   "type": "journal-article",
   "verified": "crossref"
  },
  "delaney_esol_2004": {
   "doi": "10.1021/ci034243x",
-  "title": "ESOL:\u2009 Estimating Aqueous Solubility Directly from Molecular Structure",
+  "title": "ESOL:  Estimating Aqueous Solubility Directly from Molecular Structure",
   "container": "Journal of Chemical Information and Computer Sciences",
   "year": 2004,
   "volume": "44",
@@ -181,7 +181,7 @@
  },
  "bace_2016": {
   "doi": "10.1021/acs.jcim.6b00290",
-  "title": "Computational Modeling of \u03b2-Secretase 1 (BACE-1) Inhibitors Using Ligand Based Approaches",
+  "title": "Computational Modeling of β-Secretase 1 (BACE-1) Inhibitors Using Ligand Based Approaches",
   "container": "Journal of Chemical Information and Modeling",
   "year": 2016,
   "volume": "56",
@@ -199,7 +199,7 @@
   "volume": "47",
   "issue": "D1",
   "page": "D930-D940",
-  "authors": "Mendez, David; Gaulton, Anna; Bento, A Patr\u00edcia; Chambers, Jon; De\u00a0Veij, Marleen; F\u00e9lix, Eloy; Magari\u00f1os, Mar\u00eda\u00a0Paula; Mosquera, Juan\u00a0F; Mutowo, Prudence; Nowotka, Micha\u0142",
+  "authors": "Mendez, David; Gaulton, Anna; Bento, A Patrícia; Chambers, Jon; De Veij, Marleen; Félix, Eloy; Magariños, María Paula; Mosquera, Juan F; Mutowo, Prudence; Nowotka, Michał",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -217,13 +217,13 @@
  },
  "orsolic_dad_2023": {
   "doi": "10.1093/bioinformatics/btad465",
-  "title": "Dynamic applicability domain (dAD): compound\u2013target binding affinity estimates with local conformal prediction",
+  "title": "Dynamic applicability domain (dAD): compound–target binding affinity estimates with local conformal prediction",
   "container": "Bioinformatics",
   "year": 2023,
   "volume": "39",
   "issue": "8",
   "page": null,
-  "authors": "Or\u0161oli\u0107, Davor; \u0160muc, Tomislav",
+  "authors": "Oršolić, Davor; Šmuc, Tomislav",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -267,7 +267,7 @@
  },
  "svensson_2018": {
   "doi": "10.1021/acs.jcim.8b00054",
-  "title": "Conformal Regression for Quantitative Structure\u2013Activity Relationship Modeling\u2014Quantifying Prediction Uncertainty",
+  "title": "Conformal Regression for Quantitative Structure–Activity Relationship Modeling—Quantifying Prediction Uncertainty",
   "container": "Journal of Chemical Information and Modeling",
   "year": 2018,
   "volume": "58",
@@ -285,7 +285,7 @@
   "volume": "59",
   "issue": "3",
   "page": "1269-1281",
-  "authors": "Cort\u00e9s-Ciriano, Isidro; Bender, Andreas",
+  "authors": "Cortés-Ciriano, Isidro; Bender, Andreas",
   "type": "journal-article",
   "verified": "crossref"
  },
@@ -298,7 +298,7 @@
   "verified": "arxiv"
  },
  "tibshirani_wcp_2019": {
-  "authors": "Tibshirani, Ryan J.; Barber, Rina Foygel; Cand\u00e8s, Emmanuel J.; Ramdas, Aaditya",
+  "authors": "Tibshirani, Ryan J.; Barber, Rina Foygel; Candès, Emmanuel J.; Ramdas, Aaditya",
   "title": "Conformal Prediction Under Covariate Shift",
   "container": "Advances in Neural Information Processing Systems (NeurIPS)",
   "year": 2019,
@@ -306,7 +306,7 @@
   "verified": "arxiv"
  },
  "romano_cqr_2019": {
-  "authors": "Romano, Yaniv; Patterson, Evan; Cand\u00e8s, Emmanuel J.",
+  "authors": "Romano, Yaniv; Patterson, Evan; Candès, Emmanuel J.",
   "title": "Conformalized Quantile Regression",
   "container": "Advances in Neural Information Processing Systems (NeurIPS)",
   "year": 2019,
@@ -358,6 +358,46 @@
   "container": "NeurIPS 2025 Workshop on Reliable ML from Unreliable Data",
   "year": 2025,
   "arxiv": "2608.17678",
+  "verified": "arxiv"
+ },
+ "gibbs_ccc_2025": {
+  "doi": "10.1093/jrsssb/qkaf008",
+  "title": "Conformal prediction with conditional guarantees",
+  "container": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+  "year": 2025,
+  "volume": "87",
+  "issue": "4",
+  "page": "1100-1126",
+  "authors": "Gibbs, Isaac; Cherian, John J.; Candès, Emmanuel J.",
+  "type": "journal-article",
+  "verified": "crossref"
+ },
+ "koenker_1978": {
+  "doi": "10.2307/1913643",
+  "title": "Regression Quantiles",
+  "container": "Econometrica",
+  "year": 1978,
+  "volume": "46",
+  "issue": "1",
+  "page": "33-50",
+  "authors": "Koenker, Roger; Bassett, Gilbert",
+  "type": "journal-article",
+  "verified": "crossref"
+ },
+ "jung_multivalid_2023": {
+  "authors": "Jung, Christopher; Noarov, Georgy; Ramalingam, Ramya; Roth, Aaron",
+  "title": "Batch Multivalid Conformal Prediction",
+  "container": "International Conference on Learning Representations (ICLR)",
+  "year": 2023,
+  "arxiv": "2209.15145",
+  "verified": "arxiv"
+ },
+ "srivastava_2026": {
+  "authors": "Srivastava, Arnav; Kassetty, Krishna",
+  "title": "Abstention Spends Its Budget on Local Label Variance More Than on Novelty: Auditing Conformal Calibration and Selective Prediction under Molecular Scaffold Shift",
+  "container": "arXiv preprint",
+  "year": 2026,
+  "arxiv": "2611.01512",
   "verified": "arxiv"
  }
 }

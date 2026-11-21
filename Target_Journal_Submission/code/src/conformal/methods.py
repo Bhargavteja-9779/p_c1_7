@@ -38,6 +38,9 @@ class CPContext:
     raw_std_test: np.ndarray | None = None
     sim_te_ca: np.ndarray | None = None   # (n_test, n_calib) Tanimoto, for localized CP
     bandwidth: float = 0.25
+    shift_calib: np.ndarray | None = None   # (n_folds, n_calib) cross-fitted shift score
+    shift_test: np.ndarray | None = None    # (n_test,) out-of-fold shift score
+    test_fold: np.ndarray | None = None     # (n_test,) fold id of each test point
 
     @property
     def n_strata(self):
@@ -355,8 +358,14 @@ def conditional_conformal_threshold(S_cal, P_cal, p_test, level, n_bisect=18):
     return hi   # conservative end of the bracket
 
 
-def _adcc_generic(ctx: CPContext, kind="pl", score="abs", round_a=0.01, wfun=None):
-    edges = _ad_edges(ctx.ad_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
+def _adcc_generic(ctx: CPContext, kind="pl", score="abs", round_a=0.01, wfun=None, knots="calib"):
+    if knots == "pool":
+        # deployment-aware knots: quantiles of the UNLABELED pool's AD values merged with the
+        # calibration quartiles (exploratory, post-registration variant)
+        e1 = _ad_edges(ctx.ad_calib, 4); e2 = _ad_edges(ctx.ad_test, 4)
+        edges = np.unique(np.round(np.concatenate([e1, e2]), 2))
+    else:
+        edges = _ad_edges(ctx.ad_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
     ac = np.asarray(ctx.ad_calib, float); at = np.asarray(ctx.ad_test, float)
     if round_a and kind != "pl_sig":
         ac = np.round(ac / round_a) * round_a; at = np.round(at / round_a) * round_a
@@ -400,7 +409,58 @@ def method_adcc_norm(ctx):
     return _adcc_generic(ctx, "pl", score="norm")
 
 
+def _spline1d(v, knots):
+    v = np.asarray(v, float)
+    return np.column_stack([v] + [np.maximum(v - k, 0.0) for k in knots])
+
+
+def method_adcc_plus(ctx: CPContext, n_knots=2, r=0.01):
+    """ADCC-CP+ : F = F_AD (linear spline in a) (+) linear spline in a cross-fitted, label-free
+    shift score p(x) = P(pool | x) from a train-vs-pool fingerprint classifier. For a test point
+    in fold k the basis uses the classifier trained WITHOUT fold k, so F is independent of the
+    calibration labels and of that test point: the finite-sample guarantee of ADCC-CP holds for
+    the enlarged class, whether or not p is a good density-ratio estimate. The estimate enters as
+    a basis function (a direction in which coverage is enforced), never as an importance weight,
+    so it cannot collapse the effective sample size."""
+    edges = _ad_edges(ctx.ad_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
+    rnd = lambda v: np.round(np.asarray(v, float) / r) * r
+    ac, at = rnd(ctx.ad_calib), rnd(ctx.ad_test)
+    Pa_c = ad_basis(ac, edges, "spline"); Pa_t = ad_basis(at, edges, "spline")
+    S = ctx.resid_calib
+    hw = np.empty(len(at))
+    for k in np.unique(ctx.test_fold):
+        pc = rnd(ctx.shift_calib[k]); tsel = np.where(ctx.test_fold == k)[0]
+        pt = rnd(ctx.shift_test[tsel])
+        knots = np.unique(np.quantile(pc, np.linspace(0, 1, n_knots + 2)[1:-1]))
+        Pc = np.hstack([Pa_c, _spline1d(pc, knots)])
+        Pt = np.hstack([Pa_t[tsel], _spline1d(pt, knots)])
+        cache = {}
+        for jj, j in enumerate(tsel):
+            key = tuple(np.round(Pt[jj], 6))
+            if key not in cache:
+                cache[key] = conditional_conformal_threshold(S, Pc, Pt[jj], ctx.level)
+            hw[j] = cache[key]
+    return _interval(ctx.yhat_test, hw)
+
+
+def method_adcc_plus_norm(ctx: CPContext):
+    """ADCC-CP+ with the normalized score |r|/sigma(x)."""
+    import copy
+    c2 = copy.copy(ctx)
+    c2.resid_calib = ctx.resid_calib / ctx.sigma_calib
+    lo, hi = method_adcc_plus(c2)
+    hw = (hi - lo) / 2.0 * ctx.sigma_test
+    return _interval(ctx.yhat_test, hw)
+
+
+def method_adcc_pk(ctx):
+    return _adcc_generic(ctx, "spline", knots="pool")
+
+
 DISPATCH.update({
+    "adcc_pk": method_adcc_pk,
+    "adcc_plus": method_adcc_plus,
+    "adcc_plus_norm": method_adcc_plus_norm,
     "adcc": method_adcc,
     "adcc_grp": method_adcc_grp,
     "adcc_pl": method_adcc_pl,

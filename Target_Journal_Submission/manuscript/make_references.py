@@ -43,6 +43,10 @@ ORDER = [
     "lightgbm_2017",          # 31 LightGBM
     "rdkit",                  # 32 RDKit
     "lee_labelshift_2025",    # 33 molecular CP under label shift
+    "gibbs_ccc_2025",         # 34 conformal prediction with conditional guarantees
+    "koenker_1978",           # 35 regression quantiles
+    "jung_multivalid_2023",   # 36 batch multivalid conformal
+    "srivastava_2026",        # 37 conformal under scaffold shift audit (preprint)
 ]
 
 

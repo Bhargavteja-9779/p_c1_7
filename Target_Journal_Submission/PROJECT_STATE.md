@@ -46,6 +46,7 @@ Plan:
  4. Rewrite manuscript around ADCC-CP (short abstract <=250 words, positive framing), rebuild DOCX/PDF/ZIP.
 NEXT STEP: (update as you go)
  - [x] step 2 dev selection (spline locked; supplementary/adcc_preregistration.md)
+ - [x] ADCC dev selection done; drafts: manuscript/draft_v6_intro.md, draft_v6_methods.md (related-work section still to write)
  - [ ] step 3 panel running: `cd code && nohup python experiments/run_panel_adcc.py 4` (resumable; check results/panel_adcc_rows.jsonl, 234 runs)
 
 ## Status 2026-11-16 (checkpoint)
