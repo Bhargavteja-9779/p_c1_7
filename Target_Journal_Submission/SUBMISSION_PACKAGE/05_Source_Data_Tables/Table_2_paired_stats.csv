@@ -1,0 +1,25 @@
+Metric,Baseline,ADCC − baseline (mean over 13 targets),95% cluster-bootstrap CI,Targets ADCC higher,Holm p
+worst_stratum_coverage,Split CP,0.095,"[+0.063, +0.125]",12/13,0.00146
+worst_stratum_coverage,Normalized CP,0.067,"[+0.036, +0.095]",12/13,0.00488
+worst_stratum_coverage,Mondrian-AD CP,0.04,"[+0.028, +0.052]",13/13,0.00146
+worst_stratum_coverage,KMM-weighted CP,0.055,"[+0.011, +0.100]",11/13,0.0327
+worst_stratum_coverage,ADR-CP (1-D AD weights),-0.075,"[-0.094, -0.054]",0/13,0.00146
+worst_stratum_coverage,MW-CP (stratified weights),0.016,"[+0.010, +0.022]",13/13,0.00146
+s0_coverage,Split CP,0.194,"[+0.159, +0.225]",13/13,0.00146
+s0_coverage,Normalized CP,0.165,"[+0.136, +0.193]",13/13,0.00146
+s0_coverage,Mondrian-AD CP,0.095,"[+0.071, +0.118]",13/13,0.00146
+s0_coverage,KMM-weighted CP,0.157,"[+0.118, +0.203]",13/13,0.00146
+s0_coverage,ADR-CP (1-D AD weights),0.02,"[+0.003, +0.037]",10/13,0.22
+s0_coverage,MW-CP (stratified weights),0.014,"[+0.000, +0.029]",9/13,0.22
+mean_abs_stratum_gap,Split CP,-0.133,"[-0.164, -0.102]",0/13,0.00146
+mean_abs_stratum_gap,Normalized CP,-0.108,"[-0.132, -0.085]",0/13,0.00146
+mean_abs_stratum_gap,Mondrian-AD CP,-0.054,"[-0.076, -0.034]",0/13,0.00146
+mean_abs_stratum_gap,KMM-weighted CP,-0.107,"[-0.142, -0.077]",0/13,0.00146
+mean_abs_stratum_gap,ADR-CP (1-D AD weights),-0.012,"[-0.022, -0.002]",4/13,0.0796
+mean_abs_stratum_gap,MW-CP (stratified weights),-0.008,"[-0.017, +0.000]",6/13,0.305
+mean_width,Split CP,1.216,"[+0.950, +1.492]",13/13,0.00146
+mean_width,Normalized CP,0.957,"[+0.702, +1.234]",13/13,0.00146
+mean_width,Mondrian-AD CP,0.779,"[+0.557, +1.015]",13/13,0.00146
+mean_width,KMM-weighted CP,0.955,"[+0.707, +1.215]",13/13,0.00146
+mean_width,ADR-CP (1-D AD weights),0.039,"[-0.145, +0.231]",8/13,0.787
+mean_width,MW-CP (stratified weights),0.172,"[+0.042, +0.310]",8/13,0.0796

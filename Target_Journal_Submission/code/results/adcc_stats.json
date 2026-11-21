@@ -575,5 +575,169 @@
    "worst_stratum_coverage": 0.8533,
    "mean_width": 3.4021
   }
+ ],
+ "validity": [
+  {
+   "setting": "adtilt_exp",
+   "method": "adcc",
+   "marginal_coverage": 0.909,
+   "worst_stratum_coverage": 0.846,
+   "s0_coverage": 0.904,
+   "tail10_coverage": 0.904,
+   "mean_width": 3.643
+  },
+  {
+   "setting": "adtilt_exp",
+   "method": "adcc_pl",
+   "marginal_coverage": 0.912,
+   "worst_stratum_coverage": 0.85,
+   "s0_coverage": 0.906,
+   "tail10_coverage": 0.908,
+   "mean_width": 3.835
+  },
+  {
+   "setting": "adtilt_exp",
+   "method": "mondrian",
+   "marginal_coverage": 0.903,
+   "worst_stratum_coverage": 0.84,
+   "s0_coverage": 0.893,
+   "tail10_coverage": 0.841,
+   "mean_width": 3.563
+  },
+  {
+   "setting": "adtilt_exp",
+   "method": "mwcp",
+   "marginal_coverage": 0.904,
+   "worst_stratum_coverage": 0.841,
+   "s0_coverage": 0.894,
+   "tail10_coverage": 0.843,
+   "mean_width": 3.568
+  },
+  {
+   "setting": "adtilt_exp",
+   "method": "split",
+   "marginal_coverage": 0.882,
+   "worst_stratum_coverage": 0.813,
+   "s0_coverage": 0.826,
+   "tail10_coverage": 0.759,
+   "mean_width": 3.211
+  },
+  {
+   "setting": "adtilt_exp",
+   "method": "weighted_ad",
+   "marginal_coverage": 0.904,
+   "worst_stratum_coverage": 0.842,
+   "s0_coverage": 0.857,
+   "tail10_coverage": 0.793,
+   "mean_width": 3.504
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "adcc",
+   "marginal_coverage": 0.909,
+   "worst_stratum_coverage": 0.859,
+   "s0_coverage": 0.9,
+   "tail10_coverage": 0.899,
+   "mean_width": 3.436
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "adcc_pl",
+   "marginal_coverage": 0.913,
+   "worst_stratum_coverage": 0.862,
+   "s0_coverage": 0.901,
+   "tail10_coverage": 0.902,
+   "mean_width": 3.638
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "mondrian",
+   "marginal_coverage": 0.906,
+   "worst_stratum_coverage": 0.854,
+   "s0_coverage": 0.892,
+   "tail10_coverage": 0.844,
+   "mean_width": 3.394
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "mwcp",
+   "marginal_coverage": 0.906,
+   "worst_stratum_coverage": 0.854,
+   "s0_coverage": 0.893,
+   "tail10_coverage": 0.847,
+   "mean_width": 3.397
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "split",
+   "marginal_coverage": 0.897,
+   "worst_stratum_coverage": 0.82,
+   "s0_coverage": 0.825,
+   "tail10_coverage": 0.759,
+   "mean_width": 3.211
+  },
+  {
+   "setting": "adtilt_pl",
+   "method": "weighted_ad",
+   "marginal_coverage": 0.907,
+   "worst_stratum_coverage": 0.835,
+   "s0_coverage": 0.84,
+   "tail10_coverage": 0.777,
+   "mean_width": 3.312
+  },
+  {
+   "setting": "random",
+   "method": "adcc",
+   "marginal_coverage": 0.909,
+   "worst_stratum_coverage": 0.873,
+   "s0_coverage": 0.903,
+   "tail10_coverage": 0.899,
+   "mean_width": 3.328
+  },
+  {
+   "setting": "random",
+   "method": "adcc_pl",
+   "marginal_coverage": 0.912,
+   "worst_stratum_coverage": 0.871,
+   "s0_coverage": 0.904,
+   "tail10_coverage": 0.903,
+   "mean_width": 3.509
+  },
+  {
+   "setting": "random",
+   "method": "mondrian",
+   "marginal_coverage": 0.906,
+   "worst_stratum_coverage": 0.864,
+   "s0_coverage": 0.897,
+   "tail10_coverage": 0.86,
+   "mean_width": 3.288
+  },
+  {
+   "setting": "random",
+   "method": "mwcp",
+   "marginal_coverage": 0.906,
+   "worst_stratum_coverage": 0.864,
+   "s0_coverage": 0.897,
+   "tail10_coverage": 0.861,
+   "mean_width": 3.289
+  },
+  {
+   "setting": "random",
+   "method": "split",
+   "marginal_coverage": 0.905,
+   "worst_stratum_coverage": 0.827,
+   "s0_coverage": 0.83,
+   "tail10_coverage": 0.782,
+   "mean_width": 3.208
+  },
+  {
+   "setting": "random",
+   "method": "weighted_ad",
+   "marginal_coverage": 0.905,
+   "worst_stratum_coverage": 0.827,
+   "s0_coverage": 0.83,
+   "tail10_coverage": 0.782,
+   "mean_width": 3.2
+  }
  ]
 }

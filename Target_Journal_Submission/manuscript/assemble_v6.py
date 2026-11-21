@@ -76,6 +76,11 @@ def repl(m):
     return m.group(0)
 
 out = re.sub(r"\{\{([A-Za-z0-9_]+)\}\}", repl, text)
+# inject the real ACS reference list in place of the placeholder
+refs = (HERE / "references_acs.md").read_text()
+refs_body = refs.split("## References", 1)[-1].strip()
+out = out.replace("[[Formatted from supplementary/literature/verified_references.json in ACS style.]]",
+                  refs_body)
 left = sorted(set(re.findall(r"\{\{([A-Za-z0-9_]+)\}\}", out)))
 if left:
     print("UNFILLED TOKENS:", left, file=sys.stderr)

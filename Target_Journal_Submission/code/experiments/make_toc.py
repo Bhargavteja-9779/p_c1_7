@@ -1,6 +1,6 @@
 """Generate the ACS graphical Table-of-Contents (TOC) image.
 Conceptual + data-driven: chemical-space shift along the applicability-domain axis,
-and the real worst-stratum coverage gain (split 0.670 -> ADR-CP 0.839; target 0.90).
+and the real most-out-of-domain-stratum coverage gain (split 0.69 -> ADCC-CP 0.88; target 0.90).
 Writes figures/TOC_graphic.png (and .pdf).
 """
 from pathlib import Path
@@ -18,7 +18,7 @@ FIG.mkdir(exist_ok=True)
 C_TRAIN = "#4C78A8"   # blue
 C_TEST = "#E45756"    # red
 C_SPLIT = "#B0B0B0"   # grey
-C_ADR = "#2E8B57"     # green
+C_ADR = "#D55E00"     # orange (ADCC-CP)
 TARGET = 0.90
 
 fig = plt.figure(figsize=(3.25, 1.9), dpi=300)
@@ -43,22 +43,22 @@ ax.legend(loc="upper left", fontsize=4.8, frameon=False, handletextpad=0.3,
 
 # ---- right: real worst-stratum coverage for out-of-domain compounds
 ax2 = fig.add_subplot(gs[0, 1])
-vals = [0.670, 0.839]
+vals = [0.686, 0.880]
 bars = ax2.bar([0, 1], vals, color=[C_SPLIT, C_ADR], width=0.62, zorder=3)
 ax2.axhline(TARGET, ls="--", lw=0.9, color="#333333", zorder=2)
 ax2.text(1.48, TARGET + 0.005, "0.90 target", ha="right", va="bottom", fontsize=4.8,
          color="#333333")
 for x, v in zip([0, 1], vals):
     ax2.text(x, v + 0.015, f"{v:.2f}", ha="center", va="bottom", fontsize=6, zorder=4)
-ax2.set_xticks([0, 1]); ax2.set_xticklabels(["split\nCP", "ADR-CP\n(ours)"], fontsize=5.4)
+ax2.set_xticks([0, 1]); ax2.set_xticklabels(["split\nCP", "ADCC-CP\n(ours)"], fontsize=5.4)
 ax2.set_ylim(0, 1.0); ax2.set_yticks([0, 0.5, 1.0])
 ax2.tick_params(axis="y", labelsize=4.8, length=2)
-ax2.set_ylabel("worst-stratum\ncoverage", fontsize=5.4)
+ax2.set_ylabel("coverage of most\nout-of-domain cpds", fontsize=5.4)
 for s in ("top", "right"):
     ax2.spines[s].set_visible(False)
 ax2.set_title("reliability on\nout-of-domain compounds", fontsize=5.6, pad=3)
 
-fig.suptitle("Align the conformal correction with the applicability-domain axis",
+fig.suptitle("Conformal coverage over chemical-space shifts, without ratio estimation",
              fontsize=6.6, fontweight="bold", y=0.985)
 
 fig.savefig(FIG / "TOC_graphic.png", dpi=300, bbox_inches="tight", facecolor="white")

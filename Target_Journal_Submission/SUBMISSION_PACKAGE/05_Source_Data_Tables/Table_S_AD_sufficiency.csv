@@ -1,6 +1,0 @@
-AD stratum,Mean calib-vs-test discriminator AUC,n targets
-"All (global, full fingerprint)",0.862,13
-within S0 (most out-of-domain),0.840,13
-within S1,0.820,12
-within S2,0.837,13
-within S3 (in-domain),0.784,10

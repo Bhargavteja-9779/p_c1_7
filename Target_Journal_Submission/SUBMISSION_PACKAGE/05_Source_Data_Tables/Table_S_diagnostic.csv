@@ -1,6 +1,0 @@
-Quantity,Value
-Target-level Spearman rho (AUC vs worst-cov),-0.016
-  p-value,0.957
-LOTO false-safe rate,0.538
-LOTO false-alarm rate,0.103
-"Threshold AUC (mean, 95% CI)","0.875 [0.846, 0.904]"

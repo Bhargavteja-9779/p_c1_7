@@ -73,6 +73,31 @@ Target-level (n=13) paired Wilcoxon signed-rank tests (Holm-corrected across the
 | ADR-CP (1-D AD weights) | -0.012 | [-0.022, -0.002] | 4/13 | 0.08 |
 | MW-CP | -0.008 | [-0.017, +0.000] | 6/13 | 0.31 |
 
+## S-adcc-validity. Validity controls (exchangeable and known-shift)
+
+Mean over 10 seeds × 8 datasets (4 MoleculeNet + 4 ChEMBL), LightGBM, α=0.10. `random` = exchangeable i.i.d. split (no shift). `adtilt_pl` = controlled shift whose known density ratio is piecewise-linear in a(x) (inside ADCC-CP's class; Theorem 1 applies exactly). `adtilt_exp` = known ratio exponential in a(x) (outside the class; tests Proposition 2).
+
+| Setting | Method | Marginal | Worst stratum | S0 | Novel decile | Width |
+|---|---|---|---|---|---|---|
+| adtilt_exp | ADCC-CP | 0.909 | 0.846 | 0.904 | 0.904 | 3.64 |
+| adtilt_exp | ADCC piecewise-linear | 0.912 | 0.850 | 0.906 | 0.908 | 3.83 |
+| adtilt_exp | Mondrian-AD CP | 0.903 | 0.840 | 0.893 | 0.841 | 3.56 |
+| adtilt_exp | MW-CP | 0.904 | 0.841 | 0.894 | 0.843 | 3.57 |
+| adtilt_exp | Split CP | 0.882 | 0.813 | 0.826 | 0.759 | 3.21 |
+| adtilt_exp | ADR-CP (1-D AD weights) | 0.904 | 0.842 | 0.857 | 0.793 | 3.50 |
+| adtilt_pl | ADCC-CP | 0.909 | 0.859 | 0.900 | 0.899 | 3.44 |
+| adtilt_pl | ADCC piecewise-linear | 0.913 | 0.862 | 0.901 | 0.902 | 3.64 |
+| adtilt_pl | Mondrian-AD CP | 0.906 | 0.854 | 0.892 | 0.844 | 3.39 |
+| adtilt_pl | MW-CP | 0.906 | 0.854 | 0.893 | 0.847 | 3.40 |
+| adtilt_pl | Split CP | 0.897 | 0.820 | 0.825 | 0.759 | 3.21 |
+| adtilt_pl | ADR-CP (1-D AD weights) | 0.907 | 0.835 | 0.840 | 0.777 | 3.31 |
+| random | ADCC-CP | 0.909 | 0.873 | 0.903 | 0.899 | 3.33 |
+| random | ADCC piecewise-linear | 0.912 | 0.871 | 0.904 | 0.903 | 3.51 |
+| random | Mondrian-AD CP | 0.906 | 0.864 | 0.897 | 0.860 | 3.29 |
+| random | MW-CP | 0.906 | 0.864 | 0.897 | 0.861 | 3.29 |
+| random | Split CP | 0.905 | 0.827 | 0.830 | 0.782 | 3.21 |
+| random | ADR-CP (1-D AD weights) | 0.905 | 0.827 | 0.830 | 0.782 | 3.20 |
+
 ## S-adcc-diag. Label-free misspecification diagnostic
 
 Per target (mean over three windows × three seeds): $\delta_{\mathcal F}$ = total-variation distance from the estimated covariate-shift ratio to its best applicability-domain-aligned approximation (Proposition 2 bound on ADCC-CP's coverage shortfall); $\delta_0$ = distance to 'no shift' (the corresponding bound for split conformal). $\delta_{\mathcal F}<\delta_0$ means AD-aligned correction helps; the gap is the certified improvement. No labels are used.

@@ -1,5 +1,0 @@
-dataset,ECFP4,FCFP4
-bace,0.849,0.795
-esol,0.67,0.752
-panel_cox2,0.903,0.782
-panel_egfr,0.716,0.62
