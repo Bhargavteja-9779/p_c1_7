@@ -1,12 +1,15 @@
-# Applicability-Domain–Aware Conformal Prediction for Molecular Property Regression under Covariate Shift
+# Applicability-Domain Conditional Conformal Prediction (ADCC-CP)
 
-Reproducible code for the study of **conditional (applicability-domain-stratified) coverage**
-of conformal prediction for molecular property **regression** under scaffold and temporal
-**covariate shift**, including two proposed AD-axis methods (**ADR-CP**, AD-reweighted;
-**ADE-CP**, AD-extrapolated), CoDrug-style weighting baselines, and a label-free
-**shift-magnitude diagnostic**.
+Reproducible code for **ADCC-CP**, a conformal method giving molecular-property models
+distribution-free prediction intervals that stay valid under chemical-space (covariate) shift
+**without estimating any density ratio**, by calibrating over a class of applicability-domain
+shifts. Includes all baselines (split, normalized, Mondrian, localized, discriminator/KDE/KMM-
+weighted conformal) and the prior AD-axis estimated-weight methods (ADR-CP, MW-CP), evaluated
+across four MoleculeNet scaffold datasets and thirteen time-stamped ChEMBL targets under
+temporal shift.
 
 All results, tables and figures are generated from code — no number is hand-entered.
+Released under the MIT license (`LICENSE`).
 
 ## 1. Environment
 
@@ -75,14 +78,33 @@ tests/                     unit tests
 
 ## 6. Methods implemented
 
-Baselines: raw ensemble (B0), split CP (B1), normalized CP (B2), Mondrian-AD CP (B3),
-localized/Tanimoto-kernel CP (B4), covariate-shift weighted CP with a fingerprint
-discriminator (B5) and with CoDrug-style logistic/KDE density ratios.
-Proposed: **ADR-CP** (`weighted_ad`, 1-D AD-coordinate density-ratio weighting) and
-**ADE-CP** (`adecp`, AD conformal quantile extrapolation).
+**Proposed — ADCC-CP (`adcc`): Applicability-Domain Conditional Conformal prediction.**
+Function-class conditional conformal (Gibbs–Cherian–Candès, JRSSB 2025) over the class of
+piecewise-linear functions of the applicability-domain coordinate a(x)=max Tanimoto to training.
+Gives finite-sample coverage simultaneously (i) marginally, (ii) locally at every similarity
+level, and (iii) under every covariate shift whose density ratio along a(x) lies in the class —
+**without estimating any density ratio** (`src/conformal/methods.py:conditional_conformal_threshold`,
+`ad_basis`). Pre-registered function class = continuous linear spline; ablation variants
+`adcc_grp` (indicator / Mondrian-equivalent), `adcc_pl` (piecewise-linear), `adcc_norm`
+(normalized score).
 
-Weights are estimated from the **unlabeled deployment pool** (test fingerprints without
-labels), so every method is deployable in a prospective screen.
+Baselines: split CP, normalized CP, Mondrian-AD CP, localized/Tanimoto-kernel CP; covariate-shift
+weighted CP with a fingerprint discriminator, CoDrug-style logistic/KDE density ratios, and
+KMM (kernel mean matching, KMM-CP-style). Prior-work AD-axis methods ADR-CP (`weighted_ad`) and
+MW-CP (`mwcp`) are retained as the strongest estimated-weight comparators.
+
+Reproduce the ADCC-CP study:
+```bash
+python experiments/dev_adcc.py 5              # function-class selection (scaffold dev data)
+python experiments/run_panel_adcc.py 4        # held-out 13-target temporal panel
+python experiments/validity_adcc.py 4         # exchangeable + known-shift validity controls
+python experiments/misspec_diag.py            # label-free misspecification diagnostic delta_F
+python experiments/analyze_adcc.py            # target-level stats, tables, figures
+python tests/test_adcc.py                     # ADCC-CP coverage unit tests
+```
+
+Weights (for the estimated-weight baselines) are estimated from the **unlabeled deployment pool**,
+so every method is deployable in a prospective screen.
 
 ## 7. Determinism
 
