@@ -1,0 +1,11 @@
+Method,marginal_coverage,worst_stratum_coverage,s0_coverage,tail10_coverage,mean_width,saturated_fraction,mean_abs_stratum_gap
+Split CP,0.711,0.676,0.686,0.619,2.176,0.0,0.194
+Normalized CP,0.735,0.704,0.715,0.675,2.434,0.006,0.17
+Mondrian-AD CP,0.793,0.731,0.785,0.737,2.613,0.0,0.115
+KMM-weighted CP,0.744,0.716,0.723,0.664,2.437,0.0,0.169
+ADR-CP (1-D AD weights),0.871,0.846,0.86,0.919,3.352,0.056,0.073
+MW-CP (stratified weights),0.863,0.756,0.866,0.918,3.22,0.044,0.07
+ADCC-CP (proposed),0.875,0.771,0.88,0.949,3.392,0.049,0.062
+ADCC: indicator class,0.793,0.73,0.785,0.738,2.611,0.0,0.116
+ADCC: piecewise-linear class,0.879,0.774,0.883,0.957,3.435,0.056,0.061
+ADCC: normalized score,0.873,0.775,0.875,0.943,3.62,0.101,0.057
