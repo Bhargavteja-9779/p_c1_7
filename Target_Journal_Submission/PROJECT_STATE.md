@@ -48,7 +48,7 @@ NEXT STEP: (update as you go)
  - [x] step 2 dev selection (spline locked; supplementary/adcc_preregistration.md)
  - [x] ADCC dev selection done; drafts: manuscript/draft_v6_intro.md, draft_v6_methods.md (related-work section still to write)
  - [x] panel done (234 runs); validity+misspec done; manuscript v6 assembled; DOCX/PDF/ZIP rebuilt
- - [ ] verify ADCC unit tests pass; update decision/risk; final commit
+ - [x] ROUND 6 COMPLETE: ADCC-CP novel method; 10 unit tests + leakage audit pass; manuscript+SI+cover+ZIP rebuilt; decision/risk/history updated. Author fields + repo URLs are the only author to-dos.
 
 ## Status 2026-11-16 (checkpoint)
 - Full pipeline built, tested (6 unit tests pass), leakage audit passes.

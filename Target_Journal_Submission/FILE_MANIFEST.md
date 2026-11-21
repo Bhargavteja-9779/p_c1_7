@@ -1,7 +1,7 @@
-# Final File Manifest
+# Final File Manifest (Round 6 — ADCC-CP)
 
-Submission package for *Journal of Chemical Information and Modeling*. Generated from
-public data by released code; all results/tables/figures are machine-generated.
+Submission package for *Journal of Chemical Information and Modeling*. ADCC-CP (applicability-domain
+conditional conformal). All results/tables/figures machine-generated from public data by released MIT code.
 
 ```
 Target_Journal_Submission/
