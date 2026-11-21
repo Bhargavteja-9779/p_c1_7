@@ -1,3 +1,7 @@
+## 2. Related Work
+
+Conformal prediction for molecules rests on split,² normalized,⁵,⁶ Mondrian,³ localized¹⁸,¹⁹ and quantile¹⁷ variants, all valid only under exchangeability; they underpin conformal QSAR/ADMET work.⁵⁻⁸ Under scaffold and temporal shift,²¹,²² coverage collapses for the most dissimilar compounds,¹⁰⁻¹²,¹⁵,³⁷ which motivates covariate-shift correction. Weighted conformal¹³ needs the test/calibration density ratio; for molecules CoDrug¹⁴ and KMM-CP²⁹ estimate it (KDE in a latent space; kernel mean matching) for classification and report marginal or class-conditional coverage, both noting ratio estimation as the bottleneck. Our earlier benchmark found a one-dimensional ratio along the AD coordinate (ADR-CP) the most stable estimated-weight option for regression, but still an estimate plugged in as weights with no finite-sample guarantee. ADCC-CP differs in kind: it adapts function-class conditional conformal³⁴ — which guarantees coverage simultaneously over a finite-dimensional family of shifts via an augmented quantile regression, and relates to multivalid³⁶ and conditional-coverage theory — to an applicability-domain class, so coverage holds for every AD-aligned shift at once and no ratio is estimated. Guo¹⁵ and Srivastava³⁷ document the conditional-coverage failure we address but propose no method with this guarantee; Klarner²⁰ and Lee³³ treat covariate and label shift by other means.
+
 ## 3. Method: Applicability-Domain Conditional Conformal Prediction (ADCC-CP)
 
 ### 3.1 Setting and the applicability-domain coordinate

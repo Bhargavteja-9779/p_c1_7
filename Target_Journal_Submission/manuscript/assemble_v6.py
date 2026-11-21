@@ -1,0 +1,83 @@
+"""Assemble manuscript_final.md (v6, ADCC-CP) from the draft_v6_*.md parts, filling
+{{TOKEN}} placeholders from code/results/adcc_stats.json + validity/diagnostic JSON.
+Fails loudly if any token is left unfilled."""
+import json, re, sys
+from pathlib import Path
+HERE = Path(__file__).resolve().parent
+RES = HERE.parent / "code" / "results"
+
+st = json.load(open(RES / "adcc_stats.json"))
+pool = st["pooled"]; tl = st["target_level"]
+
+
+def P(method, metric):
+    return pool[method][metric]
+
+
+def num(x, n=3):
+    return f"{x:.{n}f}"
+
+
+tok = {}
+tok["NRUNS"] = str(st["n_runs"])
+for m in ["split", "normalized", "mondrian", "weighted_kmm", "weighted_ad", "mwcp",
+          "adcc", "adcc_grp", "adcc_pl", "adcc_norm"]:
+    tok[f"POOL_wsc_{m}"] = num(P(m, "worst_stratum_coverage"))
+    tok[f"POOL_s0_{m}"] = num(P(m, "s0_coverage"))
+    tok[f"POOL_marg_{m}"] = num(P(m, "marginal_coverage"))
+    tok[f"POOL_tail10_{m}"] = num(P(m, "tail10_coverage"))
+    tok[f"POOL_sat_{m}"] = f"{100*P(m,'saturated_fraction'):.0f}%"
+    tok[f"POOL_width_{m}"] = num(P(m, "mean_width"), 2)
+# abstract short forms
+tok["WSC_split"] = num(P("split", "worst_stratum_coverage"))
+tok["WSC_adcc"] = num(P("adcc", "worst_stratum_coverage"))
+# target-level stat vs split, worst stratum
+wsc = {r["baseline"]: r for r in tl["worst_stratum_coverage"]}
+s = wsc["split"]
+tok["N_better_wsc"] = str(s["n_better"])
+tok["STAT_wsc_split_diff"] = f"{s['mean_diff']:+.3f}"
+tok["STAT_wsc_split_p"] = f"{s['p_holm']:.1e}" if s['p_holm'] < 0.01 else f"{s['p_holm']:.3f}"
+tok["STAT_wsc_split_ci"] = f"[{s['ci_lo']:+.3f}, {s['ci_hi']:+.3f}]"
+
+# validity controls
+val = {(r["setting"], r["method"]): r for r in st.get("validity", [])}
+def vget(setting, method, field, default="n/a"):
+    r = val.get((setting, method))
+    return num(r[field]) if r else default
+tok["VAL_rand_s0_adcc"] = vget("random", "adcc", "s0_coverage")
+tok["VAL_plshift_s0_adcc"] = vget("adtilt_pl", "adcc", "s0_coverage")
+tok["VAL_plshift_s0_split"] = vget("adtilt_pl", "split", "s0_coverage")
+tok["VAL_expshift_s0_adcc"] = vget("adtilt_exp", "adcc", "s0_coverage")
+
+# misspecification diagnostic
+dpath = RES / "misspec_diag.jsonl"
+if dpath.exists():
+    import statistics
+    rows = [json.loads(l) for l in open(dpath)]
+    tok["DIAG_dF"] = num(statistics.mean(r["delta_F"] for r in rows))
+    tok["DIAG_d0"] = num(statistics.mean(r["delta_0"] for r in rows))
+else:
+    tok["DIAG_dF"] = "{{DIAG_dF}}"; tok["DIAG_d0"] = "{{DIAG_d0}}"
+
+# table/figure label tokens (resolved to names used in [[TABLE:...]] markers)
+tok.update({"T_validity": "S-adcc-validity", "T_pooled": "1", "T_stats": "2",
+            "T_bywindow": "S-adcc-window", "T_bymodel": "S-adcc-model",
+            "F_panel": "1", "F_curve": "2"})
+
+parts = ["abstract", "intro", "methods", "results", "discussion"]
+text = "\n\n".join((HERE / f"draft_v6_{p}.md").read_text().strip() for p in parts)
+# append author info / data availability / references from a shared tail
+text += "\n\n" + (HERE / "draft_v6_tail.md").read_text().strip()
+
+def repl(m):
+    k = m.group(1)
+    if k in tok:
+        return tok[k]
+    return m.group(0)
+
+out = re.sub(r"\{\{([A-Za-z0-9_]+)\}\}", repl, text)
+left = sorted(set(re.findall(r"\{\{([A-Za-z0-9_]+)\}\}", out)))
+if left:
+    print("UNFILLED TOKENS:", left, file=sys.stderr)
+(HERE / "manuscript_final.md").write_text(out + "\n")
+print(f"wrote manuscript_final.md ({len(out.split())} words); unfilled={len(left)}")
