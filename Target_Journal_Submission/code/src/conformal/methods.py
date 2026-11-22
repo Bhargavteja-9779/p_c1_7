@@ -466,7 +466,7 @@ def method_adcc_plus_norm(ctx: CPContext):
     return _interval(ctx.yhat_test, hw)
 
 
-def method_adcc_2d(ctx, r=0.01):
+def method_adcc_2d(ctx, r=0.04):
     """Multi-coordinate ADCC-CP: function class = additive piecewise-linear functions of TWO
     applicability-domain coordinates (structural a(x) and physicochemical a2(x)). By Theorem 1
     the single interval is valid under every covariate shift whose density ratio is additive
@@ -486,7 +486,7 @@ def method_adcc_2d(ctx, r=0.01):
     for j in range(len(a1t)):
         key = (round(float(a1t[j]), 4), round(float(a2t[j]), 4))
         if key not in cache:
-            cache[key] = conditional_conformal_threshold(S, Pc, Pt[j], ctx.level)
+            cache[key] = conditional_conformal_threshold(S, Pc, Pt[j], ctx.level, n_bisect=14)
         hw[j] = cache[key]
     return _interval(ctx.yhat_test, hw)
 
