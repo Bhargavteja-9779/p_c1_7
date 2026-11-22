@@ -105,7 +105,7 @@ if dpath.exists():
              "distance from the estimated covariate-shift ratio to its best applicability-domain-aligned "
              "approximation (Proposition 2 bound on ADCC-CP's coverage shortfall); $\\delta_0$ = distance "
              "to 'no shift' (the corresponding bound for split conformal). $\\delta_{\\mathcal F}<\\delta_0$ "
-             "means AD-aligned correction helps; the gap is the certified improvement. No labels are used.")
+             "means part of the shift is AD-aligned (a worst-case bound; see main text, Section 5.4, for its limits).")
     L.append("")
     L.append("| Target | $\\delta_{\\mathcal F}$ | $\\delta_0$ | $\\delta_0-\\delta_{\\mathcal F}$ |")
     L.append("|---|---|---|---|")

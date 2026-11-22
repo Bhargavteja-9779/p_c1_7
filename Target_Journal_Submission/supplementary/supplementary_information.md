@@ -113,7 +113,7 @@ Mean over 10 seeds × 8 datasets (4 MoleculeNet + 4 ChEMBL), LightGBM, α=0.10. 
 
 ## S-adcc-diag. Label-free misspecification diagnostic
 
-Per target (mean over three windows × three seeds): $\delta_{\mathcal F}$ = total-variation distance from the estimated covariate-shift ratio to its best applicability-domain-aligned approximation (Proposition 2 bound on ADCC-CP's coverage shortfall); $\delta_0$ = distance to 'no shift' (the corresponding bound for split conformal). $\delta_{\mathcal F}<\delta_0$ means AD-aligned correction helps; the gap is the certified improvement. No labels are used.
+Per target (mean over three windows × three seeds): $\delta_{\mathcal F}$ = total-variation distance from the estimated covariate-shift ratio to its best applicability-domain-aligned approximation (Proposition 2 bound on ADCC-CP's coverage shortfall); $\delta_0$ = distance to 'no shift' (the corresponding bound for split conformal). $\delta_{\mathcal F}<\delta_0$ means part of the shift is AD-aligned (a worst-case bound; see main text, Section 5.4, for its limits).
 
 | Target | $\delta_{\mathcal F}$ | $\delta_0$ | $\delta_0-\delta_{\mathcal F}$ |
 |---|---|---|---|

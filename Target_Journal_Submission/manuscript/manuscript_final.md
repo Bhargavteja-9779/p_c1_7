@@ -68,7 +68,8 @@ Theorem 1 holds **simultaneously for all non-negative members of $\mathcal F_{\r
 3. **Coverage under AD-aligned covariate shift, without estimation.** If the deployment pool differs from calibration through a density ratio that is a non-negative continuous piecewise-linear function of $a(x)$ — e.g. the pool is enriched for novel chemistry at any rate — then coverage on the pool is $\ge 1-\alpha$, *whatever* that ratio is. Weighted conformal (ADR-CP, MW-CP, KMM- or CoDrug-style) must estimate the ratio and is valid only if the estimate is correct.
 
 > **Proposition 2 (graceful degradation under misspecified shift).** Let the deployment pool satisfy $P_{\rm test}(y\mid x)=P(y\mid x)$ with an *arbitrary* density ratio $w={\rm d}P_{\rm test}/{\rm d}P$. Then
-> $$\Pr_{P_{\rm test}}\big(Y\in\hat C(X)\big)\ \ge\ 1-\alpha-\delta_{\mathcal F},\qquad \delta_{\mathcal F}=\tfrac12\inf_{f\in\mathcal F_{\rm AD},\,f\ge0,\,\mathbb E_Pf=1}\mathbb E_P|w(X)-f(X)|.$$
+> $$\Pr_{P_{\rm test}}\big(Y\in\hat C(X)\big)\ \ge\ 1-\alpha-\delta_{\mathcal F},$$
+> $$\delta_{\mathcal F}=\tfrac12\inf_{f\in\mathcal F_{\rm AD},\,f\ge0,\,\mathbb E_Pf=1}\mathbb E_P|w(X)-f(X)|.$$
 > *Proof.* Let $c(x,y)=\mathbb 1\{y\in\hat C(x)\}$. For any admissible $f$, $\mathbb E_P[wc]=\mathbb E_P[fc]+\mathbb E_P[(w-f)c]\ge(1-\alpha)-\mathbb E_P[(f-w)_+]$ by Theorem 1, and $\mathbb E_P[(f-w)_+]=\tfrac12\mathbb E_P|w-f|$ because $\mathbb E_Pw=\mathbb E_Pf=1$. Take the infimum. $\square$
 
 Proposition 2 makes precise *when* an AD-only correction suffices: the shortfall is at most the total-variation distance between the true shift and its best AD-piecewise-linear approximation. Because constants belong to $\mathcal F_{\rm AD}$, $\delta_{\mathcal F}\le\delta_0=\tfrac12\mathbb E_P|w-1|$ — the corresponding bound for split conformal — so ADCC-CP's worst-case guarantee is never weaker than that of standard conformal prediction, and strictly stronger whenever any part of the shift is aligned with the AD axis. Exact pointwise conditional coverage remains impossible distribution-free;³⁰ Theorem 1 replaces it with the strongest finite-dimensional surrogate that is attainable.
@@ -131,9 +132,9 @@ Under temporal shift, split conformal under-covers overall and severely for nove
 
 ### 5.3 The applicability-domain calibration curve
 
-Because ADCC-CP's half-width depends on a compound only through its AD coordinate, it defines a curve $a\mapsto\hat s(a)$ — wider intervals for less familiar chemistry — that can be tabulated once and applied to an arbitrarily large library by lookup (Figure 2). The curve tracks the empirical error profile of the deployment compounds (90th-percentile absolute error rising as similarity falls), whereas split conformal is a flat line that is too narrow out of domain, and the estimated-weight correction is noisier where the pool is sparse. This is the practical object a project consumes: a similarity-indexed reliability schedule with a coverage guarantee attached.
+Because ADCC-CP's half-width depends on a compound only through its AD coordinate, it defines a curve $a\mapsto\hat s(a)$ — wider intervals for less familiar chemistry — that can be tabulated once and applied to an arbitrarily large library by lookup (Figure 2). On hERG and DPP-4 the curve tracks the empirical error profile of the deployment compounds (90th-percentile absolute error rising as similarity falls), whereas split conformal is a flat line that is too narrow out of domain and the estimated-weight correction changes abruptly where the pool is sparse. EGFR illustrates the limit: its temporal-test errors exceed every method's intervals across the AD range, consistent with it being the hardest target in Figure 1a and with a shift that is not mainly AD-aligned. This is the practical object a project consumes: a similarity-indexed reliability schedule with a coverage guarantee attached.
 
-[[FIGURE:fig_adcc_curve|ADCC-CP interval half-width as a function of applicability-domain coordinate (orange), for three representative targets, versus split conformal (flat, grey) and estimated-weight ADR-CP (green). Black points: observed 90th-percentile absolute error of the temporal-test compounds binned by similarity. ADCC-CP widens with novelty to match the error profile.]]
+[[FIGURE:fig_adcc_curve|ADCC-CP interval half-width as a function of applicability-domain coordinate (orange), for three representative targets, versus split conformal (flat, grey) and estimated-weight ADR-CP (green). Black points: observed 90th-percentile absolute error of the temporal-test compounds binned by similarity. One representative run per target (LightGBM, middle temporal window, seed 0); unbounded thresholds are drawn at the top of each panel.]]
 
 ### 5.4 Robustness: windows, models, and the misspecification diagnostic
 
@@ -149,7 +150,7 @@ The practical payoff is a deployment object a project can use directly. In a pro
 
 ### 5.7 Limits and the severe regime
 
-On the scaffold datasets at near-non-overlapping shift (ESOL, FreeSolv), test chemistry barely overlaps the calibration set, so the shift cannot be described as a tilt along the AD axis, and no method — ADCC-CP included — restores conditional coverage without near-trivial intervals, the empirical face of the distribution-free impossibility of pointwise conditional coverage.³⁰ ADCC-CP is honest in this regime by construction: its intervals widen or saturate rather than silently under-cover, and the saturated fraction it reports makes the situation visible to the user.
+On the scaffold datasets at near-non-overlapping shift (ESOL, FreeSolv), test chemistry barely overlaps the calibration set, so the shift cannot be described as a tilt along the AD axis, and no method — ADCC-CP included — restores conditional coverage without near-trivial intervals, the empirical face of the distribution-free impossibility of pointwise conditional coverage.³⁰ ADCC-CP is honest in this regime by construction: its intervals widen or saturate rather than silently under-cover, and the saturated fraction it reports makes the situation visible to the practitioner.
 
 ## 6. Discussion
 

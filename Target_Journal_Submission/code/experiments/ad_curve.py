@@ -54,7 +54,7 @@ def main():
         ax.set_title(t.upper(), loc="left"); ax.set_xlabel("AD coordinate a(x) (max Tanimoto to training)")
         summ[t] = {"q90_test_bins": [float(v) for v in q90], "a_mid": [float(v) for v in mids]}
     axes[0].set_ylabel("Interval half-width (log units)")
-    axes[0].legend(fontsize=7, loc="upper right")
+    axes[0].legend(fontsize=7, loc="lower left")
     fig.tight_layout()
     for ext in ("png", "pdf"):
         fig.savefig(FIG / f"fig_adcc_curve.{ext}", dpi=300)

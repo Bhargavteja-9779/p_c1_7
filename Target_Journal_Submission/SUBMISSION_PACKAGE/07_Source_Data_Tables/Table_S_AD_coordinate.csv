@@ -1,0 +1,5 @@
+AD coordinate,ADR-CP worst-stratum,ADR-CP marginal,Mean width,Saturated frac,Eff. calib N,Split worst-stratum,Δ vs split,Targets improved
+Max ECFP4 (default),0.843,0.869,3.45,0.057,530,0.649,+0.194,13/13
+Mean top-5 ECFP4,0.811,0.848,3.20,0.022,591,0.649,+0.162,13/13
+Max FCFP4,0.841,0.867,3.49,0.063,493,0.645,+0.196,13/13
+Physchem-distance,0.689,0.753,2.51,0.008,529,0.644,+0.045,11/13
