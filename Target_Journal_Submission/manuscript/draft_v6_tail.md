@@ -20,7 +20,7 @@ All data are public and all results in this paper are fully reproducible.
 
 **ChEMBL bioactivity panel** (temporal experiments), from ChEMBL (`https://www.ebi.ac.uk/chembl/`) via its public REST API, querying pChEMBL-valued activities with document year. The thirteen ChEMBL target identifiers are: EGFR (CHEMBL203), VEGFR2/KDR (CHEMBL279), JAK2 (CHEMBL2971), SRC (CHEMBL267), BACE-1 (CHEMBL4822), hERG (CHEMBL240), μ-opioid receptor (CHEMBL233), androgen receptor (CHEMBL1871), estrogen receptor α (CHEMBL206), glucocorticoid receptor (CHEMBL2034), MAO-B (CHEMBL2039), DPP-4 (CHEMBL284), COX-2 (CHEMBL230).
 
-**Code.** A complete Python implementation of ADCC-CP and all baselines, together with the download, preprocessing, leakage-audit, experiment, statistics and figure-generation scripts that regenerate every table and figure with a single command, is released under the MIT license at `https://github.com/<to-be-inserted-on-acceptance>` and archived with a DOI at Zenodo (`https://doi.org/<to-be-inserted-on-acceptance>`). The repository is anonymized for review and will be de-anonymized on acceptance.
+**Code.** A complete Python implementation of ADCC-CP and all baselines, together with the download, preprocessing, leakage-audit, experiment, statistics and figure-generation scripts that regenerate every table and figure with a single command, will be made available by the authors upon reasonable request.
 
 ## References
 

@@ -41,6 +41,8 @@ class CPContext:
     shift_calib: np.ndarray | None = None   # (n_folds, n_calib) cross-fitted shift score
     shift_test: np.ndarray | None = None    # (n_test,) out-of-fold shift score
     test_fold: np.ndarray | None = None     # (n_test,) fold id of each test point
+    ad2_calib: np.ndarray | None = None     # second AD coordinate (e.g. physicochemical), calib
+    ad2_test: np.ndarray | None = None      # second AD coordinate, test
 
     @property
     def n_strata(self):
@@ -322,6 +324,17 @@ def ad_basis(a, edges, kind="pl", sigma=None, wfun=None):
     return P
 
 
+def ad_basis_2d(a1, a2, edges1, edges2):
+    """Additive continuous-linear-spline feature map over TWO applicability-domain coordinates
+    (e.g. structural max-Tanimoto a1 and physicochemical-distance a2). Spans the class of
+    functions f(x)=g1(a1(x))+g2(a2(x)) with g1,g2 piecewise linear; a single shared intercept.
+    d = (1 + 1 + |edges1|) + (1 + |edges2|)."""
+    a1 = np.asarray(a1, float); a2 = np.asarray(a2, float); n = len(a1)
+    cols = [np.ones(n), a1] + [np.maximum(a1 - e, 0.0) for e in edges1]
+    cols += [a2] + [np.maximum(a2 - e, 0.0) for e in edges2]
+    return np.column_stack(cols)
+
+
 def _drop_empty_cols(Pc):
     keep = np.abs(Pc).sum(axis=0) > 0
     return keep
@@ -453,11 +466,37 @@ def method_adcc_plus_norm(ctx: CPContext):
     return _interval(ctx.yhat_test, hw)
 
 
+def method_adcc_2d(ctx, r=0.01):
+    """Multi-coordinate ADCC-CP: function class = additive piecewise-linear functions of TWO
+    applicability-domain coordinates (structural a(x) and physicochemical a2(x)). By Theorem 1
+    the single interval is valid under every covariate shift whose density ratio is additive
+    piecewise-linear in (a, a2) — i.e. shifts aligned with structural novelty, physicochemical
+    novelty, or any additive combination — still WITHOUT estimating any density ratio."""
+    if ctx.ad2_calib is None:
+        return method_adcc(ctx)   # second coordinate unavailable -> fall back to 1-D
+    e1 = _ad_edges(ctx.ad_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
+    e2 = _ad_edges(ctx.ad2_calib, ctx.n_strata if ctx.n_strata > 1 else 4)
+    rnd = lambda v: np.round(np.asarray(v, float) / r) * r
+    a1c, a1t = rnd(ctx.ad_calib), rnd(ctx.ad_test)
+    a2c, a2t = rnd(ctx.ad2_calib), rnd(ctx.ad2_test)
+    Pc = ad_basis_2d(a1c, a2c, e1, e2)
+    Pt = ad_basis_2d(a1t, a2t, e1, e2)
+    S = ctx.resid_calib
+    hw = np.empty(len(a1t)); cache = {}
+    for j in range(len(a1t)):
+        key = (round(float(a1t[j]), 4), round(float(a2t[j]), 4))
+        if key not in cache:
+            cache[key] = conditional_conformal_threshold(S, Pc, Pt[j], ctx.level)
+        hw[j] = cache[key]
+    return _interval(ctx.yhat_test, hw)
+
+
 def method_adcc_pk(ctx):
     return _adcc_generic(ctx, "spline", knots="pool")
 
 
 DISPATCH.update({
+    "adcc_2d": method_adcc_2d,
     "adcc_pk": method_adcc_pk,
     "adcc_plus": method_adcc_plus,
     "adcc_plus_norm": method_adcc_plus_norm,

@@ -202,6 +202,11 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
         wk = kmm_weights(Xca, Xte, seed=seed)
         weights["kmm"] = (wk, np.zeros(len(yhat_te)))
 
+    ad2_ca = ad2_te = None
+    if "adcc_2d" in methods:
+        # second applicability-domain coordinate: physicochemical nearest-training similarity
+        ad2_ca, ad2_te = _ad_coordinate("physchem", dataset_key, smiles, X, tr, ca, te, radius, nbits)
+
     shift_calib = shift_test = test_fold = None
     if any(m.startswith("adcc_plus") for m in methods):
         # cross-fitted label-free shift score p(x)=P(pool|x): PCA-32 + logistic, train vs pool
@@ -238,7 +243,8 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
                          ad_calib=ad_ca, ad_test=ad_te, calib_bin=calib_bin, test_bin=test_bin,
                          w_calib=wc, w_test=wt, raw_std_test=raw_std_te,
                          sim_te_ca=sim_te_ca, bandwidth=cfg["localized"]["bandwidth"],
-                         shift_calib=shift_calib, shift_test=shift_test, test_fold=test_fold)
+                         shift_calib=shift_calib, shift_test=shift_test, test_fold=test_fold,
+                         ad2_calib=ad2_ca, ad2_test=ad2_te)
 
     # Trivial full-range interval used to clip unbounded/degenerate conformal
     # intervals (an interval wider than the plausible property range is replaced by
