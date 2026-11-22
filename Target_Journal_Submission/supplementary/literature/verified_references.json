@@ -399,5 +399,29 @@
   "year": 2026,
   "arxiv": "2611.01512",
   "verified": "arxiv"
+ },
+ "koetter_2025": {
+  "doi": "10.1021/acs.jcim.5c00464",
+  "title": "Upgrading Reliability in Molecular Property Prediction by Robust Quantification of Uncertainty from Machine Learning Models",
+  "container": "Journal of Chemical Information and Modeling",
+  "year": 2025,
+  "volume": "65",
+  "issue": "20",
+  "page": "10819-10831",
+  "authors": "Kötter, Alex; Singh, Kanishka; Matter, Hans; Hessler, Gerhard; Grebner, Christoph",
+  "type": "journal-article",
+  "verified": "crossref"
+ },
+ "fooladi_2025": {
+  "doi": "10.1021/acs.jcim.5c00475",
+  "title": "Evaluating Machine Learning Models for Molecular Property Prediction: Performance and Robustness on Out-of-Distribution Data",
+  "container": "Journal of Chemical Information and Modeling",
+  "year": 2025,
+  "volume": "65",
+  "issue": "19",
+  "page": "9871-9891",
+  "authors": "Fooladi, Hosein; Vu, Thi Ngoc Lan; Mathea, Miriam; Kirchmair, Johannes",
+  "type": "journal-article",
+  "verified": "crossref"
  }
 }

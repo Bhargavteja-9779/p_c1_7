@@ -47,6 +47,8 @@ ORDER = [
     "koenker_1978",           # 35 regression quantiles
     "jung_multivalid_2023",   # 36 batch multivalid conformal
     "srivastava_2026",        # 37 conformal under scaffold shift audit (preprint)
+    "koetter_2025",           # 38 robust UQ for molecular property prediction (JCIM 2025)
+    "fooladi_2025",           # 39 OOD robustness evaluation (JCIM 2025)
 ]
 
 

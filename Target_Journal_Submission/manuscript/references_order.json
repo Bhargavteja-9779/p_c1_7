@@ -35,5 +35,7 @@
  "gibbs_ccc_2025": 34,
  "koenker_1978": 35,
  "jung_multivalid_2023": 36,
- "srivastava_2026": 37
+ "srivastava_2026": 37,
+ "koetter_2025": 38,
+ "fooladi_2025": 39
 }

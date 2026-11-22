@@ -14,7 +14,8 @@ NAMES = {"split": "Split CP", "normalized": "Normalized CP", "mondrian": "Mondri
          "weighted_ad": "ADR-CP (1-D AD weights)", "weighted_kmm": "KMM-weighted CP",
          "mwcp": "MW-CP (stratified weights)", "adcc": "ADCC-CP (proposed)",
          "adcc_grp": "ADCC: indicator class", "adcc_pl": "ADCC: piecewise-linear class",
-         "adcc_norm": "ADCC: normalized score", "adcc_sig": "ADCC: + sigma(x)"}
+         "adcc_norm": "ADCC: normalized score", "adcc_sig": "ADCC: + sigma(x)",
+         "adcc_2d": "ADCC-CP-2D (multi-coordinate)"}
 BASE = ["split", "normalized", "mondrian", "weighted_kmm", "weighted_ad", "mwcp"]
 MET = ["marginal_coverage", "worst_stratum_coverage", "s0_coverage", "tail10_coverage",
        "mean_width", "saturated_fraction", "mean_abs_stratum_gap"]
@@ -28,6 +29,10 @@ def _bin(d, b):
 
 def load_panel():
     df = pd.read_json(ROOT / "results/panel_adcc_rows.jsonl", lines=True)
+    p2 = ROOT / "results/panel_adcc2d_rows.jsonl"
+    if p2.exists():
+        df2 = pd.read_json(p2, lines=True)
+        df = pd.concat([df, df2], ignore_index=True)
     df = df[df.method != "adcc_sig"]
     df["s0_coverage"] = df.ad_per_bin_coverage.apply(lambda d: _bin(d, 0))
     def gap(row):
@@ -60,7 +65,7 @@ def main():
            "n_targets": int(df.target.nunique())}
     pooled = df.groupby("method")[MET].mean()
     out["pooled"] = pooled.round(4).to_dict(orient="index")
-    order = BASE + ["adcc", "adcc_grp", "adcc_pl", "adcc_norm"]
+    order = BASE + ["adcc", "adcc_2d", "adcc_grp", "adcc_pl", "adcc_norm"]
     tp = pooled.reindex([m for m in order if m in pooled.index]).copy()
     tp.insert(0, "Method", [NAMES[m] for m in tp.index])
     tp.round(3).to_csv(TAB / "table_adcc_pooled.csv", index=False)

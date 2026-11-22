@@ -8,9 +8,9 @@ st = json.load(open(RES / "adcc_stats.json"))
 NAMES = {"split": "Split CP", "normalized": "Normalized CP", "mondrian": "Mondrian-AD CP",
          "weighted_kmm": "KMM-weighted CP", "weighted_ad": "ADR-CP (1-D AD weights)",
          "mwcp": "MW-CP", "adcc": "ADCC-CP", "adcc_grp": "ADCC indicator class",
-         "adcc_pl": "ADCC piecewise-linear", "adcc_norm": "ADCC normalized score"}
+         "adcc_pl": "ADCC piecewise-linear", "adcc_norm": "ADCC normalized score", "adcc_2d": "ADCC-CP-2D (multi-coordinate)"}
 order = ["split", "normalized", "mondrian", "weighted_kmm", "weighted_ad", "mwcp",
-         "adcc", "adcc_grp", "adcc_pl", "adcc_norm"]
+         "adcc", "adcc_2d", "adcc_grp", "adcc_pl", "adcc_norm"]
 
 
 def row(m):

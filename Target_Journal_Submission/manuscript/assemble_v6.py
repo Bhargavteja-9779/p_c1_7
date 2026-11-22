@@ -21,7 +21,7 @@ def num(x, n=3):
 tok = {}
 tok["NRUNS"] = str(st["n_runs"])
 for m in ["split", "normalized", "mondrian", "weighted_kmm", "weighted_ad", "mwcp",
-          "adcc", "adcc_grp", "adcc_pl", "adcc_norm"]:
+          "adcc", "adcc_grp", "adcc_pl", "adcc_norm", "adcc_2d"]:
     tok[f"POOL_wsc_{m}"] = num(P(m, "worst_stratum_coverage"))
     tok[f"POOL_s0_{m}"] = num(P(m, "s0_coverage"))
     tok[f"POOL_marg_{m}"] = num(P(m, "marginal_coverage"))
@@ -60,7 +60,7 @@ else:
     tok["DIAG_dF"] = "{{DIAG_dF}}"; tok["DIAG_d0"] = "{{DIAG_d0}}"
 
 # table/figure label tokens (resolved to names used in [[TABLE:...]] markers)
-tok.update({"T_validity": "S-adcc-validity", "T_pooled": "1", "T_stats": "2",
+tok.update({"T_validity": "S-adcc-validity", "T_positioning": "1", "T_pooled": "2", "T_stats": "3",
             "T_bywindow": "S-adcc-window", "T_bymodel": "S-adcc-model",
             "F_panel": "1", "F_curve": "2"})
 
