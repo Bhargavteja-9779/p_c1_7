@@ -11,6 +11,15 @@
    "saturated_fraction": 0.0488,
    "mean_abs_stratum_gap": 0.0618
   },
+  "adcc_2d": {
+   "marginal_coverage": 0.8862,
+   "worst_stratum_coverage": 0.7865,
+   "s0_coverage": 0.8911,
+   "tail10_coverage": 0.953,
+   "mean_width": 3.5124,
+   "saturated_fraction": 0.0595,
+   "mean_abs_stratum_gap": 0.0548
+  },
   "adcc_grp": {
    "marginal_coverage": 0.7926,
    "worst_stratum_coverage": 0.7303,

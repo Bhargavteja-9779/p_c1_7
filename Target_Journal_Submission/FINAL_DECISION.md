@@ -1,3 +1,32 @@
+# Round 7 addendum (2026-11-22) — novelty amplified, JCIM-positioned
+
+Added on top of the round-6 decision below. Net effect: stronger novelty, direct JCIM positioning,
+and a real-world deployment framing, with all metadata set as the author requested.
+
+**New since round 6 (all real, held-out, reproducible):**
+- **Multi-coordinate ADCC-CP (ADCC-CP-2D)** — the guarantee extended to an additive function class over
+  two applicability-domain coordinates (structural + physicochemical); same Theorem-1 guarantee, no
+  estimation. On the full 13-target panel it improves S0 coverage 0.880->0.891, worst-stratum 0.771->0.787,
+  novel-decile 0.949->0.953, and has the BEST calibration of any method (mean |stratum gap| 0.055).
+- **Corollary 3 (efficiency):** ADCC-CP returns the pointwise-tightest interval among AD-threshold rules
+  satisfying the guarantee.
+- **JCIM positioning Table 1:** ADCC-CP is the only method among 11 (incl. Koetter 2025, Fooladi 2025,
+  conformalized GNN 2024, CoDrug, KMM-CP, ADR-CP, Guo) with a finite-sample conditional-family guarantee
+  AND no density-ratio estimation.
+- **Two new verified JCIM-2025 citations** (Koetter; Fooladi/Kirchmair) anchoring the problem and the
+  temporal-shift design in current same-journal work.
+- **Real-world framing (Sec 5.6):** the AD calibration curve as a per-compound, guaranteed-coverage
+  reliability schedule for prospective screening; delta_F as a pre-synthesis go/no-go on the pool.
+- **Metadata (author request):** first author P. N. Bhargav Teja; second placeholder; NO funding;
+  NO competing interest; code "available on request".
+
+**Decision:** READY to submit as a novel-method paper. The single honest caveat from round 6 stands and
+is reported in-text (ADR-CP edges aggregate worst-stratum by over-covering; ADCC-CP leads the
+decision-relevant S0 / novel-decile and carries the guarantee). 21-page manuscript, 7-page SI, 39 refs,
+3 tables, 2 figures, graphical TOC; package = 24 files.
+
+---
+
 # Final Scientific Self-Decision (Round 6 — ADCC-CP)
 
 ## Decision: **READY to submit as a novel-method paper** (ADCC-CP), with the one honest caveat below disclosed.

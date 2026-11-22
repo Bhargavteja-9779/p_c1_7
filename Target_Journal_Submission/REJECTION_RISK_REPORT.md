@@ -1,5 +1,13 @@
 # Rejection-Risk Report (Round 6 — ADCC-CP, novelty-forward framing)
 
+> **Round-7 update (2026-11-22).** Novelty amplified: new multi-coordinate ADCC-CP-2D (best-calibrated
+> method on the panel), efficiency Corollary 3, a JCIM positioning table (Table 1) vs 11 methods incl.
+> two 2025 JCIM papers, and a real-world prospective-screening framing. Per author instruction, code is
+> "available on reasonable request" (not a public repo) — note this slightly raises risk against JCIM's
+> data/software-sharing editorial (ref 28); mitigated by fully public datasets + a one-command reproducible
+> codebase ready to share. Funding: none. Competing interest: none. First author P. N. Bhargav Teja.
+
+
 Honest assessment for *J. Chem. Inf. Model.* No "zero risk"; acceptance never guaranteed.
 This round responds to real desk-rejections of earlier versions by replacing the "benchmark +
 simple method" framing with a **genuinely new method that carries a finite-sample guarantee no

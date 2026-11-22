@@ -1,0 +1,12 @@
+Method (ref),Task,Shift studied,Coverage target,Finite-sample guarantee under shift,Needs density-ratio estimate,Deployable from unlabeled pool
+Normalized CP (Svensson 2018),regression,none,marginal,no (exchangeable only),no,yes
+Conformalized GNN (Li 2024),regression,none,marginal,no (exchangeable only),no,yes
+Robust UQ (Kötter 2025),regression,under-representation,none (error estimate),no,no,yes
+OOD evaluation (Fooladi 2025),both,scaffold/OOD,none (evaluation study),n/a,n/a,n/a
+UQ-under-shift benchmark (Parrondo 2026),regression,label/data,none (benchmark),no,no,yes
+Domain-classifier filter (Harris 2026),classification,OOD,none (selective filter),no,yes,yes
+CoDrug (2023),classification,scaffold/fingerprint,marginal,only if ratio exact,yes,yes
+KMM-CP (2026),classification,fingerprint,marginal/class-conditional,only if ratio exact,yes,yes
+ADR-CP (prior best; this line of work),regression,temporal/scaffold,marginal,only if ratio exact,yes,yes
+Scaffold-shift benchmark (Guo 2027),regression,scaffold,marginal+conditional (measured),no (no new method),no,yes
+"ADCC-CP (this work)",regression,temporal/scaffold,conditional (AD-shift family),yes (Theorem 1),NO,yes

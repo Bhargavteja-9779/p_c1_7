@@ -21,6 +21,7 @@ Pooled over thirteen ChEMBL targets × three windows × two base models × three
 | ADR-CP (1-D AD weights) | 0.871 | 0.861 | 0.919 | 0.846 | 0.073 | 3.35 | 6% |
 | MW-CP | 0.863 | 0.866 | 0.918 | 0.756 | 0.070 | 3.22 | 4% |
 | ADCC-CP | 0.875 | 0.880 | 0.949 | 0.771 | 0.062 | 3.39 | 5% |
+| ADCC-CP-2D (multi-coordinate) | 0.886 | 0.891 | 0.953 | 0.786 | 0.055 | 3.51 | 6% |
 | ADCC indicator class | 0.793 | 0.785 | 0.738 | 0.730 | 0.116 | 2.61 | 0% |
 | ADCC piecewise-linear | 0.879 | 0.883 | 0.957 | 0.774 | 0.061 | 3.43 | 6% |
 | ADCC normalized score | 0.873 | 0.875 | 0.943 | 0.775 | 0.057 | 3.62 | 10% |

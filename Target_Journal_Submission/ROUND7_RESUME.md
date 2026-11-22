@@ -1,3 +1,13 @@
+# ROUND 7 — COMPLETE (2026-11-22)
+
+All steps done: multi-coordinate ADCC-CP-2D run on full 13-target panel (best-calibrated method);
+2 new JCIM-2025 refs; positioning Table 1; efficiency Corollary 3; real-world screening Sec 5.6;
+manuscript (21pp)/SI(7pp)/cover/ZIP(24 files) rebuilt; decision/risk/history updated;
+code on request; no funding; no competing interest; first author P. N. Bhargav Teja.
+Author to-dos only: fill author names/affiliations/ORCID + corresponding author.
+
+---
+
 # ROUND 7 RESUME CHECKPOINT (read this first on "continue")
 
 User asks (2026-11-22): improvise more, push novelty "very very high", make it unrejectable,
