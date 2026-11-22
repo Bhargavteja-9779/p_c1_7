@@ -38,3 +38,26 @@ main loop; readiness is judged on evidence, not cycle count (see FINAL_DECISION.
   stratum — reported in-text, not hidden.
 - **Package:** short positive abstract; MIT-licensed public code (GitHub+Zenodo placeholders); rebuilt
   manuscript (18pp) + SI (7pp) + cover letter + graphical TOC + ZIP (23 files); 37 verified refs.
+
+## Round 7 — Novelty amplification + JCIM positioning (2026-11-22)
+- **Trigger:** user asked to improvise more, push novelty "very high", make it unrejectable, compare
+  against more recent JCIM papers; code "available on request"; no funding / no competing interest.
+  User OK'd a real-world (deployment) reframing if it helps acceptance.
+- **New method (novelty+):** multi-coordinate ADCC-CP (ADCC-CP-2D) — additive piecewise-linear
+  function class over TWO applicability-domain coordinates (structural max-Tanimoto + physicochemical
+  nearest-train similarity). Theorem 1 guarantee extends unchanged (F_AD subset F_AD^2); raises
+  most-out-of-domain coverage over 1-D ADCC-CP on all tested targets. Code: methods.py ad_basis_2d /
+  method_adcc_2d; pipeline computes 2nd coordinate; held-out panel run_panel_adcc2d.py (234 configs).
+- **Theory+:** Corollary 3 (ADCC-CP returns the pointwise-tightest class-valid interval -> efficiency
+  optimal among AD-threshold rules satisfying Theorem 1).
+- **JCIM positioning:** added Table 1 comparing ADCC-CP vs Norinder2014, Svensson2018, Li/conformalized
+  GNN 2024, Koetter2025, Fooladi2025, Parrondo2026, Harris2026, CoDrug, KMM-CP, ADR-CP, Guo on task /
+  shift / coverage target / guarantee / needs-ratio-estimate / pool-deployable. ADCC-CP is the only
+  row with a finite-sample conditional-family guarantee AND no ratio estimation.
+- **New refs (verified Crossref+EuropePMC abstracts):** Koetter et al. JCIM 2025 (robust UQ; UQ fails
+  out-of-domain; split-dependent eval) #38; Fooladi/Kirchmair et al. JCIM 2025 (OOD evaluation; scaffold
+  splits understate shift) #39. Related work rewritten around both.
+- **Real-world framing:** Section 5.6 — the AD calibration curve as a per-compound, guaranteed-coverage
+  reliability schedule for prospective screening/triage; delta_F as a pre-synthesis go/no-go on the pool.
+- **Metadata:** first author P. N. Bhargav Teja; 2nd placeholder; Funding none; competing interest none;
+  code "available on request" (user override of public-repo).
