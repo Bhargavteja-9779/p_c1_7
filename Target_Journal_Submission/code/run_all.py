@@ -44,7 +44,7 @@ def main():
                 rp.main()
             except Exception as e:
                 log.warning(f"panel stage skipped: {e}")
-            # graph-model demonstration (N7) and representation ablation (E5)
+            # graph-model demonstration and representation ablation
             for mod in ("experiments.run_gnn_subset", "experiments.run_representation_ablation"):
                 try:
                     __import__(mod).main() if False else __import__(mod, fromlist=["main"]).main()

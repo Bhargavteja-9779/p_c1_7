@@ -1,4 +1,4 @@
-"""Experiment B + E (reviewer #4): expanded prospective-screening decision analysis and
+"""Expanded prospective-screening decision analysis and
 chemical-space interpretation. Retrospective temporal screening simulation (NOT a prospective
 experimental validation).
 

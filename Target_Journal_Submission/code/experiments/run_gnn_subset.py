@@ -1,4 +1,4 @@
-"""Graph-model (GNN / D-MPNN-style) demonstration of model-agnosticism (N7).
+"""Graph-model (GNN / D-MPNN-style) demonstration of model-agnosticism.
 Runs the full conformal method set with the GNN as the base model on a few representative
 panel targets (one per family, temporal w30 split), to show MW-CP and the diagnostic hold
 with a modern graph-based representation. Writes results/gnn_rows.jsonl.

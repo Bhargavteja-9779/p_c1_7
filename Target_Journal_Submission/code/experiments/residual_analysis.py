@@ -1,4 +1,4 @@
-"""Reviewer-requested justification analyses for the AD-aligned correction (review #3).
+"""Justification analyses for the AD-aligned correction.
 
 Addresses: (1) is the 1-D applicability-domain coordinate a(x) a sufficient statistic
 for the covariate-shift correction? -> within-AD-stratum calib-vs-test discriminator AUC

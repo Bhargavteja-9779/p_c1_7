@@ -1,4 +1,4 @@
-"""Round-7: compute ONLY the multi-coordinate adcc_2d method on the same 234 panel configs
+"""compute ONLY the multi-coordinate adcc_2d method on the same 234 panel configs
 (13 targets x 3 windows x {lgbm,rf} x 3 seeds), appending to results/panel_adcc2d_rows.jsonl.
 Merged with panel_adcc_rows.jsonl in analyze_adcc.py. Resumable; parallel."""
 from __future__ import annotations

@@ -1,4 +1,4 @@
-"""Round-6 DEVELOPMENT run (method selection) on the MoleculeNet scaffold datasets ONLY.
+"""DEVELOPMENT run (method selection) on the MoleculeNet scaffold datasets ONLY.
 The ChEMBL temporal panel is held out and never used for choosing the ADCC variant.
 Writes results/dev_adcc_rows.jsonl."""
 from __future__ import annotations

@@ -1,4 +1,4 @@
-"""Representation-robustness ablation (E5): do the conclusions hold under an alternative
+"""Representation-robustness ablation: do the conclusions hold under an alternative
 molecular fingerprint (FCFP4, functional-class) as well as ECFP4? Runs key methods on two
 scaffold datasets and two temporal panel targets under both representations.
 Writes results/representation_ablation.csv.

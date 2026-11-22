@@ -1,4 +1,4 @@
-"""Expanded multi-target temporal evaluation (Priority 4).
+"""Expanded multi-target temporal evaluation.
 Runs every ChEMBL panel target over multiple chronological windows, for the primary
 model (and RF for model-agnosticism), recording per-target rows. Resumable.
 Writes results/panel_rows.jsonl and results/panel_decision.jsonl.

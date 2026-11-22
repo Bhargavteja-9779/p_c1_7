@@ -1,4 +1,4 @@
-"""Round-6 validity controls for ADCC-CP.
+"""Validity controls for ADCC-CP.
 (A) exchangeable random splits (no shift): every method should be ~nominal marginally;
     ADCC-CP should additionally be ~nominal within every AD stratum.
 (B) controlled AD-tilt shift with a KNOWN density ratio that is a function of a(x):

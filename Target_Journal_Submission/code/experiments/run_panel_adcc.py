@@ -1,4 +1,4 @@
-"""Round-6 held-out evaluation of ADCC-CP on the 13-target ChEMBL temporal panel.
+"""Held-out evaluation of ADCC-CP on the 13-target ChEMBL temporal panel.
 13 targets x 3 chronological windows x {lgbm, rf} x 3 seeds, all methods paired on identical
 splits/models. Parallel over runs; resumable. Writes results/panel_adcc_rows.jsonl
 (one row per run x method, incl. per-stratum coverage/width and most-novel-decile coverage)."""

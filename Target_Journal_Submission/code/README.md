@@ -26,7 +26,9 @@ lightgbm, rdkit, matplotlib, statsmodels, python-docx.
 ## 2. Data (downloaded automatically, public)
 
 - **MoleculeNet regression** (ESOL, FreeSolv, Lipophilicity, BACE) via the DeepChem S3 mirror.
-- **ChEMBL** target activities (VEGFR2/CHEMBL279, COX-2/CHEMBL230) via the EBI REST API,
+- **ChEMBL** activities for the thirteen-target temporal panel (EGFR CHEMBL203, VEGFR2 CHEMBL279,
+  JAK2 CHEMBL2971, SRC CHEMBL267, BACE-1 CHEMBL4822, hERG CHEMBL240, MOR CHEMBL233, AR CHEMBL1871,
+  ERα CHEMBL206, GR CHEMBL2034, MAO-B CHEMBL2039, DPP-4 CHEMBL284, COX-2 CHEMBL230) via the EBI REST API,
   keeping `canonical_smiles`, `pchembl_value`, `document_year` for temporal splits.
 
 Raw files cache under `data/raw/`; cleaned, de-duplicated tables under `data/processed/`.
@@ -47,14 +49,14 @@ and skipped on re-invocation, so an interrupted run continues where it stopped.
 Outputs:
 - `results/raw_results.csv` — one row per (method × dataset × model × seed × α × split).
 - `results/metrics.json`, `results/statistics.json` — aggregates + paired tests.
-- `results/leakage_audit.json` — Phase-8 data-leakage checks.
+- `results/leakage_audit.json`, `results/leakage_audit_panel.json` — data-leakage checks.
 - `tables/*.csv`, `tables/*.md` — publication tables.
 - `figures/*.png`, `figures/*.pdf` — publication figures.
 
 ## 4. Tests and audits
 
 ```bash
-python tests/test_conformal.py            # conformal + weighting correctness (synthetic)
+python -m pytest tests                    # 10 unit tests: conformal, weighting and ADCC-CP coverage (synthetic)
 python experiments/leakage_audit.py       # scaffold-disjointness, temporal monotonicity, dedup, no label leakage
 ```
 
@@ -72,7 +74,8 @@ src/
   evaluation/metrics.py    coverage, conditional coverage, width, saturation, decision utility
   statistics/              tests.py (Wilcoxon, Holm, bootstrap), aggregate.py
   visualization/           plots.py (figures), tables.py (tables)
-experiments/               run_experiments.py, leakage_audit.py
+experiments/               one script per study (panel, validity, diagnostics, analysis, figures)
+docs/                      adcc_preregistration.md (function-class pre-registration)
 tests/                     unit tests
 ```
 
@@ -97,6 +100,7 @@ Reproduce the ADCC-CP study:
 ```bash
 python experiments/dev_adcc.py 5              # function-class selection (scaffold dev data)
 python experiments/run_panel_adcc.py 4        # held-out 13-target temporal panel
+python experiments/run_panel_adcc2d.py 4      # multi-coordinate ADCC-CP-2D on the same panel
 python experiments/validity_adcc.py 4         # exchangeable + known-shift validity controls
 python experiments/misspec_diag.py            # label-free misspecification diagnostic delta_F
 python experiments/analyze_adcc.py            # target-level stats, tables, figures

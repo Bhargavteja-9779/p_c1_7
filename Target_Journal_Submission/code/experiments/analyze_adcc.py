@@ -1,4 +1,4 @@
-"""Round-6 analysis of the held-out ADCC-CP panel (results/panel_adcc_rows.jsonl) and the
+"""Analysis of the held-out ADCC-CP panel (results/panel_adcc_rows.jsonl) and the
 validity controls (results/validity_adcc_rows.jsonl). Target-level (n=13) statistics:
 cluster bootstrap CIs and Wilcoxon signed-rank tests (Holm). Writes
 results/adcc_stats.json, tables/table_adcc_*.csv, figures/fig_adcc_*.{png,pdf}."""
@@ -7,6 +7,14 @@ import json, sys
 from pathlib import Path
 import numpy as np, pandas as pd
 from scipy.stats import wilcoxon
+METRIC_LABEL = {"worst_stratum_coverage": "Worst-stratum coverage (primary)", "s0_coverage": "S0 coverage (most out-of-domain)",
+                "mean_abs_stratum_gap": "Mean |stratum gap| (lower is better)", "mean_width": "Mean interval width"}
+
+POOLED_COLS = {"marginal_coverage": "Marginal coverage", "s0_coverage": "S0 coverage", "tail10_coverage": "Novel-decile coverage",
+               "worst_stratum_coverage": "Worst-stratum coverage", "mean_abs_stratum_gap": "Mean abs. stratum gap",
+               "mean_width": "Mean width", "saturated_fraction": "Saturated"}
+POOLED_ORDER = ["marginal_coverage", "s0_coverage", "tail10_coverage", "worst_stratum_coverage",
+                "mean_abs_stratum_gap", "mean_width", "saturated_fraction"]
 
 ROOT = Path(__file__).resolve().parents[1]
 TAB = ROOT.parent / "tables"; FIG = ROOT.parent / "figures"
@@ -68,7 +76,16 @@ def main():
     order = BASE + ["adcc", "adcc_2d", "adcc_grp", "adcc_pl", "adcc_norm"]
     tp = pooled.reindex([m for m in order if m in pooled.index]).copy()
     tp.insert(0, "Method", [NAMES[m] for m in tp.index])
-    tp.round(3).to_csv(TAB / "table_adcc_pooled.csv", index=False)
+    tp_out = tp.copy()
+    for c in MET:
+        if c == "saturated_fraction":
+            tp_out[c] = (100 * tp[c]).map(lambda v: f"{v:.0f}%")
+        elif c == "mean_width":
+            tp_out[c] = tp[c].map(lambda v: f"{v:.2f}")
+        else:
+            tp_out[c] = tp[c].map(lambda v: f"{v:.3f}")
+    tp_out = tp_out.rename(columns=POOLED_COLS)[["Method"] + [POOLED_COLS[c] for c in POOLED_ORDER]]
+    tp_out.to_csv(TAB / "table_adcc_pooled.csv", index=False)
     # target-level
     T = df.groupby(["target", "method"])[MET].mean().reset_index()
     stats = {}
@@ -92,11 +109,12 @@ def main():
         stats[metric] = recs
         if metric in ("s0_coverage", "worst_stratum_coverage", "mean_abs_stratum_gap", "mean_width"):
             for r in recs:
-                rows.append({"Metric": metric, "Baseline": NAMES[r["baseline"]],
-                             "ADCC − baseline (mean over 13 targets)": round(r["mean_diff"], 3),
+                rows.append({"Metric": METRIC_LABEL[metric],
+                             "Baseline": NAMES[r["baseline"]].replace(" (stratified weights)", ""),
+                             "ADCC − baseline (mean, 13 targets)": f"{r['mean_diff']:+.3f}",
                              "95% cluster-bootstrap CI": f"[{r['ci_lo']:+.3f}, {r['ci_hi']:+.3f}]",
                              "Targets ADCC higher": f"{r['n_better']}/{r['n']}",
-                             "Holm p": f"{r['p_holm']:.3g}"})
+                             "Holm p": f"{r['p_holm']:.4f}" if r["p_holm"] < 0.01 else f"{r['p_holm']:.2f}"})
     out["target_level"] = stats
     pd.DataFrame(rows).to_csv(TAB / "table_adcc_stats.csv", index=False)
     # per-target table (s0 coverage / width)
@@ -135,14 +153,14 @@ def figures(df, T):
     mk = {"split": "o", "mondrian": "s", "weighted_kmm": "^", "weighted_ad": "D", "mwcp": "v", "adcc": "*"}
     piv = T.pivot(index="target", columns="method", values="s0_coverage")
     tg = piv["split"].sort_values().index.tolist()
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6), gridspec_kw={"width_ratios": [1.5, 1]})
+    fig, axes = plt.subplots(1, 2, figsize=(11, 5.2), gridspec_kw={"width_ratios": [1.5, 1]})
     ax = axes[0]
     for i, m in enumerate(ms):
         ax.scatter(piv.loc[tg, m], np.arange(len(tg)) + (i - 2.5) * 0.11, label=NAMES[m], c=col[m],
                    marker=mk[m], s=60 if m == "adcc" else 28, zorder=3 if m == "adcc" else 2, edgecolor="k", lw=0.3)
     ax.axvline(0.9, ls="--", c="k", lw=1); ax.set_yticks(range(len(tg))); ax.set_yticklabels([t.upper() for t in tg])
     ax.set_xlabel("Coverage in the most out-of-domain AD stratum (S0)"); ax.set_title("a  Per-target coverage (target 0.90)", loc="left")
-    ax.legend(fontsize=7, loc="lower right")
+    ax.legend(fontsize=7.5, loc="upper center", bbox_to_anchor=(0.8, -0.13), ncol=3, frameon=False)
     ax = axes[1]
     P = df.groupby("method")[["s0_coverage", "mean_width"]].mean()
     for m in ms:

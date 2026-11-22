@@ -46,7 +46,7 @@ ax2 = fig.add_subplot(gs[0, 1])
 vals = [0.686, 0.880]
 bars = ax2.bar([0, 1], vals, color=[C_SPLIT, C_ADR], width=0.62, zorder=3)
 ax2.axhline(TARGET, ls="--", lw=0.9, color="#333333", zorder=2)
-ax2.text(1.48, TARGET + 0.005, "0.90 target", ha="right", va="bottom", fontsize=4.8,
+ax2.text(-0.45, TARGET + 0.01, "0.90 target", ha="left", va="bottom", fontsize=4.8,
          color="#333333")
 for x, v in zip([0, 1], vals):
     ax2.text(x, v + 0.015, f"{v:.2f}", ha="center", va="bottom", fontsize=6, zorder=4)

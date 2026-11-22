@@ -1,4 +1,4 @@
-"""Target-level validation of the shift-magnitude diagnostic (Priority 5 / N8).
+"""Target-level validation of the shift-magnitude diagnostic.
 
 Validates whether the train-vs-pool discriminator AUC predicts achievable conditional
 coverage, using TARGET-level (not split-level) analysis and leave-one-target-out

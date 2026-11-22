@@ -1,4 +1,4 @@
-"""Analysis of the expanded multi-target temporal panel (Priority 4).
+"""Analysis of the expanded multi-target temporal panel.
 Per-target and pooled coverage, paired statistics (MW-CP vs each baseline), and the
 per-target forest figure. Reads results/panel_results.csv.
 """

@@ -1,5 +1,5 @@
 """Compact message-passing graph neural network (D-MPNN-style) for molecular property
-regression, as a modern graph-based baseline (N7). CPU-only, small by design.
+regression, as a modern graph-based baseline. CPU-only, small by design.
 
 Interface mirrors RegressorWrapper: fit(smiles, y) / predict(smiles). The conformal
 layer is model-agnostic and consumes only the predictions, so the GNN plugs into the

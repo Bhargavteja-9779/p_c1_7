@@ -1,4 +1,4 @@
-"""Experiment A (reviewer #4, critical): is the AD-aligned correction robust to the
+"""Is the AD-aligned correction robust to the
 *definition* of the applicability-domain coordinate? Run the SAME ADR-CP procedure with
 four pre-defined AD coordinates and compare. Model features stay ECFP4 throughout; only the
 AD axis changes. The comparison is predefined (no post-hoc selection of the best coordinate).

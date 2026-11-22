@@ -280,7 +280,7 @@ def run_method(name: str, ctx: CPContext):
 
 
 # ---------------------------------------------------------------------------
-# ADCC-CP: Applicability-Domain Conditional Conformal prediction (round-6 method)
+# ADCC-CP: Applicability-Domain Conditional Conformal prediction
 # ---------------------------------------------------------------------------
 # Function-class conditional conformal (Gibbs, Cherian & Candes, JRSSB 2025)
 # instantiated on a low-dimensional applicability-domain function class F_AD.

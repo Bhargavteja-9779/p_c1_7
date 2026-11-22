@@ -7,6 +7,6 @@ UQ-under-shift benchmark (Parrondo 2026),regression,label/data,none (benchmark),
 Domain-classifier filter (Harris 2026),classification,OOD,none (selective filter),no,yes,yes
 CoDrug (2023),classification,scaffold/fingerprint,marginal,only if ratio exact,yes,yes
 KMM-CP (2026),classification,fingerprint,marginal/class-conditional,only if ratio exact,yes,yes
-ADR-CP (prior best; this line of work),regression,temporal/scaffold,marginal,only if ratio exact,yes,yes
+ADR-CP (preliminary benchmark; SI),regression,temporal/scaffold,marginal,only if ratio exact,yes,yes
 Scaffold-shift benchmark (Guo 2027),regression,scaffold,marginal+conditional (measured),no (no new method),no,yes
-"ADCC-CP (this work)",regression,temporal/scaffold,conditional (AD-shift family),yes (Theorem 1),NO,yes
+ADCC-CP (this work),regression,temporal/scaffold,conditional (AD-shift family),yes (Theorem 1),no,yes

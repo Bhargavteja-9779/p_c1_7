@@ -81,6 +81,41 @@ refs = (HERE / "references_acs.md").read_text()
 refs_body = refs.split("## References", 1)[-1].strip()
 out = out.replace("[[Formatted from supplementary/literature/verified_references.json in ACS style.]]",
                   refs_body)
+# --- renumber citations in order of first appearance (ACS style) ---
+SUP = "⁰¹²³⁴⁵⁶⁷⁸⁹"; S2D = {c: str(i) for i, c in enumerate(SUP)}
+def to_sup(n): return "".join(SUP[int(d)] for d in str(n))
+cite_re = re.compile(r"[%s]+(?:(?:⁻|,)[%s]+)*" % (SUP, SUP))
+head, out = out.split("## Abstract", 1); head += "## Abstract"
+body, refs_part = out.split("## References", 1)
+def parse(g):
+    nums = []
+    for part in g.split(","):
+        if "⁻" in part:
+            a, b = part.split("⁻"); a = int("".join(S2D[c] for c in a)); b = int("".join(S2D[c] for c in b))
+            nums += list(range(a, b + 1))
+        else:
+            nums.append(int("".join(S2D[c] for c in part)))
+    return nums
+order = []
+for m in cite_re.finditer(body):
+    for n in parse(m.group()):
+        if n not in order: order.append(n)
+ref_lines = re.findall(r"^(\d+)\. (.+)$", refs_part, flags=re.M)
+ref_map = {int(n): txt for n, txt in ref_lines}
+uncited = sorted(set(ref_map) - set(order))
+if uncited: print("UNCITED REFERENCES:", uncited, file=sys.stderr)
+order = [n for n in order if n in ref_map] + uncited
+new_of = {old: i + 1 for i, old in enumerate(order)}
+def fmt(nums):
+    nums = sorted(set(nums)); runs = []; s = nums[0]; prev = s
+    for x in nums[1:] + [None]:
+        if x is not None and x == prev + 1: prev = x; continue
+        runs.append(to_sup(s) if s == prev else (to_sup(s) + "," + to_sup(prev) if prev == s + 1 else to_sup(s) + "⁻" + to_sup(prev)))
+        if x is not None: s = prev = x
+    return ",".join(runs)
+body = cite_re.sub(lambda m: fmt([new_of[n] for n in parse(m.group())]), body)
+refs_txt = "\n".join(f"{new_of[o]}. {ref_map[o]}" for o in order)
+out = head + body + "## References\n\n" + refs_txt
 left = sorted(set(re.findall(r"\{\{([A-Za-z0-9_]+)\}\}", out)))
 if left:
     print("UNFILLED TOKENS:", left, file=sys.stderr)

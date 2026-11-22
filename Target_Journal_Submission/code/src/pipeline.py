@@ -53,7 +53,7 @@ def _physchem_matrix(smiles):
 def _ad_coordinate(variant, dataset_key, smiles, X, tr, ca, te, radius, nbits):
     """Applicability-domain coordinate a(x) (higher = more in-domain) for calib and test,
     under four reasonable definitions of chemical novelty. Model features stay ECFP; only the
-    AD axis changes, isolating the effect of the AD definition (reviewer Experiment A)."""
+    AD axis changes, isolating the effect of the AD definition."""
     from .preprocessing.features import (max_sim_to_ref_matrix, tanimoto_matrix,
                                          set_fp_variant, ecfp_matrix)
     if variant == "max_ecfp":
@@ -257,6 +257,7 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
     arrays = {}
     for m in methods:
         lo, hi = run_method(m, ctx_for(m))
+        hw_raw = (np.asarray(hi, float) - np.asarray(lo, float)) / 2  # unclipped half-width
         lo = np.maximum(lo, y_lo_tr)
         hi = np.minimum(hi, y_hi_tr)
         extra = {"dataset": dataset_key, "model": model_name, "seed": seed,
@@ -278,7 +279,7 @@ def run_single(df, cfg, dataset_key, model_name, seed, split_type, alpha,
             row["decision"] = du
         rows.append(row)
         if return_arrays:
-            arrays[m] = {"lo": lo, "hi": hi}
+            arrays[m] = {"lo": lo, "hi": hi, "hw_raw": hw_raw}
 
     meta = {"dataset": dataset_key, "model": model_name, "seed": seed, "alpha": alpha,
             "split_type": split_type, "sweep_q": sweep_q, "shift_auc": shift_auc,

@@ -1,4 +1,4 @@
-"""Round-6: label-free misspecification statistic suggested by Proposition 2.
+"""label-free misspecification statistic suggested by Proposition 2.
 For each panel run (same splits as run_panel_adcc), estimate the covariate-shift ratio
 w(x)=dP_pool/dP_cal with a cross-fitted fingerprint discriminator (calibration vs pool; PCA-32
 logistic), then compute

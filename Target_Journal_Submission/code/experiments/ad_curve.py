@@ -1,4 +1,4 @@
-"""Round-6 Figure: the ADCC-CP 'AD calibration curve' a -> half-width, versus split CP
+"""Figure: the ADCC-CP 'AD calibration curve' a -> half-width, versus split CP
 (constant) and ADR-CP (estimated 1-D weights), with empirical |residual| quantiles of the
 temporal-test compounds binned by a (uses test labels ONLY for this illustration).
 Representative targets; LightGBM; window w30; seed 0."""
@@ -31,9 +31,19 @@ def main():
         r = np.abs(y - yh); o = np.argsort(a)
         col = {"split": "#888888", "weighted_ad": "#009E73", "adcc": "#D55E00"}
         lab = {"split": "Split CP", "weighted_ad": "ADR-CP (estimated weights)", "adcc": "ADCC-CP"}
+        # Plot the method's own (unclipped) half-width threshold as a function of a(x).
+        # Saturated (unbounded) thresholds are drawn at the top of the panel.
+        top = 1.15 * max(np.nanmax(np.where(np.isfinite(meta["arrays"][m]["hw_raw"]),
+                                            meta["arrays"][m]["hw_raw"], np.nan))
+                         for m in ["split", "weighted_ad"])
+        top = max(top, 1.3 * float(np.quantile(r, 0.9)))
         for m in ["split", "weighted_ad", "adcc"]:
-            hw = (meta["arrays"][m]["hi"] - meta["arrays"][m]["lo"]) / 2
-            ax.plot(a[o], hw[o], c=col[m], lw=2 if m == "adcc" else 1.3, label=lab[m])
+            hw = np.minimum(meta["arrays"][m]["hw_raw"], top)
+            # one value per distinct a (ADCC-CP and ADR-CP thresholds depend on x only through a)
+            au, idx = np.unique(np.round(a, 2), return_index=True)
+            hu = np.array([np.median(hw[np.round(a, 2) == v]) for v in au])
+            ax.step(au, hu, where="mid", c=col[m], lw=2 if m == "adcc" else 1.3, label=lab[m])
+        ax.set_ylim(0, top * 1.02)
         bins = np.quantile(a, np.linspace(0, 1, 9))
         mids, q90 = [], []
         for lo, hi in zip(bins[:-1], bins[1:]):
@@ -44,7 +54,7 @@ def main():
         ax.set_title(t.upper(), loc="left"); ax.set_xlabel("AD coordinate a(x) (max Tanimoto to training)")
         summ[t] = {"q90_test_bins": [float(v) for v in q90], "a_mid": [float(v) for v in mids]}
     axes[0].set_ylabel("Interval half-width (log units)")
-    axes[0].legend(fontsize=7)
+    axes[0].legend(fontsize=7, loc="upper right")
     fig.tight_layout()
     for ext in ("png", "pdf"):
         fig.savefig(FIG / f"fig_adcc_curve.{ext}", dpi=300)

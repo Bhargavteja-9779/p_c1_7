@@ -1,4 +1,4 @@
-"""Experiment C (reviewer #4, critical): target-clustered statistical validation.
+"""Target-clustered statistical validation.
 
 The panel has 117 evaluation runs per method (13 targets x 3 windows x 3 seeds), but the
 independent biological unit is the TARGET (n=13). We therefore aggregate each method to the
